@@ -102,7 +102,7 @@ export function Showcase() {
       >
         <div className="max-w-5xl mx-auto px-6">
           <motion.h2
-            className="text-2xl sm:text-3xl font-light tracking-[-0.01em] text-foreground mb-4"
+            className="text-2xl sm:text-3xl font-medium tracking-[-0.01em] text-foreground mb-4"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
@@ -224,7 +224,7 @@ export function Showcase() {
                     </div>
                   </div>
                   <div className="lg:w-1/2 lg:flex-1">
-                    <h3 className="text-xl font-light text-foreground mb-3">
+                    <h3 className="text-xl font-medium text-foreground mb-3">
                       {feature.title}
                     </h3>
                     <p className="text-base text-muted-foreground mb-6 leading-relaxed">
@@ -258,7 +258,7 @@ export function Showcase() {
                 delay: 0.4,
               }}
             >
-              <h2 className="text-xl font-light text-foreground mb-3">
+              <h2 className="text-xl font-medium text-foreground mb-3">
                 Ready to stop leaving money on the table?
               </h2>
               <p className="text-base text-muted-foreground max-w-xl mb-6">

@@ -45,7 +45,7 @@ export function StoryContent() {
     >
       <Section className="space-y-8">
         <div className="space-y-4">
-          <h3 className="text-lg font-light text-foreground">
+          <h3 className="text-lg font-medium text-foreground">
             The Problem
           </h3>
           <div className="space-y-4 text-base text-muted-foreground leading-relaxed">
@@ -64,7 +64,7 @@ export function StoryContent() {
         </div>
 
         <div className="space-y-4">
-          <h3 className="text-lg font-light text-foreground">
+          <h3 className="text-lg font-medium text-foreground">
             The Solution
           </h3>
           <div className="space-y-4 text-base text-muted-foreground leading-relaxed">

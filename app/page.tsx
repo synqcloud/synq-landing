@@ -38,7 +38,7 @@ export default function HomePage() {
           {/* Learn More Section */}
           <section id="about-us" className="py-24 bg-muted/30">
             <div className="max-w-5xl mx-auto px-6">
-              <h2 className="text-2xl sm:text-3xl font-light text-foreground mb-8">
+              <h2 className="text-2xl sm:text-3xl font-medium text-foreground mb-8">
                 Why we're building this
               </h2>
               <StoryContent />

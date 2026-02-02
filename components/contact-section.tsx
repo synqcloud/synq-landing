@@ -34,7 +34,7 @@ export function ContactSection() {
       <div className="max-w-5xl mx-auto px-6">
         <div className="max-w-md">
           <motion.h2
-            className="text-2xl sm:text-3xl font-light text-foreground mb-3"
+            className="text-2xl sm:text-3xl font-medium text-foreground mb-3"
             variants={fadeInUp}
           >
             Get Your Install Link

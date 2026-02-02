@@ -30,7 +30,7 @@ export function EarlyAccessSection() {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6, ease: [0.25, 0.25, 0, 1] }}
         >
-          <h2 className="text-2xl sm:text-3xl font-light text-foreground mb-4">
+          <h2 className="text-2xl sm:text-3xl font-medium text-foreground mb-4">
             Get Started
           </h2>
           <p className="text-base text-muted-foreground max-w-xl">
@@ -50,11 +50,11 @@ export function EarlyAccessSection() {
             <span className="inline-block bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-medium mb-4">
               SHOPIFY APP
             </span>
-            <h3 className="text-xl font-light text-foreground mb-1">
+            <h3 className="text-xl font-medium text-foreground mb-1">
               Synq for Shopify
             </h3>
             <div className="flex items-baseline gap-1 mb-1">
-              <span className="text-3xl font-light text-foreground">$19</span>
+              <span className="text-3xl font-medium text-foreground">$19</span>
               <span className="text-sm text-muted-foreground">/month</span>
             </div>
             <p className="text-sm text-muted-foreground">
