@@ -9,16 +9,16 @@ import { Analytics } from "@vercel/analytics/next";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Synq - Inventory Software Built for Card Shops and Sellers",
+  title: "Synq - TCGPlayer Prices for Your Shopify Store",
   description:
-    "Inventory management software built specifically for trading card game sellers. Track inventory, manage transactions, and grow your TCG business. Built by sellers, for sellers.",
+    "Shopify app for TCG card sellers. Add cards with one click, sync prices from TCGPlayer daily, and update your store prices instantly. For Pokemon, Magic, and more.",
   keywords:
-    "TCG inventory management, trading card game software, card shop inventory, local game store software, TCG seller tools, card inventory tracking, game store management, open source inventory software",
+    "Shopify TCG app, TCGPlayer price sync, Pokemon card Shopify, Magic the Gathering Shopify, TCG price updates, card shop Shopify app, trading card Shopify",
   metadataBase: new URL("https://www.trysynq.com"),
   openGraph: {
-    title: "Synq - Inventory Software Built for Card Shops and Sellers",
+    title: "Synq - TCGPlayer Prices for Your Shopify Store",
     description:
-      "Inventory management software built specifically for trading card game sellers. Track inventory, manage transactions, and grow your TCG business. Built by sellers, for sellers.",
+      "Shopify app for TCG card sellers. Add cards with one click, sync prices from TCGPlayer daily, and update your store prices instantly.",
     url: "https://www.trysynq.com",
     type: "website",
     siteName: "Synq",
@@ -27,15 +27,15 @@ export const metadata: Metadata = {
         url: "/brand/synq-eyecatcher-art.png",
         width: 1200,
         height: 630,
-        alt: "Synq Dashboard - Inventory Management for TCG Sellers",
+        alt: "Synq - TCGPlayer Price Sync for Shopify",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Synq - Inventory Software Built for Card Shops and Sellers",
+    title: "Synq - TCGPlayer Prices for Your Shopify Store",
     description:
-      "Inventory management software built specifically for trading card game sellers. Track inventory, manage transactions, and grow your TCG business.",
+      "Shopify app for TCG sellers. Add cards with one click, sync prices from TCGPlayer daily, update your store instantly.",
     images: ["/brand/synq-eyecatcher-art.png"],
   },
   robots: {

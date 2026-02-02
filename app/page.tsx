@@ -11,9 +11,9 @@ import { SchemaMarkup } from "@/components/schema-markup";
 
 export const metadata: Metadata = {
   title:
-    "TCG Inventory Management Software for Card Shops | Pokemon, Magic, Yu-Gi-Oh | Synq",
+    "Synq - Keep Your Shopify TCG Prices Synced with TCGPlayer",
   description:
-    "Complete inventory solution for Pokemon, Magic: The Gathering, and Yu-Gi-Oh card shops. Track stock, manage sales, integrate with TCGPlayer & Cardmarket. Start free 7-day trial.",
+    "Shopify app for TCG sellers. Add Pokemon, Magic, and other trading cards to your store with one click. Daily price sync from TCGPlayer. Update prices instantly.",
   alternates: {
     canonical: "https://www.trysynq.com",
   },
@@ -37,18 +37,16 @@ export default function HomePage() {
 
           {/* Learn More Section */}
           <section id="about-us" className="py-24 bg-muted/30">
-            <div className="max-w-5xl mx-auto px-8 lg:px-12">
-              <div className="text-center mb-16">
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light tracking-[-0.01em] text-foreground mb-6">
-                  Why we're building this
-                </h2>
-              </div>
+            <div className="max-w-5xl mx-auto px-6">
+              <h2 className="text-2xl sm:text-3xl font-light text-foreground mb-8">
+                Why we're building this
+              </h2>
               <StoryContent />
             </div>
           </section>
 
-          {/* Early Access Pricing Section */}
-          <section id="early-access" className="py-24 bg-muted/30">
+          {/* Pricing / Install Section */}
+          <section id="install" className="py-24 bg-muted/30">
             <EarlyAccessSection />
           </section>
 

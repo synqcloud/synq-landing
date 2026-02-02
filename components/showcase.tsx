@@ -16,68 +16,70 @@ export function Showcase() {
   const images = [
     {
       src: "/brand/synq-inventory.png",
-      alt: "Inventory Management Dashboard",
-      title: "Inventory Management",
+      alt: "Add cards to Shopify",
+      title: "Add Cards Instantly",
       description:
-        "Track your card inventory with precision. Monitor stock levels, conditions, and values across all your collections.",
+        "Search our database, select condition, and create Shopify draft products with one click. Images, descriptions, and prices included.",
     },
     {
       src: "/brand/synq-transactions.png",
-      alt: "Transactions Dashboard",
-      title: "Transactions",
+      alt: "Price sync dashboard",
+      title: "Daily Price Updates",
       description:
-        "Track all your buying and selling activities. Monitor fees, profits, and transaction history with detailed analytics.",
+        "Prices sync daily from TCGPlayer. See which products are under or overpriced at a glance.",
     },
     {
       src: "/brand/synq-library.png",
-      alt: "Library Dashboard",
-      title: "Card Game Data Access",
+      alt: "One-click update",
+      title: "One-Click Updates",
       description:
-        "Access comprehensive card databases for multiple TCGs. Import card data, and create custom libraries for your specific product groups.",
+        "Update all your Shopify prices to match current market rates with a single click.",
     },
   ];
 
   // Core features data
   const coreFeatures = [
     {
-      title: "Inventory Management",
+      title: "Add Cards to Shopify in Seconds",
       description:
-        "Navigate on your card inventory quickly on the inventory panel. Monitor and take actions on stock levels, prices, conditions and more",
+        "Search from thousands of Pokemon, Magic, and other TCG cards. Select the condition, set your markup, and create a Shopify draft product instantly with the correct image, title, and description.",
       image: "/brand/synq-inventory.png",
-      alt: "Inventory Management Dashboard",
+      alt: "Add cards to Shopify",
       features: [
-        "Real-time stock tracking",
-        "Physical location tracking",
-        "Condition & grading support",
+        "Complete card database with images",
+        "Automatic product descriptions",
+        "Condition-based pricing (NM, LP, MP, etc.)",
+        "Creates draft products ready to publish",
       ],
-      cta: "Start managing inventory",
+      cta: "Start adding cards",
     },
     {
-      title: "Transactions",
+      title: "Prices Updated Daily from TCGPlayer",
       description:
-        "Track all your buying and selling activities. Monitor fees, profits, and transaction history with detailed analytics.",
+        "Synq pulls the latest TCGPlayer market prices every day. You'll see exactly which of your Shopify products are priced below or above the current market rate.",
       image: "/brand/synq-transactions.png",
-      alt: "Transactions Dashboard",
+      alt: "Price sync dashboard",
       features: [
-        "Buy/sell tracking",
-        "Grading submissions",
-        "Damage & loss tracking",
-        "Returns & refunds",
+        "Daily automatic price sync",
+        "See price differences at a glance",
+        "TCGPlayer market price data",
+        "Never miss a price spike",
       ],
-      cta: "View transactions",
+      cta: "See pricing in action",
     },
     {
-      title: "Card Game Data Access",
+      title: "Update Prices with One Click",
       description:
-        "Access comprehensive card databases for multiple TCGs. Import card data, and create custom libraries for your specific product groups.",
+        "When prices change, update your Shopify store instantly. Select the products you want to update and apply new prices in one click. No more manually editing each product.",
       image: "/brand/synq-library.png",
-      alt: "Library Dashboard",
+      alt: "One-click price updates",
       features: [
-        "Add existing inventories from library",
-        "Create custom product groups",
-        "Complete card data & pricing",
+        "Bulk price updates",
+        "Set your own markup percentage",
+        "Review changes before applying",
+        "Keep your margins consistent",
       ],
-      cta: "Explore library",
+      cta: "Update prices now",
     },
   ];
 
@@ -98,24 +100,24 @@ export function Showcase() {
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 0.7, ease: [0.25, 0.25, 0, 1] }}
       >
-        <div className="max-w-6xl mx-auto px-8 lg:px-12">
+        <div className="max-w-5xl mx-auto px-6">
           <motion.h2
-            className="text-2xl sm:text-3xl lg:text-4xl font-light tracking-[-0.01em] text-foreground mb-6 text-center"
+            className="text-2xl sm:text-3xl font-light tracking-[-0.01em] text-foreground mb-4"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6, ease: [0.25, 0.25, 0, 1] }}
           >
-            Core Features
+            How It Works
           </motion.h2>
           <motion.p
-            className="text-sm font-light tracking-[-0.01em] text-muted-foreground max-w-2xl mx-auto mb-12 text-center"
+            className="text-base text-muted-foreground max-w-2xl mb-12"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6, ease: [0.25, 0.25, 0, 1], delay: 0.1 }}
           >
-            Preview the core features powering your experience.
+            Add cards and keep prices updated in three simple steps.
           </motion.p>
 
           <div className="space-y-16">
@@ -189,7 +191,7 @@ export function Showcase() {
               {coreFeatures.map((feature, index) => (
                 <motion.div
                   key={feature.title}
-                  className={`flex flex-col lg:flex-row lg:items-start lg:gap-12 border border-border rounded-lg p-8 shadow-sm bg-card ${
+                  className={`flex flex-col lg:flex-row lg:items-start lg:gap-12 ${
                     index % 2 === 1 ? "lg:flex-row-reverse" : ""
                   }`}
                   initial={{ opacity: 0, y: 20 }}
@@ -222,18 +224,18 @@ export function Showcase() {
                     </div>
                   </div>
                   <div className="lg:w-1/2 lg:flex-1">
-                    <h3 className="text-2xl font-light tracking-[-0.01em] text-foreground mb-4">
+                    <h3 className="text-xl font-light text-foreground mb-3">
                       {feature.title}
                     </h3>
-                    <p className="text-base font-light tracking-[-0.01em] text-muted-foreground mb-8 leading-relaxed">
+                    <p className="text-base text-muted-foreground mb-6 leading-relaxed">
                       {feature.description}
                     </p>
 
-                    <ul className="space-y-3 mb-8">
+                    <ul className="space-y-2">
                       {feature.features.map((item, idx) => (
-                        <li key={idx} className="flex items-start gap-3">
-                          <Check className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                          <span className="text-base font-light tracking-[-0.01em] text-foreground">
+                        <li key={idx} className="flex items-start gap-2">
+                          <Check className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
+                          <span className="text-sm text-foreground">
                             {item}
                           </span>
                         </li>
@@ -244,9 +246,9 @@ export function Showcase() {
               ))}
             </div>
 
-            {/* Social Proof Section */}
+            {/* CTA Section */}
             <motion.div
-              className="mt-16 pt-16 border-t border-border"
+              className="mt-16 pt-12 border-t border-border"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
@@ -256,59 +258,31 @@ export function Showcase() {
                 delay: 0.4,
               }}
             >
-              <div className="text-center mb-12">
-                <h2 className="text-xl font-light tracking-[-0.01em] text-foreground mb-4">
-                  Real World Results
-                </h2>
-                <p className="text-sm text-muted-foreground max-w-2xl mx-auto">
-                  Try it out and tell us what changed for the better since you
-                  switched to Synq.
-                </p>
-              </div>
-
-              <div className="text-center">
-                <div className="inline-flex items-center gap-4">
-                  <a
-                    href="#contact"
-                    className="inline-flex items-center text-sm font-medium text-primary hover:text-primary/80 transition-colors"
-                  >
-                    Contact Us
-                    <svg
-                      className="w-4 h-4 ml-1"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M9 5l7 7-7 7"
-                      />
-                    </svg>
-                  </a>
-                  <span className="text-muted-foreground">or</span>
-                  <a
-                    href="mailto:hello@synq.com"
-                    className="inline-flex items-center text-sm font-medium text-primary hover:text-primary/80 transition-colors"
-                  >
-                    Share Feedback
-                    <svg
-                      className="w-4 h-4 ml-1"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M9 5l7 7-7 7"
-                      />
-                    </svg>
-                  </a>
-                </div>
-              </div>
+              <h2 className="text-xl font-light text-foreground mb-3">
+                Ready to stop leaving money on the table?
+              </h2>
+              <p className="text-base text-muted-foreground max-w-xl mb-6">
+                Install the Synq app on your Shopify store and start keeping your TCG prices competitive.
+              </p>
+              <a
+                href="#install"
+                className="inline-flex items-center text-sm font-medium text-primary hover:text-primary/80 transition-colors"
+              >
+                Get started
+                <svg
+                  className="w-4 h-4 ml-1"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </a>
             </motion.div>
           </div>
         </div>

@@ -2,8 +2,9 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { Github, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { ThemeToggle } from "./theme-toggle";
+import { Button } from "@synq/ui/component";
 
 export function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,50 +18,50 @@ export function Nav() {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 w-full px-8 lg:px-12 py-6 border-b border-border/20 bg-background/80 backdrop-blur-sm">
-      <div className="flex items-center justify-between max-w-6xl mx-auto">
-        <div className="flex items-center gap-4">
-          <Image
-            src="/brand/synq-icon.png"
-            alt="Synq Logo"
-            width={28}
-            height={28}
-            className="h-7 w-auto opacity-80"
-          />
-          <span className="hidden md:inline-block text-sm font-light tracking-[-0.01em] text-muted-foreground whitespace-nowrap align-middle">
-            Inventory management for card game stores.
-          </span>
+    <nav className="fixed top-0 left-0 right-0 z-50 w-full border-b border-border/20 bg-background/80 backdrop-blur-sm">
+      <div className="flex items-center justify-between max-w-5xl mx-auto px-6 py-4">
+        {/* Left: Logo + Nav Links */}
+        <div className="flex items-center gap-8">
+          <a href="#" className="flex items-center gap-2">
+            <Image
+              src="/brand/synq-icon.png"
+              alt="Synq Logo"
+              width={24}
+              height={24}
+              className="h-6 w-auto"
+            />
+            <span className="font-medium text-foreground">Synq</span>
+          </a>
+
+          {/* Desktop Navigation Links */}
+          <div className="hidden md:flex items-center gap-6">
+            <a
+              href="#features"
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+            >
+              Features
+            </a>
+            <a
+              href="#install"
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+            >
+              Pricing
+            </a>
+            <a
+              href="#about-us"
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+            >
+              About
+            </a>
+          </div>
         </div>
 
-        {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center gap-4">
-          <a
-            href="#features"
-            className="text-sm font-light tracking-[-0.01em] text-muted-foreground hover:text-foreground transition-colors"
-          >
-            Features
-          </a>
-          <a
-            href="#contact"
-            className="text-sm font-light tracking-[-0.01em] text-muted-foreground hover:text-foreground transition-colors"
-          >
-            Contact Us
-          </a>
-          <a
-            href="#early-access"
-            className="text-sm font-light tracking-[-0.01em] text-muted-foreground hover:text-foreground transition-colors"
-          >
-            Early Access
-          </a>
+        {/* Right: CTA + Theme Toggle */}
+        <div className="hidden md:flex items-center gap-3">
           <ThemeToggle />
-          {/*<a
-            href="https://github.com/synqcloud/synq"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-muted-foreground hover:text-foreground transition-colors"
-          >
-            <Github className="w-4 h-4" />
-          </a>*/}
+          <Button asChild size="sm">
+            <a href="#install">Get started</a>
+          </Button>
         </div>
 
         {/* Mobile Navigation Controls */}
@@ -82,39 +83,32 @@ export function Nav() {
 
       {/* Mobile Menu Overlay */}
       {isMenuOpen && (
-        <div className="md:hidden fixed inset-0 top-[73px] bg-muted z-40">
-          <div className="flex flex-col items-center justify-start bg-muted py-8 px-8 gap-6">
+        <div className="md:hidden fixed inset-0 top-[57px] bg-background z-40">
+          <div className="flex flex-col items-start px-6 py-6 gap-4">
             <a
               href="#features"
               onClick={closeMenu}
-              className="text-lg font-light tracking-[-0.01em] text-muted-foreground hover:text-foreground transition-colors"
+              className="text-base text-muted-foreground hover:text-foreground transition-colors"
             >
               Features
             </a>
             <a
-              href="#contact"
+              href="#install"
               onClick={closeMenu}
-              className="text-lg font-light tracking-[-0.01em] text-muted-foreground hover:text-foreground transition-colors"
+              className="text-base text-muted-foreground hover:text-foreground transition-colors"
             >
-              Contact Us
+              Pricing
             </a>
             <a
-              href="#early-access"
+              href="#about-us"
               onClick={closeMenu}
-              className="text-lg font-light tracking-[-0.01em] text-muted-foreground hover:text-foreground transition-colors"
+              className="text-base text-muted-foreground hover:text-foreground transition-colors"
             >
-              Early Access
+              About
             </a>
-            {/*<a
-              href="https://github.com/synqcloud/synq"
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={closeMenu}
-              className="text-muted-foreground hover:text-foreground transition-colors flex items-center gap-2"
-            >
-              <Github className="w-4 h-4" />
-              GitHub
-            </a>*/}
+            <Button asChild size="sm" className="mt-2">
+              <a href="#install" onClick={closeMenu}>Get started</a>
+            </Button>
           </div>
         </div>
       )}

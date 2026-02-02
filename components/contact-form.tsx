@@ -145,24 +145,19 @@ export function ContactForm() {
 
         {/* Store Type - usando shadcn Select */}
         <motion.div variants={fadeInUp}>
-          <Label htmlFor="storeType-select">Store Type</Label>
+          <Label htmlFor="storeType-select">Do you have a Shopify store?</Label>
           <Select
             value={storeType}
             onValueChange={(value) => setStoreType(value)}
           >
             <SelectTrigger id="storeType-select" disabled={isLoading}>
-              <SelectValue placeholder="Select your store type" />
+              <SelectValue placeholder="Select an option" />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="local-game-store">Local game store</SelectItem>
-              <SelectItem value="online-only">Online-only</SelectItem>
-              <SelectItem value="part-time-seller">
-                Part-time/casual seller
-              </SelectItem>
-              <SelectItem value="events-market-seller">
-                Event/convention seller
-              </SelectItem>
-              <SelectItem value="other">Other</SelectItem>
+              <SelectItem value="shopify-yes">Yes, I have a Shopify store</SelectItem>
+              <SelectItem value="shopify-planning">Planning to set one up</SelectItem>
+              <SelectItem value="shopify-no">No, I use another platform</SelectItem>
+              <SelectItem value="other">Other / Just exploring</SelectItem>
             </SelectContent>
           </Select>
         </motion.div>
@@ -183,13 +178,13 @@ export function ContactForm() {
         {/* Frustration */}
         <motion.div variants={fadeInUp}>
           <Label htmlFor="frustration-input">
-            What's your biggest frustration today? (optional)
+            What TCGs do you sell? Any specific needs? (optional)
           </Label>
           <Textarea
             id="frustration-input"
             value={frustration}
             onChange={(e) => setFrustration(e.target.value)}
-            placeholder="Share your biggest pain point..."
+            placeholder="e.g., Pokemon and Magic. Looking for price sync..."
             disabled={isLoading}
             className="min-h-[90px]"
           />
@@ -206,7 +201,7 @@ export function ContactForm() {
             className="h-4 w-4 text-primary border-input rounded focus:ring-ring"
           />
           <Label htmlFor="updates-checkbox">
-            I'd like early access updates
+            Send me the install link when ready
           </Label>
         </motion.div>
 

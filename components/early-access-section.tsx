@@ -6,11 +6,11 @@ import { Button } from "@synq/ui/component";
 
 export function EarlyAccessSection() {
   const features = [
-    "7-day free trial of the current development version",
-    "Explore experimental features before public release",
-    "Directly influence Synq's evolution with your feedback",
-    "Get a sneak peek at upcoming improvements",
-    "Optionally support the project early",
+    "Add cards to Shopify with images and descriptions",
+    "Daily price sync from TCGPlayer",
+    "One-click bulk price updates",
+    "Support for Pokemon, Magic, and more",
+    "Set your own markup percentage",
   ];
 
   return (
@@ -21,72 +21,66 @@ export function EarlyAccessSection() {
       viewport={{ once: true, margin: "-100px" }}
       transition={{ duration: 0.7, ease: [0.25, 0.25, 0, 1] }}
     >
-      <div className="max-w-4xl mx-auto px-8 lg:px-12">
+      <div className="max-w-5xl mx-auto px-6">
         {/* Header */}
         <motion.div
-          className="text-center mb-12"
+          className="mb-10"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6, ease: [0.25, 0.25, 0, 1] }}
         >
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light tracking-[-0.01em] text-foreground mb-6">
-            Step Inside Synq
+          <h2 className="text-2xl sm:text-3xl font-light text-foreground mb-4">
+            Get Started
           </h2>
-          <p className="text-base font-light tracking-[-0.01em] text-muted-foreground max-w-2xl mx-auto">
-            Try Synq’s current development state for 7 days. Explore
-            experimental features, share feedback, and help shape the future of
-            the platform.
+          <p className="text-base text-muted-foreground max-w-xl">
+            Install Synq on your Shopify store and start keeping your TCG prices competitive.
           </p>
         </motion.div>
 
-        {/* Experimental Trial Card */}
+        {/* Pricing Card */}
         <motion.div
-          className="relative border border-border rounded-lg bg-card/50 shadow-sm p-10 max-w-lg mx-auto"
+          className="relative border border-border rounded-lg bg-card/50 p-8 max-w-md"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6, ease: [0.25, 0.25, 0, 1] }}
         >
-          <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-            <span className="bg-primary text-primary-foreground px-4 py-1 rounded-full text-xs font-medium">
-              EXPERIMENTAL
+          <div className="mb-6">
+            <span className="inline-block bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-medium mb-4">
+              SHOPIFY APP
             </span>
-          </div>
-
-          <div className="text-center mb-8">
-            <h3 className="text-xl font-light tracking-[-0.01em] text-foreground mb-2">
-              7-Day Trial
+            <h3 className="text-xl font-light text-foreground mb-1">
+              Synq for Shopify
             </h3>
-            <p className="text-sm font-light tracking-[-0.01em] text-muted-foreground mb-4">
-              Explore, test, and share your insights.
+            <div className="flex items-baseline gap-1 mb-1">
+              <span className="text-3xl font-light text-foreground">$19</span>
+              <span className="text-sm text-muted-foreground">/month</span>
+            </div>
+            <p className="text-sm text-muted-foreground">
+              7-day free trial included
             </p>
           </div>
 
-          <ul className="space-y-3 mb-8">
+          <ul className="space-y-2 mb-6">
             {features.map((feature, idx) => (
-              <li key={idx} className="flex items-start gap-3">
+              <li key={idx} className="flex items-start gap-2">
                 <Check className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                <span className="text-sm font-light tracking-[-0.01em] text-foreground">
+                <span className="text-sm text-foreground">
                   {feature}
                 </span>
               </li>
             ))}
           </ul>
 
-          <Button
-            asChild
-            className="w-full text-xs uppercase tracking-[0.2em]"
-            size="sm"
-          >
-            <a
-              href="https://app.trysynq.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Start Trial
+          <Button asChild className="w-full">
+            <a href="#contact">
+              Request install link
             </a>
           </Button>
+          <p className="text-xs text-muted-foreground mt-3">
+            We'll send you a direct install link for your store
+          </p>
         </motion.div>
       </div>
     </motion.div>
