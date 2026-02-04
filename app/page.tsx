@@ -8,16 +8,22 @@ import { DashboardSection } from "@/components/features/dashboard-section";
 import { GamesSection } from "@/components/features/games-section";
 import { TimelineSection } from "@/components/timeline-section";
 import { FAQSection } from "@/components/faq-section";
-import { PricingSection } from "@/components/pricing-section";
+import { InstallRequestSection } from "@/components/install-request-section";
 
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Synq - Keep Your Shopify Card Prices Synced with the Market",
+  title: "Synq - Automated Card Pricing for Shopify | TCGPlayer & Cardmarket Sync",
   description:
-    "Shopify app for trading card stores. Add Magic, Pokemon, and other cards to your store with images and market prices. Daily price sync from TCGPlayer and Cardmarket.",
+    "Keep your Shopify card shop competitive with automated pricing. Synq syncs your card prices with market data daily. TCGPlayer, Cardmarket, and more. For Magic, Pokemon, Yu-Gi-Oh.",
   alternates: {
     canonical: "https://www.trysynq.com",
+  },
+  openGraph: {
+    title: "Synq - Automated Card Pricing for Shopify",
+    description:
+      "Sync your card prices with market data automatically. TCGPlayer, Cardmarket, and more. Add cards in one click.",
+    url: "https://www.trysynq.com",
   },
 };
 
@@ -27,11 +33,11 @@ export default function HomePage() {
       <Nav />
 
       <main>
-        {/* Hero Section */}
+        {/* Hero Section - Contains primary H1 */}
         <HeroSection />
 
         {/* Feature Deep-Dives */}
-        <section id="features">
+        <section id="features" aria-label="Features">
           <AddCardsSection />
           <PriceSyncSection />
           <ConditionPricingSection />
@@ -44,12 +50,10 @@ export default function HomePage() {
         {/* Timeline / Value Proposition */}
         <TimelineSection />
 
-        {/* Pricing */}
-        <section id="pricing">
-          <PricingSection />
-        </section>
+        {/* Install Request Form */}
+        <InstallRequestSection />
 
-        {/* FAQ */}
+        {/* FAQ - Important for AI/LLM SEO */}
         <FAQSection />
       </main>
 

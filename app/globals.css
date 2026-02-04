@@ -112,6 +112,12 @@ body {
   height: 100%;
 }
 
+/* Blog prose typography */
+.prose-custom {
+  @apply text-base leading-7;
+  max-width: 65ch;
+}
+
 /* Enhanced typography classes for minimalist design */
 @layer utilities {
   .text-display {

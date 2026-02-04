@@ -96,11 +96,8 @@ export function TimelineSection() {
           className="text-center"
         >
           <Button asChild>
-            <a href="#contact">Start for free</a>
+            <a href="#get-started">Get early access</a>
           </Button>
-          <p className="text-sm text-muted-foreground mt-3">
-            7-day free trial, no credit card required
-          </p>
         </motion.div>
       </div>
     </section>

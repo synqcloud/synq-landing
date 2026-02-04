@@ -25,6 +25,12 @@ export function Footer() {
               FAQ
             </a>
             <a
+              href="/blog"
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+            >
+              Blog
+            </a>
+            <a
               href="/privacy"
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
@@ -53,6 +59,12 @@ export function Footer() {
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
               Pricing
+            </a>
+            <a
+              href="/blog"
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+            >
+              Blog
             </a>
             <a
               href="/privacy"

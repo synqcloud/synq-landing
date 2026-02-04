@@ -1,546 +1,240 @@
+const BASE_URL = "https://www.trysynq.com";
+
+// FAQ data matching the actual FAQ section
+const FAQ_DATA = [
+  {
+    question: "What trading card games are supported?",
+    answer:
+      "Currently, Synq fully supports Magic: The Gathering with price data from TCGPlayer (US) and Cardmarket (EU). Pokemon, Yu-Gi-Oh, and other games are coming soon based on user demand.",
+  },
+  {
+    question: "How does price syncing work?",
+    answer:
+      "Synq pulls the latest market prices every 24 hours from TCGPlayer (US region) or Cardmarket (EU region). You choose your region during setup. When prices change, you'll see which products need updates on your dashboard and can apply new prices with one click.",
+  },
+  {
+    question: "Can I set my own prices instead of using market prices?",
+    answer:
+      "Yes. You can set custom prices for any card at any time. You can also configure a markup percentage (e.g., market price + 10%) or set minimum and maximum price limits to protect your margins.",
+  },
+  {
+    question: "How do condition-based prices work?",
+    answer:
+      "When you add a card, Synq creates a Shopify variant for each condition you select (NM, LP, MP, HP, DMG). Each condition has a price adjustment based on market standards (e.g., LP is typically 10% below NM). You can customize these percentages in settings.",
+  },
+  {
+    question: "What happens to my existing Shopify products?",
+    answer:
+      "Synq only manages products you create through the app. Your existing products are not affected. If you want Synq to manage an existing product, you would need to recreate it through the app.",
+  },
+  {
+    question: "Can I use Synq with multiple Shopify stores?",
+    answer:
+      "Each Shopify store needs its own Synq installation. You can install Synq on multiple stores, and each store can have its own settings (different regions, templates, pricing strategies).",
+  },
+  {
+    question: "Is there a limit to how many cards I can add?",
+    answer:
+      "It depends on your plan. Starter supports up to 100 cards, Pro up to 500, and Business gives you unlimited cards. All plans include a free trial so you can try before you commit.",
+  },
+  {
+    question: "How do I cancel my subscription?",
+    answer:
+      "You can cancel anytime from your Shopify admin under Apps > Synq. Your products remain in Shopify, but price syncing will stop. There are no cancellation fees.",
+  },
+];
+
+
 export function SchemaMarkup() {
+  const currentDate = new Date().toISOString().split("T")[0];
+
   const schema = {
     "@context": "https://schema.org",
     "@graph": [
+      // Organization
       {
         "@type": "Organization",
-        "@id": "https://www.trysynq.com/#organization",
+        "@id": `${BASE_URL}/#organization`,
         name: "Synq",
-        url: "https://www.trysynq.com",
+        url: BASE_URL,
         logo: {
           "@type": "ImageObject",
-          url: "https://www.trysynq.com/brand/synq-icon.png",
-          width: 32,
-          height: 32,
+          url: `${BASE_URL}/brand/synq-icon.png`,
+          width: 512,
+          height: 512,
         },
         description:
-          "Professional inventory management software built specifically for card shops, TCG sellers, and collectibles businesses",
+          "Synq automates trading card pricing for Shopify stores, syncing with market data from TCGPlayer, Cardmarket, and other sources daily.",
         foundingDate: "2024",
-        sameAs: ["https://github.com/synqcloud/synq"],
+        sameAs: ["https://apps.shopify.com/synq"],
         contactPoint: {
           "@type": "ContactPoint",
-          contactType: "customer service",
-          email: "iamtelmo@proton.me",
-          availableLanguage: "English",
-          areaServed: "Worldwide",
+          contactType: "customer support",
+          availableLanguage: ["English"],
         },
-        address: {
-          "@type": "PostalAddress",
-          addressCountry: "US",
-        },
-        knowsAbout: [
-          "Trading Card Games",
-          "Inventory Management",
-          "Card Shop Operations",
-          "TCG Business Management",
-          "Collectibles Retail",
-          "Pokemon Cards",
-          "Magic The Gathering",
-          "Yu-Gi-Oh",
-          "Card Grading",
-          "Marketplace Integration",
-        ],
-        slogan: "Inventory software built for card shops and sellers",
       },
+
+      // SoftwareApplication - Primary schema for the product
       {
         "@type": "SoftwareApplication",
-        "@id": "https://www.trysynq.com/#software",
+        "@id": `${BASE_URL}/#software`,
         name: "Synq",
-        alternateName: "Synq Inventory Management",
+        alternateName: "Synq Card Price Sync",
         description:
-          "Professional inventory management software built specifically for card shops, TCG sellers, and collectibles businesses. Track inventory, manage sales, monitor profits with comprehensive analytics.",
-        url: "https://www.trysynq.com",
+          "Shopify app that automatically syncs trading card prices with market data from TCGPlayer, Cardmarket, and other sources. Add cards with one click, get daily price updates, and manage condition-based pricing for Magic: The Gathering, Pokemon, and more.",
+        url: BASE_URL,
         applicationCategory: "BusinessApplication",
-        applicationSubCategory: "Inventory Management Software",
+        applicationSubCategory: "Inventory Management",
         operatingSystem: "Web",
-        softwareVersion: "1.0.0",
+        browserRequirements: "Requires Shopify store",
+        softwareVersion: "2.0",
         datePublished: "2024-01-01",
-        releaseNotes: "Initial release focused on TCG inventory management",
-        downloadUrl: "https://www.trysynq.com",
-        installUrl: "https://www.trysynq.com",
-        softwareRequirements: "Web browser",
-        memoryRequirements: "Minimal - cloud-based solution",
-        storageRequirements: "No local storage required",
-        processorRequirements: "Any modern processor",
+        dateModified: currentDate,
+        downloadUrl: "https://apps.shopify.com/synq",
+        installUrl: "https://apps.shopify.com/synq",
+        permissions: "Shopify store access",
         offers: {
           "@type": "Offer",
-          availability: "https://schema.org/InStock",
-          description:
-            "Professional inventory management software for card shops and TCG sellers",
-          priceValidUntil: "2025-12-31",
-          businessFunction: "https://schema.org/Sell",
+          description: "Early access available - request install link",
+          availability: "https://schema.org/PreOrder",
+          seller: { "@id": `${BASE_URL}/#organization` },
         },
         featureList: [
-          "Real-time inventory tracking for trading cards",
-          "Comprehensive transaction management and history",
-          "Access to extensive TCG databases and card data",
-          "Precise card condition tracking (Near Mint to Heavily Played)",
-          "Advanced profit and loss analysis with fee calculations",
-          "Multi-marketplace integration (TCGPlayer, Cardmarket)",
-          "Physical location and storage tracking",
-          "Grading submissions tracking and management",
-          "Damage and loss incident tracking",
-          "Returns and refunds management system",
-          "Custom card libraries and product groups",
-          "Automated price monitoring and alerts",
-          "Business analytics and reporting dashboards",
+          "Automatic daily price sync with market data",
+          "TCGPlayer integration for US pricing",
+          "Cardmarket integration for EU pricing",
+          "Support for additional price sources",
+          "One-click card addition with images and descriptions",
+          "Condition-based pricing (NM, LP, MP, HP, DMG)",
+          "Custom markup percentages and price floors",
+          "Bulk price update operations",
+          "Real-time price change dashboard",
+          "Magic: The Gathering full support",
+          "Pokemon and Yu-Gi-Oh support coming soon",
+          "Shopify product variant management",
         ],
-        screenshot: [
-          {
-            "@type": "ImageObject",
-            url: "https://www.trysynq.com/brand/synq-inventory.png",
-            caption:
-              "Inventory Management Dashboard - Track card inventory with precision and real-time updates",
-            width: 1200,
-            height: 800,
-          },
-          {
-            "@type": "ImageObject",
-            url: "https://www.trysynq.com/brand/synq-transactions.png",
-            caption:
-              "Transactions Dashboard - Monitor all buying and selling activities with detailed analytics",
-            width: 1200,
-            height: 800,
-          },
-          {
-            "@type": "ImageObject",
-            url: "https://www.trysynq.com/brand/synq-library.png",
-            caption:
-              "Card Library Dashboard - Access comprehensive TCG databases and manage custom collections",
-            width: 1200,
-            height: 800,
-          },
-        ],
-        author: {
-          "@id": "https://www.trysynq.com/#organization",
+        screenshot: {
+          "@type": "ImageObject",
+          url: `${BASE_URL}/brand/synq-eyecatcher-art.png`,
+          caption:
+            "Synq dashboard showing automated card price sync with market data",
         },
-        publisher: {
-          "@id": "https://www.trysynq.com/#organization",
+        author: { "@id": `${BASE_URL}/#organization` },
+        publisher: { "@id": `${BASE_URL}/#organization` },
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: "5",
+          ratingCount: "1",
+          bestRating: "5",
+          worstRating: "1",
         },
-        creator: {
-          "@id": "https://www.trysynq.com/#organization",
-        },
-        audience: [
-          {
-            "@type": "Audience",
-            audienceType: "Card shop owners and managers",
-            geographicArea: "Worldwide",
-          },
-          {
-            "@type": "Audience",
-            audienceType: "TCG sellers and dealers",
-            geographicArea: "Worldwide",
-          },
-          {
-            "@type": "Audience",
-            audienceType: "Local game store operators",
-            geographicArea: "Worldwide",
-          },
-          {
-            "@type": "Audience",
-            audienceType: "Collectibles business owners",
-            geographicArea: "Worldwide",
-          },
-        ],
-        keywords: [
-          "TCG inventory management software",
-          "card shop inventory system",
-          "trading card game business software",
-          "Pokemon card inventory tracking",
-          "Magic The Gathering inventory management",
-          "Yu-Gi-Oh inventory software",
-          "collectibles inventory management",
-          "card shop POS integration",
-          "TCGPlayer inventory sync",
-          "Cardmarket inventory management",
-          "card condition tracking software",
-          "grading submission tracker",
-          "card shop analytics",
-          "local game store software",
-        ],
-        isAccessibleForFree: false,
-        usageInfo:
-          "Professional inventory management for card shops and TCG sellers",
       },
+
+      // WebSite
       {
         "@type": "WebSite",
-        "@id": "https://www.trysynq.com/#website",
-        url: "https://www.trysynq.com",
-        name: "Synq - Professional Inventory Software for Card Shops",
-        alternateName: "Synq Inventory Management",
+        "@id": `${BASE_URL}/#website`,
+        url: BASE_URL,
+        name: "Synq - Automated Card Pricing for Shopify",
         description:
-          "Professional inventory management software built specifically for card shops, TCG sellers, and collectibles businesses",
-        publisher: {
-          "@id": "https://www.trysynq.com/#organization",
-        },
-        potentialAction: [
-          {
-            "@type": "SearchAction",
-            target: "https://www.trysynq.com/?search={search_term_string}",
-            "query-input": "required name=search_term_string",
-          },
-          {
-            "@type": "SubscribeAction",
-            target: "https://www.trysynq.com/#contact",
-            object: {
-              "@type": "Service",
-              name: "Synq Updates",
-            },
-          },
-        ],
+          "Sync your Shopify card prices with market data automatically. TCGPlayer, Cardmarket, and more.",
+        publisher: { "@id": `${BASE_URL}/#organization` },
         inLanguage: "en-US",
-        copyrightYear: "2024",
-        copyrightHolder: {
-          "@id": "https://www.trysynq.com/#organization",
+        potentialAction: {
+          "@type": "SearchAction",
+          target: {
+            "@type": "EntryPoint",
+            urlTemplate: `${BASE_URL}/blog?q={search_term_string}`,
+          },
+          "query-input": "required name=search_term_string",
         },
       },
+
+      // WebPage - Homepage
       {
         "@type": "WebPage",
-        "@id": "https://www.trysynq.com/#webpage",
-        url: "https://www.trysynq.com",
-        name: "Synq - Inventory Software Built for Card Shops and TCG Sellers",
-        headline: "Professional Inventory Management for Card Shops",
+        "@id": `${BASE_URL}/#webpage`,
+        url: BASE_URL,
+        name: "Synq - Automated Card Pricing for Shopify Card Shops",
         description:
-          "Professional inventory management software built specifically for card shops, TCG sellers, and collectibles businesses. Track inventory, manage sales, and grow your business with comprehensive analytics.",
-        isPartOf: {
-          "@id": "https://www.trysynq.com/#website",
+          "Keep your Shopify card shop competitive with automated pricing. Synq syncs your card prices with market data daily. Add cards in seconds, update prices in bulk.",
+        isPartOf: { "@id": `${BASE_URL}/#website` },
+        about: { "@id": `${BASE_URL}/#software` },
+        mainEntity: { "@id": `${BASE_URL}/#software` },
+        datePublished: "2024-01-01",
+        dateModified: currentDate,
+        inLanguage: "en-US",
+        breadcrumb: {
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              position: 1,
+              name: "Home",
+              item: BASE_URL,
+            },
+          ],
         },
-        about: {
-          "@id": "https://www.trysynq.com/#software",
-        },
-        mainEntity: {
-          "@id": "https://www.trysynq.com/#software",
+        speakable: {
+          "@type": "SpeakableSpecification",
+          cssSelector: ["h1", ".hero-description", "#faq"],
         },
         primaryImageOfPage: {
           "@type": "ImageObject",
-          url: "https://www.trysynq.com/brand/synq-eyecatcher-art.png",
-          caption: "Synq - Inventory management software for card shops",
-        },
-        breadcrumb: {
-          "@type": "BreadcrumbList",
-          itemListElement: [
-            {
-              "@type": "ListItem",
-              position: 1,
-              name: "Home",
-              item: "https://www.trysynq.com",
-            },
-          ],
-        },
-        datePublished: "2024-01-01",
-        dateModified: new Date().toISOString().split("T")[0],
-        inLanguage: "en-US",
-        isAccessibleForFree: true,
-        audience: {
-          "@type": "Audience",
-          audienceType: "Card shop owners, TCG sellers, collectibles dealers",
+          url: `${BASE_URL}/brand/synq-eyecatcher-art.png`,
         },
       },
+
+      // FAQPage
       {
-        "@type": "ContactPage",
-        "@id": "https://www.trysynq.com/#contact",
-        url: "https://www.trysynq.com#contact",
-        name: "Contact Synq - Get Started with Professional Card Shop Software",
-        headline: "Contact Synq",
-        description:
-          "Get in touch to learn more about Synq inventory management software for card shops and TCG sellers",
-        mainEntity: {
-          "@type": "ContactPoint",
-          contactType: "customer service",
-          email: "iamtelmo@proton.me",
-          availableLanguage: "English",
-          areaServed: "Worldwide",
-          hoursAvailable: {
-            "@type": "OpeningHoursSpecification",
-            dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-            opens: "09:00",
-            closes: "17:00",
+        "@type": "FAQPage",
+        "@id": `${BASE_URL}/#faq`,
+        mainEntity: FAQ_DATA.map((faq) => ({
+          "@type": "Question",
+          name: faq.question,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: faq.answer,
           },
-        },
-        isPartOf: {
-          "@id": "https://www.trysynq.com/#website",
-        },
-        breadcrumb: {
-          "@type": "BreadcrumbList",
-          itemListElement: [
-            {
-              "@type": "ListItem",
-              position: 1,
-              name: "Home",
-              item: "https://www.trysynq.com",
-            },
-            {
-              "@type": "ListItem",
-              position: 2,
-              name: "Contact",
-              item: "https://www.trysynq.com#contact",
-            },
-          ],
-        },
+        })),
+        isPartOf: { "@id": `${BASE_URL}/#webpage` },
       },
-      {
-        "@type": "AboutPage",
-        "@id": "https://www.trysynq.com/#about-us",
-        url: "https://www.trysynq.com#about-us",
-        name: "About Synq - Built by Card Shop Owners for Card Shop Owners",
-        headline: "About Synq",
-        description:
-          "Learn about Synq - inventory management software built specifically for card shops with direct input from store owners and sellers",
-        mainEntity: {
-          "@id": "https://www.trysynq.com/#organization",
-        },
-        isPartOf: {
-          "@id": "https://www.trysynq.com/#website",
-        },
-        breadcrumb: {
-          "@type": "BreadcrumbList",
-          itemListElement: [
-            {
-              "@type": "ListItem",
-              position: 1,
-              name: "Home",
-              item: "https://www.trysynq.com",
-            },
-            {
-              "@type": "ListItem",
-              position: 2,
-              name: "About",
-              item: "https://www.trysynq.com#about-us",
-            },
-          ],
-        },
-      },
-      {
-        "@type": "WebPage",
-        "@id": "https://www.trysynq.com/privacy#webpage",
-        url: "https://www.trysynq.com/privacy",
-        name: "Privacy Policy - Synq",
-        description: "Privacy policy for Synq inventory management software",
-        isPartOf: {
-          "@id": "https://www.trysynq.com/#website",
-        },
-        breadcrumb: {
-          "@type": "BreadcrumbList",
-          itemListElement: [
-            {
-              "@type": "ListItem",
-              position: 1,
-              name: "Home",
-              item: "https://www.trysynq.com",
-            },
-            {
-              "@type": "ListItem",
-              position: 2,
-              name: "Privacy Policy",
-              item: "https://www.trysynq.com/privacy",
-            },
-          ],
-        },
-      },
-      {
-        "@type": "WebPage",
-        "@id": "https://www.trysynq.com/terms#webpage",
-        url: "https://www.trysynq.com/terms",
-        name: "Terms of Service - Synq",
-        description: "Terms of service for Synq inventory management software",
-        isPartOf: {
-          "@id": "https://www.trysynq.com/#website",
-        },
-        breadcrumb: {
-          "@type": "BreadcrumbList",
-          itemListElement: [
-            {
-              "@type": "ListItem",
-              position: 1,
-              name: "Home",
-              item: "https://www.trysynq.com",
-            },
-            {
-              "@type": "ListItem",
-              position: 2,
-              name: "Terms of Service",
-              item: "https://www.trysynq.com/terms",
-            },
-          ],
-        },
-      },
+
+      // HowTo - Getting Started
       {
         "@type": "HowTo",
-        "@id": "https://www.trysynq.com/#howto",
-        name: "How to Get Started with Synq Inventory Management",
+        "@id": `${BASE_URL}/#howto`,
+        name: "How to Automate Your Shopify Card Prices",
         description:
-          "Step-by-step guide to getting started with Synq inventory management software for card shops",
-        image: "https://www.trysynq.com/brand/synq-eyecatcher-dark.png",
+          "Get your card shop set up with automated pricing in under 5 minutes",
         totalTime: "PT5M",
-        estimatedCost: {
-          "@type": "MonetaryAmount",
-          currency: "USD",
-          value: "Contact for pricing",
-        },
-        supply: [
-          {
-            "@type": "HowToSupply",
-            name: "Web browser",
-          },
-          {
-            "@type": "HowToSupply",
-            name: "Card inventory data",
-          },
-        ],
         tool: [
           {
             "@type": "HowToTool",
-            name: "Computer or mobile device",
+            name: "Shopify store",
           },
         ],
         step: [
           {
             "@type": "HowToStep",
-            name: "Contact Synq Team",
-            text: "Fill out our contact form to learn more about Synq and discuss your card shop's specific needs.",
-            url: "https://www.trysynq.com#contact",
-            image: "https://www.trysynq.com/brand/synq-icon.png",
+            position: 1,
+            name: "Install Synq",
+            text: "Install Synq from the Shopify App Store and connect it to your store.",
+            url: "https://apps.shopify.com/synq",
           },
           {
             "@type": "HowToStep",
-            name: "Explore Core Features",
-            text: "Learn about inventory management, transaction tracking, and TCG data access features designed for card shops.",
-            url: "https://www.trysynq.com#features",
-            image: "https://www.trysynq.com/brand/synq-inventory.png",
+            position: 2,
+            name: "Add Your Cards",
+            text: "Search for cards by name, select conditions, and add them to your store with one click. Images and prices are filled in automatically.",
           },
           {
             "@type": "HowToStep",
-            name: "Start Managing Your Inventory",
-            text: "Begin using Synq to track your card inventory, manage sales, and grow your TCG business with professional tools.",
-            image: "https://www.trysynq.com/brand/synq-transactions.png",
+            position: 3,
+            name: "Enable Price Sync",
+            text: "Configure your pricing strategy and let Synq update your prices automatically every 24 hours based on market data from TCGPlayer, Cardmarket, or other sources.",
           },
         ],
-        about: {
-          "@id": "https://www.trysynq.com/#software",
-        },
-        isPartOf: {
-          "@id": "https://www.trysynq.com/#website",
-        },
-      },
-      {
-        "@type": "FAQPage",
-        "@id": "https://www.trysynq.com/#faq",
-        mainEntity: [
-          {
-            "@type": "Question",
-            name: "What is Synq inventory management software?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "Synq is professional inventory management software specifically designed for card shops, TCG sellers, and collectibles businesses. It helps track inventory, manage transactions, analyze sales data, and streamline operations for the trading card game market.",
-            },
-          },
-          {
-            "@type": "Question",
-            name: "Who should use Synq inventory software?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "Synq is designed for local game stores, card shop owners, online TCG sellers, part-time sellers, and anyone who sells trading card games or collectibles professionally.",
-            },
-          },
-          {
-            "@type": "Question",
-            name: "What features does Synq offer for card shops?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "Synq offers real-time inventory tracking, transaction management, comprehensive TCG data access, precise card condition tracking, profit analysis, and integration with major marketplaces like TCGPlayer and Cardmarket.",
-            },
-          },
-          {
-            "@type": "Question",
-            name: "Is Synq open source inventory software?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "Yes, Synq is open source software. You can self-host the platform on your own servers, giving you complete control over your inventory data and infrastructure.",
-            },
-          },
-          {
-            "@type": "Question",
-            name: "How can I get started with Synq for my card shop?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "Contact us through our website to learn more about how Synq can help your card shop or TCG business. We'll discuss your specific needs and help you get started.",
-            },
-          },
-          {
-            "@type": "Question",
-            name: "What makes Synq different from other inventory management systems?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "Synq is built specifically for card game businesses, with specialized features like card condition tracking, grading submissions management, and integration with TCG marketplaces that generic inventory systems don't offer.",
-            },
-          },
-          {
-            "@type": "Question",
-            name: "How much does Synq inventory software cost?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "Contact us to learn about pricing and availability for Synq inventory management software.",
-            },
-          },
-          {
-            "@type": "Question",
-            name: "Does Synq work with Pokemon, Magic, and Yu-Gi-Oh cards?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "Yes, Synq supports comprehensive inventory management for Pokemon, Magic: The Gathering, Yu-Gi-Oh, and other major trading card games with full database integration.",
-            },
-          },
-          {
-            "@type": "Question",
-            name: "Can Synq integrate with TCGPlayer and Cardmarket?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "Yes, Synq offers multi-marketplace integration including TCGPlayer and Cardmarket for seamless inventory synchronization and sales management.",
-            },
-          },
-          {
-            "@type": "Question",
-            name: "Does Synq track card conditions and grading?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "Synq provides precise card condition tracking from Near Mint to Heavily Played, plus grading submission tracking and management for professional card grading services.",
-            },
-          },
-        ],
-        about: {
-          "@id": "https://www.trysynq.com/#software",
-        },
-        isPartOf: {
-          "@id": "https://www.trysynq.com/#website",
-        },
-      },
-      {
-        "@type": "Product",
-        "@id": "https://www.trysynq.com/#product",
-        name: "Synq Professional Inventory Management",
-        description:
-          "Complete inventory management solution for card shops, TCG sellers, and collectibles businesses",
-        brand: {
-          "@id": "https://www.trysynq.com/#organization",
-        },
-        manufacturer: {
-          "@id": "https://www.trysynq.com/#organization",
-        },
-        category: "Business Software",
-        productID: "synq-inventory-management",
-        offers: {
-          "@type": "Offer",
-          availability: "https://schema.org/InStock",
-          seller: {
-            "@id": "https://www.trysynq.com/#organization",
-          },
-          businessFunction: "https://schema.org/Sell",
-        },
-        audience: {
-          "@type": "Audience",
-          audienceType:
-            "Card shop owners, TCG sellers, collectibles businesses",
-        },
       },
     ],
   };

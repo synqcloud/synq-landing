@@ -14,10 +14,6 @@ import {
   navigationMenuTriggerStyle,
 } from "@synq/ui/component";
 
-const SHOPIFY_APP_URL =
-  process.env.NEXT_PUBLIC_SHOPIFY_APP_URL ||
-  "https://apps.shopify.com/synq";
-
 export function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -34,7 +30,7 @@ export function Nav() {
       <div className="flex items-center justify-between max-w-5xl mx-auto px-6 py-4">
         {/* Left: Logo + Nav Links */}
         <div className="flex items-center gap-8">
-          <Link href="#" className="flex items-center gap-2">
+          <Link href="/" className="flex items-center gap-2">
             <Image
               src="/brand/synq-icon.png"
               alt="Synq Logo"
@@ -72,6 +68,14 @@ export function Nav() {
                   <Link href="#faq">FAQ</Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
+              <NavigationMenuItem>
+                <NavigationMenuLink
+                  asChild
+                  className={navigationMenuTriggerStyle()}
+                >
+                  <Link href="/blog">Blog</Link>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
         </div>
@@ -80,7 +84,7 @@ export function Nav() {
         <div className="hidden md:flex items-center gap-3">
           <ThemeToggle />
           <Button asChild size="sm">
-            <a href={SHOPIFY_APP_URL} target="_blank" rel="noopener noreferrer">Get started</a>
+            <a href="#get-started">Get started</a>
           </Button>
         </div>
 
@@ -126,8 +130,15 @@ export function Nav() {
             >
               FAQ
             </Link>
+            <Link
+              href="/blog"
+              onClick={closeMenu}
+              className="text-base text-muted-foreground hover:text-foreground transition-colors"
+            >
+              Blog
+            </Link>
             <Button asChild size="sm" className="mt-2">
-              <a href={SHOPIFY_APP_URL} target="_blank" rel="noopener noreferrer" onClick={closeMenu}>
+              <a href="#get-started" onClick={closeMenu}>
                 Get started
               </a>
             </Button>

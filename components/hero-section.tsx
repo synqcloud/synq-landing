@@ -4,10 +4,6 @@ import { motion } from "framer-motion";
 import { Button } from "@synq/ui/component";
 import Image from "next/image";
 
-const SHOPIFY_APP_URL =
-  process.env.NEXT_PUBLIC_SHOPIFY_APP_URL ||
-  "https://apps.shopify.com/synq";
-
 export function HeroSection() {
   return (
     <section className="pt-24 sm:pt-32 pb-12 sm:pb-24">
@@ -106,6 +102,7 @@ export function HeroSection() {
             Keep your card shop competitive{" "}
             <span className="text-primary">without the busywork.</span>
           </motion.h1>
+          {/* SEO: Visible summary for users and AI crawlers */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -114,11 +111,9 @@ export function HeroSection() {
               ease: [0.25, 0.25, 0, 1],
               delay: 0.05,
             }}
-            className="text-lg text-muted-foreground mb-6 max-w-2xl leading-relaxed"
+            className="hero-description text-lg text-muted-foreground mb-6 max-w-2xl leading-relaxed"
           >
-            Add cards to your Shopify store with images, descriptions, and
-            market prices already filled in. Prices sync with the market every
-            24 hours so your store is always up to date.
+            Synq automatically syncs your Shopify card prices with market data every 24 hours. Add cards with one click, manage condition-based pricing, and update prices in bulk.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -193,7 +188,7 @@ export function HeroSection() {
             className="flex flex-col sm:flex-row gap-3"
           >
             <Button asChild>
-              <a href={SHOPIFY_APP_URL} target="_blank" rel="noopener noreferrer">Get started</a>
+              <a href="#get-started">Get started</a>
             </Button>
             <Button asChild variant="outline">
               <a href="#features">See how it works</a>
