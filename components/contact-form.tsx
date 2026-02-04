@@ -178,7 +178,7 @@ export function ContactForm() {
         {/* Frustration */}
         <motion.div variants={fadeInUp}>
           <Label htmlFor="frustration-input">
-            What TCGs do you sell? Any specific needs? (optional)
+            What cards do you sell? Any specific needs? (optional)
           </Label>
           <Textarea
             id="frustration-input"

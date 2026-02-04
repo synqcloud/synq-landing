@@ -1,12 +1,10 @@
 export function Footer() {
   return (
-    <footer className="py-8 border-t border-border/20">
-      <div className="max-w-5xl mx-auto px-6">
+    <footer className="py-8">
+      <div className="max-w-5xl mx-auto px-6 border-t border-border pt-8">
         {/* Desktop Layout */}
         <div className="hidden md:flex items-center justify-between">
-          <span className="text-sm text-muted-foreground">
-            © 2025 Synq
-          </span>
+          <span className="text-sm text-muted-foreground">© 2025 Synq</span>
           <div className="flex items-center gap-6">
             <a
               href="#features"
@@ -15,16 +13,16 @@ export function Footer() {
               Features
             </a>
             <a
-              href="#install"
+              href="#pricing"
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
               Pricing
             </a>
             <a
-              href="#about-us"
+              href="#faq"
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
-              About
+              FAQ
             </a>
             <a
               href="/privacy"
@@ -51,7 +49,7 @@ export function Footer() {
               Features
             </a>
             <a
-              href="#install"
+              href="#pricing"
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
               Pricing

@@ -1,19 +1,21 @@
 import { Nav } from "../components/nav";
-import { StoryContent } from "../components/story-content";
-import { Showcase } from "../components/showcase";
-import { ContactSection } from "../components/contact-section";
 import { HeroSection } from "../components/hero-section";
 import { Footer } from "../components/footer";
-import { EarlyAccessSection } from "@/components/early-access-section";
+import { AddCardsSection } from "@/components/features/add-cards-section";
+import { PriceSyncSection } from "@/components/features/price-sync-section";
+import { ConditionPricingSection } from "@/components/features/condition-pricing-section";
+import { DashboardSection } from "@/components/features/dashboard-section";
+import { GamesSection } from "@/components/features/games-section";
+import { TimelineSection } from "@/components/timeline-section";
+import { FAQSection } from "@/components/faq-section";
+import { PricingSection } from "@/components/pricing-section";
 
 import { Metadata } from "next";
-import { SchemaMarkup } from "@/components/schema-markup";
 
 export const metadata: Metadata = {
-  title:
-    "Synq - Keep Your Shopify TCG Prices Synced with TCGPlayer",
+  title: "Synq - Keep Your Shopify Card Prices Synced with the Market",
   description:
-    "Shopify app for TCG sellers. Add Pokemon, Magic, and other trading cards to your store with one click. Daily price sync from TCGPlayer. Update prices instantly.",
+    "Shopify app for trading card stores. Add Magic, Pokemon, and other cards to your store with images and market prices. Daily price sync from TCGPlayer and Cardmarket.",
   alternates: {
     canonical: "https://www.trysynq.com",
   },
@@ -21,43 +23,37 @@ export const metadata: Metadata = {
 
 export default function HomePage() {
   return (
-    <>
-      {/*<SchemaMarkup />*/}
-      <div>
-        <Nav />
+    <div>
+      <Nav />
 
+      <main>
         {/* Hero Section */}
-        <main>
-          <HeroSection />
+        <HeroSection />
 
-          {/* Showcase Section */}
-          <section id="features" className="py-24">
-            <Showcase />
-          </section>
+        {/* Feature Deep-Dives */}
+        <section id="features">
+          <AddCardsSection />
+          <PriceSyncSection />
+          <ConditionPricingSection />
+          <DashboardSection />
+        </section>
 
-          {/* Learn More Section */}
-          <section id="about-us" className="py-24 bg-muted/30">
-            <div className="max-w-5xl mx-auto px-6">
-              <h2 className="text-2xl sm:text-3xl font-medium text-foreground mb-8">
-                Why we're building this
-              </h2>
-              <StoryContent />
-            </div>
-          </section>
+        {/* Supported Games */}
+        <GamesSection />
 
-          {/* Pricing / Install Section */}
-          <section id="install" className="py-24 bg-muted/30">
-            <EarlyAccessSection />
-          </section>
+        {/* Timeline / Value Proposition */}
+        <TimelineSection />
 
-          {/* Contact Form Section - Last */}
-          <section id="contact" className="py-24 bg-muted/30">
-            <ContactSection />
-          </section>
-        </main>
-        {/* Footer */}
-        <Footer />
-      </div>
-    </>
+        {/* Pricing */}
+        <section id="pricing">
+          <PricingSection />
+        </section>
+
+        {/* FAQ */}
+        <FAQSection />
+      </main>
+
+      <Footer />
+    </div>
   );
 }

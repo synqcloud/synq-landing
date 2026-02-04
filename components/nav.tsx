@@ -2,9 +2,21 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { ThemeToggle } from "./theme-toggle";
 import { Button } from "@synq/ui/component";
+import {
+  NavigationMenu,
+  NavigationMenuList,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  navigationMenuTriggerStyle,
+} from "@synq/ui/component";
+
+const SHOPIFY_APP_URL =
+  process.env.NEXT_PUBLIC_SHOPIFY_APP_URL ||
+  "https://apps.shopify.com/synq";
 
 export function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,7 +34,7 @@ export function Nav() {
       <div className="flex items-center justify-between max-w-5xl mx-auto px-6 py-4">
         {/* Left: Logo + Nav Links */}
         <div className="flex items-center gap-8">
-          <a href="#" className="flex items-center gap-2">
+          <Link href="#" className="flex items-center gap-2">
             <Image
               src="/brand/synq-icon.png"
               alt="Synq Logo"
@@ -31,36 +43,44 @@ export function Nav() {
               className="h-6 w-auto"
             />
             <span className="font-medium text-foreground">Synq</span>
-          </a>
+          </Link>
 
-          {/* Desktop Navigation Links */}
-          <div className="hidden md:flex items-center gap-6">
-            <a
-              href="#features"
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-            >
-              Features
-            </a>
-            <a
-              href="#install"
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-            >
-              Pricing
-            </a>
-            <a
-              href="#about-us"
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-            >
-              About
-            </a>
-          </div>
+          {/* Desktop Navigation Menu */}
+          <NavigationMenu className="hidden md:block">
+            <NavigationMenuList>
+              <NavigationMenuItem>
+                <NavigationMenuLink
+                  asChild
+                  className={navigationMenuTriggerStyle()}
+                >
+                  <Link href="#features">Features</Link>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <NavigationMenuLink
+                  asChild
+                  className={navigationMenuTriggerStyle()}
+                >
+                  <Link href="#pricing">Pricing</Link>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <NavigationMenuLink
+                  asChild
+                  className={navigationMenuTriggerStyle()}
+                >
+                  <Link href="#faq">FAQ</Link>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+            </NavigationMenuList>
+          </NavigationMenu>
         </div>
 
         {/* Right: CTA + Theme Toggle */}
         <div className="hidden md:flex items-center gap-3">
           <ThemeToggle />
           <Button asChild size="sm">
-            <a href="#install">Get started</a>
+            <a href={SHOPIFY_APP_URL} target="_blank" rel="noopener noreferrer">Get started</a>
           </Button>
         </div>
 
@@ -83,31 +103,33 @@ export function Nav() {
 
       {/* Mobile Menu Overlay */}
       {isMenuOpen && (
-        <div className="md:hidden fixed inset-0 top-[57px] bg-background z-40">
-          <div className="flex flex-col items-start px-6 py-6 gap-4">
-            <a
+        <div className="md:hidden fixed inset-0 top-[57px] bg-background/95 backdrop-blur-md z-40">
+          <div className="bg-muted backdrop-blur-md flex flex-col items-start px-6 py-6 gap-4">
+            <Link
               href="#features"
               onClick={closeMenu}
               className="text-base text-muted-foreground hover:text-foreground transition-colors"
             >
               Features
-            </a>
-            <a
-              href="#install"
+            </Link>
+            <Link
+              href="#pricing"
               onClick={closeMenu}
               className="text-base text-muted-foreground hover:text-foreground transition-colors"
             >
               Pricing
-            </a>
-            <a
-              href="#about-us"
+            </Link>
+            <Link
+              href="#faq"
               onClick={closeMenu}
               className="text-base text-muted-foreground hover:text-foreground transition-colors"
             >
-              About
-            </a>
+              FAQ
+            </Link>
             <Button asChild size="sm" className="mt-2">
-              <a href="#install" onClick={closeMenu}>Get started</a>
+              <a href={SHOPIFY_APP_URL} target="_blank" rel="noopener noreferrer" onClick={closeMenu}>
+                Get started
+              </a>
             </Button>
           </div>
         </div>

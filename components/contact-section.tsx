@@ -25,13 +25,13 @@ const fadeInUp = {
 export function ContactSection() {
   return (
     <motion.div
-      className="bg-muted/30 py-16"
+      className="py-24 bg-muted/30"
       variants={staggerContainer}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, margin: "-100px" }}
     >
-      <div className="max-w-5xl mx-auto px-6">
+      <div className="max-w-5xl mx-auto px-6 border-t border-border pt-24">
         <div className="max-w-md">
           <motion.h2
             className="text-2xl sm:text-3xl font-medium text-foreground mb-3"

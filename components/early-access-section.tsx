@@ -7,7 +7,7 @@ import { Button } from "@synq/ui/component";
 export function EarlyAccessSection() {
   const features = [
     "Add cards to Shopify with images and descriptions",
-    "Daily price sync from TCGPlayer",
+    "Daily price sync from TCGPlayer or Cardmarket",
     "One-click bulk price updates",
     "Support for Pokemon, Magic, and more",
     "Set your own markup percentage",
@@ -15,13 +15,13 @@ export function EarlyAccessSection() {
 
   return (
     <motion.div
-      className="bg-background py-16"
+      className="py-24"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true, margin: "-100px" }}
       transition={{ duration: 0.7, ease: [0.25, 0.25, 0, 1] }}
     >
-      <div className="max-w-5xl mx-auto px-6">
+      <div className="max-w-5xl mx-auto px-6 border-t border-border pt-24">
         {/* Header */}
         <motion.div
           className="mb-10"
@@ -34,7 +34,7 @@ export function EarlyAccessSection() {
             Get Started
           </h2>
           <p className="text-base text-muted-foreground max-w-xl">
-            Install Synq on your Shopify store and start keeping your TCG prices competitive.
+            Install Synq on your Shopify store and start keeping your card prices competitive.
           </p>
         </motion.div>
 

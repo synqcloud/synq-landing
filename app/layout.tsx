@@ -9,16 +9,16 @@ import { Analytics } from "@vercel/analytics/next";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Synq - TCGPlayer Prices for Your Shopify Store",
+  title: "Synq - Keep Your Shopify Card Prices Synced with the Market",
   description:
-    "Shopify app for TCG card sellers. Add cards with one click, sync prices from TCGPlayer daily, and update your store prices instantly. For Pokemon, Magic, and more.",
+    "Shopify app for trading card sellers. Add cards with one click, sync market prices daily, and update your store prices instantly. For Pokemon, Magic, and more.",
   keywords:
-    "Shopify TCG app, TCGPlayer price sync, Pokemon card Shopify, Magic the Gathering Shopify, TCG price updates, card shop Shopify app, trading card Shopify",
+    "Shopify card app, card price sync, Pokemon card Shopify, Magic the Gathering Shopify, card price updates, card shop Shopify app, trading card Shopify",
   metadataBase: new URL("https://www.trysynq.com"),
   openGraph: {
-    title: "Synq - TCGPlayer Prices for Your Shopify Store",
+    title: "Synq - Keep Your Shopify Card Prices Synced with the Market",
     description:
-      "Shopify app for TCG card sellers. Add cards with one click, sync prices from TCGPlayer daily, and update your store prices instantly.",
+      "Shopify app for trading card sellers. Add cards with one click, sync market prices daily, and update your store prices instantly.",
     url: "https://www.trysynq.com",
     type: "website",
     siteName: "Synq",
@@ -27,15 +27,15 @@ export const metadata: Metadata = {
         url: "/brand/synq-eyecatcher-art.png",
         width: 1200,
         height: 630,
-        alt: "Synq - TCGPlayer Price Sync for Shopify",
+        alt: "Synq - Card Price Sync for Shopify",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Synq - TCGPlayer Prices for Your Shopify Store",
+    title: "Synq - Keep Your Shopify Card Prices Synced with the Market",
     description:
-      "Shopify app for TCG sellers. Add cards with one click, sync prices from TCGPlayer daily, update your store instantly.",
+      "Shopify app for trading card sellers. Add cards with one click, sync market prices daily, update your store instantly.",
     images: ["/brand/synq-eyecatcher-art.png"],
   },
   robots: {

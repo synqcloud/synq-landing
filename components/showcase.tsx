@@ -26,7 +26,7 @@ export function Showcase() {
       alt: "Price sync dashboard",
       title: "Daily Price Updates",
       description:
-        "Prices sync daily from TCGPlayer. See which products are under or overpriced at a glance.",
+        "Prices sync daily from the market. See which products are under or overpriced at a glance.",
     },
     {
       src: "/brand/synq-library.png",
@@ -42,7 +42,7 @@ export function Showcase() {
     {
       title: "Add Cards to Shopify in Seconds",
       description:
-        "Search from thousands of Pokemon, Magic, and other TCG cards. Select the condition, set your markup, and create a Shopify draft product instantly with the correct image, title, and description.",
+        "Search from thousands of Pokemon, Magic, and other trading cards. Select the condition, set your markup, and create a Shopify draft product instantly with the correct image, title, and description.",
       image: "/brand/synq-inventory.png",
       alt: "Add cards to Shopify",
       features: [
@@ -54,23 +54,23 @@ export function Showcase() {
       cta: "Start adding cards",
     },
     {
-      title: "Prices Updated Daily from TCGPlayer",
+      title: "Prices Updated Daily from the Market",
       description:
-        "Synq pulls the latest TCGPlayer market prices every day. You'll see exactly which of your Shopify products are priced below or above the current market rate.",
+        "Synq pulls the latest market prices every day from TCGPlayer (US) or Cardmarket (EU). You'll see exactly which of your Shopify products are priced below or above the current market rate.",
       image: "/brand/synq-transactions.png",
       alt: "Price sync dashboard",
       features: [
         "Daily automatic price sync",
         "See price differences at a glance",
-        "TCGPlayer market price data",
-        "Never miss a price spike",
+        "TCGPlayer (US) or Cardmarket (EU) data",
+        "See when prices shift",
       ],
       cta: "See pricing in action",
     },
     {
       title: "Update Prices with One Click",
       description:
-        "When prices change, update your Shopify store instantly. Select the products you want to update and apply new prices in one click. No more manually editing each product.",
+        "When prices change, you can update your Shopify store right away. Select the products you want to update and apply the new prices in one click.",
       image: "/brand/synq-library.png",
       alt: "One-click price updates",
       features: [
@@ -259,13 +259,14 @@ export function Showcase() {
               }}
             >
               <h2 className="text-xl font-medium text-foreground mb-3">
-                Ready to stop leaving money on the table?
+                Want to see how it works with your store?
               </h2>
               <p className="text-base text-muted-foreground max-w-xl mb-6">
-                Install the Synq app on your Shopify store and start keeping your TCG prices competitive.
+                Install the Synq app on your Shopify store and start syncing
+                your card prices with the market.
               </p>
               <a
-                href="#install"
+                href="#contact"
                 className="inline-flex items-center text-sm font-medium text-primary hover:text-primary/80 transition-colors"
               >
                 Get started

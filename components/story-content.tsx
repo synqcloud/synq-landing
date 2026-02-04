@@ -50,13 +50,13 @@ export function StoryContent() {
           </h3>
           <div className="space-y-4 text-base text-muted-foreground leading-relaxed">
             <p>
-              TCG prices change constantly. A card worth $5 today might be $15
+              Card prices change constantly. A card worth $5 today might be $15
               tomorrow after a tournament result or new set announcement. If
               your Shopify prices don't keep up, you're either losing sales (too
               high) or losing profit (too low).
             </p>
             <p>
-              Manually checking TCGPlayer and updating each product is tedious.
+              Manually checking market prices and updating each product is tedious.
               Most sellers don't have time for it, so they leave money on the
               table.
             </p>
@@ -69,13 +69,13 @@ export function StoryContent() {
           </h3>
           <div className="space-y-4 text-base text-muted-foreground leading-relaxed">
             <p>
-              Synq is a Shopify app that connects your store to TCGPlayer
+              Synq is a Shopify app that connects your store to market
               pricing. Add new cards with one click (images, descriptions, and
               prices included). See which products need price updates. Apply
               changes instantly.
             </p>
             <p>
-              Built by a TCG seller who got tired of the manual work. If you
+              Built by a card seller who got tired of the manual work. If you
               have a Shopify store selling Pokemon, Magic, or other trading
               cards, this app is for you.
             </p>
