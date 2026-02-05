@@ -37,6 +37,7 @@ export function Nav() {
               width={24}
               height={24}
               className="h-6 w-auto"
+              priority
             />
             <span className="font-medium text-foreground">Synq</span>
           </Link>

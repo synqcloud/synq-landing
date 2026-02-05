@@ -37,10 +37,13 @@ export function AddCardsSection() {
         >
           <Image
             src="/brand/add-magic-cards-to-shopify.png"
-            alt="Synq card search interface"
+            alt="Synq card search interface showing how to add Magic: The Gathering cards to Shopify"
             width={1200}
             height={700}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1000px"
             className="w-full h-auto"
+            quality={85}
+            priority
           />
         </motion.div>
 

@@ -37,10 +37,12 @@ export function DashboardSection() {
         >
           <Image
             src="/brand/dashboard.png"
-            alt="Synq dashboard and inventory view"
+            alt="Synq dashboard showing card inventory management and bulk price update operations"
             width={1200}
             height={700}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1000px"
             className="w-full h-auto"
+            quality={85}
           />
         </motion.div>
       </div>

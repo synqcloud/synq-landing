@@ -129,6 +129,7 @@ export function HeroSection() {
                 width={20}
                 height={20}
                 className="w-5 h-5 object-contain"
+                loading="eager"
               />
               <span>Magic: The Gathering,</span>
             </span>
@@ -139,6 +140,7 @@ export function HeroSection() {
                 width={20}
                 height={20}
                 className="w-5 h-5 object-contain"
+                loading="eager"
               />
               <span>Pokemon,</span>
             </span>

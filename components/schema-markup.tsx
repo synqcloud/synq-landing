@@ -51,18 +51,23 @@ export function SchemaMarkup() {
   const schema = {
     "@context": "https://schema.org",
     "@graph": [
-      // Organization
+      // Organization - Required for Google Knowledge Panel
       {
         "@type": "Organization",
         "@id": `${BASE_URL}/#organization`,
         name: "Synq",
+        legalName: "Synq",
         url: BASE_URL,
         logo: {
           "@type": "ImageObject",
+          "@id": `${BASE_URL}/#logo`,
           url: `${BASE_URL}/brand/synq-icon.png`,
+          contentUrl: `${BASE_URL}/brand/synq-icon.png`,
           width: 512,
           height: 512,
+          caption: "Synq Logo",
         },
+        image: { "@id": `${BASE_URL}/#logo` },
         description:
           "Synq automates trading card pricing for Shopify stores, syncing with market data from TCGPlayer, Cardmarket, and other sources daily.",
         foundingDate: "2024",
@@ -130,12 +135,13 @@ export function SchemaMarkup() {
         },
       },
 
-      // WebSite
+      // WebSite - Required for Google Site Names
       {
         "@type": "WebSite",
         "@id": `${BASE_URL}/#website`,
         url: BASE_URL,
-        name: "Synq - Automated Card Pricing for Shopify",
+        name: "Synq",
+        alternateName: ["Synq Card Price Sync", "Synq for Shopify"],
         description:
           "Sync your Shopify card prices with market data automatically. TCGPlayer, Cardmarket, and more.",
         publisher: { "@id": `${BASE_URL}/#organization` },

@@ -37,10 +37,12 @@ export function ConditionPricingSection() {
         >
           <Image
             src="/brand/shopify-magic-the-gathering-product-variants.png"
-            alt="Synq condition-based pricing interface"
+            alt="Synq condition-based pricing showing Shopify product variants for different card conditions"
             width={1200}
             height={700}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1000px"
             className="w-full h-auto"
+            quality={85}
           />
         </motion.div>
       </div>

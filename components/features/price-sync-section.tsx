@@ -37,10 +37,12 @@ export function PriceSyncSection() {
         >
           <Image
             src="/brand/update-shopify-magic-the-gathering-card-prices.png"
-            alt="Synq price sync dashboard"
+            alt="Synq price sync dashboard showing automatic TCGPlayer and Cardmarket price updates"
             width={1200}
             height={700}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1000px"
             className="w-full h-auto"
+            quality={85}
           />
         </motion.div>
 
