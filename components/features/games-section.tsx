@@ -60,11 +60,13 @@ export function GamesSection() {
             {duplicatedGames.map((game, idx) => (
               <div
                 key={`${game.name}-${idx}`}
-                className={`flex items-center gap-3 flex-shrink-0 ${
-                  game.active ? "" : "opacity-40 grayscale"
-                }`}
+                className="flex items-center gap-3 flex-shrink-0"
               >
-                <div className="w-10 h-10 flex items-center justify-center">
+                <div
+                  className={`w-10 h-10 flex items-center justify-center ${
+                    game.active ? "" : "opacity-40 grayscale"
+                  }`}
+                >
                   <Image
                     src={game.logo}
                     alt={game.name}
@@ -75,7 +77,7 @@ export function GamesSection() {
                 </div>
                 <span
                   className={`text-sm font-medium whitespace-nowrap ${
-                    game.active ? "text-foreground" : "text-muted-foreground"
+                    game.active ? "text-foreground" : "text-foreground/60"
                   }`}
                 >
                   {game.name}
