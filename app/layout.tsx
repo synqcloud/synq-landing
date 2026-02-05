@@ -159,13 +159,6 @@ export default function RootLayout({
           title="Sitemap"
           href="/sitemap.xml"
         />
-        {/* Preconnect for performance */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
       </head>
       <body className={`${inter.className} bg-background text-foreground`}>
         <LandingProviders>{children}</LandingProviders>

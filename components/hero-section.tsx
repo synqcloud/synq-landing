@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { Button } from "@synq/ui/component";
 import Image from "next/image";
 
@@ -8,23 +7,9 @@ export function HeroSection() {
   return (
     <section className="pt-24 sm:pt-32 pb-12 sm:pb-24">
       <div className="max-w-5xl mx-auto px-6">
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{
-            duration: 0.8,
-            staggerChildren: 0.1,
-            delayChildren: 0.2,
-          }}
-          className="mb-12 sm:mb-16"
-        >
+        <div className="mb-12 sm:mb-16 animate-fade-in">
           {/* Badges */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: [0.25, 0.25, 0, 1] }}
-            className="flex flex-wrap items-center gap-3 mb-6"
-          >
+          <div className="flex flex-wrap items-center gap-3 mb-6">
             {/* Built for Shopify Badge */}
             <div className="flex items-center gap-2 rounded-full bg-background px-4 py-2 shadow-sm border border-border">
               <Image
@@ -33,6 +18,7 @@ export function HeroSection() {
                 width={20}
                 height={20}
                 className="h-5 w-5"
+                priority
               />
               <span className="text-sm font-medium text-foreground">
                 Built for Shopify
@@ -91,36 +77,17 @@ export function HeroSection() {
                 Built for Local Card Shops
               </span>
             </div>
-          </motion.div>
+          </div>
 
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: [0.25, 0.25, 0, 1] }}
-            className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-[-0.02em] text-foreground mb-6 leading-[1.15] max-w-3xl"
-          >
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-[-0.02em] text-foreground mb-6 leading-[1.15] max-w-3xl">
             Keep your card shop competitive{" "}
             <span className="text-primary">without the busywork.</span>
-          </motion.h1>
+          </h1>
           {/* SEO: Visible summary for users and AI crawlers */}
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{
-              duration: 0.6,
-              ease: [0.25, 0.25, 0, 1],
-              delay: 0.05,
-            }}
-            className="hero-description text-lg text-muted-foreground mb-6 max-w-2xl leading-relaxed"
-          >
+          <p className="hero-description text-lg text-muted-foreground mb-6 max-w-2xl leading-relaxed">
             Synq automatically syncs your Shopify card prices with market data every 24 hours. Add cards with one click, manage condition-based pricing, and update prices in bulk.
-          </motion.p>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: [0.25, 0.25, 0, 1], delay: 0.1 }}
-            className="flex items-center gap-2 text-base text-muted-foreground mb-4 max-w-2xl flex-wrap"
-          >
+          </p>
+          <div className="flex items-center gap-2 text-base text-muted-foreground mb-4 max-w-2xl flex-wrap">
             <span>For</span>
             <span className="inline-flex items-center gap-1.5">
               <Image
@@ -145,17 +112,8 @@ export function HeroSection() {
               <span>Pokemon,</span>
             </span>
             <span>and more.</span>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{
-              duration: 0.6,
-              ease: [0.25, 0.25, 0, 1],
-              delay: 0.12,
-            }}
-            className="flex items-center gap-2 text-base text-muted-foreground mb-8 max-w-2xl flex-wrap"
-          >
+          </div>
+          <div className="flex items-center gap-2 text-base text-muted-foreground mb-8 max-w-2xl flex-wrap">
             <span>Prices from</span>
             <span className="inline-flex items-center gap-1.5">
               <Image
@@ -178,25 +136,16 @@ export function HeroSection() {
               />
               <span>Cardmarket.</span>
             </span>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{
-              duration: 0.6,
-              ease: [0.25, 0.25, 0, 1],
-              delay: 0.15,
-            }}
-            className="flex flex-col sm:flex-row gap-3"
-          >
+          </div>
+          <div className="flex flex-col sm:flex-row gap-3">
             <Button asChild>
               <a href="#get-started">Get started</a>
             </Button>
             <Button asChild variant="outline">
               <a href="#features">See how it works</a>
             </Button>
-          </motion.div>
-        </motion.div>
+          </div>
+        </div>
       </div>
     </section>
   );

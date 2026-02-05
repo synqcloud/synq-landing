@@ -58,14 +58,6 @@ export function Nav() {
                   asChild
                   className={navigationMenuTriggerStyle()}
                 >
-                  <Link href="#pricing">Pricing</Link>
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <NavigationMenuLink
-                  asChild
-                  className={navigationMenuTriggerStyle()}
-                >
                   <Link href="#faq">FAQ</Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
@@ -116,13 +108,6 @@ export function Nav() {
               className="text-base text-muted-foreground hover:text-foreground transition-colors"
             >
               Features
-            </Link>
-            <Link
-              href="#pricing"
-              onClick={closeMenu}
-              className="text-base text-muted-foreground hover:text-foreground transition-colors"
-            >
-              Pricing
             </Link>
             <Link
               href="#faq"

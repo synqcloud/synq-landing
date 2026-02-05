@@ -10,7 +10,7 @@ const allGames = [
   { name: "Flesh and Blood", logo: "/games/fab.png", active: false },
   { name: "One Piece Card Game", logo: "/games/onepiece.png", active: false },
   { name: "Disney Lorcana", logo: "/games/lorcana.avif", active: false },
-  { name: "Star Wars: Unlimited", logo: "/games/starwars.png", active: false },
+  { name: "Star Wars: Unlimited", logo: "/games/swu.webp", active: false },
   { name: "Digimon Card Game", logo: "/games/digimon.png", active: false },
 ];
 
