@@ -91,7 +91,6 @@ export function SchemaMarkup() {
         applicationCategory: "BusinessApplication",
         applicationSubCategory: "Inventory Management",
         operatingSystem: "Web",
-        browserRequirements: "Requires Shopify store",
         softwareVersion: "2.0",
         datePublished: "2024-01-01",
         dateModified: currentDate,
