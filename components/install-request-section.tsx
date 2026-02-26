@@ -15,10 +15,10 @@ export function InstallRequestSection() {
           className="text-center mb-10"
         >
           <h2 className="text-2xl sm:text-3xl font-medium text-foreground mb-3">
-            Get early access
+            Join the Waitlist
           </h2>
           <p className="text-base text-muted-foreground max-w-xl mx-auto">
-            Enter your Shopify store domain and we'll send you a direct install link.
+            We're currently going through Shopify's app review. Enter your details and you'll be the first to know when Synq is live.
           </p>
         </motion.div>
 
