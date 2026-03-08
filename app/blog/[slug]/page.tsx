@@ -31,7 +31,7 @@ export async function generateMetadata({
   if (!post) return {};
 
   const { frontmatter } = post;
-  const baseUrl = "https://www.trysynq.com";
+  const baseUrl = "https://synq.cards";
 
   return {
     title: `${frontmatter.title} | Synq Blog`,

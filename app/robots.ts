@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = "https://www.trysynq.com";
+  const baseUrl = "https://synq.cards";
 
   return {
     rules: [

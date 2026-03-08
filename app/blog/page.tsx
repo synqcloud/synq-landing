@@ -13,12 +13,12 @@ export const metadata: Metadata = {
     title: "Synq Blog - Card Shop Automation & Pricing Guides",
     description:
       "Guides, tips, and strategies for running a successful card shop on Shopify.",
-    url: "https://www.trysynq.com/blog",
+    url: "https://synq.cards/blog",
     type: "website",
     siteName: "Synq",
   },
   alternates: {
-    canonical: "https://www.trysynq.com/blog",
+    canonical: "https://synq.cards/blog",
   },
 };
 

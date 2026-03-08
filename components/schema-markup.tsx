@@ -1,4 +1,4 @@
-const BASE_URL = "https://www.trysynq.com";
+const BASE_URL = "https://synq.cards";
 
 // FAQ data matching the actual FAQ section
 const FAQ_DATA = [

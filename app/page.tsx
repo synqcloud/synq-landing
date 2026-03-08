@@ -17,13 +17,13 @@ export const metadata: Metadata = {
   description:
     "Keep your Shopify card shop competitive with automated pricing. Synq syncs your card prices with market data daily. TCGPlayer, Cardmarket, and more. For Magic, Pokemon, Yu-Gi-Oh.",
   alternates: {
-    canonical: "https://www.trysynq.com",
+    canonical: "https://synq.cards",
   },
   openGraph: {
     title: "Synq - Automated Card Pricing for Shopify",
     description:
       "Sync your card prices with market data automatically. TCGPlayer, Cardmarket, and more. Add cards in one click.",
-    url: "https://www.trysynq.com",
+    url: "https://synq.cards",
   },
 };
 

@@ -10,7 +10,7 @@ import { SchemaMarkup } from "@/components/schema-markup";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const BASE_URL = "https://www.trysynq.com";
+const BASE_URL = "https://synq.cards";
 
 export const viewport: Viewport = {
   width: "device-width",

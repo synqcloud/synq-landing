@@ -11,7 +11,7 @@ export function BlogPostSchema({
   slug,
   readingTime,
 }: BlogSchemaProps) {
-  const baseUrl = "https://www.trysynq.com";
+  const baseUrl = "https://synq.cards";
   const postUrl = `${baseUrl}/blog/${slug}`;
 
   const blogPosting = {
@@ -111,7 +111,7 @@ export function BlogPostSchema({
 }
 
 export function BlogListSchema() {
-  const baseUrl = "https://www.trysynq.com";
+  const baseUrl = "https://synq.cards";
 
   const schema = {
     "@context": "https://schema.org",

@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 import { getAllPosts } from "@/lib/blog";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://www.trysynq.com";
+  const baseUrl = "https://synq.cards";
   const currentDate = new Date();
 
   // Static pages only - no fragment URLs (they aren't indexable separately)

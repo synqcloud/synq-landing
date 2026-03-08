@@ -8,7 +8,18 @@
           "value": "trysynq.com"
         }
       ],
-      "destination": "https://www.trysynq.com/:path*",
+      "destination": "https://synq.cards/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.trysynq.com"
+        }
+      ],
+      "destination": "https://synq.cards/:path*",
       "permanent": true
     }
   ],
