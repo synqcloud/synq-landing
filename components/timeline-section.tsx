@@ -11,7 +11,7 @@ export function TimelineSection() {
       title: "Install and configure",
       items: [
         "Install Synq on your Shopify store",
-        "Choose your selling region (US or EU)",
+        "Configure your product template and conditions",
         "Select a product template preset",
         "Configure condition pricing adjustments",
       ],
@@ -96,7 +96,7 @@ export function TimelineSection() {
           className="text-center"
         >
           <Button asChild>
-            <a href="#get-started">Get early access</a>
+            <a href="https://apps.shopify.com/synq-tcg-card-manager" target="_blank" rel="noopener noreferrer">Install on Shopify</a>
           </Button>
         </motion.div>
       </div>

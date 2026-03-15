@@ -7,7 +7,7 @@ import { Button } from "@synq/ui/component";
 export function EarlyAccessSection() {
   const features = [
     "Add cards to Shopify with images and descriptions",
-    "Daily price sync from TCGPlayer or Cardmarket",
+    "Daily price sync from TCGPlayer",
     "One-click bulk price updates",
     "Support for Pokemon, Magic, and more",
     "Set your own markup percentage",
@@ -74,12 +74,12 @@ export function EarlyAccessSection() {
           </ul>
 
           <Button asChild className="w-full">
-            <a href="#contact">
-              Request install link
+            <a href="https://apps.shopify.com/synq-tcg-card-manager" target="_blank" rel="noopener noreferrer">
+              Install on Shopify
             </a>
           </Button>
           <p className="text-xs text-muted-foreground mt-3">
-            We'll send you a direct install link for your store
+            7-day free trial · No credit card required
           </p>
         </motion.div>
       </div>

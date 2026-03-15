@@ -24,11 +24,11 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   // Primary SEO
   title: {
-    default: "Synq - Automated Card Pricing for Shopify | TCGPlayer & Cardmarket Sync",
+    default: "Synq - Automated Card Pricing for Shopify | TCGPlayer Price Sync",
     template: "%s | Synq",
   },
   description:
-    "Sync your Shopify card prices with market data automatically. TCGPlayer, Cardmarket, and more. Add cards in one click, daily price updates, condition-based pricing.",
+    "Sync your Shopify card prices with TCGPlayer market data automatically. Add cards in one click, daily price updates, condition-based pricing.",
   keywords: [
     // Primary keywords
     "automated card pricing",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     "card price sync Shopify",
     // Price sources
     "TCGPlayer Shopify sync",
-    "Cardmarket integration",
+    "TCGPlayer price sync",
     "market price sync",
     "card market data",
     // Product-specific
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
     siteName: "Synq",
     title: "Synq - Automated Card Pricing for Shopify",
     description:
-      "Keep your Shopify card shop competitive with automated pricing. Sync with TCGPlayer, Cardmarket, and more. Add cards in seconds.",
+      "Keep your Shopify card shop competitive with automated pricing. Sync with TCGPlayer market data daily. Add cards in seconds.",
     images: [
       {
         url: "/brand/synq-eyecatcher-art.png",
@@ -87,7 +87,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Synq - Automated Card Pricing for Shopify",
     description:
-      "Sync your card prices with market data automatically. TCGPlayer, Cardmarket, and more. Add cards in one click.",
+      "Sync your card prices with TCGPlayer market data automatically. Add cards in one click.",
     images: ["/brand/synq-eyecatcher-art.png"],
     creator: "@trysynq",
     site: "@trysynq",

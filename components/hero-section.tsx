@@ -2,148 +2,132 @@
 
 import { Button } from "@synq/ui/component";
 import Image from "next/image";
+import { Check } from "lucide-react";
+
+const highlights = [
+  "Prices that stay current with the market",
+  "Add any card to your store in seconds",
+  "Automatic discounts by condition",
+  "Update thousands of cards at once",
+];
 
 export function HeroSection() {
   return (
-    <section className="pt-24 sm:pt-32 pb-12 sm:pb-24">
-      <div className="max-w-5xl mx-auto px-6">
-        <div className="mb-12 sm:mb-16 animate-fade-in">
-          {/* Badges */}
-          <div className="flex flex-wrap items-center gap-3 mb-6">
-            {/* Built for Shopify Badge */}
-            <div className="flex items-center gap-2 rounded-full bg-background px-4 py-2 shadow-sm border border-border">
-              <Image
-                src="/shopify.svg"
-                alt="Shopify"
-                width={20}
-                height={20}
-                className="h-5 w-5"
-                priority
-              />
-              <span className="text-sm font-medium text-foreground">
-                Built for Shopify
-              </span>
-            </div>
+    <section className="relative pt-20 sm:pt-28 pb-16 sm:pb-24 overflow-hidden">
+      {/* Background glow */}
+      <div className="absolute inset-0 -z-10 pointer-events-none">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_-5%,hsl(var(--primary)/0.08),transparent_70%)]" />
+      </div>
 
-            {/* Built for Local Card Shops Badge */}
-            <div className="flex items-center gap-2 rounded-full bg-background px-4 py-2 shadow-sm border border-border">
-              <svg
-                className="h-5 w-5"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                {/* Storefront icon with fill */}
-                <path
-                  d="M3 21V10L1 8L4 3H20L23 8L21 10V21H3Z"
-                  className="fill-amber-500/20 stroke-amber-600 dark:fill-amber-400/20 dark:stroke-amber-400"
-                  strokeWidth={1.5}
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M9 21V14H15V21"
-                  className="stroke-amber-600 dark:stroke-amber-400"
-                  strokeWidth={1.5}
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M1 8H23"
-                  className="stroke-amber-600 dark:stroke-amber-400"
-                  strokeWidth={1.5}
-                />
-                <path
-                  d="M7 8V10C7 11.1 6.1 12 5 12C3.9 12 3 11.1 3 10V8"
-                  className="stroke-amber-600 dark:stroke-amber-400"
-                  strokeWidth={1.5}
-                />
-                <path
-                  d="M12 8V10C12 11.1 11.1 12 10 12C8.9 12 8 11.1 8 10V8"
-                  className="stroke-amber-600 dark:stroke-amber-400"
-                  strokeWidth={1.5}
-                />
-                <path
-                  d="M17 8V10C17 11.1 16.1 12 15 12C13.9 12 13 11.1 13 10V8"
-                  className="stroke-amber-600 dark:stroke-amber-400"
-                  strokeWidth={1.5}
-                />
-                <path
-                  d="M21 8V10C21 11.1 20.1 12 19 12C17.9 12 17 11.1 17 10V8"
-                  className="stroke-amber-600 dark:stroke-amber-400"
-                  strokeWidth={1.5}
-                />
-              </svg>
-              <span className="text-sm font-medium text-foreground">
-                Built for Local Card Shops
-              </span>
-            </div>
+      <div className="max-w-5xl mx-auto px-6">
+        <div className="max-w-2xl mx-auto text-center">
+
+          {/* Badge */}
+          <div className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-3.5 py-1.5 text-xs font-medium text-muted-foreground mb-8 shadow-sm">
+            <Image
+              src="/shopify.svg"
+              alt=""
+              width={12}
+              height={12}
+              className="h-3 w-3"
+              priority
+              aria-hidden="true"
+            />
+            <span>Shopify App</span>
+            <span className="text-border mx-0.5">·</span>
+            <span className="text-primary font-semibold">Now on Shopify</span>
           </div>
 
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-[-0.02em] text-foreground mb-6 leading-[1.15] max-w-3xl">
-            Keep your card shop competitive{" "}
-            <span className="text-primary">without the busywork.</span>
+          {/* Headline — what it is, who it's for, outcome */}
+          <h1 className="hero-description text-[2.5rem] sm:text-5xl lg:text-[3.25rem] font-semibold tracking-[-0.03em] leading-[1.1] mb-5">
+            <span className="text-foreground">Your Shopify card shop,</span>
+            <br />
+            <span className="text-primary">always priced to sell.</span>
           </h1>
-          {/* SEO: Visible summary for users and AI crawlers */}
-          <p className="hero-description text-lg text-muted-foreground mb-6 max-w-2xl leading-relaxed">
+
+          {/* Sub — short, positive, no jargon */}
+          <p className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-8 max-w-lg mx-auto">
             Synq automatically syncs your Shopify card prices with market data every 24 hours. Add cards with one click, manage condition-based pricing, and update prices in bulk.
           </p>
-          <div className="flex items-center gap-2 text-base text-muted-foreground mb-4 max-w-2xl flex-wrap">
-            <span>For</span>
-            <span className="inline-flex items-center gap-1.5">
-              <Image
-                src="/games/mtg.png"
-                alt="Magic: The Gathering"
-                width={20}
-                height={20}
-                className="w-5 h-5 object-contain"
-                loading="eager"
-              />
-              <span>Magic: The Gathering,</span>
-            </span>
-            <span className="inline-flex items-center gap-1.5">
-              <Image
-                src="/games/pokemon.png"
-                alt="Pokemon"
-                width={20}
-                height={20}
-                className="w-5 h-5 object-contain"
-                loading="eager"
-              />
-              <span>Pokemon,</span>
-            </span>
-            <span>and more.</span>
-          </div>
-          <div className="flex items-center gap-2 text-base text-muted-foreground mb-8 max-w-2xl flex-wrap">
-            <span>Prices from</span>
-            <span className="inline-flex items-center gap-1.5">
-              <Image
-                src="/tcgplayer.svg"
-                alt="TCGPlayer"
-                width={18}
-                height={18}
-                className="w-[18px] h-[18px] object-contain"
-              />
-              <span>TCGPlayer</span>
-            </span>
-            <span>and</span>
-            <span className="inline-flex items-center gap-1.5">
-              <Image
-                src="/cardmarket.svg"
-                alt="Cardmarket"
-                width={18}
-                height={18}
-                className="w-[18px] h-[18px] object-contain"
-              />
-              <span>Cardmarket.</span>
-            </span>
-          </div>
-          <div className="flex flex-col sm:flex-row gap-3">
+
+          {/* CTAs */}
+          <div className="flex flex-wrap items-center justify-center gap-3 mb-10">
             <Button asChild>
-              <a href="#get-started">Get started</a>
+              <a href="https://apps.shopify.com/synq-tcg-card-manager" target="_blank" rel="noopener noreferrer">Install on Shopify</a>
             </Button>
             <Button asChild variant="outline">
               <a href="#features">See how it works</a>
             </Button>
+          </div>
+
+          {/* Benefit highlights — problems solved, not feature names */}
+          <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-x-6 gap-y-2.5">
+            {highlights.map((item) => (
+              <div
+                key={item}
+                className="flex items-center gap-2 text-sm text-muted-foreground"
+              >
+                <Check
+                  className="h-3.5 w-3.5 text-primary shrink-0"
+                  aria-hidden="true"
+                />
+                {item}
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Trust bar — names + logos, readable */}
+        <div className="mt-14 pt-7 border-t border-border">
+          <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-4 text-sm text-muted-foreground">
+            <div className="flex items-center gap-2.5">
+              <Image
+                src="/tcgplayer.svg"
+                alt=""
+                width={16}
+                height={16}
+                className="h-4 w-4 opacity-50"
+                aria-hidden="true"
+              />
+              <span>TCGPlayer</span>
+            </div>
+            <div className="flex items-center gap-2.5 opacity-40">
+              <Image
+                src="/cardmarket.svg"
+                alt=""
+                width={16}
+                height={16}
+                className="h-4 w-4 grayscale"
+                aria-hidden="true"
+              />
+              <span>Cardmarket <span className="text-xs">(coming soon)</span></span>
+            </div>
+            <div className="hidden sm:block h-4 w-px bg-border" />
+            <div className="flex items-center gap-2.5">
+              <Image
+                src="/games/mtg.png"
+                alt=""
+                width={18}
+                height={18}
+                className="h-[18px] w-[18px] object-contain opacity-60"
+                loading="eager"
+                aria-hidden="true"
+              />
+              <span>Magic: The Gathering</span>
+            </div>
+            <div className="flex items-center gap-2.5">
+              <Image
+                src="/games/pokemon.png"
+                alt=""
+                width={18}
+                height={18}
+                className="h-[18px] w-[18px] object-contain opacity-60"
+                loading="eager"
+                aria-hidden="true"
+              />
+              <span>Pokemon</span>
+            </div>
+            <span className="text-muted-foreground/50">& more</span>
           </div>
         </div>
       </div>

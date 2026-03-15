@@ -9,12 +9,12 @@ const faqs = [
   {
     question: "What trading card games are supported?",
     answer:
-      "Currently, Synq fully supports Magic: The Gathering with price data from TCGPlayer (US) and Cardmarket (EU). Pokemon, Yu-Gi-Oh, and other games are coming soon based on user demand.",
+      "Currently, Synq fully supports Magic: The Gathering with price data from TCGPlayer (US). EU / Cardmarket support is on the roadmap. Pokemon, Yu-Gi-Oh, and other games are coming soon.",
   },
   {
     question: "How does price syncing work?",
     answer:
-      "Synq pulls the latest market prices every 24 hours from TCGPlayer (US region) or Cardmarket (EU region). You choose your region during setup. When prices change, you'll see which products need updates on your dashboard and can apply new prices with one click.",
+      "Synq pulls the latest market prices every 24 hours from TCGPlayer. When prices change, you'll see which products need updates on your dashboard and can apply new prices with one click.",
   },
   {
     question: "Can I set my own prices instead of using market prices?",
@@ -39,7 +39,7 @@ const faqs = [
   {
     question: "Is there a limit to how many cards I can add?",
     answer:
-      "It depends on your plan. Starter supports up to 100 cards, Pro up to 500, and Business gives you unlimited cards. All plans include a free trial so you can try before you commit.",
+      "It depends on your plan. Starter supports up to 2,000 cards, Pro up to 15,000, and Scale up to 50,000. All plans include a 7-day free trial so you can try before you commit.",
   },
   {
     question: "How do I cancel my subscription?",

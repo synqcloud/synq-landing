@@ -13,16 +13,16 @@ import { InstallRequestSection } from "@/components/install-request-section";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Synq - Automated Card Pricing for Shopify | TCGPlayer & Cardmarket Sync",
+  title: "Synq - Automated Card Pricing for Shopify | TCGPlayer Price Sync",
   description:
-    "Keep your Shopify card shop competitive with automated pricing. Synq syncs your card prices with market data daily. TCGPlayer, Cardmarket, and more. For Magic, Pokemon, Yu-Gi-Oh.",
+    "Keep your Shopify card shop competitive with automated pricing. Synq syncs your card prices with TCGPlayer market data daily. For Magic: The Gathering, Pokemon, Yu-Gi-Oh, and more.",
   alternates: {
     canonical: "https://synq.cards",
   },
   openGraph: {
     title: "Synq - Automated Card Pricing for Shopify",
     description:
-      "Sync your card prices with market data automatically. TCGPlayer, Cardmarket, and more. Add cards in one click.",
+      "Sync your card prices with TCGPlayer market data automatically. Add cards in one click, daily price updates.",
     url: "https://synq.cards",
   },
 };

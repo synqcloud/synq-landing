@@ -56,13 +56,13 @@ export function Showcase() {
     {
       title: "Prices Updated Daily from the Market",
       description:
-        "Synq pulls the latest market prices every day from TCGPlayer (US) or Cardmarket (EU). You'll see exactly which of your Shopify products are priced below or above the current market rate.",
+        "Synq pulls the latest market prices every day from TCGPlayer. You'll see exactly which of your Shopify products are priced below or above the current market rate.",
       image: "/brand/synq-transactions.png",
       alt: "Price sync dashboard",
       features: [
         "Daily automatic price sync",
         "See price differences at a glance",
-        "TCGPlayer (US) or Cardmarket (EU) data",
+        "TCGPlayer market data",
         "See when prices shift",
       ],
       cta: "See pricing in action",

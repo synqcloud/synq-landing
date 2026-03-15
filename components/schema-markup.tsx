@@ -5,12 +5,12 @@ const FAQ_DATA = [
   {
     question: "What trading card games are supported?",
     answer:
-      "Currently, Synq fully supports Magic: The Gathering with price data from TCGPlayer (US) and Cardmarket (EU). Pokemon, Yu-Gi-Oh, and other games are coming soon based on user demand.",
+      "Currently, Synq fully supports Magic: The Gathering with price data from TCGPlayer (US). EU / Cardmarket support is on the roadmap. Pokemon, Yu-Gi-Oh, and other games are coming soon.",
   },
   {
     question: "How does price syncing work?",
     answer:
-      "Synq pulls the latest market prices every 24 hours from TCGPlayer (US region) or Cardmarket (EU region). You choose your region during setup. When prices change, you'll see which products need updates on your dashboard and can apply new prices with one click.",
+      "Synq pulls the latest market prices every 24 hours from TCGPlayer. When prices change, you'll see which products need updates on your dashboard and can apply new prices with one click.",
   },
   {
     question: "Can I set my own prices instead of using market prices?",
@@ -35,7 +35,7 @@ const FAQ_DATA = [
   {
     question: "Is there a limit to how many cards I can add?",
     answer:
-      "It depends on your plan. Starter supports up to 100 cards, Pro up to 500, and Business gives you unlimited cards. All plans include a free trial so you can try before you commit.",
+      "It depends on your plan. Starter supports up to 2,000 cards, Pro up to 15,000, and Scale up to 50,000. All plans include a 7-day free trial so you can try before you commit.",
   },
   {
     question: "How do I cancel my subscription?",
@@ -69,9 +69,9 @@ export function SchemaMarkup() {
         },
         image: { "@id": `${BASE_URL}/#logo` },
         description:
-          "Synq automates trading card pricing for Shopify stores, syncing with market data from TCGPlayer, Cardmarket, and other sources daily.",
+          "Synq automates trading card pricing for Shopify stores, syncing with TCGPlayer market data daily.",
         foundingDate: "2024",
-        sameAs: ["https://apps.shopify.com/synq"],
+        sameAs: ["https://apps.shopify.com/synq-tcg-card-manager"],
         contactPoint: {
           "@type": "ContactPoint",
           contactType: "customer support",
@@ -86,7 +86,7 @@ export function SchemaMarkup() {
         name: "Synq",
         alternateName: "Synq Card Price Sync",
         description:
-          "Shopify app that automatically syncs trading card prices with market data from TCGPlayer, Cardmarket, and other sources. Add cards with one click, get daily price updates, and manage condition-based pricing for Magic: The Gathering, Pokemon, and more.",
+          "Shopify app that automatically syncs trading card prices with TCGPlayer market data. Add cards with one click, get daily price updates, and manage condition-based pricing for Magic: The Gathering, Pokemon, and more.",
         url: BASE_URL,
         applicationCategory: "BusinessApplication",
         applicationSubCategory: "Inventory Management",
@@ -94,19 +94,19 @@ export function SchemaMarkup() {
         softwareVersion: "2.0",
         datePublished: "2024-01-01",
         dateModified: currentDate,
-        downloadUrl: "https://apps.shopify.com/synq",
-        installUrl: "https://apps.shopify.com/synq",
+        downloadUrl: "https://apps.shopify.com/synq-tcg-card-manager",
+        installUrl: "https://apps.shopify.com/synq-tcg-card-manager",
         permissions: "Shopify store access",
         offers: {
           "@type": "Offer",
-          description: "Early access available - request install link",
+          description: "Available on the Shopify App Store. 7-day free trial.",
           availability: "https://schema.org/PreOrder",
           seller: { "@id": `${BASE_URL}/#organization` },
         },
         featureList: [
           "Automatic daily price sync with market data",
           "TCGPlayer integration for US pricing",
-          "Cardmarket integration for EU pricing",
+          "EU / Cardmarket pricing (coming soon)",
           "Support for additional price sources",
           "One-click card addition with images and descriptions",
           "Condition-based pricing (NM, LP, MP, HP, DMG)",
@@ -142,7 +142,7 @@ export function SchemaMarkup() {
         name: "Synq",
         alternateName: ["Synq Card Price Sync", "Synq for Shopify"],
         description:
-          "Sync your Shopify card prices with market data automatically. TCGPlayer, Cardmarket, and more.",
+          "Sync your Shopify card prices with TCGPlayer market data automatically.",
         publisher: { "@id": `${BASE_URL}/#organization` },
         inLanguage: "en-US",
         potentialAction: {
@@ -225,7 +225,7 @@ export function SchemaMarkup() {
             position: 1,
             name: "Install Synq",
             text: "Install Synq from the Shopify App Store and connect it to your store.",
-            url: "https://apps.shopify.com/synq",
+            url: "https://apps.shopify.com/synq-tcg-card-manager",
           },
           {
             "@type": "HowToStep",
@@ -237,7 +237,7 @@ export function SchemaMarkup() {
             "@type": "HowToStep",
             position: 3,
             name: "Enable Price Sync",
-            text: "Configure your pricing strategy and let Synq update your prices automatically every 24 hours based on market data from TCGPlayer, Cardmarket, or other sources.",
+            text: "Configure your pricing strategy and let Synq update your prices automatically every 24 hours based on TCGPlayer market data.",
           },
         ],
       },

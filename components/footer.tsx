@@ -13,7 +13,7 @@ export function Footer() {
               Features
             </a>
             <a
-              href="#pricing"
+              href="/pricing"
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
               Pricing
@@ -55,7 +55,7 @@ export function Footer() {
               Features
             </a>
             <a
-              href="#pricing"
+              href="/pricing"
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
               Pricing

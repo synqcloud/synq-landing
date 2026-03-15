@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ContactForm } from "./contact-form";
 import { Check } from "lucide-react";
 import { Button } from "@synq/ui/component";
 
@@ -27,7 +26,7 @@ const fadeInUp = {
 export function ContactPricingSection() {
   const features = [
     "Add cards to Shopify with images and descriptions",
-    "Daily price sync from TCGPlayer or Cardmarket",
+    "Daily price sync from TCGPlayer",
     "One-click bulk price updates",
     "Support for Pokemon, Magic, and more",
     "Set your own markup percentage",
@@ -54,15 +53,18 @@ export function ContactPricingSection() {
 
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Contact Form - Left Column */}
-          <motion.div variants={fadeInUp} className="lg:pr-8">
+          <motion.div variants={fadeInUp} className="lg:pr-8 flex flex-col justify-center">
             <h3 className="text-xl font-medium text-foreground mb-3">
-              Request Your Install Link
+              Start your free trial
             </h3>
             <p className="text-sm text-muted-foreground mb-6">
-              Share your details and we'll send you a direct link to install
-              Synq on your Shopify store.
+              Synq is live on the Shopify App Store. Install directly and get 7 days free — no credit card required.
             </p>
-            <ContactForm />
+            <Button asChild size="lg" className="w-fit">
+              <a href="https://apps.shopify.com/synq-tcg-card-manager" target="_blank" rel="noopener noreferrer">
+                Install on Shopify
+              </a>
+            </Button>
           </motion.div>
 
           {/* Pricing Card - Right Column */}
@@ -96,10 +98,12 @@ export function ContactPricingSection() {
               </ul>
 
               <Button asChild className="w-full">
-                <a href="#contact">Request install link</a>
+                <a href="https://apps.shopify.com/synq-tcg-card-manager" target="_blank" rel="noopener noreferrer">
+                  Install on Shopify
+                </a>
               </Button>
               <p className="text-xs text-muted-foreground mt-3 text-center">
-                We'll send you a direct install link for your store
+                7-day free trial · No credit card required
               </p>
             </div>
           </motion.div>

@@ -2,43 +2,50 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Check } from "lucide-react";
+import { type LucideIcon, Library, Gamepad2, RefreshCw, SlidersHorizontal, Zap, PlusCircle, CalendarDays, Headphones } from "lucide-react";
 import { Button } from "@synq/ui/component";
 
-const SHOPIFY_APP_URL =
-  process.env.NEXT_PUBLIC_SHOPIFY_APP_URL ||
-  "https://apps.shopify.com/synq";
+const SHOPIFY_APP_URL = "https://apps.shopify.com/synq-tcg-card-manager";
+
+type Feature = { label: string; icon: LucideIcon };
+
+const BASE_FEATURES: Feature[] = [
+  { label: "MTG, Pokémon, Yu-Gi-Oh & more", icon: Gamepad2 },
+  { label: "Daily prices from TCGPlayer", icon: RefreshCw },
+  { label: "Custom condition adjustments", icon: SlidersHorizontal },
+  { label: "Bulk price updates in one click", icon: Zap },
+  { label: "One-click card & product creation", icon: PlusCircle },
+  { label: "7-day free trial", icon: CalendarDays },
+];
 
 // Ordered: most expensive first (anchoring effect)
 const plans = [
   {
-    id: "business",
-    name: "Business",
-    monthlyPrice: 79,
-    annualPrice: 63,
-    annualTotal: 756,
-    description: "High-volume sellers.",
+    id: "scale",
+    name: "Scale",
+    monthlyPrice: 149,
+    annualPrice: 99,
+    annualTotal: 1192,
+    description: "Built for high-volume stores.",
     features: [
-      "Unlimited cards",
-      "Bulk operations",
-      "Priority support",
-      "Multi-game (coming soon)",
-    ],
+      { label: "Up to 50,000 cards managed", icon: Library },
+      ...BASE_FEATURES,
+      { label: "Priority support", icon: Headphones },
+    ] as Feature[],
     cta: "Start Free Trial",
     highlighted: false,
   },
   {
     id: "pro",
     name: "Pro",
-    monthlyPrice: 39,
-    annualPrice: 31,
-    annualTotal: 372,
+    monthlyPrice: 79,
+    annualPrice: 53,
+    annualTotal: 632,
     description: "Growing stores.",
     features: [
-      "Up to 500 cards",
-      "Bulk operations",
-      "Priority support",
-    ],
+      { label: "Up to 15,000 cards managed", icon: Library },
+      ...BASE_FEATURES,
+    ] as Feature[],
     cta: "Start Free Trial",
     highlighted: true,
     badge: "Most Popular",
@@ -46,23 +53,17 @@ const plans = [
   {
     id: "starter",
     name: "Starter",
-    monthlyPrice: 19,
-    annualPrice: 15,
-    annualTotal: 180,
+    monthlyPrice: 29,
+    annualPrice: 19,
+    annualTotal: 232,
     description: "Getting started.",
     features: [
-      "Up to 100 cards",
-    ],
+      { label: "Up to 2,000 cards managed", icon: Library },
+      ...BASE_FEATURES,
+    ] as Feature[],
     cta: "Start Free Trial",
     highlighted: false,
   },
-];
-
-const SHARED_FEATURES = [
-  "Daily price syncs",
-  "Market price tracking",
-  "Condition-based pricing",
-  "Shopify auto-sync",
 ];
 
 const staggerContainer = {
@@ -138,7 +139,7 @@ export function PricingSection() {
                     : "bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400"
                 }`}
               >
-                Save 20%
+                Save 33%
               </span>
             </button>
           </div>
@@ -180,7 +181,7 @@ export function PricingSection() {
                 </div>
                 {isAnnual ? (
                   <p className="text-xs text-green-600 dark:text-green-400 mt-0.5">
-                    ${plan.annualTotal}/yr — save ${plan.monthlyPrice * 12 - plan.annualTotal}
+                    ${plan.annualTotal}/yr — save 33%
                   </p>
                 ) : (
                   <p className="text-xs text-muted-foreground mt-0.5">
@@ -193,13 +194,16 @@ export function PricingSection() {
               <div className="border-t border-border mb-4" />
 
               {/* Plan-specific features */}
-              <ul className="space-y-2 mb-5 flex-1">
-                {plan.features.map((feature, idx) => (
-                  <li key={idx} className="flex items-center gap-2">
-                    <Check className="w-3.5 h-3.5 text-primary flex-shrink-0" />
-                    <span className="text-sm text-foreground">{feature}</span>
-                  </li>
-                ))}
+              <ul className="space-y-2.5 mb-5 flex-1">
+                {plan.features.map((feature, idx) => {
+                  const Icon = feature.icon;
+                  return (
+                    <li key={idx} className="flex items-center gap-2.5">
+                      <Icon className="w-3.5 h-3.5 text-muted-foreground flex-shrink-0" />
+                      <span className="text-sm text-foreground">{feature.label}</span>
+                    </li>
+                  );
+                })}
               </ul>
 
               {/* CTA */}
@@ -217,24 +221,9 @@ export function PricingSection() {
           ))}
         </div>
 
-        {/* Shared features */}
         <motion.div variants={fadeInUp} className="mt-6 text-center">
-          <p className="text-xs text-muted-foreground mb-2">
-            All plans include:
-          </p>
-          <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1">
-            {SHARED_FEATURES.map((feature) => (
-              <span
-                key={feature}
-                className="inline-flex items-center gap-1 text-xs text-muted-foreground"
-              >
-                <Check className="w-3 h-3 text-primary" />
-                {feature}
-              </span>
-            ))}
-          </div>
-          <p className="text-xs text-muted-foreground mt-3">
-            7-day free trial on all plans. Cancel anytime.
+          <p className="text-xs text-muted-foreground">
+            Cancel anytime. No credit card required to start.
           </p>
         </motion.div>
       </div>

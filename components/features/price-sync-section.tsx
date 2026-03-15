@@ -37,7 +37,7 @@ export function PriceSyncSection() {
         >
           <Image
             src="/brand/update-shopify-magic-the-gathering-card-prices.png"
-            alt="Synq price sync dashboard showing automatic TCGPlayer and Cardmarket price updates"
+            alt="Synq price sync dashboard showing automatic TCGPlayer price updates"
             width={1200}
             height={700}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1000px"
@@ -46,7 +46,7 @@ export function PriceSyncSection() {
           />
         </motion.div>
 
-        {/* Two markets section */}
+        {/* Market section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -77,7 +77,7 @@ export function PriceSyncSection() {
               Conditions: NM, LP, MP, HP, DMG
             </p>
           </div>
-          <div className="p-5 bg-background rounded-lg border border-border">
+          <div className="p-5 bg-background rounded-lg border border-border opacity-50">
             <div className="flex items-center gap-3 mb-3">
               <span className="text-2xl">🇪🇺</span>
               <div>
@@ -88,10 +88,10 @@ export function PriceSyncSection() {
                     alt="Cardmarket"
                     width={14}
                     height={14}
-                    className="h-3.5 w-3.5"
+                    className="h-3.5 w-3.5 grayscale"
                   />
                   <p className="text-xs text-muted-foreground">
-                    Prices from Cardmarket
+                    Cardmarket — coming soon
                   </p>
                 </div>
               </div>

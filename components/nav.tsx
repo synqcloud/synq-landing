@@ -58,6 +58,14 @@ export function Nav() {
                   asChild
                   className={navigationMenuTriggerStyle()}
                 >
+                  <Link href="/pricing">Pricing</Link>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <NavigationMenuLink
+                  asChild
+                  className={navigationMenuTriggerStyle()}
+                >
                   <Link href="#faq">FAQ</Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
@@ -77,7 +85,7 @@ export function Nav() {
         <div className="hidden md:flex items-center gap-3">
           <ThemeToggle />
           <Button asChild size="sm">
-            <a href="#get-started">Get started</a>
+            <a href="https://apps.shopify.com/synq-tcg-card-manager" target="_blank" rel="noopener noreferrer">Install on Shopify</a>
           </Button>
         </div>
 
@@ -110,6 +118,13 @@ export function Nav() {
               Features
             </Link>
             <Link
+              href="/pricing"
+              onClick={closeMenu}
+              className="text-base text-muted-foreground hover:text-foreground transition-colors"
+            >
+              Pricing
+            </Link>
+            <Link
               href="#faq"
               onClick={closeMenu}
               className="text-base text-muted-foreground hover:text-foreground transition-colors"
@@ -124,8 +139,8 @@ export function Nav() {
               Blog
             </Link>
             <Button asChild size="sm" className="mt-2">
-              <a href="#get-started" onClick={closeMenu}>
-                Get started
+              <a href="https://apps.shopify.com/synq-tcg-card-manager" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>
+                Install on Shopify
               </a>
             </Button>
           </div>
