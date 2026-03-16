@@ -5,7 +5,7 @@ const FAQ_DATA = [
   {
     question: "What trading card games are supported?",
     answer:
-      "Currently, Synq fully supports Magic: The Gathering with price data from TCGPlayer (US). EU / Cardmarket support is on the roadmap. Pokemon, Yu-Gi-Oh, and other games are coming soon.",
+      "Currently, Synq fully supports Magic: The Gathering, Disney Lorcana, and Riftbound with price data from TCGPlayer (US). EU / Cardmarket support is on the roadmap. Pokemon, Yu-Gi-Oh, and other games are coming soon.",
   },
   {
     question: "How does price syncing work?",
@@ -114,6 +114,8 @@ export function SchemaMarkup() {
           "Bulk price update operations",
           "Real-time price change dashboard",
           "Magic: The Gathering full support",
+          "Disney Lorcana full support",
+          "Riftbound full support",
           "Pokemon and Yu-Gi-Oh support coming soon",
           "Shopify product variant management",
         ],

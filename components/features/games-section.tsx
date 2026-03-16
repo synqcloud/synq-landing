@@ -5,7 +5,8 @@ import Image from "next/image";
 
 const allGames = [
   { name: "Magic: The Gathering", logo: "/games/mtg.png", active: true },
-  { name: "Disney Lorcana", logo: "/games/lorcana.avif", active: true },
+  { name: "Disney Lorcana", logo: "/games/lorcana.png", active: true },
+  { name: "Riftbound", logo: "/games/riftbound.png", active: true },
   { name: "Pokemon TCG", logo: "/games/pokemon.png", active: false },
   { name: "Yu-Gi-Oh!", logo: "/games/yugioh.png", active: false },
   { name: "Flesh and Blood", logo: "/games/fab.png", active: false },
@@ -32,7 +33,7 @@ export function GamesSection() {
             Supporting the games you sell
           </p>
           <h2 className="text-lg font-medium text-foreground">
-            Magic available now • More games coming soon
+            MTG, Lorcana & Riftbound available now • More games coming soon
           </h2>
         </motion.div>
 
