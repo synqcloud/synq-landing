@@ -5,11 +5,11 @@ import Image from "next/image";
 
 const allGames = [
   { name: "Magic: The Gathering", logo: "/games/mtg.png", active: true },
+  { name: "Disney Lorcana", logo: "/games/lorcana.avif", active: true },
   { name: "Pokemon TCG", logo: "/games/pokemon.png", active: false },
   { name: "Yu-Gi-Oh!", logo: "/games/yugioh.png", active: false },
   { name: "Flesh and Blood", logo: "/games/fab.png", active: false },
   { name: "One Piece Card Game", logo: "/games/onepiece.png", active: false },
-  { name: "Disney Lorcana", logo: "/games/lorcana.avif", active: false },
   { name: "Star Wars: Unlimited", logo: "/games/swu.webp", active: false },
   { name: "Digimon Card Game", logo: "/games/digimon.png", active: false },
 ];
