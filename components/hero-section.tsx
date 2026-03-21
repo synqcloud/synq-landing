@@ -125,9 +125,9 @@ export function HeroSection() {
                 loading="eager"
                 aria-hidden="true"
               />
-              <span>Pokemon</span>
+              <span>Pokemon TCG</span>
             </div>
-            <span className="text-muted-foreground/50">& more</span>
+            <span className="text-muted-foreground/50">Yu-Gi-Oh & more coming soon</span>
           </div>
         </div>
       </div>

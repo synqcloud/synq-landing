@@ -7,7 +7,7 @@ const allGames = [
   { name: "Magic: The Gathering", logo: "/games/mtg.png", active: true },
   { name: "Disney Lorcana", logo: "/games/lorcana.png", active: true },
   { name: "Riftbound", logo: "/games/riftbound.png", active: true },
-  { name: "Pokemon TCG", logo: "/games/pokemon.png", active: false },
+  { name: "Pokemon TCG", logo: "/games/pokemon.png", active: true, beta: true },
   { name: "Yu-Gi-Oh!", logo: "/games/yugioh.png", active: false },
   { name: "Flesh and Blood", logo: "/games/fab.png", active: false },
   { name: "One Piece Card Game", logo: "/games/onepiece.png", active: false },
@@ -33,7 +33,7 @@ export function GamesSection() {
             Supporting the games you sell
           </p>
           <h2 className="text-lg font-medium text-foreground">
-            MTG, Lorcana & Riftbound available now • More games coming soon
+            MTG, Lorcana & Riftbound available now • Pokemon TCG in beta • More games coming soon
           </h2>
         </motion.div>
 
@@ -83,9 +83,14 @@ export function GamesSection() {
                 >
                   {game.name}
                 </span>
-                {game.active && (
+                {game.active && !game.beta && (
                   <span className="px-1.5 py-0.5 bg-primary/10 text-primary text-[10px] font-medium rounded">
                     LIVE
+                  </span>
+                )}
+                {game.beta && (
+                  <span className="px-1.5 py-0.5 bg-amber-500/10 text-amber-500 text-[10px] font-medium rounded">
+                    BETA
                   </span>
                 )}
               </div>

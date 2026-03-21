@@ -2,7 +2,6 @@ import { Nav } from "../components/nav";
 import { HeroSection } from "../components/hero-section";
 import { Footer } from "../components/footer";
 import { AddCardsSection } from "@/components/features/add-cards-section";
-import { PriceSyncSection } from "@/components/features/price-sync-section";
 import { ConditionPricingSection } from "@/components/features/condition-pricing-section";
 import { DashboardSection } from "@/components/features/dashboard-section";
 import { GamesSection } from "@/components/features/games-section";
@@ -15,14 +14,14 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Synq - Automated Card Pricing for Shopify | TCGPlayer Price Sync",
   description:
-    "Keep your Shopify card shop competitive with automated pricing. Synq syncs your card prices with TCGPlayer market data daily. For Magic: The Gathering, Pokemon, Yu-Gi-Oh, and more.",
+    "Keep your Shopify card shop competitive with automated pricing. Synq syncs your card prices with TCGPlayer market data daily. For Magic: The Gathering, Pokemon TCG, and more — with Yu-Gi-Oh coming soon.",
   alternates: {
     canonical: "https://synq.cards",
   },
   openGraph: {
     title: "Synq - Automated Card Pricing for Shopify",
     description:
-      "Sync your card prices with TCGPlayer market data automatically. Add cards in one click, daily price updates.",
+      "Sync your card prices with TCGPlayer market data automatically. Supports MTG, Lorcana, Riftbound, and Pokemon TCG — with more games coming soon.",
     url: "https://synq.cards",
   },
 };
@@ -39,7 +38,6 @@ export default function HomePage() {
         {/* Feature Deep-Dives */}
         <section id="features" aria-label="Features">
           <AddCardsSection />
-          <PriceSyncSection />
           <ConditionPricingSection />
           <DashboardSection />
         </section>
