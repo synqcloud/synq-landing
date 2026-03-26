@@ -1,148 +1,103 @@
 "use client";
 
-import { useState } from "react";
-import Image from "next/image";
+import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X } from "lucide-react";
-import { ThemeToggle } from "./theme-toggle";
-import { Button } from "@synq/ui/component";
-import {
-  NavigationMenu,
-  NavigationMenuList,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  navigationMenuTriggerStyle,
-} from "@synq/ui/component";
+import { Logo } from "./logo";
+
+const SHOPIFY_URL = "https://apps.shopify.com/synq-tcg-card-manager";
+
+const navLinks = [
+  { label: "Features", href: "#features" },
+  { label: "Pricing", href: "/pricing" },
+  { label: "FAQ", href: "#faq" },
+  { label: "Blog", href: "/blog" },
+];
 
 export function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
-  const closeMenu = () => {
-    setIsMenuOpen(false);
-  };
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 10);
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 w-full border-b border-border/20 bg-background/80 backdrop-blur-sm">
-      <div className="flex items-center justify-between max-w-5xl mx-auto px-6 py-4">
-        {/* Left: Logo + Nav Links */}
-        <div className="flex items-center gap-8">
-          <Link href="/" className="flex items-center gap-2">
-            <Image
-              src="/brand/synq-icon.png"
-              alt="Synq Logo"
-              width={24}
-              height={24}
-              className="h-6 w-auto"
-              priority
-            />
-            <span className="font-medium text-foreground">Synq</span>
+    <nav className={`fixed top-0 left-0 right-0 z-50 w-full transition-all duration-200 ${
+      scrolled
+        ? "bg-background/95 backdrop-blur-md border-b border-border"
+        : "bg-transparent"
+    }`}>
+      <div className="flex items-center justify-between max-w-5xl mx-auto px-6 h-16">
+        <div className="flex items-center gap-1">
+          <Link href="/" onClick={() => setIsMenuOpen(false)} aria-label="Synq — Home">
+            <Logo />
           </Link>
 
-          {/* Desktop Navigation Menu */}
-          <NavigationMenu className="hidden md:block">
-            <NavigationMenuList>
-              <NavigationMenuItem>
-                <NavigationMenuLink
-                  asChild
-                  className={navigationMenuTriggerStyle()}
-                >
-                  <Link href="#features">Features</Link>
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <NavigationMenuLink
-                  asChild
-                  className={navigationMenuTriggerStyle()}
-                >
-                  <Link href="/pricing">Pricing</Link>
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <NavigationMenuLink
-                  asChild
-                  className={navigationMenuTriggerStyle()}
-                >
-                  <Link href="#faq">FAQ</Link>
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <NavigationMenuLink
-                  asChild
-                  className={navigationMenuTriggerStyle()}
-                >
-                  <Link href="/blog">Blog</Link>
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-            </NavigationMenuList>
-          </NavigationMenu>
+          {/* Desktop links */}
+          <div className="hidden md:flex items-center gap-1 ml-4">
+            {navLinks.map((link) => (
+              <Link
+                key={link.label}
+                href={link.href}
+                className="px-3.5 py-2 text-sm text-muted-foreground hover:text-foreground hover:bg-muted rounded-lg transition-colors"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
         </div>
 
-        {/* Right: CTA + Theme Toggle */}
-        <div className="hidden md:flex items-center gap-3">
-          <ThemeToggle />
-          <Button asChild size="sm">
-            <a href="https://apps.shopify.com/synq-tcg-card-manager" target="_blank" rel="noopener noreferrer">Install on Shopify</a>
-          </Button>
-        </div>
-
-        {/* Mobile Navigation Controls */}
-        <div className="md:hidden flex items-center gap-2">
-          <ThemeToggle />
-          <button
-            onClick={toggleMenu}
-            className="text-muted-foreground hover:text-foreground transition-colors p-2"
-            aria-label="Toggle menu"
+        {/* Desktop CTA */}
+        <div className="hidden md:block">
+          <a
+            href={SHOPIFY_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-primary text-primary-foreground text-sm font-semibold px-4 py-2 rounded-lg hover:opacity-80 transition-opacity"
           >
-            {isMenuOpen ? (
-              <X className="w-5 h-5" />
-            ) : (
-              <Menu className="w-5 h-5" />
-            )}
-          </button>
+            <Image src="/shopify.svg" alt="" width={13} height={13} className="opacity-90" aria-hidden />
+            Install on Shopify
+          </a>
         </div>
+
+        {/* Mobile toggle */}
+        <button
+          className="md:hidden p-2 text-muted-foreground hover:text-foreground rounded-lg transition-colors"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+        >
+          {isMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+        </button>
       </div>
 
-      {/* Mobile Menu Overlay */}
+      {/* Mobile menu */}
       {isMenuOpen && (
-        <div className="md:hidden fixed inset-0 top-[57px] bg-background/95 backdrop-blur-md z-40">
-          <div className="bg-muted backdrop-blur-md flex flex-col items-start px-6 py-6 gap-4">
-            <Link
-              href="#features"
-              onClick={closeMenu}
-              className="text-base text-muted-foreground hover:text-foreground transition-colors"
+        <div className="md:hidden bg-background border-t border-border">
+          <div className="max-w-5xl mx-auto px-6 py-5 flex flex-col gap-1">
+            {navLinks.map((link) => (
+              <Link
+                key={link.label}
+                href={link.href}
+                onClick={() => setIsMenuOpen(false)}
+                className="px-3 py-2.5 text-sm text-muted-foreground hover:text-foreground hover:bg-muted rounded-lg transition-colors"
+              >
+                {link.label}
+              </Link>
+            ))}
+            <a
+              href={SHOPIFY_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setIsMenuOpen(false)}
+              className="mt-3 inline-flex items-center w-fit bg-primary text-primary-foreground text-sm font-semibold px-5 py-2.5 rounded-lg hover:opacity-80 transition-opacity"
             >
-              Features
-            </Link>
-            <Link
-              href="/pricing"
-              onClick={closeMenu}
-              className="text-base text-muted-foreground hover:text-foreground transition-colors"
-            >
-              Pricing
-            </Link>
-            <Link
-              href="#faq"
-              onClick={closeMenu}
-              className="text-base text-muted-foreground hover:text-foreground transition-colors"
-            >
-              FAQ
-            </Link>
-            <Link
-              href="/blog"
-              onClick={closeMenu}
-              className="text-base text-muted-foreground hover:text-foreground transition-colors"
-            >
-              Blog
-            </Link>
-            <Button asChild size="sm" className="mt-2">
-              <a href="https://apps.shopify.com/synq-tcg-card-manager" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>
-                Install on Shopify
-              </a>
-            </Button>
+              <Image src="/shopify.svg" alt="" width={13} height={13} className="opacity-90" aria-hidden />
+            Install on Shopify
+            </a>
           </div>
         </div>
       )}

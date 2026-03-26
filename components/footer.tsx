@@ -1,87 +1,36 @@
+import Link from "next/link";
+import { Logo } from "./logo";
+
+const links = [
+  { label: "Features", href: "/#features" },
+  { label: "Pricing",  href: "/pricing" },
+  { label: "FAQ",      href: "/#faq" },
+  { label: "Blog",     href: "/blog" },
+  { label: "Privacy",  href: "/privacy" },
+  { label: "Terms",    href: "/terms" },
+];
+
 export function Footer() {
   return (
-    <footer className="py-8">
-      <div className="max-w-5xl mx-auto px-6 border-t border-border pt-8">
-        {/* Desktop Layout */}
-        <div className="hidden md:flex items-center justify-between">
-          <span className="text-sm text-muted-foreground">© 2025 Synq</span>
-          <div className="flex items-center gap-6">
-            <a
-              href="#features"
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-            >
-              Features
-            </a>
-            <a
-              href="/pricing"
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-            >
-              Pricing
-            </a>
-            <a
-              href="#faq"
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-            >
-              FAQ
-            </a>
-            <a
-              href="/blog"
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-            >
-              Blog
-            </a>
-            <a
-              href="/privacy"
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-            >
-              Privacy
-            </a>
-            <a
-              href="/terms"
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-            >
-              Terms
-            </a>
-          </div>
+    <footer className="border-t border-border bg-muted">
+      <div className="max-w-5xl mx-auto px-6 py-10">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 mb-8">
+          <Logo size="sm" />
+          <nav className="flex flex-wrap gap-x-5 gap-y-2" aria-label="Footer">
+            {links.map((link) => (
+              <Link
+                key={link.label}
+                href={link.href}
+                className="text-sm text-subtle hover:text-foreground transition-colors"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </nav>
         </div>
-
-        {/* Mobile Layout */}
-        <div className="md:hidden space-y-4">
-          <div className="flex flex-wrap justify-center gap-4">
-            <a
-              href="#features"
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-            >
-              Features
-            </a>
-            <a
-              href="/pricing"
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-            >
-              Pricing
-            </a>
-            <a
-              href="/blog"
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-            >
-              Blog
-            </a>
-            <a
-              href="/privacy"
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-            >
-              Privacy
-            </a>
-            <a
-              href="/terms"
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-            >
-              Terms
-            </a>
-          </div>
-          <p className="text-sm text-muted-foreground text-center">
-            © 2025 Synq
-          </p>
+        <div className="border-t border-border pt-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
+          <p className="text-xs text-subtle">© 2025 Synq. All rights reserved.</p>
+          <p className="text-xs text-subtle">Automated card pricing for Shopify stores.</p>
         </div>
       </div>
     </footer>

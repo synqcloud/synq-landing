@@ -3,91 +3,70 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
+const steps = [
+  { num: "1", label: "Search", desc: "Find any card by name or set" },
+  { num: "2", label: "Configure", desc: "Choose conditions and pricing rules" },
+  { num: "3", label: "Publish", desc: "Live on Shopify in seconds" },
+];
+
 export function AddCardsSection() {
   return (
-    <section id="add-cards" className="py-24">
-      <div className="max-w-5xl mx-auto px-6 border-t border-border pt-24">
+    <section id="add-cards" className="py-10">
+      <div className="max-w-5xl mx-auto px-6 border-t border-border pt-16">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.6 }}
-          className="mb-12"
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.5 }}
+          className="mb-10"
         >
-          <span className="inline-block text-sm font-medium text-primary mb-4">
+          <span className="inline-block text-xs font-semibold text-subtle uppercase tracking-widest mb-3">
             Card Search & Product Creation
           </span>
-          <h2 className="text-2xl sm:text-3xl font-medium text-foreground mb-4 max-w-2xl">
-            Add cards to your Shopify store in seconds.
+          <h2 className="text-2xl sm:text-3xl font-bold text-foreground tracking-[-0.02em] mb-3 max-w-xl">
+            Add cards to your store in seconds.
           </h2>
-          <p className="text-base text-muted-foreground max-w-2xl leading-relaxed">
-            Search our database, pick a card and its condition, and Synq creates
-            a complete Shopify product with the right image, title, and
-            description. That's it.
+          <p className="text-base text-muted-foreground max-w-lg leading-relaxed">
+            Search our database, pick a card and its condition, and Synq creates a complete Shopify product — image, title, description, and market price included.
           </p>
         </motion.div>
 
-        {/* Card Search Screenshot */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.6, delay: 0.1 }}
-          className="rounded-xl border border-border overflow-hidden shadow-lg"
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.5, delay: 0.08 }}
+          className="screenshot-frame"
         >
           <Image
             src="/brand/add-magic-cards-to-shopify.png"
-            alt="Synq card search interface showing how to add Magic: The Gathering cards to Shopify"
-            width={1200}
-            height={700}
+            alt="Synq card search — add Magic: The Gathering cards to Shopify instantly"
+            width={1200} height={700}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1000px"
             className="w-full h-auto"
-            quality={85}
+            quality={90}
             priority
           />
         </motion.div>
 
-        {/* How it works - condensed */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 12 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="mt-8 grid sm:grid-cols-3 gap-4"
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.5, delay: 0.16 }}
+          className="mt-5 grid sm:grid-cols-3 gap-3"
         >
-          <div className="flex items-start gap-3 p-4 bg-background rounded-lg border border-border">
-            <div className="flex-shrink-0 w-7 h-7 rounded-full bg-primary/10 flex items-center justify-center">
-              <span className="text-xs font-semibold text-primary">1</span>
+          {steps.map((step) => (
+            <div key={step.num} className="flex items-start gap-3.5 p-4 bg-card rounded-xl border border-border">
+              <span className="flex-shrink-0 w-6 h-6 rounded-full bg-primary text-primary-foreground text-xs font-bold flex items-center justify-center">
+                {step.num}
+              </span>
+              <div>
+                <p className="text-sm font-semibold text-foreground">{step.label}</p>
+                <p className="text-xs text-subtle mt-0.5">{step.desc}</p>
+              </div>
             </div>
-            <div>
-              <p className="text-sm font-medium text-foreground">Search</p>
-              <p className="text-xs text-muted-foreground">
-                Find any card by name or set
-              </p>
-            </div>
-          </div>
-          <div className="flex items-start gap-3 p-4 bg-background rounded-lg border border-border">
-            <div className="flex-shrink-0 w-7 h-7 rounded-full bg-primary/10 flex items-center justify-center">
-              <span className="text-xs font-semibold text-primary">2</span>
-            </div>
-            <div>
-              <p className="text-sm font-medium text-foreground">Configure</p>
-              <p className="text-xs text-muted-foreground">
-                Pick finish, condition, price
-              </p>
-            </div>
-          </div>
-          <div className="flex items-start gap-3 p-4 bg-background rounded-lg border border-border">
-            <div className="flex-shrink-0 w-7 h-7 rounded-full bg-primary/10 flex items-center justify-center">
-              <span className="text-xs font-semibold text-primary">3</span>
-            </div>
-            <div>
-              <p className="text-sm font-medium text-foreground">Publish</p>
-              <p className="text-xs text-muted-foreground">
-                Product ready in Shopify
-              </p>
-            </div>
-          </div>
+          ))}
         </motion.div>
       </div>
     </section>

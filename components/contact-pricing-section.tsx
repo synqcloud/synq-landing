@@ -58,7 +58,7 @@ export function ContactPricingSection() {
               Start your free trial
             </h3>
             <p className="text-sm text-muted-foreground mb-6">
-              Synq is live on the Shopify App Store. Install directly and get 7 days free — no credit card required.
+              Synq is live on the Shopify App Store. Install directly and get 7 days free.
             </p>
             <Button asChild size="lg" className="w-fit">
               <a href="https://apps.shopify.com/synq-tcg-card-manager" target="_blank" rel="noopener noreferrer">
@@ -103,7 +103,7 @@ export function ContactPricingSection() {
                 </a>
               </Button>
               <p className="text-xs text-muted-foreground mt-3 text-center">
-                7-day free trial · No credit card required
+                7-day free trial
               </p>
             </div>
           </motion.div>

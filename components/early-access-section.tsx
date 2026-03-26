@@ -79,7 +79,7 @@ export function EarlyAccessSection() {
             </a>
           </Button>
           <p className="text-xs text-muted-foreground mt-3">
-            7-day free trial · No credit card required
+            7-day free trial
           </p>
         </motion.div>
       </div>

@@ -7,66 +7,55 @@ import { ContactModal } from "./contact-modal";
 
 const faqs = [
   {
-    question: "What trading card games are supported?",
-    answer:
-      "Currently, Synq fully supports Magic: The Gathering, Disney Lorcana, and Riftbound with price data from TCGPlayer (US). EU / Cardmarket support is on the roadmap. Pokemon, Yu-Gi-Oh, and other games are coming soon.",
+    question: "Which trading card games are supported?",
+    answer: "Magic: The Gathering, Disney Lorcana, and Riftbound are fully supported with live TCGPlayer pricing. Pokémon TCG is available in beta. Yu-Gi-Oh, Flesh and Blood, One Piece, Star Wars: Unlimited, and Digimon are coming soon — we prioritise by demand, so let us know what you need.",
   },
   {
-    question: "How does price syncing work?",
-    answer:
-      "Synq pulls the latest market prices every 24 hours from TCGPlayer. When prices change, you'll see which products need updates on your dashboard and can apply new prices with one click.",
+    question: "How does automatic price syncing work?",
+    answer: "Synq pulls the latest market prices from TCGPlayer every 24 hours. Your dashboard shows which listings have drifted from market — you can apply all updates with one click, or set them to update automatically.",
   },
   {
-    question: "Can I set my own prices instead of using market prices?",
-    answer:
-      "Yes. You can set custom prices for any card at any time. You can also configure a markup percentage (e.g., market price + 10%) or set minimum and maximum price limits to protect your margins.",
+    question: "Can I use my own prices instead of market prices?",
+    answer: "Yes — you're always in control. Set custom prices for any card, add a markup percentage (e.g. market + 15%), or define min/max price floors and ceilings to protect your margins.",
   },
   {
-    question: "How do condition-based prices work?",
-    answer:
-      "When you add a card, Synq creates a Shopify variant for each condition you select (NM, LP, MP, HP, DMG). Each condition has a price adjustment based on market standards (e.g., LP is typically 10% below NM). You can customize these percentages in settings.",
+    question: "How does condition-based pricing work?",
+    answer: "When you add a card, Synq creates a Shopify variant for each condition you stock (NM, LP, MP, HP, DMG), with price adjustments already applied based on market standards. All percentages are fully configurable.",
   },
   {
-    question: "What happens to my existing Shopify products?",
-    answer:
-      "Synq only manages products you create through the app. Your existing products are not affected. If you want Synq to manage an existing product, you would need to recreate it through the app.",
+    question: "Will it affect my existing Shopify products?",
+    answer: "Not at all. Synq only manages products you create through the app. Your current listings are completely untouched.",
   },
   {
-    question: "Can I use Synq with multiple Shopify stores?",
-    answer:
-      "Each Shopify store needs its own Synq installation. You can install Synq on multiple stores, and each store can have its own settings (different regions, templates, pricing strategies).",
+    question: "How many cards can I manage?",
+    answer: "Starter handles up to 2,000 cards, Pro up to 15,000, and Scale up to 50,000. All plans start with a 7-day free trial so you can see the value before you commit.",
   },
   {
-    question: "Is there a limit to how many cards I can add?",
-    answer:
-      "It depends on your plan. Starter supports up to 2,000 cards, Pro up to 15,000, and Scale up to 50,000. All plans include a 7-day free trial so you can try before you commit.",
+    question: "Can I use it across multiple stores?",
+    answer: "Yes — each Shopify store gets its own Synq installation with independent settings. Great if you run separate stores for different games or regions.",
   },
   {
-    question: "How do I cancel my subscription?",
-    answer:
-      "You can cancel anytime from your Shopify admin under Apps > Synq. Your products remain in Shopify, but price syncing will stop. There are no cancellation fees.",
+    question: "What if I want to cancel?",
+    answer: "Cancel any time from Shopify admin → Apps → Synq. Your products stay in Shopify; automatic syncing just stops. No cancellation fees, no awkward conversations.",
   },
 ];
 
 function FAQItem({ question, answer }: { question: string; answer: string }) {
-  const [isOpen, setIsOpen] = useState(false);
-
+  const [open, setOpen] = useState(false);
   return (
     <div className="border-b border-border">
       <button
-        onClick={() => setIsOpen(!isOpen)}
-        className="w-full py-5 flex items-start justify-between text-left"
+        onClick={() => setOpen(!open)}
+        className="w-full py-4 flex items-start justify-between text-left gap-6 group"
       >
-        <span className="font-medium text-foreground pr-4">{question}</span>
-        <ChevronDown
-          className={`w-5 h-5 text-muted-foreground flex-shrink-0 transition-transform ${
-            isOpen ? "rotate-180" : ""
-          }`}
-        />
+        <span className="text-sm font-medium text-foreground leading-snug group-hover:text-primary transition-colors">
+          {question}
+        </span>
+        <ChevronDown className={`w-4 h-4 text-subtle flex-shrink-0 mt-0.5 transition-transform duration-200 ${open ? "rotate-180" : ""}`} />
       </button>
-      {isOpen && (
-        <div className="pb-5">
-          <p className="text-muted-foreground text-sm leading-relaxed">{answer}</p>
+      {open && (
+        <div className="pb-4">
+          <p className="text-sm text-muted-foreground leading-relaxed">{answer}</p>
         </div>
       )}
     </div>
@@ -75,57 +64,49 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
 
 export function FAQSection() {
   const [contactOpen, setContactOpen] = useState(false);
-
   return (
-    <section id="faq" className="py-24">
-      <div className="max-w-5xl mx-auto px-6 border-t border-border pt-24">
+    <section id="faq" className="py-20">
+      <div className="max-w-5xl mx-auto px-6 border-t border-border pt-20">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.6 }}
-          className="mb-12"
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.5 }}
+          className="mb-10"
         >
-          <h2 className="text-2xl sm:text-3xl font-medium text-foreground mb-4">
-            Frequently asked questions
-          </h2>
-          <p className="text-base text-muted-foreground max-w-2xl">
-            Everything you need to know about using Synq for your Shopify card store.
-          </p>
+          <span className="inline-block text-xs font-semibold text-subtle uppercase tracking-widest mb-3">FAQ</span>
+          <h2 className="text-2xl sm:text-3xl font-bold text-foreground tracking-[-0.02em]">Questions? We've got answers.</h2>
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.6, delay: 0.1 }}
-          className="max-w-3xl"
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.5, delay: 0.08 }}
+          className="max-w-2xl border-t border-border"
         >
-          {faqs.map((faq, index) => (
-            <FAQItem key={index} question={faq.question} answer={faq.answer} />
-          ))}
+          {faqs.map((faq, i) => <FAQItem key={i} question={faq.question} answer={faq.answer} />)}
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="mt-12 p-6 bg-muted/30 rounded-lg border border-border max-w-3xl"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.15 }}
+          className="mt-8 p-5 bg-card rounded-xl border border-border max-w-2xl"
         >
-          <p className="text-foreground mb-2">Still have questions?</p>
+          <p className="text-sm font-medium text-foreground mb-1">Still have questions?</p>
           <p className="text-sm text-muted-foreground">
             <button
               onClick={() => setContactOpen(true)}
-              className="text-primary hover:underline"
+              className="text-foreground underline underline-offset-2 hover:opacity-60 transition-opacity font-medium"
             >
               Get in touch
-            </button>{" "}
-            and we'll help you figure out if Synq is right for your store.
+            </button>
+            {" "}— we're happy to help you figure out if Synq is the right fit.
           </p>
         </motion.div>
       </div>
-
       <ContactModal open={contactOpen} onOpenChange={setContactOpen} />
     </section>
   );

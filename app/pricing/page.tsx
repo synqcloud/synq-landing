@@ -6,7 +6,7 @@ import { PricingSection } from "@/components/pricing-section";
 export const metadata: Metadata = {
   title: "Pricing - Synq | Card Shop Pricing Plans",
   description:
-    "Simple, transparent pricing for Synq. Start with a 7-day free trial on any plan. No credit card required.",
+    "Simple, transparent pricing for Synq. Start with a 7-day free trial on any plan.",
   alternates: {
     canonical: "https://synq.cards/pricing",
   },

@@ -1,104 +1,90 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Check } from "lucide-react";
-import { Button } from "@synq/ui/component";
+
+const steps = [
+  {
+    number: "1",
+    when: "Today",
+    title: "Install and configure",
+    desc: "Connect Synq to your Shopify store in minutes. No dev work required.",
+  },
+  {
+    number: "2",
+    when: "Day 1",
+    title: "Add your first cards",
+    desc: "Search any card, pick your conditions, and Synq builds a complete Shopify product instantly.",
+  },
+  {
+    number: "3",
+    when: "Week 1+",
+    title: "Automated pricing running",
+    desc: "Synq checks TCGPlayer every 24 hours. Update stale listings with one click, or let it run on its own.",
+  },
+];
 
 export function TimelineSection() {
-  const milestones = [
-    {
-      day: "Today",
-      title: "Install and configure",
-      items: [
-        "Install Synq on your Shopify store",
-        "Configure your product template and conditions",
-        "Select a product template preset",
-        "Configure condition pricing adjustments",
-      ],
-    },
-    {
-      day: "Day 1",
-      title: "Add your first cards",
-      items: [
-        "Search and add cards to your store",
-        "Products created with images and prices",
-        "Variants for each condition you sell",
-        "Publish products when ready",
-      ],
-    },
-    {
-      day: "Week 1",
-      title: "Automated pricing running",
-      items: [
-        "Prices sync automatically every 24 hours",
-        "Dashboard shows cards needing updates",
-        "Update all prices with one click",
-        "Prices update automatically from here",
-      ],
-    },
-  ];
-
   return (
-    <section id="timeline" className="py-24 bg-muted/30">
-      <div className="max-w-5xl mx-auto px-6 border-t border-border pt-24">
+    <section id="timeline" className="py-20">
+      <div className="max-w-5xl mx-auto px-6 border-t border-border pt-20">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.6 }}
-          className="mb-12"
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.5 }}
+          className="mb-14"
         >
-          <h2 className="text-2xl sm:text-3xl font-medium text-foreground mb-4">
-            Up and running in a week
+          <span className="inline-block text-xs font-semibold text-subtle uppercase tracking-widest mb-3">
+            How It Works
+          </span>
+          <h2 className="text-2xl sm:text-3xl font-bold text-foreground tracking-[-0.02em] max-w-lg">
+            Up and running in a day.
+            Automated from week one.
           </h2>
-          <p className="text-base text-muted-foreground max-w-2xl">
-            Here's what a typical first week looks like.
-          </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
-          {milestones.map((milestone, index) => (
-            <motion.div
-              key={milestone.day}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="relative"
-            >
-              <div className="mb-4">
-                <span className="inline-block px-3 py-1 bg-primary/10 text-primary text-sm font-medium rounded-full">
-                  {milestone.day}
-                </span>
-              </div>
-              <h3 className="text-lg font-medium text-foreground mb-4">
-                {milestone.title}
-              </h3>
-              <ul className="space-y-2">
-                {milestone.items.map((item, idx) => (
-                  <li key={idx} className="flex items-start gap-2">
-                    <Check className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-sm text-muted-foreground">
-                      {item}
-                    </span>
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
-          ))}
+        {/* Steps */}
+        <div className="relative">
+          {/* Connecting line — desktop only */}
+          <div
+            className="hidden md:block absolute top-[18px] left-[calc(16.666%+18px)] right-[calc(16.666%+18px)] h-px bg-border"
+            aria-hidden="true"
+          />
+
+          <div className="grid md:grid-cols-3 gap-10 md:gap-8">
+            {steps.map((step, i) => (
+              <motion.div
+                key={step.number}
+                initial={{ opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-80px" }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+                className="flex md:flex-col gap-5 md:gap-0"
+              >
+                {/* Circle */}
+                <div className="flex-shrink-0 flex md:mb-6 items-start">
+                  <span className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-primary text-primary-foreground text-sm font-bold relative z-10">
+                    {step.number}
+                  </span>
+                </div>
+
+                {/* Content */}
+                <div>
+                  <p className="text-xs font-semibold text-subtle uppercase tracking-wider mb-1">
+                    {step.when}
+                  </p>
+                  <h3 className="text-lg font-bold text-foreground mb-2">
+                    {step.title}
+                  </h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    {step.desc}
+                  </p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
         </div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className="text-center"
-        >
-          <Button asChild>
-            <a href="https://apps.shopify.com/synq-tcg-card-manager" target="_blank" rel="noopener noreferrer">Install on Shopify</a>
-          </Button>
-        </motion.div>
       </div>
     </section>
   );
