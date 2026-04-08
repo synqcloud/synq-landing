@@ -1,5 +1,6 @@
 import { MetadataRoute } from "next";
 import { getAllPosts } from "@/lib/blog";
+import { getAllDocs } from "@/lib/docs";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://synq.cards";
@@ -44,9 +45,27 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const blogPages: MetadataRoute.Sitemap = posts.map((post) => ({
     url: `${baseUrl}/blog/${post.slug}`,
     lastModified: new Date(post.frontmatter.date),
-    changeFrequency: "monthly",
+    changeFrequency: "monthly" as const,
     priority: 0.8,
   }));
 
-  return [...staticPages, ...blogPages];
+  // Help center
+  const helpHub: MetadataRoute.Sitemap = [
+    {
+      url: `${baseUrl}/help`,
+      lastModified: currentDate,
+      changeFrequency: "weekly" as const,
+      priority: 0.8,
+    },
+  ];
+
+  const docs = getAllDocs();
+  const helpPages: MetadataRoute.Sitemap = docs.map((doc) => ({
+    url: `${baseUrl}/help/${doc.slug}`,
+    lastModified: currentDate,
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
+  return [...staticPages, ...blogPages, ...helpHub, ...helpPages];
 }

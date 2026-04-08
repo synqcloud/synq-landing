@@ -27,7 +27,7 @@ export async function POST(request: NextRequest) {
       to: "iamtelmo@proton.me",
       subject: isWaitlist
         ? `New Waitlist Signup: ${email}`
-        : `New Contact Form Submission: ${firstName} from ${storeType}`,
+        : `Support Ticket: ${firstName} <${email}>`,
       html: isWaitlist
         ? `
         <h2>New Waitlist Signup</h2>
@@ -37,13 +37,11 @@ export async function POST(request: NextRequest) {
         <p><strong>Inventory:</strong> ${inventory}</p>
       `
         : `
-        <h2>New Contact Form Submission</h2>
+        <h2>New Support Ticket</h2>
         <p><strong>Name:</strong> ${firstName}</p>
         <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Store Type:</strong> ${storeType}</p>
-        ${role ? `<p><strong>Role:</strong> ${role}</p>` : ""}
-        ${frustration ? `<p><strong>Biggest Frustration:</strong> ${frustration}</p>` : ""}
-        <p><strong>Wants Updates:</strong> ${wantsUpdates ? "Yes" : "No"}</p>
+        <p><strong>Category:</strong> ${storeType}</p>
+        ${frustration ? `<p><strong>Description:</strong> ${frustration}</p>` : ""}
       `,
     });
 
@@ -55,7 +53,7 @@ export async function POST(request: NextRequest) {
       to: email,
       subject: isWaitlist
         ? "You're on the Synq waitlist!"
-        : "Thanks for reaching out! 👋",
+        : "We received your support ticket",
       html: isWaitlist
         ? `
         <h2>You're on the list!</h2>
@@ -66,10 +64,10 @@ export async function POST(request: NextRequest) {
       `
         : `
         <h2>Hi ${firstName},</h2>
-        <p>Thanks for reaching out! I'm excited to learn more about your needs.</p>
-        <p>I'll be in touch soon to keep the conversation going and see how Synq can help your business.</p>
-        <p>If you have any questions or want to share more thoughts, feel free to reach out directly at <a href="mailto:iamtelmo@proton.me">iamtelmo@proton.me</a>.</p>
-        <p>Telmo, founder @ Synq</p>
+        <p>We got your message and we're on it. You'll hear back from us within one business day.</p>
+        <p>In the meantime, you can browse our <a href="https://trysynq.com/help">help center</a> — it might have a quick answer while you wait.</p>
+        <p>If anything else comes up, just reply to this email.</p>
+        <p>— The Synq team</p>
       `,
     });
 

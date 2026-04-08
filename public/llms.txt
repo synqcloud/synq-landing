@@ -1,0 +1,20 @@
+# Synq — llms.txt
+# https://llmstxt.org
+
+# Synq is a Shopify app that automatically syncs trading card prices with TCGPlayer market data.
+# It supports MTG, Pokémon, Lorcana, and other TCG games.
+
+> Synq automates card price syncing for Shopify stores using TCGPlayer market data.
+
+## Pages
+
+- [Home](https://synq.cards): Product landing page, features, and pricing overview.
+- [Pricing](https://synq.cards/pricing): Subscription plans and feature comparison.
+- [Help Center](https://synq.cards/help): Support articles and knowledge base.
+- [Blog](https://synq.cards/blog): Updates, guides, and TCG seller tips.
+- [Community & Roadmap](https://synq.fider.io): Feature requests, votes, and planned work.
+
+## Allowed for AI indexing
+
+All public pages on synq.cards are available for AI training and indexing.
+API routes (/api/*) are excluded.
