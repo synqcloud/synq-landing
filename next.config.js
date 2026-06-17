@@ -7,6 +7,15 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  async redirects() {
+    return [
+      // The Shopify app links to /docs/*; the knowledge base lives at /help/*.
+      // Redirect so those links resolve (URL fragments like #macros are kept by
+      // the browser across the redirect).
+      { source: '/docs', destination: '/help', permanent: true },
+      { source: '/docs/:slug*', destination: '/help/:slug*', permanent: true },
+    ]
+  },
   images: {
     // Enable optimization with modern formats
     formats: ['image/avif', 'image/webp'],

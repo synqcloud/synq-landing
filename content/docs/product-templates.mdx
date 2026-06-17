@@ -1,0 +1,139 @@
+---
+title: "Product templates"
+seoTitle: "Product templates in Synq: titles, macros, SKUs and more"
+description: "Control how Synq builds each Shopify product it creates: title, description, category, product type, SKU, barcode and theme template."
+category: "Inventory Management"
+order: 10
+keywords:
+  - synq product templates
+  - shopify product title template
+  - tcg product description template
+  - synq sku pattern
+  - shopify card product template
+  - synq barcode upc gtin
+---
+
+Product templates decide how Synq fills in every Shopify product it creates. You set the format once, and every card or sealed product you add follows it. A template controls the title and description, plus optional fields like category, product type, SKU, barcode and theme template.
+
+## On this page
+
+- [Getting started](#getting-started)
+- [How templates are chosen](#how-templates-are-chosen)
+- [Title and description](#title-and-description)
+- [Macros](#macros)
+- [Product category](#product-category)
+- [Product type](#product-type)
+- [SKU](#sku)
+- [Barcode](#barcode)
+- [Theme template](#theme-template)
+- [Saving and applying](#saving-and-applying)
+
+## Getting started
+
+You will find templates in Synq under **Settings**, then **Products**. Every store starts with one **Default template** that applies to all new products. You can edit it, and you can add more templates scoped to specific products.
+
+To create or edit a template:
+
+1. In Synq, open **Settings**, then **Products**.
+2. Under **Product templates**, click **New template**, or click an existing template to edit it.
+3. Give the template a name so you can recognize it later, like "Pokémon singles".
+4. Fill in the title and description, then turn on any optional fields you want.
+5. Click **Save**.
+
+> Only the title and description are always applied. Category, product type, SKU, barcode and theme template are optional and off by default. When an optional field is off, Synq leaves it blank on the Shopify product instead of guessing a value.
+
+## How templates are chosen
+
+Each template can be limited to certain product kinds and certain games:
+
+- **Kinds**: singles, sealed, decks and accessories.
+- **Games**: the catalogs you sell, like Magic: The Gathering or Pokémon.
+
+When you add a product, Synq picks the template that matches it most closely. A template that matches on both kind and game beats one that matches on only one of them, which in turn beats the Default template. If a template lists a kind or game that does not match the product, it is skipped. When two templates match equally well, the one edited most recently wins.
+
+If nothing else matches, the Default template is used. Leaving a template with no kinds and no games makes it apply to everything, which is what the Default template does.
+
+## Title and description
+
+The title and description are the only required fields, and they are the same fields Shopify shows on every product. You write them using plain text plus **macros**, which are placeholders that Synq replaces with the real card details when it creates the product.
+
+For example, this title:
+
+```
+{name} - {set_name} - {collector_number}
+```
+
+becomes:
+
+```
+Gateway Plaza - Guilds of Ravnica - 247
+```
+
+The editor shows a live **Preview** with sample card data so you can see the result as you type. The description supports bold, italic, links and bullet lists, so you can build a clean product layout.
+
+## Macros
+
+Macros work in both the title and the description. Click a macro chip in the editor to copy it, then paste it where you want it. If a card does not have a value for a macro, Synq removes it cleanly so you never get blank gaps.
+
+| Macro | What it inserts |
+| --- | --- |
+| `{name}` | Card or product name |
+| `{set_name}` | Set name |
+| `{set_code}` | Set code |
+| `{collector_number}` | Collector number |
+| `{rarity}` | Rarity |
+| `{printing}` | Printing, for example 1st Edition or Foil |
+| `{product_type}` | Single, Sealed, Deck or Accessory |
+| `{game_name}` | Game, for example Pokémon TCG |
+| `{vendor}` | Maker, for example The Pokémon Company |
+
+The description has one extra macro:
+
+| Macro | What it inserts |
+| --- | --- |
+| `{description}` | Card text or product description from the catalog |
+
+## Product category
+
+Turn this on to set the Shopify product category, which Shopify uses for filtering and for Google Shopping. Choose a specific category, or leave it on **Auto** to let Synq suggest one based on the product kind. When this field is off, Synq does not set a category.
+
+## Product type
+
+Turn this on to set the Shopify product type, a label used to group products, like "Pokémon TCG". Leave the field blank to use the game's name, or type your own value. When this field is off, Synq does not set a product type.
+
+## SKU
+
+Turn this on to put a SKU on each variant. You have two options:
+
+- **TCGplayer SKU**: uses TCGplayer's SKU for each item, matched by condition and printing. This is the simplest choice and keeps your codes aligned with TCGplayer.
+- **Custom**: build your own code with a pattern, the same way you build a title.
+
+The default custom pattern is:
+
+```
+{set_code}-{collector_number}-{condition}
+```
+
+Keep `{condition}` in your pattern so each condition gets its own unique code. Custom SKU patterns can use these macros:
+
+| Macro | What it inserts |
+| --- | --- |
+| `{condition}` | Variant condition, for example NM or LP |
+| `{set_code}` | Set code |
+| `{collector_number}` | Collector number |
+| `{printing}` | Printing, for example 1st Edition or Foil |
+| `{rarity}` | Rarity |
+
+When this field is off, Synq does not set a SKU.
+
+## Barcode
+
+Turn this on to write the catalog's UPC or GTIN to the product barcode. This only applies to sealed products, since singles do not have a barcode, so the option appears only when the template's scope includes sealed products. When this field is off, Synq does not set a barcode.
+
+## Theme template
+
+Turn this on to use a custom product page layout from your Shopify theme. The dropdown lists the alternate product templates your theme provides. If your theme has none, this field is disabled, and you can create one in your theme to use it here.
+
+## Saving and applying
+
+When you save a template, Synq keeps you on the editor so you can keep tweaking. Templates apply to products you add **after** saving. Products that already exist in your store keep their current details until you recreate them.
