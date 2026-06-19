@@ -1,0 +1,102 @@
+---
+title: "How Synq prices your cards"
+seoTitle: "How Synq prices trading cards on Shopify, from TCGplayer to your store"
+description: "Synq builds every card price from live TCGplayer market data, your pricing strategy, per-condition adjustments, currency, and your price rules. See the full pipeline and how to choose a strategy."
+category: "Pricing"
+order: 1
+datePublished: "2026-06-17"
+dateModified: "2026-06-19"
+keywords:
+  - how synq prices trading cards
+  - automatically price trading cards shopify
+  - tcgplayer pricing shopify
+  - card pricing strategy shopify
+  - condition pricing trading cards
+  - undercut tcgplayer
+faq:
+  - question: "How does Synq decide what to charge for a card?"
+    answer: "Synq starts from the live TCGplayer market price for that exact card, set and printing. It applies your pricing strategy (Market price, Market plus a percent, or Market minus a percent), then a per-condition adjustment so a Lightly Played copy sits below Near Mint, converts to your store currency, and finally applies your price rules (floor, ceiling and rounding) before saving the price to Shopify."
+  - question: "What is the best pricing strategy for a card store?"
+    answer: "Most stores start at Market price, which is competitive and simple, then move to Market plus a percent once they know their margins. Protect cheap cards with a floor and cap volatile cards with a ceiling. Undercutting wins sales but erodes margin, so most stores compete on grading, speed and bundles instead of price."
+  - question: "How does condition change the price?"
+    answer: "After your strategy is applied, Synq adjusts each condition down from Near Mint. The defaults are Near Mint 0 percent, Lightly Played minus 10 percent, Moderately Played minus 25 percent, Heavily Played minus 40 percent and Damaged minus 60 percent. You can tune every one of these."
+  - question: "Can I stop prices from dropping too low?"
+    answer: "Yes. Price rules let you set a floor so no card is priced below an amount you choose, a ceiling to cap prices, and rounding so prices end cleanly. The floor is applied last, so automation can never produce a price below it."
+---
+
+Every card price in your store is built the same way: Synq starts from live TCGplayer market data, applies the strategy you chose, adjusts for the card's condition, converts to your currency, and then enforces your price rules. The result is saved to Shopify. This page owns that pipeline end to end, plus how to pick a strategy that protects your margins.
+
+## Where the price comes from
+
+Every price starts from the **TCGplayer market price** for that exact card, matched by set, printing (for example Normal or Foil) and condition. Synq reads this live, so you are always working from current market data rather than a stale number you typed in months ago. This covers the games you sell, including Magic: The Gathering, Pokemon and Disney Lorcana.
+
+## The pricing pipeline
+
+Synq turns the market price into the price your customer pays in a fixed order. Each step takes the number from the step before it:
+
+1. **Market price.** Start from the live TCGplayer market price for the card and printing.
+2. **Pricing strategy.** Apply your strategy: at market, a percent above, or a percent below.
+3. **Per-condition adjustment.** Discount the price for the card's condition, so a Lightly Played copy is priced below Near Mint.
+4. **Currency conversion.** Convert into your store's currency if it is not USD.
+5. **Price rules.** Apply your floor, ceiling and rounding so the final number is one you would have set yourself.
+
+By default there is no floor, ceiling or rounding, so the price is simply your strategy plus the condition adjustment, in your store currency. The order matters: rules are applied last, so a floor always wins, even over a deep condition discount.
+
+## Choosing a pricing strategy
+
+Your strategy decides where your prices sit compared to the TCGplayer market. You set one default for the whole store under **Settings, then Pricing**, and can override it per card.
+
+- **Market price.** Price at the TCGplayer market price. Competitive and the simplest place to start.
+- **Market + %.** Price a set percentage above market to add margin, for example plus 10 percent. Enter a whole number such as `10`.
+- **Market − %.** Price a set percentage below market to undercut, for example minus 5 percent.
+
+**Which one to use:**
+
+- **New or unsure:** start at **Market price**, then adjust once you see how it sells.
+- **Want margin:** **Market + %** works well on singles when you back it with fast shipping and accurate grading. Buyers will pay a little more for a copy they trust will arrive as described.
+- **Moving bulk:** pair any strategy with a [price floor](/help/price-rules) so cheap commons never sell below your handling cost.
+
+**Avoid the race to the bottom.** Undercutting with **Market − %** wins sales but erodes margin for everyone, and chasing the lowest price is a fight you cannot win for long. A common alternative is to price at or near market and compete on what the card alone cannot offer: accurate grading, quick dispatch, bundles and trust. Use a ceiling so you do not chase short-lived spikes, and a floor so you never sell below your costs.
+
+You do not need to wait after changing your strategy. Once you save it, [re-price your whole store in one click](/help/keep-prices-current).
+
+## How condition changes the price
+
+After your strategy is applied, Synq adjusts the price down for the card's condition, measured against Near Mint. The defaults are:
+
+| Condition | Adjustment |
+| --- | --- |
+| Near Mint | 0% |
+| Lightly Played | −10% |
+| Moderately Played | −25% |
+| Heavily Played | −40% |
+| Damaged | −60% |
+
+Every one of these is tunable. If your local market values played copies higher or lower, change the percentages under **Settings, then Pricing**, and they apply across your store.
+
+## Currency conversion
+
+TCGplayer prices are in USD. If your store sells in another currency, Synq converts the price after the condition adjustment, so the floor, ceiling and rounding you set always operate in your own currency. For how rates are sourced and applied, see [currencies and conversion](/help/currencies-and-conversion).
+
+## Price rules: floor, ceiling and rounding
+
+Price rules are the last step and exist to protect your margins, so automation never produces a price you would not have set yourself:
+
+- **Floor.** No card is priced below this amount. Applied last, so it overrides even a deep condition discount.
+- **Ceiling.** Caps the price, so you do not chase a short-lived spike.
+- **Rounding.** Ends prices cleanly, for example at `.99`.
+
+Set these under **Settings, then Pricing**. For the full behaviour, including how rules interact and per-game limits, see [price rules](/help/price-rules).
+
+## Overriding the price for one card
+
+The strategy and rules above are your store defaults, but you are not locked into them. When you [add a card](/help/adding-products-to-your-store), you can override the strategy for that single listing or set a specific fixed price. Everything else keeps following your defaults.
+
+## Keeping prices current
+
+Market prices move, so a price set today drifts over time. You have two ways to stay current:
+
+- **Automatic repricing** runs once a day at an hour you choose, in your store's timezone, on the **Pro and Scale** plans. See [plans and what is included](/help/plans-and-what-is-included).
+- **One click, any plan:** re-price your whole store yourself, which updates every card that has drifted from current market data and applies your strategy and rules.
+
+A price changes whenever the new number differs from the one in your store, even by a cent, so there is no minimum change to configure. For how to set up daily repricing and review changes before they go live, see [keeping prices current](/help/keep-prices-current).

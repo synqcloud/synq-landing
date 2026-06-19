@@ -1,0 +1,42 @@
+---
+title: "Currencies and price conversion"
+seoTitle: "How Synq converts card prices to your Shopify store currency"
+description: "TCGplayer market prices are in USD. Synq converts each calculated price to your Shopify store currency before saving it, so your listings show the right currency."
+category: "Pricing"
+order: 3
+datePublished: "2026-06-17"
+dateModified: "2026-06-17"
+keywords:
+  - shopify card prices currency
+  - tcgplayer usd conversion
+  - synq store currency
+  - card pricing currency conversion
+faq:
+  - question: "Does Synq convert prices to my store currency?"
+    answer: "Yes. TCGplayer market prices are in USD, and Synq converts each price to your Shopify store currency before saving it, so your listings show the right currency."
+  - question: "Where in the calculation does conversion happen?"
+    answer: "Synq starts from the USD market price, applies your strategy and a discount for each condition, converts to your store's currency, then applies any floor, ceiling and rounding rules."
+---
+
+TCGplayer market prices are in USD, but your store may sell in another currency. Synq converts each calculated price to your Shopify store currency before saving it, so your listings always show the right currency.
+
+## When does conversion happen?
+
+Synq works out each price step by step, and currency conversion is one of those steps:
+
+1. Start from the USD market price and apply your [strategy](/help/how-synq-prices-your-cards).
+2. Apply a discount for each condition.
+3. Convert to your store's currency.
+4. Keep it between your floor and ceiling, if set.
+5. Round it up to a clean ending, if set.
+
+Because conversion happens before your [price rules](/help/price-rules), your floor, ceiling and rounding all work in your store's currency, so a floor of 2 means 2 in your currency.
+
+## What currency are my prices in?
+
+Whatever your Shopify store currency is. Synq reads it from your store and converts to it, so you do not enter exchange rates yourself.
+
+## Tips
+
+- Set your floor, ceiling and rounding in your own currency, since that is what the rules use.
+- If you change your store currency in Shopify, run [Sync all prices](/help/keep-prices-current) afterward so prices reflect the new currency.

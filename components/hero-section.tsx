@@ -32,8 +32,8 @@ export function HeroSection() {
             </h1>
 
             <p className="text-base text-muted-foreground leading-relaxed mb-8 max-w-sm">
-              Synq pulls live prices from TCGPlayer every 24 hours and
-              keeps your entire Shopify inventory up to date — automatically.
+              Add singles, sealed and accessories, keep prices updated and
+              manage your catalog without the manual work.
             </p>
 
             <div className="flex flex-wrap items-center gap-3">

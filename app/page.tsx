@@ -17,14 +17,14 @@ import { FeedbackSection } from "@/components/feedback-section";
 export const metadata: Metadata = {
   title: "Synq — Automated Card Pricing for Shopify",
   description:
-    "Keep your Shopify card shop competitive with automated pricing. Synq syncs your card prices with TCGPlayer market data daily — for MTG, Pokemon, Lorcana, and more.",
+    "Keep your Shopify card shop competitive with automated pricing. Synq syncs your card prices with TCGPlayer market data daily for Magic, Pokemon, Lorcana, Yu-Gi-Oh, One Piece and more.",
   alternates: {
     canonical: "https://synq.cards",
   },
   openGraph: {
     title: "Synq — Automated Card Pricing for Shopify",
     description:
-      "Sync your card prices with TCGPlayer market data automatically. Supports MTG, Lorcana, Riftbound, Pokemon TCG — and more games coming soon.",
+      "Sync your card prices with TCGPlayer market data automatically. Supports Magic, Pokemon, Lorcana, Yu-Gi-Oh, One Piece, Flesh and Blood, Riftbound and more.",
     url: "https://synq.cards",
   },
 };

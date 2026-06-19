@@ -1,0 +1,56 @@
+---
+title: "Price rules: floors, ceilings and rounding"
+seoTitle: "Set price floors, ceilings and rounding for Shopify card prices"
+description: "Protect your margins with price rules in Synq. Set a floor so cards never sell too low, a ceiling to cap prices, and rounding so prices end cleanly."
+category: "Pricing"
+order: 2
+datePublished: "2026-06-17"
+dateModified: "2026-06-17"
+keywords:
+  - price floor shopify
+  - minimum price trading cards
+  - price rounding shopify
+  - card pricing rules
+  - protect margin card store
+faq:
+  - question: "How do I stop cards from selling too cheaply?"
+    answer: "Set a price floor in Synq. No card will be priced below the amount you choose, even if its market price drops lower. This protects bulk commons that still cost you time to pick and ship."
+  - question: "What does rounding do?"
+    answer: "Rounding rounds a price up to a clean ending you choose, for example .49, .99 or .00, so your store looks intentional instead of showing values like 3.47. It only ever rounds up."
+  - question: "In what order are price rules applied?"
+    answer: "Synq starts from the market price and your strategy, applies a discount for each condition, converts to your store's currency, then keeps the result between your floor and ceiling, and rounds last."
+---
+
+Price rules keep automated pricing safe. They make sure that no matter how the market moves, Synq never produces a price you would not have set yourself. You set a floor, a ceiling and a rounding option under **Settings, then Pricing**, in the "Price limits & rounding" section.
+
+## How Synq works out a price
+
+Synq works out every price step by step:
+
+1. **Start from the market price** and apply your [pricing strategy](/help/how-synq-prices-your-cards).
+2. **Apply a discount for each condition.**
+3. **Convert to your store's currency.**
+4. **Keep it between your floor and ceiling.**
+5. **Round it up** to a clean ending.
+
+By default there are no limits or rounding, so the price is just your strategy and the condition discount. Price rules are how you add the last two steps.
+
+## Store-wide rules
+
+Today, price rules apply to your whole store:
+
+- **Floor**: the lowest price any card can have. Great for bulk commons with a fixed handling cost.
+- **Ceiling**: the highest price any card can have. Useful if you do not want to chase volatile spikes.
+- **Rounding**: the ending your prices round to. Options are off, .49, .99 or .00, and rounding only ever rounds **up**.
+
+If a rounded price would exceed your ceiling, the ceiling wins, so prices never break your cap.
+
+## Rules for specific games or conditions (not yet)
+
+Store-wide rules treat every card the same. Rules that apply to only some products, for example a higher floor on sealed than on singles, are not available yet. When they arrive, a rule for a specific game or condition will override the store-wide rule for those cards, while everything else keeps the store-wide rule. For now, floor, ceiling and rounding apply to your whole store.
+
+## How do rules combine?
+
+The order is always: start from your strategy, apply the condition discount, convert to your currency, keep it between your floor and ceiling, then round. Rounding only moves a price up and is then capped by the ceiling, so your floor and ceiling are never broken.
+
+Price rules shape the number; your [pricing strategy](/help/how-synq-prices-your-cards) sets the starting point. To apply new rules to existing cards immediately, [re-price your store in one click](/help/keep-prices-current).

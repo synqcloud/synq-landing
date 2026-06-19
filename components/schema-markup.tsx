@@ -1,48 +1,6 @@
-const BASE_URL = "https://synq.cards";
+import { faqs } from "@/lib/faqs";
 
-// FAQ data matching the actual FAQ section
-const FAQ_DATA = [
-  {
-    question: "What trading card games are supported?",
-    answer:
-      "Currently, Synq fully supports Magic: The Gathering, Disney Lorcana, and Riftbound with price data from TCGPlayer (US). EU / Cardmarket support is on the roadmap. Pokemon, Yu-Gi-Oh, and other games are coming soon.",
-  },
-  {
-    question: "How does price syncing work?",
-    answer:
-      "Synq pulls the latest market prices every 24 hours from TCGPlayer. When prices change, you'll see which products need updates on your dashboard and can apply new prices with one click.",
-  },
-  {
-    question: "Can I set my own prices instead of using market prices?",
-    answer:
-      "Yes. You can set custom prices for any card at any time. You can also configure a markup percentage (e.g., market price + 10%) or set minimum and maximum price limits to protect your margins.",
-  },
-  {
-    question: "How do condition-based prices work?",
-    answer:
-      "When you add a card, Synq creates a Shopify variant for each condition you select (NM, LP, MP, HP, DMG). Each condition has a price adjustment based on market standards (e.g., LP is typically 10% below NM). You can customize these percentages in settings.",
-  },
-  {
-    question: "What happens to my existing Shopify products?",
-    answer:
-      "Synq only manages products you create through the app. Your existing products are not affected. If you want Synq to manage an existing product, you would need to recreate it through the app.",
-  },
-  {
-    question: "Can I use Synq with multiple Shopify stores?",
-    answer:
-      "Each Shopify store needs its own Synq installation. You can install Synq on multiple stores, and each store can have its own settings (different regions, templates, pricing strategies).",
-  },
-  {
-    question: "Is there a limit to how many cards I can add?",
-    answer:
-      "It depends on your plan. Starter supports up to 2,000 cards, Pro up to 15,000, and Scale up to 50,000. All plans include a 7-day free trial so you can try before you commit.",
-  },
-  {
-    question: "How do I cancel my subscription?",
-    answer:
-      "You can cancel anytime from your Shopify admin under Apps > Synq. Your products remain in Shopify, but price syncing will stop. There are no cancellation fees.",
-  },
-];
+const BASE_URL = "https://synq.cards";
 
 
 export function SchemaMarkup() {
@@ -91,32 +49,58 @@ export function SchemaMarkup() {
         applicationCategory: "BusinessApplication",
         applicationSubCategory: "Inventory Management",
         operatingSystem: "Web",
-        softwareVersion: "2.0",
         datePublished: "2024-01-01",
         dateModified: currentDate,
         downloadUrl: "https://apps.shopify.com/synq-tcg-card-manager",
         installUrl: "https://apps.shopify.com/synq-tcg-card-manager",
         permissions: "Shopify store access",
         offers: {
-          "@type": "Offer",
-          description: "Available on the Shopify App Store. 7-day free trial.",
-          availability: "https://schema.org/PreOrder",
+          "@type": "AggregateOffer",
+          priceCurrency: "USD",
+          lowPrice: "29",
+          highPrice: "149",
+          offerCount: 3,
+          availability: "https://schema.org/InStock",
           seller: { "@id": `${BASE_URL}/#organization` },
+          offers: [
+            {
+              "@type": "Offer",
+              name: "Starter",
+              price: "29",
+              priceCurrency: "USD",
+              description: "Up to 2,000 products. 7-day free trial.",
+              url: `${BASE_URL}/pricing`,
+              availability: "https://schema.org/InStock",
+            },
+            {
+              "@type": "Offer",
+              name: "Pro",
+              price: "79",
+              priceCurrency: "USD",
+              description: "Up to 15,000 products, automatic daily repricing. 7-day free trial.",
+              url: `${BASE_URL}/pricing`,
+              availability: "https://schema.org/InStock",
+            },
+            {
+              "@type": "Offer",
+              name: "Scale",
+              price: "149",
+              priceCurrency: "USD",
+              description: "Up to 50,000 products, automatic daily repricing, priority support. 7-day free trial.",
+              url: `${BASE_URL}/pricing`,
+              availability: "https://schema.org/InStock",
+            },
+          ],
         },
         featureList: [
           "Automatic daily price sync with market data",
-          "TCGPlayer integration for US pricing",
-          "EU / Cardmarket pricing (coming soon)",
-          "Support for additional price sources",
+          "TCGPlayer market pricing",
           "One-click card addition with images and descriptions",
           "Condition-based pricing (NM, LP, MP, HP, DMG)",
           "Custom markup percentages and price floors",
           "Bulk price update operations",
-          "Real-time price change dashboard",
-          "Magic: The Gathering full support",
-          "Disney Lorcana full support",
-          "Riftbound full support",
-          "Pokemon and Yu-Gi-Oh support coming soon",
+          "Daily price-change dashboard with one-click bulk apply",
+          "Supports Magic: The Gathering, Pokemon, Pokemon TCG Japan, Disney Lorcana, Yu-Gi-Oh!, One Piece, Flesh and Blood, Riftbound, Sorcery: Contested Realm, Digimon, Grand Archive and Gundam Card Game",
           "Shopify product variant management",
         ],
         screenshot: {
@@ -127,13 +111,6 @@ export function SchemaMarkup() {
         },
         author: { "@id": `${BASE_URL}/#organization` },
         publisher: { "@id": `${BASE_URL}/#organization` },
-        aggregateRating: {
-          "@type": "AggregateRating",
-          ratingValue: "5",
-          ratingCount: "1",
-          bestRating: "5",
-          worstRating: "1",
-        },
       },
 
       // WebSite - Required for Google Site Names
@@ -196,7 +173,7 @@ export function SchemaMarkup() {
       {
         "@type": "FAQPage",
         "@id": `${BASE_URL}/#faq`,
-        mainEntity: FAQ_DATA.map((faq) => ({
+        mainEntity: faqs.map((faq) => ({
           "@type": "Question",
           name: faq.question,
           acceptedAnswer: {
@@ -238,8 +215,8 @@ export function SchemaMarkup() {
           {
             "@type": "HowToStep",
             position: 3,
-            name: "Enable Price Sync",
-            text: "Configure your pricing strategy and let Synq update your prices automatically every 24 hours based on TCGPlayer market data.",
+            name: "Keep prices current",
+            text: "Configure your pricing strategy, then update prices in one click on any plan, or turn on automatic daily repricing on the Pro and Scale plans.",
           },
         ],
       },

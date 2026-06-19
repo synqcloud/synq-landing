@@ -3,18 +3,30 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import { ContactModal } from "@/components/contact-modal";
+
+const GAME_LINKS = [
+  { label: "Pokémon", href: "/for/pokemon" },
+  { label: "Magic: The Gathering", href: "/for/magic-the-gathering" },
+  { label: "Yu-Gi-Oh!", href: "/for/yu-gi-oh" },
+  { label: "Disney Lorcana", href: "/for/disney-lorcana" },
+  { label: "One Piece", href: "/for/one-piece" },
+];
 
 const allGames = [
   { name: "Magic: The Gathering", logo: "/games/mtg.png", active: true },
-  { name: "Pokemon TCG",          logo: "/games/pokemon.png", active: true, beta: true },
+  { name: "Pokemon TCG",          logo: "/games/pokemon.png", active: true },
+  { name: "Pokemon TCG Japan",    logo: "/games/pokemon_japan.png", active: true },
   { name: "Disney Lorcana",       logo: "/games/lorcana.png", active: true },
   { name: "Riftbound",            logo: "/games/riftbound.png", active: true },
   { name: "Flesh and Blood",      logo: "/games/fab.png", active: true },
   { name: "One Piece",            logo: "/games/onepiece.png", active: true },
-  { name: "Yu-Gi-Oh!",           logo: "/games/yugioh.png", active: false },
-  { name: "Star Wars: Unlimited", logo: "/games/swu.webp", active: false },
-  { name: "Digimon Card Game",    logo: "/games/digimon.png", active: false },
+  { name: "Yu-Gi-Oh!",           logo: "/games/yugioh.png", active: true },
+  { name: "Digimon Card Game",    logo: "/games/digimon.png", active: true },
+  { name: "Sorcery: Contested Realm", logo: "/games/sorcery.png", active: true },
+  { name: "Gundam Card Game",     logo: "/games/gundam.png", active: true },
+  { name: "Grand Archive",        logo: "/games/grand_archive.png", active: true },
 ];
 
 export function GamesSection() {
@@ -54,19 +66,27 @@ export function GamesSection() {
                 <span className={`text-sm whitespace-nowrap font-medium ${game.active ? "text-foreground" : "text-subtle"}`}>
                   {game.name}
                 </span>
-                {game.active && !game.beta && (
+                {game.active && (
                   <span className="px-1.5 py-0.5 rounded-full bg-primary text-primary-foreground text-[10px] font-semibold">
                     Live
-                  </span>
-                )}
-                {game.beta && (
-                  <span className="px-1.5 py-0.5 rounded-full border border-border text-subtle text-[10px] font-semibold">
-                    Beta
                   </span>
                 )}
               </div>
             ))}
           </motion.div>
+        </div>
+
+        <div className="mt-5 flex flex-wrap items-center gap-x-4 gap-y-1.5">
+          <span className="text-sm text-subtle">Sell on Shopify:</span>
+          {GAME_LINKS.map((g) => (
+            <Link
+              key={g.href}
+              href={g.href}
+              className="text-sm text-foreground underline underline-offset-2 hover:opacity-60 transition-opacity"
+            >
+              {g.label}
+            </Link>
+          ))}
         </div>
 
         <motion.p
@@ -78,7 +98,7 @@ export function GamesSection() {
         >
           Selling a game we don't support yet?{" "}
           <button onClick={() => setContactOpen(true)} className="text-foreground underline underline-offset-2 hover:opacity-60 transition-opacity">
-            Let us know — we prioritize by demand.
+            Let us know, we prioritize by demand.
           </button>
           <ContactModal open={contactOpen} onOpenChange={setContactOpen} />
         </motion.p>

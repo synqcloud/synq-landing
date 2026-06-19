@@ -1,0 +1,79 @@
+---
+title: "Storefront formatting and theme issues"
+seoTitle: "Fix Shopify storefront formatting and theme template problems in Synq"
+description: "Bullets or spacing break on your live store, or the theme template selector is empty or greyed out? Here is the cause and the exact fix for each."
+category: "Troubleshooting"
+order: 2
+datePublished: "2026-06-17"
+dateModified: "2026-06-19"
+keywords:
+  - shopify description formatting broken
+  - bullet points not showing shopify
+  - shopify theme template empty
+  - synq theme template selector
+  - read_themes permission shopify
+faq:
+  - question: "Why do my bullet points look fine in the editor but broken on my store?"
+    answer: "The Shopify editor and your live theme can show the same formatting differently. A common cause is paragraph spacing inside list items. Synq cleans up the formatting it generates so bullets show correctly on the storefront."
+  - question: "I edited a description by hand and it looks off. What do I do?"
+    answer: "Re-save the description so it regenerates cleanly, or simplify the formatting. If you pasted from another source, clear the formatting and use plain bullets, bold and links."
+  - question: "Why is the theme template selector greyed out in Synq?"
+    answer: "It is greyed out when your theme has no alternate product templates to choose from, only the default. Create an alternate product template in your theme and it will appear."
+  - question: "Why do I see a text box instead of a dropdown?"
+    answer: "Synq could not read your theme's templates, usually because it does not yet have permission. Reopen or reinstall the app so it can read your theme, then the dropdown will show your theme's templates."
+---
+
+## Formatting looks off on my storefront
+
+A card description looks perfect in the Shopify editor, but on your live store the spacing or bullets look broken.
+
+The cause is almost always how your theme shows the formatting, not a problem with the content itself. The Shopify product editor and your storefront theme can render the same formatting differently. A classic example is bullet points: extra paragraph spacing inside list items can look fine in the editor but appear broken on the live page because the theme adds margins.
+
+Synq cleans up the formatting it generates from your [templates](/help/product-templates), so bullet lists show cleanly on storefront themes. New products you add get tidy formatting automatically.
+
+### Fix a product that already looks off
+
+Products created before this cleanup keep their original formatting until they are recreated or re-saved. To fix one:
+
+- **Re-save the description** in Shopify so it regenerates cleanly, or
+- **Simplify the formatting**: use plain bullets, bold and links rather than complex or pasted formatting.
+
+If you pasted text from another app, clear the formatting first, then re-apply simple styles.
+
+### Keep new products clean
+
+When you build a [product template](/help/product-templates), keep it to simple bullets, bold and links. That renders reliably across themes and reads well for buyers and search engines. For tips on the content itself, see [avoid thin or duplicate descriptions](/blog/avoid-thin-or-duplicate-descriptions).
+
+## The theme template selector is empty or greyed out
+
+The theme template setting in a [product template](/help/product-templates) lets you pick a custom product page layout from your theme. When it is empty or disabled, it is one of two situations. Here is how to tell them apart and fix each.
+
+### The dropdown is greyed out
+
+If the selector is a **greyed-out dropdown** showing only "Theme default", your theme simply has no alternate product templates to choose from. This is not an error.
+
+To add one:
+
+1. In Shopify, go to **Online Store, Themes**.
+2. Click **Customize**, then open **Templates**.
+3. **Add a new template**, choose product, and give it a name.
+4. Save it. It will now appear in Synq's theme template selector.
+
+### You see a text box instead of a dropdown
+
+If you see a **free text box** rather than a dropdown, Synq could not read your theme's templates. This usually means Synq does not yet have permission to read your theme.
+
+To fix it:
+
+1. **Reopen the app**, and approve any new access Shopify asks for.
+2. If nothing appears, **reinstall** the app on your store so it can ask for theme access.
+
+Once access is granted, the field becomes a dropdown with your theme's templates.
+
+### Do you need a theme template at all?
+
+No. The theme template is optional. Leave it on "Theme default" and your cards use your theme's standard product page. Set it only if you have created a custom layout you want card products to use. See [product templates](/help/product-templates).
+
+## Still need help?
+
+Open a support ticket from Synq in your Shopify admin, email [support@synq.cards](mailto:support@synq.cards), or ask in our [community](https://synq.fider.io).

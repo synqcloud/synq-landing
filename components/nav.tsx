@@ -11,9 +11,7 @@ const SHOPIFY_URL = "https://apps.shopify.com/synq-tcg-card-manager";
 const navLinks = [
   { label: "Features", href: "#features" },
   { label: "Pricing", href: "/pricing" },
-  { label: "Blog", href: "/blog" },
-  { label: "Help", href: "/help" },
-  { label: "Community & Roadmap", href: "/help?tab=community" },
+  { label: "Docs", href: "/help" },
 ];
 
 export function Nav() {
@@ -40,27 +38,15 @@ export function Nav() {
 
           {/* Desktop links */}
           <div className="hidden md:flex items-center gap-1 ml-4">
-            {navLinks.map((link) =>
-              link.external ? (
-                <a
-                  key={link.label}
-                  href={link.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-3.5 py-2 text-sm text-muted-foreground hover:text-foreground hover:bg-muted rounded-lg transition-colors"
-                >
-                  {link.label}
-                </a>
-              ) : (
-                <Link
-                  key={link.label}
-                  href={link.href}
-                  className="px-3.5 py-2 text-sm text-muted-foreground hover:text-foreground hover:bg-muted rounded-lg transition-colors"
-                >
-                  {link.label}
-                </Link>
-              )
-            )}
+            {navLinks.map((link) => (
+              <Link
+                key={link.label}
+                href={link.href}
+                className="px-3.5 py-2 text-sm text-muted-foreground hover:text-foreground hover:bg-muted rounded-lg transition-colors"
+              >
+                {link.label}
+              </Link>
+            ))}
           </div>
         </div>
 
@@ -91,29 +77,16 @@ export function Nav() {
       {isMenuOpen && (
         <div className="md:hidden bg-background border-t border-border">
           <div className="max-w-5xl mx-auto px-6 py-5 flex flex-col gap-1">
-            {navLinks.map((link) =>
-              link.external ? (
-                <a
-                  key={link.label}
-                  href={link.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={() => setIsMenuOpen(false)}
-                  className="px-3 py-2.5 text-sm text-muted-foreground hover:text-foreground hover:bg-muted rounded-lg transition-colors"
-                >
-                  {link.label}
-                </a>
-              ) : (
-                <Link
-                  key={link.label}
-                  href={link.href}
-                  onClick={() => setIsMenuOpen(false)}
-                  className="px-3 py-2.5 text-sm text-muted-foreground hover:text-foreground hover:bg-muted rounded-lg transition-colors"
-                >
-                  {link.label}
-                </Link>
-              )
-            )}
+            {navLinks.map((link) => (
+              <Link
+                key={link.label}
+                href={link.href}
+                onClick={() => setIsMenuOpen(false)}
+                className="px-3 py-2.5 text-sm text-muted-foreground hover:text-foreground hover:bg-muted rounded-lg transition-colors"
+              >
+                {link.label}
+              </Link>
+            ))}
             <a
               href={SHOPIFY_URL}
               target="_blank"

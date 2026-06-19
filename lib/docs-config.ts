@@ -1,15 +1,12 @@
-export const CATEGORY_ICONS: Record<string, string> = {
-  "Getting Started": "🚀",
-  "Pricing & Sync": "💲",
-  "Inventory Management": "📦",
-  "Billing & Plans": "💳",
-  Troubleshooting: "🔧",
-};
+// Icons are no longer rendered in the knowledge base, kept only so any other
+// consumer importing this map does not break. Category labels live in CATEGORY_ORDER.
+export const CATEGORY_ICONS: Record<string, string> = {};
 
 export const CATEGORY_ORDER: string[] = [
-  "Getting Started",
-  "Pricing & Sync",
-  "Inventory Management",
-  "Billing & Plans",
+  "Setup",
+  "Catalog",
+  "Pricing",
+  "Listings & channels",
+  "Billing & account",
   "Troubleshooting",
 ];

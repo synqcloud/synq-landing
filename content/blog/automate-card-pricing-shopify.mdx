@@ -1,6 +1,6 @@
 ---
 title: "How to Automate Card Pricing on Shopify"
-description: "Stop manually updating card prices. Learn how to sync your Shopify store with TCGPlayer market data and automate your trading card pricing workflow."
+description: "Stop manually updating card prices. Learn how to price your Shopify store from TCGplayer market data and automate your trading card pricing workflow with Synq."
 date: "2026-01-28"
 author: "Synq Team"
 authorTitle: ""
@@ -9,21 +9,20 @@ tags: ["pricing", "automation", "TCGPlayer", "Shopify", "market-data"]
 keywords: "automated card pricing, TCGPlayer Shopify sync, card price automation, trading card pricing tool, Shopify price sync"
 image: "/blog/automate-card-pricing.png"
 imageAlt: "Synq pricing dashboard showing automated TCGPlayer price updates"
-canonical: "https://www.trysynq.com/blog/automate-card-pricing-shopify"
 faq:
   - question: "How often should I update card prices?"
-    answer: "Market prices for popular trading cards can shift daily. With Synq, you can sync prices automatically on a regular schedule, ensuring your store always reflects current market values without manual work."
+    answer: "Market prices for popular trading cards can shift daily. On Synq's Pro and Scale plans, automatic repricing runs once a day at an hour you choose in your store timezone, so your store reflects current market values without manual work. On any plan you can also reprice on demand with the one-click Sync all prices button."
   - question: "Can I set custom margins on automated prices?"
-    answer: "Yes. Synq lets you configure markup rules and pricing strategies on top of market data. You can set percentage markups, minimum margins, or fixed price adjustments per category or condition."
+    answer: "Yes. Synq prices from TCGplayer market data and lets you apply a store pricing strategy on top: market price, market plus a percentage, or market minus a percentage. You can also set fixed per-condition adjustments, and you can override the strategy or set a specific price for any listing when you add it."
   - question: "Does price automation work for all card conditions?"
-    answer: "Synq supports condition-based pricing, applying different price points for Near Mint, Lightly Played, Moderately Played, and other conditions based on market data differentials."
+    answer: "Yes. Synq supports condition-based pricing across Near Mint, Lightly Played, Moderately Played, Heavily Played, and Damaged. Each condition is its own Shopify variant, and you set a fixed, configurable percentage adjustment for each one store-wide."
   - question: "Will automated pricing undercut my margins?"
-    answer: "No. You set minimum margins and price floors. Synq will never price a card below your configured minimums, protecting your profit margins while staying competitive."
+    answer: "You stay in control. Synq prices from market data using the strategy you configure, you can review proposed changes on the Products dashboard before applying them, and you can set a manual price for any listing you want to hold steady. Optional global floor and ceiling rules let you clamp prices within a range you define."
 ---
 
 ## The Hidden Cost of Manual Card Pricing
 
-If you run a trading card shop on Shopify, you already know the routine. You wake up, check TCGPlayer for the latest market prices, open a spreadsheet, cross-reference your inventory, and start updating prices one by one. On a slow day with a small catalog, this might take an hour. If you carry thousands of SKUs across multiple sets and conditions, it can consume your entire morning.
+If you run a trading card shop on Shopify, you already know the routine. You wake up, check TCGplayer for the latest market prices, open a spreadsheet, cross-reference your inventory, and start updating prices one by one. On a slow day with a small catalog, this might take an hour. If you carry thousands of SKUs across multiple sets and conditions, it can consume your entire morning.
 
 Manual pricing is more than just tedious. It is expensive in ways that are easy to overlook.
 
@@ -37,146 +36,146 @@ Manual pricing is more than just tedious. It is expensive in ways that are easy 
 
 The solution is not to work harder at manual pricing. It is to stop doing it manually altogether.
 
-## Understanding TCGPlayer Market Data
+## Understanding TCGplayer Market Data
 
-Before diving into automation, it helps to understand the data that drives card pricing. TCGPlayer is the largest marketplace for trading cards in North America, and its market data has become the de facto pricing standard for the industry.
+Before diving into automation, it helps to understand the data that drives card pricing. TCGplayer is the largest marketplace for trading cards in North America, and its market data has become the de facto pricing standard for the industry. With Synq, you do not need your own TCGplayer account, because Synq provides the market data for you.
 
 ### Key Price Points
 
-TCGPlayer provides several price metrics for each card:
+TCGplayer tracks several price metrics for each card:
 
 - **Market Price** is calculated from recent completed sales, weighted by recency and volume. It represents what buyers are actually paying for a card right now.
 - **Low Price** reflects the cheapest currently listed copy from verified sellers. This is useful as a floor reference but can be skewed by outliers or sellers dumping inventory.
 - **Mid Price** is a median of current listings, offering a middle-ground reference that filters out extreme highs and lows.
 
-For most automated pricing strategies, market price is the most reliable anchor because it reflects real transaction data rather than just listing aspirations.
+For most automated pricing strategies, market price is the most reliable anchor because it reflects real transaction data rather than just listing aspirations. Synq builds your prices from market price.
 
 ### Condition Multipliers
 
-Card condition significantly affects value. A Near Mint copy of a chase rare commands a premium, while a Moderately Played copy of the same card might sell for 60 to 80 percent of the Near Mint price. TCGPlayer tracks pricing across conditions, giving you the data needed to price each condition tier appropriately rather than guessing at discounts.
+Card condition significantly affects value. A Near Mint copy of a chase rare commands a premium, while a Moderately Played copy of the same card might sell for 60 to 80 percent of the Near Mint price. Tracking pricing across conditions gives you a sense of how to discount each condition tier appropriately rather than guessing.
 
 ### Volatility and Timing
 
-Not all cards move at the same pace. Staples in competitive formats can swing 20 percent or more in a single week based on metagame shifts. Meanwhile, casual favorites and older collectibles tend to hold steadier prices. Understanding this volatility is important when deciding how frequently to sync prices and how much buffer to build into your margins.
+Not all cards move at the same pace. Staples in competitive formats can swing 20 percent or more in a single week based on metagame shifts. Meanwhile, casual favorites and older collectibles tend to hold steadier prices. Understanding this volatility is important when deciding how much buffer to build into your margins and when to refresh prices on demand.
 
 ## How Automated Card Pricing Works
 
 Automated pricing replaces the manual lookup-and-update cycle with a software-driven pipeline. Here is what happens under the hood.
 
-### Data Ingestion
+### Building Your Catalog from Market Data
 
-The automation tool connects to market data sources and pulls current pricing information for every card in your catalog. This includes market prices, low prices, and condition-specific data points. The data is normalized and mapped to your Shopify product listings using identifiers like set name, card number, and condition.
+Instead of asking you to match your existing listings to a data source, Synq works the other way around. You add cards from Synq's built-in catalog by searching by name, set, or collector number, and Synq creates the Shopify products for you, already priced from TCGplayer market data. Each card is created with its conditions as separate Shopify variants, each with its own price and stock.
 
 ### Price Calculation
 
-Raw market data is rarely the final price you want on your store. The automation engine applies your configured rules on top of the market data. This might include a percentage markup to cover your overhead and desired margin, rounding rules to produce clean price points, minimum price floors to protect against selling below cost, and maximum price ceilings to stay competitive on high-value cards.
+Raw market data is rarely the final price you want on your store. Synq applies your configured strategy on top of the market data in a clear order: it starts from the market price, applies your pricing strategy, applies a per-condition adjustment, converts to your store currency, optionally clamps the result between a floor and a ceiling, and then rounds up. By default there are no floor, ceiling, or rounding rules, so you turn those on only if you want them.
 
 ### Sync to Shopify
 
-Once prices are calculated, the tool pushes updates to your Shopify store through the Shopify API. Prices update across your storefront, and if you use Shopify POS for in-store sales, your point-of-sale prices stay aligned as well.
+Once prices are calculated, Synq writes the updated prices to your Shopify store through the Shopify API. The sync writes the variant price only. It does not change your stock, titles, descriptions, or images, so a repricing run never touches anything except the number on the price tag.
 
 ### Scheduling
 
-Rather than running once and forgetting, automated pricing operates on a schedule. You choose the frequency that matches your business needs, whether that is daily syncs, multiple times per day, or on-demand refreshes when you know the market has shifted.
+Rather than running once and forgetting, automatic repricing runs on a schedule. On the Pro and Scale plans, Synq reprices once a day at an hour you choose, in your store timezone. On any plan, you can also trigger a manual refresh whenever you know the market has shifted, using the one-click Sync all prices button.
 
 ## Setting Up Automated Pricing with Synq
 
 Synq is built specifically for trading card shops on Shopify. Here is how to get started with automated pricing.
 
-### Step 1: Install and Connect
+### Step 1: Install Synq
 
-Install Synq from the Shopify App Store and authorize it to access your store. The app connects to your Shopify product catalog and begins scanning your listings to identify trading cards and map them to market data.
+Install Synq from the Shopify App Store and authorize it to access your store. Every plan includes a 7-day free trial, so you can set everything up before committing.
 
-### Step 2: Review Your Catalog Mapping
+### Step 2: Pick Your Games
 
-Synq matches your Shopify products to TCGPlayer market data using card attributes. Review the mapping dashboard to confirm that your products are correctly linked. For cards with unusual naming conventions or custom bundles, you can adjust mappings manually to ensure accuracy.
+Choose the games you sell so Synq knows which catalogs to surface when you search. Synq supports Magic: The Gathering, Pokemon, Pokemon TCG Japan, Disney Lorcana, Yu-Gi-Oh!, One Piece, Flesh and Blood, Riftbound, Sorcery: Contested Realm, Digimon, Grand Archive, and the Gundam Card Game.
 
-### Step 3: Configure Your Pricing Strategy
+### Step 3: Configure Your Pricing Strategy and Rules
 
-This is where you define how market data translates into your store prices. Set your base pricing source, typically TCGPlayer market price, and then layer on your business rules. We will cover markup rules and price floors in detail in the next section.
+This is where you define how market data translates into your store prices. Set your store pricing strategy: market price, market plus a percentage, or market minus a percentage. Then set your fixed per-condition adjustments and, if you want them, optional global floor, ceiling, and rounding rules. We will cover these in detail in the next section.
 
-### Step 4: Set Your Sync Schedule
+### Step 4: Add Cards from Search
 
-Choose how often Synq should check for market price changes and update your store. For most shops, a daily sync strikes the right balance between staying current and avoiding unnecessary churn. If you deal heavily in competitive staples or newly released sets, consider syncing twice daily during high-volatility periods.
+Search Synq's catalog by name, set, or collector number and add the cards you carry. Synq creates the Shopify products for you and prices them from TCGplayer market data using the strategy you configured. You can override the strategy or set a specific price for a listing as you add it.
 
-### Step 5: Run Your First Sync
+### Step 5: Review Proposed Changes
 
-Before going fully automatic, run a manual sync and review the proposed price changes. Synq shows you a preview of what will change, including the current price, the new calculated price, and the percentage adjustment. This gives you a chance to spot-check the results and fine-tune your rules before prices go live.
+Before prices go live, review them on the Products dashboard. Synq shows you the current price and the new calculated price so you can spot-check the results and fine-tune your strategy before applying. When you are ready, applying is a one-click action.
 
-### Step 6: Enable Automation
+### Step 6: Enable Automatic Repricing
 
-Once you are confident in your configuration, enable scheduled syncing. From this point on, Synq handles pricing updates automatically. You will receive summary notifications after each sync so you can stay informed without being involved in every update.
+On the Pro and Scale plans, turn on automatic repricing and choose the hour it should run each day in your store timezone. From this point on, Synq updates your prices on that daily schedule, and you can always open the Products dashboard to see the latest changes.
 
-## Configuring Markup Rules and Price Floors
+## Configuring Your Pricing Strategy and Rules
 
-Getting your pricing rules right is the most important part of the setup. This is where you encode your business strategy into the automation.
+Getting your pricing right is the most important part of the setup. This is where you encode your business strategy into the automation.
 
-### Percentage Markups
+### Pricing Strategy
 
-The most common approach is a percentage markup over market price. For example, a 10 percent markup on a card with a $20 market price sets your store price at $22. This covers platform fees, shipping materials, and your profit margin.
+Synq's store pricing strategy is a single, simple control applied on top of market price. You can price at market (100 percent of market price), at market plus a percentage, or at market minus a percentage. For example, a 10 percent markup on a card with a $20 market price sets your store price at $22, which helps cover platform fees, shipping materials, and your profit margin. You can also override the strategy on an individual listing when you add it.
 
-Consider varying your markup by price tier. Lower-value cards, those under $5, often need a higher percentage markup to remain worth listing and shipping. Higher-value cards can carry a slimmer margin because the dollar amount per sale is already substantial.
+As a general matter of strategy, many sellers think about margin differently across price tiers. Lower-value cards, those under $5, often need a higher relative markup to remain worth listing and shipping, while higher-value cards can carry a slimmer margin because the dollar amount per sale is already substantial. Synq's strategy is global, so you would account for this when you set your store-wide percentage rather than configuring separate tiers.
 
-### Fixed Minimums
+### Price Floors
 
-Set a minimum price for any card in your store. If your all-in cost to list, store, and ship a card is $1.50, there is no reason to price anything below $2. A fixed minimum ensures you never take a loss on low-value inventory, even if the market price drops to pennies.
+You can set a global minimum price for cards in your store. If your all-in cost to list, store, and ship a card is $1.50, there is no reason to price anything below $2. A floor ensures you never take a loss on low-value inventory, even if the market price drops to pennies. Floors apply store-wide.
+
+### Price Ceilings
+
+You can also set a global maximum price to keep your most valuable cards from drifting above what you want to charge. Like floors, ceilings are applied store-wide and are off by default until you enable them.
 
 ### Price Rounding
 
-Customers respond to clean price points. Configuring your automation to round to the nearest $0.49 or $0.99 produces prices that feel intentional and professional rather than algorithmically generated. A card that calculates to $7.23 looks better at $6.99 or $7.49.
-
-### Category-Specific Rules
-
-Different product categories may warrant different strategies. Sealed products have different margin profiles than singles. Accessories and supplies follow yet another pattern. Configure distinct rule sets for each category so your automation handles the nuances of your full catalog.
+Customers respond to clean price points. Synq can round prices up to .49, .99, or .00, producing prices that feel intentional and professional rather than algorithmically generated. A card that calculates to $7.23 looks tidier at $7.49. Rounding is global and, like floors and ceilings, is off by default until you turn it on.
 
 ## Condition-Based Pricing Strategies
 
-Condition grading is central to trading card sales, and your pricing automation should account for it.
+Condition grading is central to trading card sales, and your pricing should account for it. In Synq, each condition is its own Shopify variant with its own price and stock.
 
-### Applying Condition Discounts
+### Applying Condition Adjustments
 
-Rather than pricing all conditions identically and hoping buyers sort themselves out, use market data to apply condition-specific pricing. A common framework looks like this:
+Rather than pricing all conditions identically and hoping buyers sort themselves out, apply a fixed, configurable percentage adjustment to each condition. These adjustments are set once and applied store-wide. Synq ships with sensible defaults you can change:
 
-- **Near Mint:** 100% of your calculated price (full market value plus markup)
-- **Lightly Played:** 85-90% of the Near Mint price
-- **Moderately Played:** 70-80% of the Near Mint price
-- **Heavily Played:** 50-65% of the Near Mint price
-- **Damaged:** 30-45% of the Near Mint price
+- **Near Mint:** 0% adjustment (full calculated price)
+- **Lightly Played:** -10% from Near Mint
+- **Moderately Played:** -25% from Near Mint
+- **Heavily Played:** -40% from Near Mint
+- **Damaged:** -60% from Near Mint
 
-These percentages vary by card game and customer base. Collectors of older cards may be more tolerant of played conditions, while competitive players want Near Mint and will pay for it.
+These percentages are yours to tune. Collectors of older cards may be more tolerant of played conditions, while competitive players want Near Mint and will pay for it, so adjust the spreads to match your customer base.
 
-### Dynamic Condition Spreads
+### Choosing Your Spreads
 
-Synq can adjust condition discounts based on actual market data rather than fixed percentages. If TCGPlayer data shows that Lightly Played copies of a particular card are selling at 95 percent of Near Mint, there is no reason to discount your LP copies by 15 percent. Data-driven condition pricing captures value that flat percentages leave behind.
+Because the per-condition adjustments are configurable, you can set them to reflect how your market actually behaves. If you find that Lightly Played copies in your store tend to sell close to Near Mint, you might narrow the LP adjustment so you are not discounting more than you need to. The adjustments are fixed percentages you control, applied consistently across your catalog.
 
-### Condition and Scarcity
+### Sealed Product
 
-For scarce cards, condition matters less to buyers. If there are only a handful of copies on the market in any condition, even a Moderately Played copy commands a premium. Your automation rules should account for supply depth, and Synq provides scarcity indicators to help you adjust accordingly.
+Sealed product works a little differently from singles. A sealed item is tracked as a single Unopened unit rather than a set of condition variants, so it carries one price built from market data and your strategy.
 
 ## Monitoring and Adjusting Your Automation
 
 Automation does not mean abandonment. The best results come from setting up your system, then monitoring and refining it over time.
 
-### Review Sync Reports
+### Review the Products Dashboard
 
-After each automated sync, review the summary report. Look for outliers: cards with unusually large price changes, cards that hit your price floor repeatedly, or categories where margins are tighter than expected. These outliers often signal that a rule needs adjustment or that a specific card requires manual attention.
+The Products dashboard is your control center. Before applying a repricing run, review the proposed changes there and look for outliers: cards with unusually large price changes, cards that hit your floor repeatedly, or items where margins are tighter than expected. These outliers often signal that your strategy needs adjustment or that a specific card requires a manual price.
 
 ### Track Key Metrics
 
 Monitor a few key numbers on a weekly basis:
 
 - **Average margin across your catalog.** Is it trending where you want it?
-- **Number of cards at price floor.** If too many cards are hitting your minimum, your floor might be too high, or those cards may not be worth carrying.
-- **Sync coverage.** What percentage of your catalog is successfully matched and priced? Gaps in coverage mean manual work is still needed for unmatched products.
-- **Sales velocity changes.** Are you selling more or fewer cards after enabling automation? Price changes should correlate with healthy sales volume.
+- **Number of cards at your floor.** If too many cards are hitting your minimum, your floor might be too high, or those cards may not be worth carrying.
+- **Catalog coverage.** Have you added the cards you actually carry, or are there gaps where you are still selling outside Synq?
+- **Sales velocity changes.** Are you selling more or fewer cards after enabling automatic repricing? Price changes should correlate with healthy sales volume.
 
 ### Seasonal Adjustments
 
-The trading card market has rhythms. New set releases drive spikes in supply and demand. Rotation announcements shift value between formats. Holiday seasons bring increased buyer activity. Adjust your markup rules and sync frequency to align with these cycles. You might tighten margins during a new release to move volume, then relax them during quieter periods.
+The trading card market has rhythms. New set releases drive spikes in supply and demand. Rotation announcements shift value between formats. Holiday seasons bring increased buyer activity. Adjust your strategy and lean on the on-demand Sync all prices button to align with these cycles. You might tighten margins during a new release to move volume, then relax them during quieter periods.
 
-### Override When Necessary
+### Set a Manual Price When Necessary
 
-No automation is perfect. When you know something the algorithm does not, such as an impending reprint announcement, a buyout in progress, or a card you want to hold as a loss leader, use manual overrides. Synq lets you lock specific cards out of automated updates, giving you control where you need it without disrupting the broader system.
+No automation is perfect. When you know something the market data does not, such as an impending reprint announcement, a buyout in progress, or a card you want to hold as a loss leader, set a manual price for that listing. The repricing run respects the price you set, giving you control where you need it without disrupting the broader system.
 
 ## The ROI of Automated Pricing
 
@@ -184,26 +183,26 @@ Switching from manual to automated pricing is an investment in your business. He
 
 ### Time Savings
 
-A shop with 3,000 to 5,000 SKUs typically spends 6 to 10 hours per week on manual price updates. Automated pricing reduces this to 30 minutes of monitoring and occasional adjustments. Over a year, that is roughly 400 hours reclaimed, time you can redirect toward sourcing better inventory, improving your store, or simply taking a day off.
+A shop with 3,000 to 5,000 SKUs typically spends 6 to 10 hours per week on manual price updates. Automated pricing reduces this to a few minutes of monitoring and occasional adjustments. Over a year, that is roughly 400 hours reclaimed, time you can redirect toward sourcing better inventory, improving your store, or simply taking a day off.
 
 ### Margin Improvement
 
-Stores that switch to automated pricing commonly see margin improvements of 5 to 15 percent. This comes from three sources: catching upward price movements faster, reducing underpricing errors, and applying consistent markup rules that eliminate the drift inherent in manual updates.
+Automated pricing can improve your margins in three ways: catching upward price movements faster, reducing underpricing errors, and applying a consistent strategy that eliminates the drift inherent in manual updates. The size of the gain depends on your catalog and how stale your manual prices had become.
 
 ### Reduced Losses
 
-Pricing errors are a real cost center for manual shops. A single misplaced decimal on a high-value card can wipe out a week of profit. Automated pricing eliminates this category of error entirely. Your rules define the boundaries, and the system operates within them every time.
+Pricing errors are a real cost center for manual shops. A single misplaced decimal on a high-value card can wipe out a week of profit. Automated pricing eliminates this category of error entirely. Your strategy and optional floor and ceiling rules define the boundaries, and the system operates within them every time.
 
 ### Competitive Positioning
 
-Buyers compare prices. A store that updates prices daily stays competitive in a way that a store updating weekly simply cannot. You win more buy boxes, convert more browsers into buyers, and build a reputation as a fairly priced shop, all without spending your evenings cross-referencing spreadsheets.
+Buyers compare prices. A store that reprices daily stays competitive in a way that a store updating weekly simply cannot. You win more buy boxes, convert more browsers into buyers, and build a reputation as a fairly priced shop, all without spending your evenings cross-referencing spreadsheets.
 
 ### Scalability
 
-Perhaps the most important benefit is that automation scales. Doubling your catalog from 3,000 to 6,000 cards does not double your pricing workload. It adds zero additional hours because the automation handles the entire catalog in each sync. This means you can grow your inventory aggressively without growing your operational overhead at the same rate.
+Perhaps the most important benefit is that automation scales. Doubling your catalog from 3,000 to 6,000 cards does not double your pricing workload. The daily repricing run handles your whole catalog at once, so growing your inventory does not grow your operational overhead at the same rate. Synq's plans are sized for this, with product limits of 2,000 on Starter, 15,000 on Pro, and 50,000 on Scale.
 
 ## Getting Started
 
 If you are still pricing cards by hand, the best time to automate was six months ago. The second best time is today. Start by auditing how much time you currently spend on pricing, then consider what you would do with those hours back.
 
-Synq is designed to make the transition straightforward. Install the app, configure your rules, run a test sync, and let the automation take over the repetitive work so you can focus on what actually grows your business: finding great inventory, serving your customers, and building a shop that lasts.
+Synq is designed to make the transition straightforward. Install the app, pick your games, configure your strategy, add your cards, review the proposed prices, and let the automation take over the repetitive work so you can focus on what actually grows your business: finding great inventory, serving your customers, and building a shop that lasts. Every plan starts with a 7-day free trial.

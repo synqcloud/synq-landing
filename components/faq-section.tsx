@@ -4,41 +4,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import { ContactModal } from "./contact-modal";
-
-const faqs = [
-  {
-    question: "Which trading card games are supported?",
-    answer: "Magic: The Gathering, Disney Lorcana, and Riftbound are fully supported with live TCGPlayer pricing. Pokémon TCG is available in beta. Yu-Gi-Oh, Flesh and Blood, One Piece, Star Wars: Unlimited, and Digimon are coming soon — we prioritise by demand, so let us know what you need.",
-  },
-  {
-    question: "How does automatic price syncing work?",
-    answer: "Synq pulls the latest market prices from TCGPlayer every 24 hours. Your dashboard shows which listings have drifted from market — you can apply all updates with one click, or set them to update automatically.",
-  },
-  {
-    question: "Can I use my own prices instead of market prices?",
-    answer: "Yes — you're always in control. Set custom prices for any card, add a markup percentage (e.g. market + 15%), or define min/max price floors and ceilings to protect your margins.",
-  },
-  {
-    question: "How does condition-based pricing work?",
-    answer: "When you add a card, Synq creates a Shopify variant for each condition you stock (NM, LP, MP, HP, DMG), with price adjustments already applied based on market standards. All percentages are fully configurable.",
-  },
-  {
-    question: "Will it affect my existing Shopify products?",
-    answer: "Not at all. Synq only manages products you create through the app. Your current listings are completely untouched.",
-  },
-  {
-    question: "How many cards can I manage?",
-    answer: "Starter handles up to 2,000 cards, Pro up to 15,000, and Scale up to 50,000. All plans start with a 7-day free trial so you can see the value before you commit.",
-  },
-  {
-    question: "Can I use it across multiple stores?",
-    answer: "Yes — each Shopify store gets its own Synq installation with independent settings. Great if you run separate stores for different games or regions.",
-  },
-  {
-    question: "What if I want to cancel?",
-    answer: "Cancel any time from Shopify admin → Apps → Synq. Your products stay in Shopify; automatic syncing just stops. No cancellation fees, no awkward conversations.",
-  },
-];
+import { faqs } from "@/lib/faqs";
 
 function FAQItem({ question, answer }: { question: string; answer: string }) {
   const [open, setOpen] = useState(false);

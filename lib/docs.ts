@@ -11,6 +11,10 @@ export interface DocFrontmatter {
   category: string;
   order?: number;
   keywords?: string[];
+  datePublished?: string;
+  dateModified?: string;
+  /** Rendered as a visible FAQ section and emitted as FAQPage structured data. */
+  faq?: { question: string; answer: string }[];
 }
 
 export interface DocMeta {

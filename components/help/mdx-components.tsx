@@ -4,7 +4,7 @@ import Link from "next/link";
 export const docsMdxComponents: Record<string, any> = {
   h2: ({ children, ...props }) => (
     <h2
-      className="mt-8 mb-3 text-lg font-semibold text-foreground scroll-mt-24"
+      className="mt-10 mb-4 text-xl font-semibold tracking-tight text-foreground scroll-mt-24"
       {...props}
     >
       {children}
@@ -12,14 +12,14 @@ export const docsMdxComponents: Record<string, any> = {
   ),
   h3: ({ children, ...props }) => (
     <h3
-      className="mt-6 mb-2 text-base font-semibold text-foreground scroll-mt-24"
+      className="mt-8 mb-2 text-[15px] font-semibold text-foreground scroll-mt-24"
       {...props}
     >
       {children}
     </h3>
   ),
   p: ({ children, ...props }) => (
-    <p className="mb-4 leading-7 text-muted-foreground text-sm" {...props}>
+    <p className="mb-4 text-[15px] leading-7 text-foreground/90" {...props}>
       {children}
     </p>
   ),
@@ -49,17 +49,23 @@ export const docsMdxComponents: Record<string, any> = {
     );
   },
   ul: ({ children, ...props }) => (
-    <ul className="mb-4 ml-5 space-y-1.5 list-disc" {...props}>
+    <ul
+      className="mb-4 ml-5 space-y-2 list-disc marker:text-muted-foreground"
+      {...props}
+    >
       {children}
     </ul>
   ),
   ol: ({ children, ...props }) => (
-    <ol className="mb-4 ml-5 space-y-1.5 list-decimal" {...props}>
+    <ol
+      className="mb-4 ml-5 space-y-2 list-decimal marker:text-muted-foreground"
+      {...props}
+    >
       {children}
     </ol>
   ),
   li: ({ children, ...props }) => (
-    <li className="text-sm text-muted-foreground leading-relaxed" {...props}>
+    <li className="text-[15px] leading-7 text-foreground/90 pl-1" {...props}>
       {children}
     </li>
   ),
@@ -86,7 +92,7 @@ export const docsMdxComponents: Record<string, any> = {
   ),
   blockquote: ({ children, ...props }) => (
     <blockquote
-      className="mb-4 border-l-2 border-primary/40 pl-4 text-sm text-muted-foreground italic"
+      className="my-5 rounded-r-lg border-l-2 border-primary/50 bg-muted/50 py-3 pl-4 pr-4 text-[15px] leading-7 text-foreground/90 [&>p]:mb-0"
       {...props}
     >
       {children}
@@ -114,7 +120,7 @@ export const docsMdxComponents: Record<string, any> = {
   ),
   td: ({ children, ...props }) => (
     <td
-      className="px-4 py-2.5 text-sm text-muted-foreground border-t border-border"
+      className="px-4 py-2.5 text-sm text-foreground/90 border-t border-border align-top"
       {...props}
     >
       {children}

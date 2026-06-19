@@ -31,12 +31,14 @@ export const metadata: Metadata = {
     url: "https://synq.cards/help",
     siteName: "Synq",
     type: "website",
+    images: ["/brand/synq-eyecatcher-art.png"],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "Synq Help Center: Knowledge Base, Support and Community",
     description:
       "Find answers, guides, and support for Synq. The Shopify app for TCGPlayer card price syncing.",
+    images: ["/brand/synq-eyecatcher-art.png"],
   },
 };
 

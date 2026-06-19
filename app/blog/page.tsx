@@ -16,6 +16,14 @@ export const metadata: Metadata = {
     url: "https://synq.cards/blog",
     type: "website",
     siteName: "Synq",
+    images: ["/brand/synq-eyecatcher-art.png"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Synq Blog - Card Shop Automation & Pricing Guides",
+    description:
+      "Guides, tips, and strategies for running a successful card shop on Shopify.",
+    images: ["/brand/synq-eyecatcher-art.png"],
   },
   alternates: {
     canonical: "https://synq.cards/blog",

@@ -3,11 +3,11 @@ import { Logo } from "./logo";
 
 const links = [
   { label: "Features", href: "/#features" },
+  { label: "How it works", href: "/how-it-works" },
   { label: "Pricing",  href: "/pricing" },
-  { label: "FAQ",      href: "/#faq" },
+  { label: "FAQ",      href: "/faq" },
+  { label: "Docs",     href: "/help" },
   { label: "Blog",     href: "/blog" },
-  { label: "Help",     href: "/help" },
-  { label: "Community & Roadmap", href: "/help?tab=community" },
   { label: "Privacy",  href: "/privacy" },
   { label: "Terms",    href: "/terms" },
 ];

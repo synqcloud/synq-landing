@@ -1,0 +1,44 @@
+---
+title: "A price or product is not updating"
+seoTitle: "Fix a card price or product that is not updating in Synq on Shopify"
+description: "A card's price stayed the same, or a product is missing from your store. Work through this ordered checklist to find the cause and force an update if you need one."
+category: "Troubleshooting"
+order: 1
+datePublished: "2026-06-17"
+dateModified: "2026-06-19"
+keywords:
+  - card price not updating shopify
+  - synq price did not change
+  - product not syncing shopify
+  - card missing from store
+  - tcgplayer price sync not working
+  - force update card prices
+faq:
+  - question: "Why didn't a card's price change after a repricing run?"
+    answer: "The most common reasons are that the new price worked out the same as what is already in your store, a floor or ceiling is holding the card at your limit, or automatic repricing is off because your plan does not include it or you have not enabled it. Each is expected behavior, not a bug."
+  - question: "How do I force a price update?"
+    answer: "Open the Products page and click Sync all prices. Synq reprices every card that has drifted, immediately, from current market data, your strategy and your rules. This works on every plan."
+  - question: "Why is a product missing from my store?"
+    answer: "It may have been created as a draft rather than published, or it may have been added outside Synq. Check your auto-publish setting and the product's status in Shopify, and confirm the product was added through Synq's Add products flow so Synq can manage it."
+---
+
+A card's price stayed the same, or a product is missing from your store entirely. In almost every case this comes down to how the product was created, whether Synq can match it to a market price, whether a rule is holding it, or whether automatic repricing has run. Work through the checks below in order.
+
+## Check these in order
+
+1. **Did the new price work out the same?** Synq writes a price only when the new price is different from what is in your store. If the market barely moved, the new price can round to the same value, so nothing changes. This is expected. See [how Synq prices your cards](/help/how-synq-prices-your-cards).
+2. **Is a floor or ceiling holding it?** If a [price rule](/help/price-rules) is keeping the card at your floor or ceiling, it stays there even when the market moves past your limit. Open the rule, check the floor and ceiling values, and adjust or remove the cap if you want the card to follow the market.
+3. **Was the product added through Synq?** Synq only manages and reprices products it created. A product added manually in Shopify, or imported another way, is not matched to the market feed and will not receive price updates. Re-add it through [Add products](/help/adding-products-to-your-store) so Synq can manage it.
+4. **Can the card be matched?** Synq prices a product by matching it to a card by game, set and printing. If a card cannot be matched, its price cannot update. Re-adding it from search ensures a clean match. See [find and organize products](/help/find-and-organize-products).
+5. **Is automatic repricing on, and has it run?** [Automatic repricing](/help/keep-prices-current) runs once a day at the hour you set, and is included on the Pro and Scale plans. On Starter, or if you have not enabled it, prices update only when you run them yourself. If you just made a change, the daily run may not have happened yet. Check your [plan and what is included](/help/plans-and-what-is-included).
+6. **Is the product published?** If [auto-publish](/help/publishing-and-sales-channels) is off, new products are created as **drafts** and do not appear on your storefront until you publish them. Check the product's status in Shopify and your selected sales channels.
+
+## How to force an update now
+
+Open the **Products** page and click **Sync all prices**. Synq reprices every card that has drifted, immediately, using current market data, your [pricing strategy](/help/how-synq-prices-your-cards) and your rules. This works on [every plan](/help/plans-and-what-is-included), including Starter.
+
+A price run only writes the price. It does not overwrite your manual edits or your images, so forcing a sync is safe to run any time a price looks stuck.
+
+## Still need help?
+
+Open a support ticket from Synq in your Shopify admin, email [support@synq.cards](mailto:support@synq.cards), or ask in our [community](https://synq.fider.io).

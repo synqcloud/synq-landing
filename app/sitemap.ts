@@ -1,6 +1,7 @@
 import { MetadataRoute } from "next";
 import { getAllPosts } from "@/lib/blog";
 import { getAllDocs } from "@/lib/docs";
+import { GAME_PAGES } from "@/lib/game-pages";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://synq.cards";
@@ -26,6 +27,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.8,
     },
+    {
+      url: `${baseUrl}/how-it-works`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/faq`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/synq-vs-spreadsheets`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    ...GAME_PAGES.map((g) => ({
+      url: `${baseUrl}/for/${g.slug}`,
+      lastModified: currentDate,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    })),
     {
       url: `${baseUrl}/privacy`,
       lastModified: currentDate,

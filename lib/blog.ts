@@ -78,4 +78,5 @@ export const CATEGORY_LABELS: Record<string, string> = {
   "pokemon-tcg": "Pokemon TCG",
   "pricing-strategies": "Pricing Strategies",
   "case-studies": "Case Studies",
+  "listing-seo": "Listings & SEO",
 };
