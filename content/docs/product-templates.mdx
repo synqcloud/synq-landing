@@ -5,7 +5,7 @@ description: "Control how Synq creates each Shopify product: title, description,
 category: "Listings & channels"
 order: 1
 datePublished: "2026-06-17"
-dateModified: "2026-06-19"
+dateModified: "2026-06-25"
 keywords:
   - synq product templates
   - shopify product title template
@@ -23,6 +23,8 @@ faq:
     answer: "Per game. Every product for a game uses that game's vendor, so you set it once instead of choosing it on every card."
   - question: "Do template changes update products I already created?"
     answer: "Yes, if you choose to. Saving a template applies to new products from then on. For products you already created, Synq shows how many are out of date and lets you review the changes and update them in bulk, without recreating them."
+  - question: "Does Synq add barcodes to single cards?"
+    answer: "Yes. Trading card singles have no manufacturer barcode, so when you turn on barcodes in a product template, Synq generates a unique barcode for each single card and condition. Sealed products use their real UPC from the catalog instead. You can then scan products in Shopify POS and print labels with Shopify's free Retail Barcode Labels app."
 ---
 
 Product templates decide how Synq fills in every Shopify product it creates. You set the format once, and every card or sealed product you add follows it. A template controls the title and description, plus optional fields like vendor, category, product type, SKU, barcode and theme template.
@@ -141,7 +143,18 @@ When this is off, Synq does not set a SKU.
 
 ## Barcode
 
-Turn this on to write the catalog's UPC or GTIN to the product barcode. This only applies to sealed products, since singles do not have a barcode, so the option appears only when the template's scope includes sealed products. When this is off, Synq does not set a barcode.
+Turn this on to give your products a barcode, so you can scan them in **Shopify POS** to sell at the register, receive stock and run stock counts, and print barcode labels. It is off by default.
+
+Synq fills the barcode for you, based on the kind of product:
+
+- **Single cards** get a unique barcode that Synq generates. Trading card singles carry no manufacturer barcode, so Synq mints one that is unique to each card and condition. This is what makes singles scannable at all.
+- **Sealed products** (booster boxes, packs, tins, bundles and so on) use their **real UPC** from the catalog, the same barcode printed on the box, so scanning the physical box just works. When the catalog has no UPC for a sealed product, Synq leaves the barcode blank rather than inventing one that would not match the box.
+
+To turn it on, open the template, find **Barcode (POS)**, and tick **Set barcodes for POS**. Under **Advanced** you can switch to **Sealed only**, which sets the real UPC on sealed products and leaves single cards without a barcode (the original behaviour).
+
+To print labels, use Shopify's free [Retail Barcode Labels](https://apps.shopify.com/retail-barcode-labels) app. You will need a [supported label printer](https://help.shopify.com/en/manual/sell-in-person/hardware/barcode-printer) to use it, such as a Dymo, Zebra, Brother or Bixolon, or a regular printer loaded with Avery 5160 label sheets. Synq already fills in every barcode, so you only need to print. Do not use that app's **Create barcodes** option: it overwrites barcodes with values based on the variant ID and can give two different products the same code.
+
+Once your products have barcodes, Shopify POS does the rest natively. Scan a product to add it to a sale or to look it up, and use Shopify's inventory tools to receive stock and run stocktakes by scanning. All you need is a supported barcode scanner, or your device's camera.
 
 ## Theme template
 
