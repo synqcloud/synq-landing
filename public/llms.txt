@@ -103,7 +103,7 @@ Troubleshooting
 
 - Pricing: https://synq.cards/pricing
 - Help Center: https://synq.cards/help
-- Community and roadmap: https://synq.fider.io
+- Community and roadmap: https://feedback.synq.cards
 
 ## Indexing
 
