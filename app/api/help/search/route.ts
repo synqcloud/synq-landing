@@ -2,9 +2,9 @@ import { NextRequest, NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import { searchFeedbackSuggestions, feedbackPostUrl, getTextPreview } from "@/lib/feedback";
 
 const DOCS_DIR = path.join(process.cwd(), "content/docs");
-const FIDER_URL = "https://synq.fider.io";
 
 function stripMdx(content: string): string {
   return content
@@ -51,7 +51,7 @@ interface ArticleResult {
 
 interface DiscussionResult {
   type: "discussion";
-  number: number;
+  id: string;
   title: string;
   description: string;
   votesCount: number;
@@ -100,35 +100,23 @@ export async function GET(req: NextRequest) {
     });
   }
 
-  // --- Fider discussion search ---
+  // --- Feedback board discussion search ---
   let discussions: DiscussionResult[] = [];
 
   try {
-    const res = await fetch(
-      `${FIDER_URL}/api/v1/posts?query=${encodeURIComponent(q)}&limit=5`,
-      {
-        headers: { Authorization: `Bearer ${process.env.FIDER_API_KEY}` },
-        next: { revalidate: 0 },
-      }
-    );
-
-    if (res.ok) {
-      const posts = await res.json();
-      if (Array.isArray(posts)) {
-        discussions = posts.map((p: any) => ({
-          type: "discussion",
-          number: p.number,
-          title: p.title,
-          description: p.description,
-          votesCount: p.votesCount,
-          status: p.status,
-          url: `${FIDER_URL}/posts/${p.number}/${p.slug}`,
-          tags: p.tags ?? [],
-        }));
-      }
-    }
+    const posts = await searchFeedbackSuggestions(q, 5);
+    discussions = posts.map((p) => ({
+      type: "discussion",
+      id: p.id,
+      title: p.title,
+      description: getTextPreview(p.body, 160),
+      votesCount: p.vote_count,
+      status: p.status,
+      url: feedbackPostUrl(p),
+      tags: p.type ? [p.type.name] : [],
+    }));
   } catch {
-    // Fider unavailable — return articles only
+    // Feedback board unavailable — return articles only
   }
 
   return NextResponse.json({
