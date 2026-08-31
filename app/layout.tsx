@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
+import Script from "next/script";
 
 import "./globals.css";
 
@@ -152,6 +153,12 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <Script
+          data-website-id="dfid_RfE7L3eQI4DDx8k86Xsqk"
+          data-domain="synq.cards"
+          src="https://datafa.st/js/script.js"
+          strategy="afterInteractive"
+        />
         <SchemaMarkup />
         <Analytics />
         <link
