@@ -24,7 +24,7 @@ export async function POST(request: NextRequest) {
     // Send email to you
     const notificationEmail = await resend.emails.send({
       from: "Synq <noreply@trysynq.com>",
-      to: "iamtelmo@proton.me",
+      to: "iamtelmoo@gmail.com",
       subject: isWaitlist
         ? `New Waitlist Signup: ${email}`
         : `Support Ticket: ${firstName} <${email}>`,
