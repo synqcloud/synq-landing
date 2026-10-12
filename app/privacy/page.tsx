@@ -1,170 +1,223 @@
 "use client";
 
-import { Nav } from "@/components/nav";
-import { motion } from "framer-motion";
+import {
+  LegalPage,
+  Link,
+  List,
+  SupportEmail,
+  type LegalSection,
+} from "@/components/legal";
 
-const fadeIn = {
-  hidden: { opacity: 0, y: 12 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.8, ease: [0.25, 0.25, 0, 1] },
+const sections: LegalSection[] = [
+  {
+    id: "who-we-are",
+    title: "Who we are",
+    body: (
+      <p>
+        Synq (&quot;we&quot;, &quot;us&quot;) makes a Shopify app that helps
+        trading card stores list cards, keep stock in sync and price them from
+        market data. This policy covers the app and this website. Our legal
+        details are in the <Link href="/legal">legal notice</Link>. For anything
+        about your data, write to <SupportEmail />.
+      </p>
+    ),
   },
-};
+  {
+    id: "what-we-collect",
+    title: "What we collect",
+    body: (
+      <>
+        <p>We collect only what we need to run the app:</p>
+        <List
+          items={[
+            <>
+              <strong>Store details</strong>: your shop&apos;s domain, name,
+              contact email, currency and timezone, from Shopify when you
+              install.
+            </>,
+            <>
+              <strong>Staff details</strong>: the name and email of the people
+              who open the app.
+            </>,
+            <>
+              <strong>Catalog data</strong>: the products, variants, inventory,
+              locations and sales channels Synq manages for you.
+            </>,
+            <>
+              <strong>Analytics</strong>: how the app is used (pages opened,
+              clicks, browser and device), so we can see where it gets in your
+              way. This covers Synq&apos;s pages only, never the rest of your
+              Shopify admin or your screen.
+            </>,
+            <>
+              <strong>Messages</strong>: what you send us by email, the contact
+              form or Shopify&apos;s support channel.
+            </>,
+          ]}
+        />
+        <p>
+          We don&apos;t collect your customers&apos; data. Synq does not ask
+          Shopify for access to orders or customers, and passwords and payment
+          details never pass through it.
+        </p>
+      </>
+    ),
+  },
+  {
+    id: "how-we-use-it",
+    title: "How we use it",
+    body: (
+      <>
+        <List
+          items={[
+            "To run the app: create and update your products, sync stock and prices, run imports and bill your plan.",
+            "To help you when you write to us, and to send service emails such as job results or billing notices.",
+            "To find and fix problems and decide what to build next.",
+            "To keep the service secure and prevent abuse.",
+            "To keep the billing and tax records the law requires.",
+          ]}
+        />
+        <p>We never sell your data or use it for advertising.</p>
+        <p>
+          If you are in the EU or UK: we rely on our contract with you to run
+          the app, on our legitimate interest to improve and secure it, and on
+          legal obligation for billing records.
+        </p>
+      </>
+    ),
+  },
+  {
+    id: "who-we-share-it-with",
+    title: "Who we share it with",
+    body: (
+      <>
+        <p>
+          Only with the providers that run parts of Synq for us (hosting,
+          database, background jobs, image storage, email and analytics), under
+          contracts that limit them to our instructions. Ask us at{" "}
+          <SupportEmail /> and we&apos;ll send you the current list.
+        </p>
+        <p>
+          We may also disclose data when the law requires it, or to a buyer if
+          Synq is ever sold, under this same policy.
+        </p>
+      </>
+    ),
+  },
+  {
+    id: "shopify-and-merchants",
+    title: "Shopify and merchants",
+    body: (
+      <>
+        <p>
+          Synq works through the permissions you approve when you install it:
+          products, inventory, locations and sales channels. For the data in
+          your store, Synq acts on your behalf.
+        </p>
+        <p>
+          Shopify sends us its privacy requests and we answer them. When you
+          uninstall, Shopify asks us to erase your store&apos;s data 48 hours
+          later and we delete it. The products in your store stay there; they
+          are yours.
+        </p>
+        <p>
+          If you shop at a store that uses Synq, your data is held by that store
+          and Shopify, not by us. Please contact the store.
+        </p>
+      </>
+    ),
+  },
+  {
+    id: "retention",
+    title: "How long we keep it",
+    body: (
+      <List
+        items={[
+          "Store, staff and catalog data: while the app is installed, then deleted after uninstall as above.",
+          "Analytics: for the retention period of our analytics plan, then deleted.",
+          "Messages: as long as needed to help you.",
+          "Billing records: as long as tax law requires.",
+        ]}
+      />
+    ),
+  },
+  {
+    id: "security",
+    title: "Security",
+    body: (
+      <p>
+        Data is encrypted in transit, access to production systems is limited to
+        the people who run Synq, and every read and write is scoped to a single
+        store. No system is perfectly secure; if a breach affects your data, we
+        will tell you and the authorities as the law requires.
+      </p>
+    ),
+  },
+  {
+    id: "international-transfers",
+    title: "International transfers",
+    body: (
+      <p>
+        Several of our providers are in the United States. Those transfers rely
+        on the EU–US Data Privacy Framework where the provider is certified, and
+        otherwise on the European Commission&apos;s Standard Contractual
+        Clauses.
+      </p>
+    ),
+  },
+  {
+    id: "cookies",
+    title: "Cookies",
+    body: (
+      <p>
+        The app keeps a small analytics identifier in your browser&apos;s local
+        storage, and Shopify uses its own cookies to sign you in. This website
+        uses privacy-friendly analytics and no advertising cookies.
+      </p>
+    ),
+  },
+  {
+    id: "your-rights",
+    title: "Your rights",
+    body: (
+      <>
+        <p>
+          You can ask us to access, correct, delete or export your personal
+          data, or object to how we use it. Write to <SupportEmail /> and we
+          will answer within a month.
+        </p>
+        <p>
+          In the EU you can also complain to your data protection authority;
+          ours is Spain&apos;s Agencia Española de Protección de Datos
+          (aepd.es).
+        </p>
+      </>
+    ),
+  },
+  {
+    id: "changes",
+    title: "Changes to this policy",
+    body: (
+      <p>
+        When we change this policy we update the date at the top. If a change
+        matters, we tell you by email or in the app first.
+      </p>
+    ),
+  },
+];
 
 export default function PrivacyPolicy() {
   return (
-    <div className="min-h-screen bg-background">
-      <Nav />
-
-      <main className="pt-32 pb-16">
-        <div className="max-w-4xl mx-auto px-8 lg:px-12">
-          <motion.div initial="hidden" animate="visible" variants={fadeIn}>
-            <div>
-              <h1 className="text-3xl sm:text-4xl font-light tracking-[-0.01em] text-foreground mb-4">
-                Privacy Policy
-              </h1>
-              <p className="text-sm font-light tracking-[-0.01em] text-muted-foreground">
-                Last updated: {new Date().toLocaleDateString()}
-              </p>
-            </div>
-
-            <div className="space-y-8 text-sm text-muted-foreground leading-relaxed">
-              <section>
-                <h2 className="text-xl font-semibold tracking-[-0.01em] text-foreground mb-4">
-                  Introduction
-                </h2>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  Synq ("we," "our," or "us") is committed to protecting your
-                  privacy. This Privacy Policy explains how we collect, use,
-                  disclose, and safeguard your information when you use our
-                  inventory management platform for card game stores.
-                </p>
-              </section>
-
-              <section>
-                <h2 className="text-xl font-semibold tracking-[-0.01em] text-foreground mb-4">
-                  Information We Collect
-                </h2>
-                <div className="space-y-4 text-sm text-muted-foreground">
-                  <div>
-                    <h3 className="font-semibold text-foreground mb-2">
-                      Personal Information
-                    </h3>
-                    <p className="leading-relaxed">
-                      We may collect personal information such as your name,
-                      email address, store information, and business details
-                      when you sign up for our service or contact us.
-                    </p>
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-foreground mb-2">
-                      Usage Information
-                    </h3>
-                    <p className="leading-relaxed">
-                      We collect information about how you use our platform,
-                      including inventory data, sales information, and analytics
-                      to improve our service.
-                    </p>
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-foreground mb-2">
-                      Technical Information
-                    </h3>
-                    <p className="leading-relaxed">
-                      We may collect technical information such as IP addresses,
-                      browser type, and device information for security and
-                      service optimization.
-                    </p>
-                  </div>
-                </div>
-              </section>
-
-              <section>
-                <h2 className="text-xl font-semibold tracking-[-0.01em] text-foreground mb-4">
-                  How We Use Your Information
-                </h2>
-                <div className="space-y-3 text-sm text-muted-foreground">
-                  <p className="leading-relaxed">
-                    • To provide and maintain our inventory management service
-                  </p>
-                  <p className="leading-relaxed">
-                    • To communicate with you about our service
-                  </p>
-                  <p className="leading-relaxed">
-                    • To improve and develop our platform
-                  </p>
-                  <p className="leading-relaxed">
-                    • To ensure security and prevent fraud
-                  </p>
-                  <p className="leading-relaxed">
-                    • To comply with legal obligations
-                  </p>
-                </div>
-              </section>
-
-              <section>
-                <h2 className="text-xl font-semibold tracking-[-0.01em] text-foreground mb-4">
-                  Data Security
-                </h2>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  We implement appropriate security measures to protect your
-                  personal information against unauthorized access, alteration,
-                  disclosure, or destruction. However, no method of transmission
-                  over the internet is 100% secure.
-                </p>
-              </section>
-
-              <section>
-                <h2 className="text-xl font-semibold tracking-[-0.01em] text-foreground mb-4">
-                  Data Sharing
-                </h2>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  We do not sell, trade, or otherwise transfer your personal
-                  information to third parties without your consent, except as
-                  described in this policy or as required by law.
-                </p>
-              </section>
-
-              <section>
-                <h2 className="text-xl font-semibold tracking-[-0.01em] text-foreground mb-4">
-                  Your Rights
-                </h2>
-                <div className="space-y-3 text-sm text-muted-foreground">
-                  <p className="leading-relaxed">
-                    • Access your personal information
-                  </p>
-                  <p className="leading-relaxed">
-                    • Correct inaccurate information
-                  </p>
-                  <p className="leading-relaxed">
-                    • Request deletion of your data
-                  </p>
-                  <p className="leading-relaxed">
-                    • Opt-out of marketing communications
-                  </p>
-                </div>
-              </section>
-
-              <section>
-                <h2 className="text-xl font-semibold tracking-[-0.01em] text-foreground mb-4">
-                  Contact Us
-                </h2>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  If you have any questions about this Privacy Policy, please
-                  contact us at{" "}
-                  <a
-                    href="mailto:iamtelmo@proton.me"
-                    className="text-blue-600 hover:text-blue-800"
-                  >
-                    iamtelmo@proton.me
-                  </a>
-                </p>
-              </section>
-            </div>
-          </motion.div>
-        </div>
-      </main>
-    </div>
+    <LegalPage
+      title="Privacy Policy"
+      updated="October 12, 2026"
+      intro={
+        <p>
+          Our rule is simple: collect only what Synq needs to do its job, and
+          never sell it. Here is what that means in practice.
+        </p>
+      }
+      sections={sections}
+    />
   );
 }
