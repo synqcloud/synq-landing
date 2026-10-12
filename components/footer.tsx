@@ -10,6 +10,7 @@ const links = [
   { label: "Blog",     href: "/blog" },
   { label: "Privacy",  href: "/privacy" },
   { label: "Terms",    href: "/terms" },
+  { label: "Legal",    href: "/legal" },
 ];
 
 export function Footer() {
