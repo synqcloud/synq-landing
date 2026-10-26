@@ -20,6 +20,9 @@ export function ContactForm() {
   const [topic, setTopic] = useState<string>(TOPICS[0]);
   const [message, setMessage] = useState("");
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
+  // Anti-spam: bots fill the hidden field and submit instantly.
+  const [website, setWebsite] = useState("");
+  const [startedAt] = useState(() => Date.now());
 
   const canSubmit = name.trim() && email.trim() && message.trim();
 
@@ -39,6 +42,8 @@ export function ContactForm() {
           frustration: message.trim(),
           page: window.location.pathname,
           attribution: getAttribution(),
+          website,
+          elapsedMs: Date.now() - startedAt,
         }),
       });
       if (!res.ok) throw new Error("Failed to send");
@@ -62,6 +67,10 @@ export function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} className="grid gap-4 p-6 border border-border rounded-xl bg-card">
+      <div aria-hidden="true" style={{ position: "absolute", left: "-10000px", width: 1, height: 1, overflow: "hidden" }}>
+        <label htmlFor="contact-website">Website</label>
+        <input id="contact-website" name="website" type="text" tabIndex={-1} autoComplete="off" value={website} onChange={(e) => setWebsite(e.target.value)} />
+      </div>
       <div className="grid sm:grid-cols-2 gap-4">
         <div className="grid gap-1.5">
           <Label htmlFor="contact-name">Name</Label>

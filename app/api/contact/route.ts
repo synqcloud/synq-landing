@@ -15,8 +15,46 @@ const escapeHtml = (value: unknown) =>
 
 const isEmail = (value: string) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
 
+// ---- Anti-spam -------------------------------------------------------------
+// Bots get a normal "success" response so they don't learn what tripped them,
+// but nothing is sent: no email to the inbox and, importantly, no confirmation
+// email to an address a bot typed in (that would hurt our sending reputation).
+
+const ALLOWED_ORIGINS = [/^https:\/\/synq\.cards$/, /^https:\/\/[a-z0-9-]+\.vercel\.app$/, /^http:\/\/localhost(:\d+)?$/];
+const MIN_FILL_MS = 3_000; // humans don't fill the form in under 3 seconds
+const MAX_FILL_MS = 24 * 60 * 60 * 1_000;
+const MAX_LINKS = 2;
+const RATE_LIMIT = 5; // per IP per hour (best effort: per serverless instance)
+const RATE_WINDOW_MS = 60 * 60 * 1_000;
+const SPAM_PATTERNS = [
+  /\b(seo|backlinks?|guest post|link building|rank(ing)? (your|on) google)\b/i,
+  /\b(crypto|bitcoin|forex|casino|viagra|loan offer)\b/i,
+  /\b(web ?design|app development|lead generation) (services|agency|company)\b/i,
+];
+
+const hits = new Map<string, number[]>();
+function rateLimited(ip: string): boolean {
+  const now = Date.now();
+  const recent = (hits.get(ip) ?? []).filter((t) => now - t < RATE_WINDOW_MS);
+  recent.push(now);
+  hits.set(ip, recent);
+  return recent.length > RATE_LIMIT;
+}
+
+function spamReason(request: NextRequest, body: Record<string, unknown>, message: string): string | null {
+  const origin = request.headers.get("origin");
+  if (origin && !ALLOWED_ORIGINS.some((re) => re.test(origin))) return "origin";
+  if (String(body.website ?? "").trim()) return "honeypot";
+  const elapsed = Number(body.elapsedMs);
+  if (!Number.isFinite(elapsed) || elapsed < MIN_FILL_MS || elapsed > MAX_FILL_MS) return "timing";
+  if ((message.match(/https?:\/\/|www\./gi) ?? []).length > MAX_LINKS) return "links";
+  if (SPAM_PATTERNS.some((re) => re.test(message))) return "content";
+  const ip = request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() || "unknown";
+  if (rateLimited(ip)) return "rate";
+  return null;
+}
+
 export async function POST(request: NextRequest) {
-  const resend = new Resend(process.env.RESEND_API_KEY);
   try {
     const body = await request.json();
     const name = String(body.firstName ?? "").trim().slice(0, 120);
@@ -31,10 +69,17 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
     }
 
+    const spam = spamReason(request, body, `${name} ${message}`);
+    if (spam) {
+      console.warn("Contact form: dropped as spam", { reason: spam });
+      return NextResponse.json({ success: true });
+    }
+
     const origin = a
       ? `${escapeHtml(a.source)} / ${escapeHtml(a.medium)}${a.campaign ? ` / ${escapeHtml(a.campaign)}` : ""} · first page ${escapeHtml(a.landingPath)} · first seen ${escapeHtml(a.firstSeen)}${a.referrer ? ` · referrer ${escapeHtml(a.referrer)}` : ""}`
       : "unknown";
 
+    const resend = new Resend(process.env.RESEND_API_KEY);
     await resend.emails.send({
       from: FROM,
       to: INBOX,
