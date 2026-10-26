@@ -123,7 +123,7 @@ export default async function GameLandingPage({ params }: Props) {
                   Every price starts from the live TCGplayer market price for that exact card, set and
                   printing. {g.printings} You choose a store strategy, Market price, Market + %, or
                   Market - %, and Synq applies it, then keeps prices current. Learn more in{" "}
-                  <Link href="/help/how-synq-prices-your-cards" className="text-primary underline underline-offset-4">how Synq prices your cards</Link>.
+                  <Link href="/how-it-works" className="text-primary underline underline-offset-4">how Synq works</Link>.
                 </p>
               </section>
 
@@ -136,8 +136,7 @@ export default async function GameLandingPage({ params }: Props) {
                 <h2 className="text-lg font-semibold text-foreground mb-2">Add {g.noun} in one click</h2>
                 <p className="text-sm text-muted-foreground leading-7">
                   {g.exampleSets} Pick the printing and conditions, and Synq creates the Shopify product
-                  for you, priced from market data. See{" "}
-                  <Link href="/help/adding-products-to-your-store" className="text-primary underline underline-offset-4">adding products</Link>.
+                  for you, priced from market data.
                 </p>
               </section>
 

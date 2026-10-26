@@ -1,84 +1,74 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 
+// All contact and support messages go to this inbox, nowhere else.
+const INBOX = "iamtelmoo@gmail.com";
+const FROM = "Synq <noreply@trysynq.com>";
+
+const escapeHtml = (value: unknown) =>
+  String(value ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+
+const isEmail = (value: string) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+
 export async function POST(request: NextRequest) {
   const resend = new Resend(process.env.RESEND_API_KEY);
   try {
     const body = await request.json();
-    const { firstName, email, storeType, role, frustration, inventorySize, wantsUpdates } =
-      body;
+    const name = String(body.firstName ?? "").trim().slice(0, 120);
+    const email = String(body.email ?? "").trim().slice(0, 200);
+    const shop = String(body.shop ?? "").trim().slice(0, 200);
+    const topic = String(body.storeType ?? "General inquiry").trim().slice(0, 80);
+    const message = String(body.frustration ?? "").trim().slice(0, 5000);
+    const page = String(body.page ?? "").slice(0, 200);
+    const a = body.attribution && typeof body.attribution === "object" ? body.attribution : null;
 
-    // Validate required fields
-    if (!email || !storeType) {
-      return NextResponse.json(
-        { error: "Missing required fields" },
-        { status: 400 },
-      );
+    if (!email || !isEmail(email) || !message) {
+      return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
     }
 
-    const isWaitlist = storeType === "waitlist";
-    const region = role || "Not specified";
-    const games = frustration || "Not specified";
-    const inventory = inventorySize || "Not specified";
+    const origin = a
+      ? `${escapeHtml(a.source)} / ${escapeHtml(a.medium)}${a.campaign ? ` / ${escapeHtml(a.campaign)}` : ""} · first page ${escapeHtml(a.landingPath)} · first seen ${escapeHtml(a.firstSeen)}${a.referrer ? ` · referrer ${escapeHtml(a.referrer)}` : ""}`
+      : "unknown";
 
-    // Send email to you
-    const notificationEmail = await resend.emails.send({
-      from: "Synq <noreply@trysynq.com>",
-      to: "iamtelmoo@gmail.com",
-      subject: isWaitlist
-        ? `New Waitlist Signup: ${email}`
-        : `Support Ticket: ${firstName} <${email}>`,
-      html: isWaitlist
-        ? `
-        <h2>New Waitlist Signup</h2>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Region:</strong> ${region}</p>
-        <p><strong>Games:</strong> ${games}</p>
-        <p><strong>Inventory:</strong> ${inventory}</p>
-      `
-        : `
-        <h2>New Support Ticket</h2>
-        <p><strong>Name:</strong> ${firstName}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Category:</strong> ${storeType}</p>
-        ${frustration ? `<p><strong>Description:</strong> ${frustration}</p>` : ""}
+    await resend.emails.send({
+      from: FROM,
+      to: INBOX,
+      replyTo: email,
+      subject: `[Synq] ${topic}: ${name || email}`,
+      html: `
+        <h2>${escapeHtml(topic)}</h2>
+        <p><strong>Name:</strong> ${escapeHtml(name)}</p>
+        <p><strong>Email:</strong> ${escapeHtml(email)}</p>
+        ${shop ? `<p><strong>Store:</strong> ${escapeHtml(shop)}</p>` : ""}
+        <p><strong>Message:</strong></p>
+        <p style="white-space:pre-wrap">${escapeHtml(message)}</p>
+        <hr />
+        <p style="color:#666;font-size:12px"><strong>Sent from:</strong> ${escapeHtml(page) || "unknown"}<br />
+        <strong>Origin (first touch):</strong> ${origin}</p>
       `,
     });
 
-    console.log("Notification email sent:", notificationEmail);
-
-    // Send confirmation email to user
-    const confirmationEmail = await resend.emails.send({
-      from: "Synq <noreply@trysynq.com>",
+    await resend.emails.send({
+      from: FROM,
       to: email,
-      subject: isWaitlist
-        ? "You're on the Synq waitlist!"
-        : "We received your support ticket",
-      html: isWaitlist
-        ? `
-        <h2>You're on the list!</h2>
-        <p>Really glad to have you here. We're building Synq because we know how much time card store owners lose to manual work, time that could go toward growing your store instead.</p>
-        <p>We're currently going through Shopify's app review. As soon as we're live, we'll reach out to this email with your invite.</p>
-        <p>If anything comes to mind in the meantime, we're always happy to hear from you at <a href="mailto:help@trysynq.com">help@trysynq.com</a>.</p>
-        <p>Telmo, founder @ Synq</p>
-      `
-        : `
-        <h2>Hi ${firstName},</h2>
-        <p>We got your message and we're on it. You'll hear back from us within one business day.</p>
-        <p>In the meantime, you can browse our <a href="https://trysynq.com/help">help center</a> — it might have a quick answer while you wait.</p>
-        <p>If anything else comes up, just reply to this email.</p>
-        <p>— The Synq team</p>
+      replyTo: INBOX,
+      subject: "We got your message",
+      html: `
+        <p>Hi ${escapeHtml(name) || "there"},</p>
+        <p>Thanks for reaching out. We got your message and will reply to this email, usually within one business day.</p>
+        <p>If you want to add anything, just reply to this email.</p>
+        <p>Telmo, Synq</p>
       `,
     });
-
-    console.log("Confirmation email sent:", confirmationEmail);
 
     return NextResponse.json({ success: true });
   } catch (error) {
     console.error("Contact form error:", error);
-    return NextResponse.json(
-      { error: "Failed to send email" },
-      { status: 500 },
-    );
+    return NextResponse.json({ error: "Failed to send email" }, { status: 500 });
   }
 }

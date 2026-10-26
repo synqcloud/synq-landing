@@ -63,34 +63,6 @@ and wants to: list singles or sealed product fast from a catalog, price from
 TCGplayer market data, handle per-condition variants and stock, and keep prices
 current automatically or in bulk.
 
-## Key help docs
-
-Setup
-- Get started with Synq (install, first sync, no TCGplayer account needed): https://synq.cards/help/get-started-with-synq
-- Choose your games and collections: https://synq.cards/help/choose-your-games-and-collections
-- Switching from manual pricing: https://synq.cards/help/migrating-from-manual-pricing
-
-Catalog
-- Add products to your store (singles, sealed, conditions, stock): https://synq.cards/help/adding-products-to-your-store
-- Find and organize products (search and saved views): https://synq.cards/help/find-and-organize-products
-
-Pricing
-- How Synq prices your cards (market, strategy, conditions): https://synq.cards/help/how-synq-prices-your-cards
-- Price rules (floors, ceilings, rounding): https://synq.cards/help/price-rules
-- Currencies and conversion: https://synq.cards/help/currencies-and-conversion
-- Keep prices current (one-click sync and automatic daily repricing): https://synq.cards/help/keep-prices-current
-
-Listings and channels
-- Product templates (titles, descriptions, SKUs, vendor; apply changes to existing products): https://synq.cards/help/product-templates
-- Publishing: sales channels and Google Shopping: https://synq.cards/help/publishing-and-sales-channels
-
-Billing
-- Plans and what is included: https://synq.cards/help/plans-and-what-is-included
-
-Troubleshooting
-- A price or product is not updating: https://synq.cards/help/prices-or-products-not-updating
-- Storefront formatting and theme issues: https://synq.cards/help/storefront-formatting-and-theme-issues
-
 ## Blog
 
 - How to Automate Card Pricing on Shopify: https://synq.cards/blog/automate-card-pricing-shopify
@@ -102,8 +74,7 @@ Troubleshooting
 ## Other
 
 - Pricing: https://synq.cards/pricing
-- Help Center: https://synq.cards/help
-- Community and roadmap: https://feedback.synq.cards
+- Contact and support: https://synq.cards/contact
 
 ## Indexing
 

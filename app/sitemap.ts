@@ -1,6 +1,5 @@
 import { MetadataRoute } from "next";
 import { getAllPosts } from "@/lib/blog";
-import { getAllDocs } from "@/lib/docs";
 import { GAME_PAGES } from "@/lib/game-pages";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -40,6 +39,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
+      url: `${baseUrl}/contact`,
+      lastModified: currentDate,
+      changeFrequency: "yearly",
+      priority: 0.5,
+    },
+    {
       url: `${baseUrl}/synq-vs-spreadsheets`,
       lastModified: currentDate,
       changeFrequency: "monthly",
@@ -74,23 +79,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  // Help center
-  const helpHub: MetadataRoute.Sitemap = [
-    {
-      url: `${baseUrl}/help`,
-      lastModified: currentDate,
-      changeFrequency: "weekly" as const,
-      priority: 0.8,
-    },
-  ];
-
-  const docs = getAllDocs();
-  const helpPages: MetadataRoute.Sitemap = docs.map((doc) => ({
-    url: `${baseUrl}/help/${doc.slug}`,
-    lastModified: currentDate,
-    changeFrequency: "monthly" as const,
-    priority: 0.7,
-  }));
-
-  return [...staticPages, ...blogPages, ...helpHub, ...helpPages];
+  return [...staticPages, ...blogPages];
 }

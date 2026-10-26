@@ -13,6 +13,7 @@ import {
   Textarea,
   Label,
 } from "@synq/ui/component";
+import { getAttribution } from "@/lib/attribution";
 
 interface ContactModalProps {
   open: boolean;
@@ -44,7 +45,8 @@ export function ContactModal({ open, onOpenChange }: ContactModalProps) {
           email: email.trim(),
           storeType: "General inquiry",
           frustration: message.trim(),
-          wantsUpdates: false,
+          page: window.location.pathname,
+          attribution: getAttribution(),
         }),
       });
 
@@ -137,8 +139,8 @@ export function ContactModal({ open, onOpenChange }: ContactModalProps) {
               {status === "error" && (
                 <p className="text-sm text-destructive">
                   Something went wrong. Please try again or email us at{" "}
-                  <a href="mailto:support@synq.cards" className="underline">
-                    support@synq.cards
+                  <a href="mailto:iamtelmoo@gmail.com" className="underline">
+                    iamtelmoo@gmail.com
                   </a>
                   .
                 </p>

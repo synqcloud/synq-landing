@@ -127,9 +127,7 @@ export default function SynqVsSpreadsheetsPage() {
                 Synq prices from TCGplayer market data, writes prices straight to Shopify, handles a
                 variant per condition, and keeps prices current with a one-click sync or automatic daily
                 repricing. See{" "}
-                <Link href="/how-it-works" className="text-primary underline underline-offset-4">how Synq works</Link>{" "}
-                and{" "}
-                <Link href="/help/how-synq-prices-your-cards" className="text-primary underline underline-offset-4">how it prices your cards</Link>.
+                <Link href="/how-it-works" className="text-primary underline underline-offset-4">how Synq works</Link>.
               </p>
             </section>
 
