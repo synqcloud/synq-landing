@@ -82,7 +82,7 @@ export default function FaqPage() {
             <div className="mt-10 p-5 bg-card rounded-xl border border-border">
               <p className="text-sm font-medium text-foreground mb-1">Still have questions?</p>
               <p className="text-sm text-muted-foreground mb-4">
-                Browse the <a href="/help" className="text-primary underline underline-offset-4">help center</a> or install Synq and try it free for 7 days.
+                <a href="/contact" className="text-primary underline underline-offset-4">Contact us</a> or install Synq and try it free for 7 days.
               </p>
               <a
                 href={SHOPIFY_URL}

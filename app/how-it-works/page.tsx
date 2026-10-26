@@ -132,8 +132,7 @@ export default function HowItWorksPage() {
                 <li>Round it up to a clean ending, if set.</li>
               </ol>
               <p className="text-sm text-muted-foreground leading-7 mt-3">
-                Floor, ceiling and rounding are off by default. Learn more in{" "}
-                <Link href="/help/price-rules" className="text-primary underline underline-offset-4">price rules</Link>.
+                Floor, ceiling and rounding are off by default.
               </p>
             </section>
 
@@ -141,8 +140,7 @@ export default function HowItWorksPage() {
               <h2 className="text-lg font-semibold text-foreground mb-2">What Synq does not touch</h2>
               <p className="text-sm text-muted-foreground leading-7">
                 The price sync updates the price only. It never changes your stock, titles,
-                descriptions or images, so any manual edit you make is preserved. See{" "}
-                <Link href="/help/what-synq-writes-to-shopify" className="text-primary underline underline-offset-4">what Synq writes to Shopify</Link>.
+                descriptions or images, so any manual edit you make is preserved.
               </p>
             </section>
 

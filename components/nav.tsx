@@ -11,7 +11,7 @@ const SHOPIFY_URL = "https://apps.shopify.com/synq-tcg-card-manager";
 const navLinks = [
   { label: "Features", href: "#features" },
   { label: "Pricing", href: "/pricing" },
-  { label: "Docs", href: "/help" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export function Nav() {

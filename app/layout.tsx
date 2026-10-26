@@ -6,6 +6,7 @@ import "./globals.css";
 import { LandingProviders } from "./providers";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { AttributionTracker } from "@/components/attribution-tracker";
 import { SchemaMarkup } from "@/components/schema-markup";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -164,6 +165,7 @@ export default function RootLayout({
       <body className={`${inter.className} bg-background text-foreground`}>
         <LandingProviders>{children}</LandingProviders>
         <SpeedInsights />
+        <AttributionTracker />
       </body>
     </html>
   );

@@ -12,7 +12,6 @@ import { InstallRequestSection } from "@/components/install-request-section";
 import { PricingSection } from "@/components/pricing-section";
 
 import { Metadata } from "next";
-import { FeedbackSection } from "@/components/feedback-section";
 
 export const metadata: Metadata = {
   title: "Synq — Automated Card Pricing for Shopify",
@@ -58,7 +57,6 @@ export default function HomePage() {
           {/* CTA */}
           <InstallRequestSection />
 
-          {/* <FeedbackSection /> */}
 
           {/* FAQ */}
           <FAQSection />

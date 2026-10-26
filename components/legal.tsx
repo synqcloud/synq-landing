@@ -3,7 +3,7 @@
 import { Nav } from "@/components/nav";
 import { motion } from "framer-motion";
 
-const SUPPORT_EMAIL = "help@trysynq.com";
+const SUPPORT_EMAIL = "iamtelmoo@gmail.com";
 
 // The legal holder behind synq. Shown only on /legal (Spain's LSSI art. 10
 // requires name, tax id and address on the site); the policies say "synq".

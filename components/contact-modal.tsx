@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Send, CheckCircle, Loader2 } from "lucide-react";
 import {
   Dialog,
@@ -13,6 +13,7 @@ import {
   Textarea,
   Label,
 } from "@synq/ui/component";
+import { getAttribution } from "@/lib/attribution";
 
 interface ContactModalProps {
   open: boolean;
@@ -26,6 +27,12 @@ export function ContactModal({ open, onOpenChange }: ContactModalProps) {
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">(
     "idle",
   );
+
+  const [website, setWebsite] = useState("");
+  const [openedAt, setOpenedAt] = useState(() => Date.now());
+  useEffect(() => {
+    if (open) setOpenedAt(Date.now());
+  }, [open]);
 
   const canSubmit = name.trim() && email.trim() && message.trim();
 
@@ -44,7 +51,10 @@ export function ContactModal({ open, onOpenChange }: ContactModalProps) {
           email: email.trim(),
           storeType: "General inquiry",
           frustration: message.trim(),
-          wantsUpdates: false,
+          page: window.location.pathname,
+          attribution: getAttribution(),
+          website,
+          elapsedMs: Date.now() - openedAt,
         }),
       });
 
@@ -97,6 +107,10 @@ export function ContactModal({ open, onOpenChange }: ContactModalProps) {
             </DialogHeader>
 
             <form onSubmit={handleSubmit} className="grid gap-4 mt-2">
+              <div aria-hidden="true" style={{ position: "absolute", left: "-10000px", width: 1, height: 1, overflow: "hidden" }}>
+                <label htmlFor="modal-website">Website</label>
+                <input id="modal-website" name="website" type="text" tabIndex={-1} autoComplete="off" value={website} onChange={(e) => setWebsite(e.target.value)} />
+              </div>
               <div className="grid grid-cols-2 gap-4">
                 <div className="grid gap-1.5">
                   <Label htmlFor="contact-name">Name</Label>
@@ -137,8 +151,8 @@ export function ContactModal({ open, onOpenChange }: ContactModalProps) {
               {status === "error" && (
                 <p className="text-sm text-destructive">
                   Something went wrong. Please try again or email us at{" "}
-                  <a href="mailto:support@synq.cards" className="underline">
-                    support@synq.cards
+                  <a href="mailto:iamtelmoo@gmail.com" className="underline">
+                    iamtelmoo@gmail.com
                   </a>
                   .
                 </p>
