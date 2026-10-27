@@ -32,8 +32,9 @@ export function HeroSection() {
             </h1>
 
             <p className="text-base text-muted-foreground leading-relaxed mb-8 max-w-sm">
-              Add singles, sealed and accessories, keep prices updated and
-              manage your catalog without the manual work.
+              Add singles, sealed and decks from a catalog or your spreadsheet.
+              Price rules keep every price in step with TCGplayer, on a schedule
+              you choose.
             </p>
 
             <div className="flex flex-wrap items-center gap-3">
@@ -58,10 +59,10 @@ export function HeroSection() {
             className="screenshot-frame lg:-mr-6"
           >
             <Image
-              src="/brand/dashboard.png"
-              alt="Synq dashboard — manage card inventory and update prices in bulk"
-              width={1400}
-              height={820}
+              src="/screens/rule-preview.webp"
+              alt="A Synq price rule previewing each Pokémon card's new price before it runs"
+              width={2000}
+              height={1059}
               sizes="(max-width: 768px) 100vw, 65vw"
               className="w-full h-auto"
               quality={92}
