@@ -34,9 +34,9 @@ export const faqs: Faq[] = [
       "Yes. You can link existing Shopify products to Synq's catalog, or import your inventory from a CSV, an Excel file or a TCGplayer export and review every match before anything is created. Synq only reprices products that are linked to it.",
   },
   {
-    question: "How many cards can I manage?",
+    question: "How many products can I manage?",
     answer:
-      "Starter handles up to 2,000 cards, Pro up to 15,000, and Scale up to 50,000. Every plan starts with a 7-day free trial so you can see the value before you commit.",
+      "Starter manages up to 2,000 products, Pro up to 15,000 and Scale up to 50,000. A product is one printing of a card, with a variant for each condition you stock. Every plan has every feature and starts with a 7-day free trial.",
   },
   {
     question: "Can I use it across multiple stores?",

@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 const steps = [
-  { num: "1", label: "Search", desc: "Find any card by name or set" },
-  { num: "2", label: "Configure", desc: "Choose conditions and pricing rules" },
-  { num: "3", label: "Publish", desc: "Live on Shopify in seconds" },
+  { num: "1", label: "Search", desc: "By name, set or collector number" },
+  { num: "2", label: "Pick", desc: "The printing and the conditions you stock" },
+  { num: "3", label: "Add", desc: "Created in Shopify, priced by your rules" },
 ];
 
 export function AddCardsSection() {
@@ -21,13 +21,13 @@ export function AddCardsSection() {
           className="mb-10"
         >
           <span className="inline-block text-xs font-semibold text-subtle uppercase tracking-widest mb-3">
-            Card Search & Product Creation
+            Add products
           </span>
           <h2 className="text-2xl sm:text-3xl font-bold text-foreground tracking-[-0.02em] mb-3 max-w-xl">
-            Add cards to your store in seconds.
+            Add trading cards to Shopify from a catalog.
           </h2>
           <p className="text-base text-muted-foreground max-w-lg leading-relaxed">
-            Search our database, pick a card and its condition, and Synq creates a complete Shopify product — image, title, description, and market price included.
+            Search a catalog of singles, sealed product and decks. Synq creates the Shopify product with its image, title and a variant per condition, priced by your rules (or at market price when no rule fits). Cards you already stock show their stock on the tile.
           </p>
         </motion.div>
 
@@ -39,9 +39,9 @@ export function AddCardsSection() {
           className="screenshot-frame"
         >
           <Image
-            src="/brand/add-magic-cards-to-shopify.png"
-            alt="Synq card search — add Magic: The Gathering cards to Shopify instantly"
-            width={1200} height={700}
+            src="/screens/add-products.webp"
+            alt="Searching Synq's catalog for Charizard ex, with the printings already in the store shown first"
+            width={2000} height={1210}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1000px"
             className="w-full h-auto"
             quality={90}
@@ -57,7 +57,7 @@ export function AddCardsSection() {
           className="mt-5 grid sm:grid-cols-3 gap-3"
         >
           {steps.map((step) => (
-            <div key={step.num} className="flex items-start gap-3.5 p-4 bg-card rounded-xl border border-border">
+            <div key={step.num} className="flex items-start gap-3.5 p-4 bg-card rounded-[14px] shadow-[0_0_0_1px_rgba(0,0,0,0.06),0_1px_2px_rgba(0,0,0,0.04),0_10px_28px_-16px_rgba(0,0,0,0.18)]">
               <span className="flex-shrink-0 w-6 h-6 rounded-full bg-primary text-primary-foreground text-xs font-bold flex items-center justify-center">
                 {step.num}
               </span>

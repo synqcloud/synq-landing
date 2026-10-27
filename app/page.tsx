@@ -3,7 +3,9 @@ import { Nav } from "../components/nav";
 import { HeroSection } from "../components/hero-section";
 import { Footer } from "../components/footer";
 import { AddCardsSection } from "@/components/features/add-cards-section";
-import { ConditionPricingSection } from "@/components/features/condition-pricing-section";
+import { PriceRulesSection } from "@/components/features/price-rules-section";
+import { ImportSection } from "@/components/features/import-section";
+import { PosSection } from "@/components/features/pos-section";
 import { DashboardSection } from "@/components/features/dashboard-section";
 import { GamesSection } from "@/components/features/games-section";
 import { TimelineSection } from "@/components/timeline-section";
@@ -14,16 +16,16 @@ import { PricingSection } from "@/components/pricing-section";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Synq — Automated Card Pricing for Shopify",
+  title: "Synq: TCG inventory and automated card pricing for Shopify",
   description:
-    "Keep your Shopify card shop competitive with automated pricing. Synq syncs your card prices with TCGPlayer market data daily for Magic, Pokemon, Lorcana, Yu-Gi-Oh, One Piece and more.",
+    "Shopify app for card shops: add or import singles and sealed, and keep prices in step with TCGplayer using scheduled price rules. 19 games.",
   alternates: {
     canonical: "https://synq.cards",
   },
   openGraph: {
-    title: "Synq — Automated Card Pricing for Shopify",
+    title: "Synq: TCG inventory and automated card pricing for Shopify",
     description:
-      "Sync your card prices with TCGPlayer market data automatically. Supports Magic, Pokemon, Lorcana, Yu-Gi-Oh, One Piece, Flesh and Blood, Riftbound and more.",
+      "Add or import your trading cards into Shopify and keep every price in step with TCGplayer market data using scheduled price rules.",
     url: "https://synq.cards",
   },
 };
@@ -41,8 +43,10 @@ export default function HomePage() {
           {/* Feature deep-dives */}
           <section id="features" aria-label="Features">
             <AddCardsSection />
-            <ConditionPricingSection />
+            <PriceRulesSection />
+            <ImportSection />
             <DashboardSection />
+            <PosSection />
           </section>
 
           {/* Supported games */}

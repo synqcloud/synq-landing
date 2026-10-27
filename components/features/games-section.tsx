@@ -46,7 +46,7 @@ export function GamesSection() {
             Supported Games
           </span>
           <h2 className="text-xl sm:text-2xl font-bold text-foreground tracking-[-0.02em]">
-            Works with the games your customers love
+            Sell Magic, Pokémon, Lorcana and 16 more games on Shopify
           </h2>
         </motion.div>
 

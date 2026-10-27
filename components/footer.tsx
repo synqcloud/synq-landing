@@ -44,8 +44,8 @@ export function Footer() {
           </nav>
         </div>
         <div className="border-t border-border pt-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
-          <p className="text-xs text-subtle">© 2025 Synq. All rights reserved.</p>
-          <p className="text-xs text-subtle">Automated card pricing for Shopify stores.</p>
+          <p className="text-xs text-subtle">© {new Date().getFullYear()} Synq. All rights reserved.</p>
+          <p className="text-xs text-subtle">Inventory and automated pricing for Shopify card stores.</p>
         </div>
       </div>
     </footer>

@@ -41,7 +41,7 @@ export function FAQSection() {
           className="mb-10"
         >
           <span className="inline-block text-xs font-semibold text-subtle uppercase tracking-widest mb-3">FAQ</span>
-          <h2 className="text-2xl sm:text-3xl font-bold text-foreground tracking-[-0.02em]">Questions? We've got answers.</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold text-foreground tracking-[-0.02em]">Frequently asked questions</h2>
         </motion.div>
 
         <motion.div

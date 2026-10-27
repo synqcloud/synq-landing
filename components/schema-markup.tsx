@@ -28,7 +28,7 @@ export function SchemaMarkup() {
         },
         image: { "@id": `${BASE_URL}/#logo` },
         description:
-          "Synq automates trading card pricing for Shopify stores, syncing with TCGPlayer market data daily.",
+          "Synq is a Shopify app for trading card stores: inventory from a catalog or spreadsheet, and prices kept in step with TCGplayer market data by scheduled price rules.",
         foundingDate: "2024",
         sameAs: ["https://apps.shopify.com/synq-tcg-card-manager"],
         contactPoint: {
@@ -45,7 +45,7 @@ export function SchemaMarkup() {
         name: "Synq",
         alternateName: "Synq Card Price Sync",
         description:
-          "Shopify app that automatically syncs trading card prices with TCGPlayer market data. Add cards with one click, get daily price updates, and manage condition-based pricing for Magic: The Gathering, Pokemon, and more.",
+          "Shopify app for trading card stores. Add singles, sealed product and decks from a catalog or a spreadsheet, and keep prices in step with TCGplayer market data using scheduled price rules, per-condition market prices and minimums. Supports 19 games including Magic: The Gathering, Pokémon and Lorcana.",
         url: BASE_URL,
         applicationCategory: "BusinessApplication",
         applicationSubCategory: "Inventory Management",
@@ -125,7 +125,7 @@ export function SchemaMarkup() {
         name: "Synq",
         alternateName: ["Synq Card Price Sync", "Synq for Shopify"],
         description:
-          "Sync your Shopify card prices with TCGPlayer market data automatically.",
+          "Inventory and automated card pricing for Shopify card stores, from TCGplayer market data.",
         publisher: { "@id": `${BASE_URL}/#organization` },
         inLanguage: "en-US",
         potentialAction: {
