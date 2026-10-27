@@ -44,6 +44,7 @@ export async function generateMetadata({
       url: `${baseUrl}/blog/${slug}`,
       type: "article",
       publishedTime: frontmatter.date,
+      modifiedTime: frontmatter.updated ?? frontmatter.date,
       authors: [frontmatter.author],
       siteName: "Synq",
       images: frontmatter.image
