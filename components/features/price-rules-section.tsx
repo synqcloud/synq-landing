@@ -8,8 +8,8 @@ const parts = [
   { label: "Which cards", desc: "A game, sets, rarities, printings or conditions. The most specific rule wins." },
   { label: "The price", desc: "TCGplayer market, plus or minus a percentage and a dollar amount." },
   { label: "Each condition", desc: "Its own market price, or Near Mint minus a percentage you set." },
-  { label: "A minimum", desc: "A fixed amount, or your cost plus a margin. Then round to .49, .99 or .00." },
-  { label: "When it runs", desc: "Every day, on the days you pick, or by hand. Included on every plan." },
+  { label: "A minimum", desc: "A fixed amount, or your cost plus a margin. Rounded to .49, .99 or .00." },
+  { label: "When it runs", desc: "Every day, on the days you pick, or by hand. On every plan." },
 ];
 
 const reveal = {
@@ -52,23 +52,30 @@ export function PriceRulesSection() {
           />
         </motion.div>
 
-        <div className="mt-12 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <motion.div {...reveal} transition={{ duration: 0.5 }} className="mt-14">
+          <h3 className="text-lg font-semibold text-foreground mb-5">What a price rule decides</h3>
+          <ol className="grid sm:grid-cols-2 lg:grid-cols-5 gap-3">
+            {parts.map((p, i) => (
+              <li key={p.label} className="bg-card rounded-[14px] p-4 shadow-[0_0_0_1px_rgba(0,0,0,0.06),0_1px_2px_rgba(0,0,0,0.04),0_10px_28px_-16px_rgba(0,0,0,0.18)]">
+                <span className="text-xs font-semibold text-subtle tabular-nums">{String(i + 1).padStart(2, "0")}</span>
+                <p className="text-sm font-semibold text-foreground mt-2">{p.label}</p>
+                <p className="text-sm text-muted-foreground mt-1 leading-relaxed">{p.desc}</p>
+              </li>
+            ))}
+          </ol>
+        </motion.div>
+
+        <div className="mt-20 grid lg:grid-cols-[5fr,7fr] gap-10 lg:gap-14 items-center">
           <motion.div {...reveal} transition={{ duration: 0.5 }}>
-            <h3 className="text-lg font-semibold text-foreground mb-4">What a price rule decides</h3>
-            <div className="bg-card rounded-[14px] overflow-hidden shadow-[0_0_0_1px_rgba(0,0,0,0.06),0_1px_2px_rgba(0,0,0,0.04),0_10px_28px_-16px_rgba(0,0,0,0.18)]">
-              {parts.map((p, i) => (
-                <div
-                  key={p.label}
-                  className={`px-4 py-3 ${i < parts.length - 1 ? "border-b border-border" : ""}`}
-                >
-                  <p className="text-sm font-semibold text-foreground">{p.label}</p>
-                  <p className="text-sm text-muted-foreground mt-0.5">{p.desc}</p>
-                </div>
-              ))}
-            </div>
-            <p className="text-sm text-muted-foreground leading-relaxed mt-5">
-              A card you want to handle yourself gets its own formula or minimum, or stays out of
-              rules altogether. Select the cards and pick what changes.
+            <span className="inline-block text-xs font-semibold text-subtle uppercase tracking-widest mb-3">
+              Exceptions
+            </span>
+            <h3 className="text-xl sm:text-2xl font-bold text-foreground tracking-[-0.02em] mb-4">
+              Keep the cards you price by hand out of the rules.
+            </h3>
+            <p className="text-base text-muted-foreground leading-relaxed">
+              Select the cards and pick what changes: their own formula, their own minimum, or no
+              rule at all for a condition. Everything else keeps following its rule.
             </p>
           </motion.div>
 
@@ -78,7 +85,7 @@ export function PriceRulesSection() {
               alt="Setting exceptions to their price rules for four selected cards in Synq's inventory"
               width={1800}
               height={1034}
-              sizes="(max-width: 768px) 100vw, 600px"
+              sizes="(max-width: 1024px) 100vw, 600px"
               className="w-full h-auto"
               quality={90}
             />

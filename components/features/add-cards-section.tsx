@@ -57,7 +57,7 @@ export function AddCardsSection() {
           className="mt-5 grid sm:grid-cols-3 gap-3"
         >
           {steps.map((step) => (
-            <div key={step.num} className="flex items-start gap-3.5 p-4 bg-card rounded-xl border border-border">
+            <div key={step.num} className="flex items-start gap-3.5 p-4 bg-card rounded-[14px] shadow-[0_0_0_1px_rgba(0,0,0,0.06),0_1px_2px_rgba(0,0,0,0.04),0_10px_28px_-16px_rgba(0,0,0,0.18)]">
               <span className="flex-shrink-0 w-6 h-6 rounded-full bg-primary text-primary-foreground text-xs font-bold flex items-center justify-center">
                 {step.num}
               </span>
