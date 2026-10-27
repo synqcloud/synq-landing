@@ -23,7 +23,7 @@ export function BlogPostSchema({
       ? `${baseUrl}${frontmatter.image}`
       : `${baseUrl}/brand/synq-eyecatcher-art.png`,
     datePublished: frontmatter.date,
-    dateModified: frontmatter.date,
+    dateModified: frontmatter.updated ?? frontmatter.date,
     author: {
       "@type": "Person",
       name: frontmatter.author,

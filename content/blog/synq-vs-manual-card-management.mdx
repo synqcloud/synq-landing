@@ -2,20 +2,21 @@
 title: "Synq vs Manual Card Management: Time & Cost Analysis"
 description: "A detailed comparison of automated vs manual trading card management. See how much time and money you could save by automating your card shop operations."
 date: "2026-01-21"
+updated: "2026-10-27"
 author: "Synq Team"
 authorTitle: ""
 category: "case-studies"
 tags: ["ROI", "automation", "comparison", "time-savings", "card-management"]
 keywords: "Synq review, card shop automation ROI, manual vs automated card management, card shop time savings, TCG automation benefits"
-image: "/blog/synq-vs-manual.png"
-imageAlt: "Comparison chart showing time savings with Synq vs manual card management"
+image: "/brand/synq-eyecatcher-art.png"
+imageAlt: "Synq: TCGplayer-priced inventory and price rules for Shopify"
 faq:
   - question: "How much time does Synq save per week?"
     answer: "It depends on your catalog size and how often you reprice. Automating price updates and card listing, tasks usually done by hand, can free up many hours each week. The figures in this article are illustrative examples, not guarantees."
   - question: "Is Synq worth it for small card shops?"
-    answer: "Yes. Even shops with a few hundred listings benefit from automated pricing and faster listing. The time saved on manual price checks alone typically justifies the investment. Every plan includes a 7-day free trial."
+    answer: "Yes. Even shops with a few hundred listings benefit from automated pricing and faster listing. The time saved on manual price checks alone typically justifies the investment. Paid plans start with a 7-day free trial."
   - question: "Can I try Synq before committing?"
-    answer: "Yes. Every plan (Starter, Pro, and Scale) includes a 7-day free trial. Install Synq from the Shopify App Store and explore its features. Visit apps.shopify.com/synq-tcg-card-manager to get started."
+    answer: "Yes. The Starter, Pro and Scale plans start with a 7-day free trial. Install Synq from the Shopify App Store and explore its features. Visit apps.shopify.com/synq-tcg-card-manager to get started."
   - question: "What if I only sell a few card types?"
     answer: "Synq works well whether you sell Pokemon, Magic: The Gathering, Yu-Gi-Oh!, or any combination. Even focused shops benefit from automated pricing and streamlined card listing."
 ---
@@ -38,7 +39,7 @@ Market prices for trading cards shift constantly. A card that was worth $12 on M
 
 **Manual approach:** You open a price guide or marketplace in one tab and your Shopify admin in another. You search for a card, compare your listed price to the current market value, decide on a margin, and update the price field. Repeat for every card in your store. For a shop with 500 active listings, this process takes roughly 8-12 hours per week if you are checking prices every few days.
 
-**With Synq:** Synq pulls market data automatically and updates the prices of products it created based on the strategy you set. You pick a strategy once ("Market price", "Market + %", or "Market - %"), and on Pro and Scale, automatic repricing runs once a day at an hour you choose to keep prices aligned with the market. On any plan you can also hit "Sync all prices" for a one-click manual update. Weekly time spent: under 30 minutes for reviewing changes and adjusting your strategy as needed.
+**With Synq:** You set up price rules once: which products each rule covers (game, set, rarity, printing, condition) and the formula (TCGplayer market plus or minus a percentage and a dollar amount, with an optional minimum and rounding). Each rule runs on a schedule you choose, on every plan, and shows a preview of every price it would change. Weekly time spent: under 30 minutes reading the activity log and adjusting rules as needed.
 
 ### Adding New Cards to Inventory
 
@@ -46,7 +47,7 @@ Every time you acquire new inventory, whether from a collection buy, booster box
 
 **Manual approach:** You type out each card's details, search for the right image, cross-reference the price, set the condition, and publish. Listing 50 new cards manually takes most shop owners 3-5 hours, depending on how meticulous they are with descriptions and categorization.
 
-**With Synq:** Search for the card within the app, confirm the details, set the condition, and Synq creates the Shopify product for you, populating images, set information, and pricing from TCGplayer market data. Those same 50 cards take roughly 30-45 minutes.
+**With Synq:** Search for the card within the app, confirm the details, set the condition, and Synq creates the Shopify product for you, populating images, set information, and pricing from TCGplayer market data. Those same 50 cards take roughly 30-45 minutes. For a large batch, import a CSV, Excel file or TCGplayer export and review the matches instead of adding cards one by one.
 
 ### Condition Assessment and Pricing Adjustments
 
@@ -54,7 +55,7 @@ Condition grading directly affects pricing. A near-mint card commands a premium,
 
 **Manual approach:** You assess each card's condition, then manually look up market prices for that specific condition tier and adjust your listing. For 100 cards, this typically takes 2-3 hours.
 
-**With Synq:** Each condition (NM, LP, MP, HP, DMG) is its own Shopify variant with its own price and stock. Synq applies your configured per-condition percentage adjustment automatically across the store, so a lightly played copy is discounted by the same percentage every time. The same 100 cards take about 30 minutes, since you only need to focus on the grading itself.
+**With Synq:** Each condition (NM, LP, MP, HP, DMG) is its own Shopify variant with its own price and stock. Your price rule prices each condition from its own TCGplayer market price, or from Near Mint minus a percentage you choose, so every lightly played copy is priced the same way. The same 100 cards take about 30 minutes, since you only need to focus on the grading itself.
 
 ### Keeping Prices Current
 
@@ -62,7 +63,7 @@ Cards move in price all the time, and a store that lags behind the market either
 
 **Manual approach:** You pull up each card, recheck the market, and correct prices one by one. For a shop with 500+ SKUs, this takes 2-4 hours per week.
 
-**With Synq:** Synq keeps the prices of products it created aligned with market data, either through the once-a-day automatic repricing on Pro and Scale or with a one-click "Sync all prices" on any plan. Keeping prices current becomes a quick review rather than a manual sweep, typically taking 15-30 minutes.
+**With Synq:** Your scheduled rules keep prices aligned with market data, and you can run a rule by hand when the market moves between runs. Keeping prices current becomes a quick look at the activity log rather than a manual sweep, typically taking 15-30 minutes.
 
 ### Weekly Time Comparison
 
@@ -125,12 +126,12 @@ Here is how Synq stacks up against a fully manual workflow across the features t
 
 | Feature                    | Manual Process           | Synq                          |
 |----------------------------|--------------------------|-------------------------------|
-| Price updates              | One at a time, per card  | Market-synced, once a day (Pro/Scale) or one-click on any plan |
-| Card data entry            | Typed manually           | Auto-created from built-in catalog |
+| Price updates              | One at a time, per card  | Price rules on a daily schedule, on every plan |
+| Card data entry            | Typed manually           | Created from a built-in catalog, or imported from CSV/TCGplayer |
 | Card images                | Searched and uploaded     | Pulled once at product creation |
-| Condition-based pricing    | Calculated per card       | Fixed percentage per condition, store-wide |
+| Condition-based pricing    | Calculated per card       | Each condition's own market price, or NM minus a % |
 | Multi-TCG support          | Same effort per game      | Pokemon, MTG, Yu-Gi-Oh! and more built in |
-| Pricing strategy           | Decided manually each time | "Market price", "Market + %", or "Market - %" |
+| Pricing strategy           | Decided manually each time | Rules by game, set, rarity and condition, with preview |
 | Bulk operations            | Tedious and error-prone   | Fast and reliable             |
 | Time to list 50 cards      | 3 - 5 hours              | 30 - 45 minutes               |
 | Ongoing weekly maintenance | 15 - 24 hours            | Under 2.5 hours               |
@@ -143,7 +144,7 @@ You buy a collection of 200 cards on Saturday morning. You want them listed and 
 
 **Manual path:** You spend most of Saturday afternoon and all of Sunday identifying cards, looking up prices, photographing or finding images, and entering listings. That is 10-14 hours of work, and you probably still have a backlog going into Monday.
 
-**With Synq:** You sort and grade the cards, then use Synq to search the built-in catalog and add each one. Synq creates the Shopify products with details, images, and prices populated from TCGplayer market data based on the card and condition you select. Total time: 2-3 hours. You have Sunday free.
+**With Synq:** You sort and grade the cards, then add them from the built-in catalog, or put them in a spreadsheet and import it. Synq creates the Shopify products with details, images, and prices from your rules. Total time: 2-3 hours. You have Sunday free.
 
 ### Scenario 2: A Set Rotation Tanks Prices
 
@@ -151,7 +152,7 @@ A major tournament bans a popular card on Wednesday. Market prices for that card
 
 **Manual path:** You might not notice until Thursday or Friday. By then, you have already sold several copies at pre-crash prices, except now the buyers expect the lower price, leading to disputes. Or worse, you are stuck with overpriced inventory that will not move.
 
-**With Synq:** Once the market data refreshes, your next price sync brings your store in line with the new reality. On Pro and Scale that happens automatically at your chosen daily hour, or you can hit "Sync all prices" right away to react immediately. Either way you keep selling at competitive rates instead of fielding complaints or watching inventory stagnate.
+**With Synq:** Once the market data refreshes, the next scheduled run of your rule brings your store in line with the new reality, or you can run the rule by hand right away after checking its preview. Either way you keep selling at competitive rates instead of fielding complaints or watching inventory stagnate.
 
 ### Scenario 3: Scaling from 500 to 2,000 Listings
 
@@ -183,15 +184,15 @@ For most card shop owners running a real business on Shopify, the crossover poin
 
 ## Getting Started with Synq
 
-Making the switch does not require a major overhaul of your store. Synq is designed to work alongside your existing Shopify setup, and every plan starts with a 7-day free trial.
+Making the switch does not require a major overhaul of your store. Synq is designed to work alongside your existing Shopify setup, and paid plans start with a 7-day free trial.
 
 **Step 1: Install from the Shopify App Store.** Visit [apps.shopify.com/synq-tcg-card-manager](https://apps.shopify.com/synq-tcg-card-manager) and add Synq to your store. The installation takes just a few minutes. You do not need a TCGplayer account; Synq provides the market data.
 
-**Step 2: Add your cards.** Search Synq's built-in catalog by name, set, or collector number, pick the condition, and Synq creates the Shopify products for you. Synq manages the products it creates, so you build your Synq catalog as you add cards.
+**Step 2: Bring in your cards.** Search Synq's built-in catalog by name, set, or collector number and Synq creates the Shopify products for you. Already have inventory? Import a CSV, Excel file or TCGplayer export, or link products already in your store.
 
-**Step 3: Set your pricing strategy.** Choose "Market price", "Market + %", or "Market - %", set your per-condition adjustments, and optionally add global floor, ceiling, and round-up rules. Synq applies these settings across the products it manages.
+**Step 3: Create your price rules.** Start with one rule per game: market price plus or minus your margin, a minimum based on your cost, and rounding. Check its preview, then add narrower rules where you want different pricing.
 
-**Step 4: Let it run.** Once configured, Synq keeps your prices current and makes listing new cards dramatically faster. On Pro and Scale, automatic repricing runs once a day; on any plan, "Sync all prices" updates everything with one click. You shift from spending hours on data entry to spending minutes on business decisions.
+**Step 4: Schedule them.** Pick the days and hour each rule runs. From then on Synq keeps your prices current, and new cards you add are priced by the same rules. You shift from spending hours on data entry to spending minutes on business decisions.
 
 The time you reclaim is not just about efficiency. It is about what you do with those recovered hours, sourcing better inventory, engaging with customers, growing your community, or simply having your evenings back.
 

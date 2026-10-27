@@ -9,6 +9,8 @@ export interface BlogFrontmatter {
   title: string;
   description: string;
   date: string;
+  /** Last substantive edit (YYYY-MM-DD); falls back to `date`. */
+  updated?: string;
   author: string;
   authorTitle: string;
   category: string;
