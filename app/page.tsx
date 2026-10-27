@@ -18,7 +18,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Synq: TCG inventory and automated card pricing for Shopify",
   description:
-    "Add or import your trading cards into Shopify and keep every price in step with TCGplayer market data using scheduled price rules. Magic, Pokémon, Lorcana, Yu-Gi-Oh!, One Piece and 14 more games.",
+    "Shopify app for card shops: add or import singles and sealed, and keep prices in step with TCGplayer using scheduled price rules. 19 games.",
   alternates: {
     canonical: "https://synq.cards",
   },

@@ -25,11 +25,11 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   // Primary SEO
   title: {
-    default: "Synq - Automated Card Pricing for Shopify | TCGPlayer Price Sync",
+    default: "Synq: TCG inventory and automated card pricing for Shopify",
     template: "%s | Synq",
   },
   description:
-    "Sync your Shopify card prices with TCGPlayer market data automatically. Add cards in one click, daily price updates, condition-based pricing.",
+    "Shopify app for card shops: add or import singles and sealed, and keep prices in step with TCGplayer using scheduled price rules. 19 games.",
   keywords: [
     // Primary keywords
     "automated card pricing",
@@ -69,15 +69,15 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: BASE_URL,
     siteName: "Synq",
-    title: "Synq - Automated Card Pricing for Shopify",
+    title: "Synq: TCG inventory and automated card pricing for Shopify",
     description:
-      "Keep your Shopify card shop competitive with automated pricing. Sync with TCGPlayer market data daily. Add cards in seconds.",
+      "Add or import your trading cards into Shopify and keep every price in step with TCGplayer market data using scheduled price rules.",
     images: [
       {
         url: "/brand/synq-eyecatcher-art.png",
         width: 1200,
         height: 630,
-        alt: "Synq - Automated card pricing for Shopify stores",
+        alt: "Synq: price rules for Shopify card stores, from TCGplayer market data",
         type: "image/png",
       },
     ],
@@ -86,9 +86,9 @@ export const metadata: Metadata = {
   // Twitter
   twitter: {
     card: "summary_large_image",
-    title: "Synq - Automated Card Pricing for Shopify",
+    title: "Synq: TCG inventory and automated card pricing for Shopify",
     description:
-      "Sync your card prices with TCGPlayer market data automatically. Add cards in one click.",
+      "Add or import your trading cards into Shopify and keep every price in step with TCGplayer market data using scheduled price rules.",
     images: ["/brand/synq-eyecatcher-art.png"],
     creator: "@trysynq",
     site: "@trysynq",

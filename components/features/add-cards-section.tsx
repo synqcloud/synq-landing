@@ -6,7 +6,7 @@ import Image from "next/image";
 const steps = [
   { num: "1", label: "Search", desc: "By name, set or collector number" },
   { num: "2", label: "Pick", desc: "The printing and the conditions you stock" },
-  { num: "3", label: "Add", desc: "Priced by your rules, live on Shopify" },
+  { num: "3", label: "Add", desc: "Created in Shopify, priced by your rules" },
 ];
 
 export function AddCardsSection() {
@@ -27,7 +27,7 @@ export function AddCardsSection() {
             Add trading cards to Shopify from a catalog.
           </h2>
           <p className="text-base text-muted-foreground max-w-lg leading-relaxed">
-            Search a catalog of singles, sealed product and decks. Synq creates the Shopify product with its image, title, a variant per condition and a price from your rules. Cards you already stock show their stock on the tile.
+            Search a catalog of singles, sealed product and decks. Synq creates the Shopify product with its image, title and a variant per condition, priced by your rules (or at market price when no rule fits). Cards you already stock show their stock on the tile.
           </p>
         </motion.div>
 

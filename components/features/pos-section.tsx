@@ -23,7 +23,7 @@ export function PosSection() {
             </h2>
             <p className="text-base text-muted-foreground leading-relaxed mb-4">
               Singles have no barcode of their own, so Synq gives each card and condition a unique
-              code. Sealed product gets the barcode printed on its box.
+              code. Sealed product gets the barcode printed on its box, or a Synq code until we have it.
             </p>
             <p className="text-base text-muted-foreground leading-relaxed">
               Print labels with Shopify&apos;s free Retail Barcode Labels app. A scan in Shopify POS
