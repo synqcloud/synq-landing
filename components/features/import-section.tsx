@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 const points = [
   { label: "Any sheet", desc: "CSV, Excel or a TCGplayer export. You tell Synq which column is which." },
@@ -25,7 +26,7 @@ export function ImportSection() {
               Import
             </span>
             <h2 className="text-2xl sm:text-3xl font-bold text-foreground tracking-[-0.02em] mb-4">
-              Bring the inventory you already have.
+              Import your card inventory from a spreadsheet or TCGplayer.
             </h2>
             <p className="text-base text-muted-foreground leading-relaxed mb-7">
               Import a spreadsheet and Synq matches each row to the catalog. When a name fits
@@ -40,7 +41,11 @@ export function ImportSection() {
               ))}
             </ul>
             <p className="text-sm text-muted-foreground leading-relaxed mt-6">
-              Products already in your Shopify store can be linked to Synq too.
+              Products already in your Shopify store can be linked to Synq too. See{" "}
+              <Link href="/how-it-works" className="text-foreground underline underline-offset-4">
+                how Synq works
+              </Link>
+              .
             </p>
           </motion.div>
 

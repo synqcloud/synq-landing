@@ -28,7 +28,7 @@ export function HeroSection() {
             <h1 className="text-[2.4rem] sm:text-[2.75rem] lg:text-5xl font-bold leading-[1.1] tracking-[-0.03em] mb-5">
               <span className="text-foreground">Your card shop,</span>
               <br />
-              <span className="text-primary">always priced to sell.</span>
+              <span className="text-muted-foreground">always priced to sell.</span>
             </h1>
 
             <p className="text-base text-muted-foreground leading-relaxed mb-8 max-w-sm">
@@ -59,10 +59,10 @@ export function HeroSection() {
             className="screenshot-frame lg:-mr-6"
           >
             <Image
-              src="/screens/rule-preview.webp"
+              src="/screens/rule-preview-hero.webp"
               alt="A Synq price rule previewing each Pokémon card's new price before it runs"
-              width={2000}
-              height={1059}
+              width={1600}
+              height={784}
               sizes="(max-width: 768px) 100vw, 65vw"
               className="w-full h-auto"
               quality={92}

@@ -18,7 +18,7 @@ export function DashboardSection() {
             Inventory
           </span>
           <h2 className="text-2xl sm:text-3xl font-bold text-foreground tracking-[-0.02em] mb-3 max-w-xl">
-            Your whole inventory, card by card.
+            Manage your TCG inventory card by card.
           </h2>
           <p className="text-base text-muted-foreground max-w-lg leading-relaxed">
             Every card by game, with its market price, your price, cost and margin side by side. Filter, save views, edit a price in place, and change stock, cost or conditions for many cards at once.

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 const parts = [
   { label: "Which cards", desc: "A game, sets, rarities, printings or conditions. The most specific rule wins." },
@@ -26,11 +27,16 @@ export function PriceRulesSection() {
             Price rules
           </span>
           <h2 className="text-2xl sm:text-3xl font-bold text-foreground tracking-[-0.02em] mb-3 max-w-xl">
-            Set your pricing once. It keeps up on its own.
+            Automated card pricing from TCGplayer market data.
           </h2>
           <p className="text-base text-muted-foreground max-w-lg leading-relaxed">
-            A rule says which cards it prices and how. Before it runs, its preview shows every
-            price that would move, and each run is kept in the activity log.
+            Set your pricing once with rules. A rule says which cards it prices and how; before it
+            runs, its preview shows every price that would move, and each run is kept in the
+            activity log. More in{" "}
+            <Link href="/blog/automate-card-pricing-shopify" className="text-foreground underline underline-offset-4">
+              how to automate card pricing on Shopify
+            </Link>
+            .
           </p>
         </motion.div>
 
@@ -48,8 +54,8 @@ export function PriceRulesSection() {
 
         <div className="mt-12 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <motion.div {...reveal} transition={{ duration: 0.5 }}>
-            <h3 className="text-lg font-semibold text-foreground mb-4">What a rule decides</h3>
-            <div className="bg-card rounded-xl border border-border overflow-hidden shadow-sm">
+            <h3 className="text-lg font-semibold text-foreground mb-4">What a price rule decides</h3>
+            <div className="bg-card rounded-[14px] overflow-hidden shadow-[0_0_0_1px_rgba(0,0,0,0.06),0_1px_2px_rgba(0,0,0,0.04),0_10px_28px_-16px_rgba(0,0,0,0.18)]">
               {parts.map((p, i) => (
                 <div
                   key={p.label}
@@ -70,8 +76,8 @@ export function PriceRulesSection() {
             <Image
               src="/screens/exceptions.webp"
               alt="Setting exceptions to their price rules for four selected cards in Synq's inventory"
-              width={2000}
-              height={1112}
+              width={1800}
+              height={1034}
               sizes="(max-width: 768px) 100vw, 600px"
               className="w-full h-auto"
               quality={90}

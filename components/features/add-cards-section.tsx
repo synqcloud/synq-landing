@@ -24,7 +24,7 @@ export function AddCardsSection() {
             Add products
           </span>
           <h2 className="text-2xl sm:text-3xl font-bold text-foreground tracking-[-0.02em] mb-3 max-w-xl">
-            Add cards to your store in seconds.
+            Add trading cards to Shopify from a catalog.
           </h2>
           <p className="text-base text-muted-foreground max-w-lg leading-relaxed">
             Search a catalog of singles, sealed product and decks. Synq creates the Shopify product with its image, title, a variant per condition and a price from your rules. Cards you already stock show their stock on the tile.

@@ -19,7 +19,7 @@ export function PosSection() {
               Point of Sale
             </span>
             <h2 className="text-2xl sm:text-3xl font-bold text-foreground tracking-[-0.02em] mb-4">
-              Scan a card at the counter.
+              Sell cards at the counter with Shopify POS.
             </h2>
             <p className="text-base text-muted-foreground leading-relaxed mb-4">
               Singles have no barcode of their own, so Synq gives each card and condition a unique
