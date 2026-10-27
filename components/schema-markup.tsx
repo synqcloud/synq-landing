@@ -1,10 +1,11 @@
 import { faqs } from "@/lib/faqs";
+import { CONTENT_UPDATED } from "@/lib/content-updated";
 
 const BASE_URL = "https://synq.cards";
 
 
 export function SchemaMarkup() {
-  const currentDate = new Date().toISOString().split("T")[0];
+  const currentDate = CONTENT_UPDATED;
 
   const schema = {
     "@context": "https://schema.org",
@@ -93,14 +94,17 @@ export function SchemaMarkup() {
           ],
         },
         featureList: [
-          "Automatic daily price sync with market data",
-          "TCGPlayer market pricing",
-          "One-click card addition with images and descriptions",
-          "Condition-based pricing (NM, LP, MP, HP, DMG)",
-          "Custom markup percentages and price floors",
-          "Bulk price update operations",
-          "Daily price-change dashboard with one-click bulk apply",
-          "Supports Magic: The Gathering, Pokemon, Pokemon TCG Japan, Disney Lorcana, Yu-Gi-Oh!, One Piece, Flesh and Blood, Riftbound, Sorcery: Contested Realm, Digimon, Grand Archive and Gundam Card Game",
+          "Price rules by game, set, rarity, printing and condition",
+          "Scheduled daily repricing from TCGplayer market data",
+          "Per-condition market prices (NM, LP, MP, HP, DMG)",
+          "Price minimums based on cost, and rounding",
+          "Preview of every price change before a rule runs",
+          "Add singles, sealed product and decks from a built-in catalog",
+          "Import inventory from CSV, Excel or a TCGplayer export",
+          "Link existing Shopify products",
+          "Bulk inventory actions and saved views",
+          "Barcodes and TCGplayer SKUs for Shopify POS",
+          "Supports 19 games including Magic: The Gathering, Pokemon, Disney Lorcana, Yu-Gi-Oh!, One Piece, Flesh and Blood, Riftbound, Star Wars Unlimited and Gundam Card Game",
           "Shopify product variant management",
         ],
         screenshot: {
@@ -210,13 +214,13 @@ export function SchemaMarkup() {
             "@type": "HowToStep",
             position: 2,
             name: "Add Your Cards",
-            text: "Search for cards by name, select conditions, and add them to your store with one click. Images and prices are filled in automatically.",
+            text: "Search the catalog by name, set or collector number, or import a CSV or TCGplayer file. Synq creates the Shopify products with images and prices.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Keep prices current",
-            text: "Configure your pricing strategy, then update prices in one click on any plan, or turn on automatic daily repricing on the Pro and Scale plans.",
+            text: "Create price rules, preview the changes, and schedule them to run daily at an hour you choose.",
           },
         ],
       },

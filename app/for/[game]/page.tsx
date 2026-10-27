@@ -121,8 +121,9 @@ export default async function GameLandingPage({ params }: Props) {
                 <h2 className="text-lg font-semibold text-foreground mb-2">How Synq prices {g.noun}</h2>
                 <p className="text-sm text-muted-foreground leading-7">
                   Every price starts from the live TCGplayer market price for that exact card, set and
-                  printing. {g.printings} You choose a store strategy, Market price, Market + %, or
-                  Market - %, and Synq applies it, then keeps prices current. Learn more in{" "}
+                  printing. {g.printings} Price rules set the formula (market +/- a percentage or dollar
+                  amount, an optional minimum and rounding), and each condition can use its own market
+                  price. Learn more in{" "}
                   <Link href="/how-it-works" className="text-primary underline underline-offset-4">how Synq works</Link>.
                 </p>
               </section>
@@ -143,8 +144,8 @@ export default async function GameLandingPage({ params }: Props) {
               <section>
                 <h2 className="text-lg font-semibold text-foreground mb-2">Keep prices current</h2>
                 <p className="text-sm text-muted-foreground leading-7">
-                  Re-price everything in one click with Sync all prices on any plan, or turn on
-                  automatic daily repricing on Pro and Scale. See{" "}
+                  Preview every price a rule would change, then schedule it to run daily at an hour you
+                  choose. Scheduling is included on every plan. See{" "}
                   <Link href="/pricing" className="text-primary underline underline-offset-4">plans and pricing</Link>.
                 </p>
               </section>

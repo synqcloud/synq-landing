@@ -11,13 +11,13 @@ type Feature = { label: string; icon: LucideIcon };
 const BASE_FEATURES: Feature[] = [
   { label: "MTG, Pokémon, Lorcana & more", icon: Gamepad2 },
   { label: "TCGPlayer market pricing", icon: RefreshCw },
-  { label: "Custom condition adjustments", icon: SlidersHorizontal },
-  { label: "Bulk price updates in one click", icon: Zap },
-  { label: "One-click card & product creation", icon: PlusCircle },
+  { label: "Per-condition market prices", icon: SlidersHorizontal },
+  { label: "Price rules by game, set, rarity & condition", icon: Zap },
+  { label: "Automatic daily repricing", icon: CalendarDays },
+  { label: "Add from catalog or import a CSV / TCGplayer file", icon: PlusCircle },
   { label: "7-day free trial, no card required", icon: CalendarDays },
 ];
 
-const AUTO_REPRICING: Feature = { label: "Automatic daily repricing", icon: CalendarDays };
 
 const plans = [
   {
@@ -26,7 +26,7 @@ const plans = [
     description: "For high-volume card operations.",
     cta: "Start free trial",
     highlighted: false,
-    features: [{ label: "Up to 50,000 cards managed", icon: Library }, ...BASE_FEATURES, AUTO_REPRICING, { label: "Priority support", icon: Headphones }] as Feature[],
+    features: [{ label: "Up to 50,000 cards managed", icon: Library }, ...BASE_FEATURES, { label: "Priority support", icon: Headphones }] as Feature[],
   },
   {
     id: "pro", name: "Pro",
@@ -34,7 +34,7 @@ const plans = [
     description: "For shops ready to grow.",
     cta: "Start free trial",
     highlighted: true, badge: "Most popular",
-    features: [{ label: "Up to 15,000 cards managed", icon: Library }, ...BASE_FEATURES, AUTO_REPRICING] as Feature[],
+    features: [{ label: "Up to 15,000 cards managed", icon: Library }, ...BASE_FEATURES] as Feature[],
   },
   {
     id: "starter", name: "Starter",

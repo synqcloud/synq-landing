@@ -21,7 +21,7 @@ export function DashboardSection() {
             See everything. Update in bulk.
           </h2>
           <p className="text-base text-muted-foreground max-w-lg leading-relaxed">
-            Your dashboard shows every managed card, total inventory value, and exactly which cards need price updates. Select a batch, update all prices in one click.
+            Your inventory shows every card by game, with saved views, inline price editing and bulk actions for stock, cost, conditions and status.
           </p>
         </motion.div>
 
