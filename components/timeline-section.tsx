@@ -19,7 +19,7 @@ const steps = [
     number: "3",
     when: "Week 1+",
     title: "Automated pricing running",
-    desc: "Synq checks TCGPlayer market prices daily. Update stale listings with one click on any plan, or let Synq apply them automatically at an hour you choose on Pro and Scale.",
+    desc: "Your price rules run on schedule, repricing from TCGplayer market data at the hour you choose. Preview any change before it goes live.",
   },
 ];
 

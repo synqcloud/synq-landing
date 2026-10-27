@@ -1,10 +1,11 @@
 import { MetadataRoute } from "next";
 import { getAllPosts } from "@/lib/blog";
 import { GAME_PAGES } from "@/lib/game-pages";
+import { CONTENT_UPDATED } from "@/lib/content-updated";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://synq.cards";
-  const currentDate = new Date();
+  const currentDate = new Date(CONTENT_UPDATED);
 
   // Static pages only - no fragment URLs (they aren't indexable separately)
   const staticPages: MetadataRoute.Sitemap = [

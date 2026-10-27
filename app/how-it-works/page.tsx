@@ -10,7 +10,7 @@ const URL = "https://synq.cards/how-it-works";
 export const metadata: Metadata = {
   title: { absolute: "How Synq works: automated card pricing for Shopify" },
   description:
-    "How Synq works: add cards from a built-in catalog, Synq creates the Shopify products priced from TCGplayer market data, and keeps prices current automatically or in one click.",
+    "How Synq works: add cards from a built-in catalog or import a file, Synq creates the Shopify products, and price rules keep them current with TCGplayer market data.",
   keywords: [
     "how does synq work",
     "automate shopify card pricing",
@@ -44,18 +44,18 @@ const steps = [
   },
   {
     n: "2",
-    title: "Set up your template and pricing",
-    body: "Set up a product template first, because every product Synq creates is built from it (title, description, and optional fields like category, SKU and barcode). Then choose a store strategy (Market price, Market + %, or Market - %), set a discount for each condition, and optionally add floor, ceiling and rounding rules for the whole store.",
+    title: "Set up your product template",
+    body: "Every product Synq creates is built from a template per game: title, description, SEO fields, vendor, product type and category, plus barcodes and SKUs for Shopify POS if you use them.",
   },
   {
     n: "3",
-    title: "Add cards from the catalog",
-    body: "Search Synq's built-in catalog by name, set or collector number, pick the printing and conditions, and Synq creates the Shopify product for you from your template, priced from TCGplayer market data. Synq only manages products it creates; it never scans or remaps your existing listings.",
+    title: "Add or import your inventory",
+    body: "Search Synq's built-in catalog by name, set or collector number, pick the printing and conditions, and Synq creates the Shopify product from your template. Already have inventory? Import a CSV, Excel file or TCGplayer export and review every match, or link products already in your store.",
   },
   {
     n: "4",
-    title: "Keep prices current",
-    body: "Re-price your whole store in one click with Sync all prices on any plan, or turn on automatic daily repricing at an hour you choose on Pro and Scale.",
+    title: "Price with rules",
+    body: "Create price rules for a game, set, rarity, printing or condition. Preview every price that would change, then schedule the rule to run daily or on the days you choose, at an hour in your store's timezone. Every plan includes scheduling.",
   },
 ];
 
@@ -125,21 +125,22 @@ export default function HowItWorksPage() {
                 Synq works out every price step by step:
               </p>
               <ol className="ml-5 list-decimal space-y-1.5 text-sm text-muted-foreground">
-                <li>Start from the TCGplayer market price and apply your strategy.</li>
-                <li>Apply a discount for each condition (NM, LP, MP, HP, DMG).</li>
+                <li>Find the rule for the product: the most specific one that matches wins.</li>
+                <li>Start from the TCGplayer market price for that condition, or Near Mint minus a percentage.</li>
+                <li>Apply the rule&apos;s formula: plus or minus a percentage and a dollar amount.</li>
                 <li>Convert to your store&apos;s currency.</li>
-                <li>Keep it between your floor and ceiling, if set.</li>
-                <li>Round it up to a clean ending, if set.</li>
+                <li>Keep it above the rule&apos;s minimum, if set.</li>
+                <li>Round it to a clean ending, if set.</li>
               </ol>
               <p className="text-sm text-muted-foreground leading-7 mt-3">
-                Floor, ceiling and rounding are off by default.
+                A product can also have its own formula or minimum, or be excluded from rules.
               </p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-lg font-semibold text-foreground mb-2">What Synq does not touch</h2>
               <p className="text-sm text-muted-foreground leading-7">
-                The price sync updates the price only. It never changes your stock, titles,
+                A rule run updates the price only. It never changes your stock, titles,
                 descriptions or images, so any manual edit you make is preserved.
               </p>
             </section>

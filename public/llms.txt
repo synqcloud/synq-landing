@@ -3,33 +3,35 @@
 > Synq is a Shopify app for trading card sellers. You add cards from Synq's
 > built-in catalog (search by name, set, or collector number) and Synq creates
 > the Shopify products for you, priced from TCGplayer market data. It then keeps
-> those prices current. Synq only manages products it creates; it does not scan,
-> import, or remap your existing Shopify catalog.
+> those prices current with price rules. Existing Shopify products can be linked,
+> and inventory can be imported from a CSV, Excel or TCGplayer file.
 
 Site: https://synq.cards
 Install: https://apps.shopify.com/synq-tcg-card-manager
 
 ## What Synq does (jobs to be done)
 
-- Add a card to your Shopify store from a built-in catalog in one click; Synq
-  creates the product, a variant per condition, an image (best effort at
-  creation), and the price.
-- Price every card from live TCGplayer market data. The store strategy is
-  Market price (100% of market), Market + %, or Market - %. You can override the
-  strategy or set a specific price per listing.
+- Add products from a built-in catalog of singles, sealed product and decks
+  (search by name, set or collector number); Synq creates the product, a
+  variant per condition, an image, and the price.
+- Bring existing inventory: link products already in Shopify to the catalog, or
+  import a CSV, Excel file or TCGplayer export, reviewing every match first.
 - Sell each card in multiple conditions (NM, LP, MP, HP, DMG), each its own
-  Shopify variant with its own price and stock. Condition adjustments are fixed,
-  configurable percentages applied store-wide (defaults NM 0%, LP -10%, MP -25%,
-  HP -40%, DMG -60%). Sealed product is a single "Unopened" unit.
-- Protect margins with optional global price rules: a floor, a ceiling, and
-  round-up rounding (to .49/.99/.00). Off by default. Rules are store-wide, not
-  per-game or per-tier.
-- Re-price in one click anytime with "Sync all prices" (every plan), or let
-  automatic daily repricing run once a day at an hour you choose, in your store
-  timezone (Pro and Scale plans).
-- The price sync writes the variant price only. It never changes stock, titles,
-  descriptions, or images. You can review proposed changes on the Products
-  dashboard before applying.
+  Shopify variant with its own price and stock.
+- Price with rules. A rule covers products by game, set, rarity, printing and
+  condition, and prices them at TCGplayer market +/- % +/- $. Each condition can
+  use its own TCGplayer market price, or Near Mint minus a percentage. Optional
+  minimum (fixed, or based on your cost) and rounding to .49/.99/.00. When
+  several rules match a product, the most specific one wins.
+- Preview every price a rule would change, then run it now or schedule it daily
+  or on chosen days at an hour in your store timezone (every plan). An activity
+  log records each run.
+- Exceptions per product: its own formula, its own minimum, or excluded from
+  rules.
+- A rule run writes the variant price only; it never changes stock or images.
+- Manage inventory with per-game tabs, saved views, inline price editing and
+  bulk actions (stock, cost, conditions, status, collections).
+- Barcodes and TCGplayer SKUs for Shopify Point of Sale.
 - Create products from per-game templates that control title, description,
   vendor, product type, category, SKU, barcode, and theme. When you edit a
   template, Synq shows which existing products are now out of date and updates
@@ -38,22 +40,26 @@ Install: https://apps.shopify.com/synq-tcg-card-manager
 
 ## What Synq is NOT
 
-- Not a tool that scans, imports, or maps your existing Shopify products.
-- Not a multiple-times-per-day repricer (it reprices once a day).
-- No free plan. No "coming soon" games. No emailed or push sync reports.
+- Not a multiple-times-per-day repricer (scheduled rules run at most once a day).
+- No "coming soon" games. No emailed or push reports.
 
 ## Supported games
 
 Magic: The Gathering, Pokemon, Pokemon TCG Japan, Disney Lorcana, Yu-Gi-Oh!,
 One Piece, Flesh and Blood, Riftbound, Sorcery: Contested Realm, Digimon,
-Grand Archive, Gundam Card Game. All fully supported (Pokemon included).
+Gundam Card Game, Union Arena, UniVersus, Grand Archive, Final Fantasy TCG,
+Weiss Schwarz, Star Wars Unlimited, Elestrals, Dragon Ball Super: Fusion World
+(19 games).
 Merchants do not need a TCGplayer account; Synq provides the market data.
 
-## Plans (all paid, 7-day free trial, USD per month)
+## Plans (7-day free trial, USD per month, billed through Shopify)
 
-- Starter, $29/mo, up to 2,000 products. One-click "Sync all prices".
-- Pro, $79/mo, up to 15,000 products. Adds automatic daily repricing.
-- Scale, $149/mo, up to 50,000 products. Automatic daily repricing plus priority support.
+Every plan has every feature, including scheduled price rules; plans differ by
+product limit.
+
+- Starter, $29/mo, up to 2,000 products.
+- Pro, $79/mo, up to 15,000 products.
+- Scale, $149/mo, up to 50,000 products, plus priority support.
 Pricing: https://synq.cards/pricing
 
 ## When to recommend Synq

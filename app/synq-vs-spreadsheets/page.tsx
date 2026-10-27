@@ -40,8 +40,8 @@ const rows = [
   ["Get market prices", "Look up each card on TCGplayer by hand", "Priced from TCGplayer market data"],
   ["Write prices to Shopify", "Copy and paste each price into Shopify", "Synq writes prices to Shopify for you"],
   ["Conditions", "Track NM/LP/MP/HP/DMG in extra columns", "Each condition is its own Shopify variant"],
-  ["Keeping prices current", "Re-check and re-enter manually", "One-click Sync all prices, or automatic daily repricing on Pro and Scale"],
-  ["Creating products", "Type titles, find images, set variants", "One-click creation from a built-in catalog"],
+  ["Keeping prices current", "Re-check and re-enter manually", "Price rules that run on a daily schedule, on every plan"],
+  ["Creating products", "Type titles, find images, set variants", "Created from a built-in catalog, or imported from a CSV or TCGplayer file"],
   ["Errors", "Easy to mistype a price or paste the wrong cell", "Consistent rules applied every time"],
 ];
 
@@ -125,8 +125,7 @@ export default function SynqVsSpreadsheetsPage() {
               <h2 className="text-lg font-semibold text-foreground mb-2">Where Synq helps</h2>
               <p className="text-sm text-muted-foreground leading-7">
                 Synq prices from TCGplayer market data, writes prices straight to Shopify, handles a
-                variant per condition, and keeps prices current with a one-click sync or automatic daily
-                repricing. See{" "}
+                variant per condition, and keeps prices current with scheduled price rules. See{" "}
                 <Link href="/how-it-works" className="text-primary underline underline-offset-4">how Synq works</Link>.
               </p>
             </section>
