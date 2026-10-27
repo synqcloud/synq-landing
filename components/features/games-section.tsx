@@ -6,13 +6,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { ContactModal } from "@/components/contact-modal";
 
-const GAME_LINKS = [
-  { label: "Pokémon", href: "/for/pokemon" },
-  { label: "Magic: The Gathering", href: "/for/magic-the-gathering" },
-  { label: "Yu-Gi-Oh!", href: "/for/yu-gi-oh" },
-  { label: "Disney Lorcana", href: "/for/disney-lorcana" },
-  { label: "One Piece", href: "/for/one-piece" },
-];
+import { GAME_PAGES } from "@/lib/game-pages";
+
+const GAME_LINKS = GAME_PAGES.map((g) => ({ label: g.name, href: `/for/${g.slug}` }));
 
 const allGames = [
   { name: "Magic: The Gathering", logo: "/games/mtg.png", active: true },
@@ -27,6 +23,7 @@ const allGames = [
   { name: "Sorcery: Contested Realm", logo: "/games/sorcery.png", active: true },
   { name: "Gundam Card Game",     logo: "/games/gundam.png", active: true },
   { name: "Grand Archive",        logo: "/games/grand_archive.png", active: true },
+  { name: "Star Wars: Unlimited", logo: "/games/swu.webp", active: true },
 ];
 
 export function GamesSection() {
