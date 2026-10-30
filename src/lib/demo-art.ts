@@ -21,7 +21,9 @@ const SIZES: Record<string, [number, number]> = {
   "/stores/mint.webp": [210, 96],
 };
 
-export function artSize(src: string): { width?: number; height?: number } {
+/* Every demo sits below the hero, so its pictures load lazily. Without it
+   React preloads each <img> in <head>, ahead of the hero (LCP went 8s+). */
+export function artSize(src: string): { width?: number; height?: number; loading: "lazy" } {
   const s = SIZES[src];
-  return s ? { width: s[0], height: s[1] } : {};
+  return s ? { width: s[0], height: s[1], loading: "lazy" } : { loading: "lazy" };
 }

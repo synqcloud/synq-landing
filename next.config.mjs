@@ -64,7 +64,7 @@ const nextConfig = {
      here are static, so blocking costs nothing: always put <title>, canonical
      and hreflang in <head>, for every crawler (incl. AI ones that don't run JS). */
   htmlLimitedBots: /.*/,
-  // Config redirects run before middleware, so next-intl never sees these paths.
+  // Config redirects run before the proxy, so next-intl never sees these paths.
   async redirects() {
     return [
       /* the old domain, as the old vercel.json did */

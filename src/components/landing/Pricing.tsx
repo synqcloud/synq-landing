@@ -266,7 +266,7 @@ export default function Pricing() {
           </blockquote>
           <figcaption className="mt-5 flex items-center gap-3">
             <span className="flex h-10 items-center justify-center rounded-[10px] bg-white px-2 shadow-[0_0_0_1px_rgb(0_0_0/0.06)]">
-              <img src="/stores/mint.webp" width={210} height={96} alt="" className="h-7 w-auto object-contain" />
+              <img src="/stores/mint.webp" width={210} height={96} loading="lazy" alt="" className="h-7 w-auto object-contain" />
             </span>
             <span className="flex flex-col text-left leading-[1.3]">
               <b className="text-[14px] font-[650]">{t("proof.store")}</b>
