@@ -1,0 +1,498 @@
+/* The Price rules screen, after the app's own (see the design system:
+   white cards with the 3-layer shadow on the admin's grey, ink chips,
+   green only for state). */
+
+.rd {
+  --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  border-radius: 24px;
+  background: #f4f4f4;
+  box-shadow:
+    rgb(26 31 46 / 4%) 0 64px 64px -32px,
+    rgb(26 31 46 / 4%) 0 32px 32px -16px,
+    rgb(26 31 46 / 4%) 0 12px 12px -6px,
+    rgb(26 31 46 / 8%) 0 1px 1px -0.5px,
+    rgb(26 31 46 / 6%) 0 0 0 1px;
+  color: var(--color-ink);
+  text-align: left;
+}
+/* the camera: everything inside moves and zooms as one, following the scroll
+   with only a short smoothing */
+.rd-stage {
+  position: relative;
+  padding: 22px 22px 24px;
+  transform-origin: 0 0;
+  will-change: transform;
+  transition: transform 140ms linear;
+}
+.rd-head,
+.rd-rule,
+.rd-activity {
+  transition: opacity 200ms linear;
+}
+.rd-summary {
+  color: var(--color-ink-2);
+  font-size: 13px;
+}
+.rd-summary b {
+  color: var(--color-ink);
+  font-weight: 650;
+  font-variant-numeric: tabular-nums;
+}
+.rd-summary span {
+  margin: 0 4px;
+  color: var(--color-ink-4);
+}
+
+/* ---------- toolbar ---------- */
+
+.rd-bar {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 14px;
+}
+.rd-label {
+  margin-right: 8px;
+  color: var(--color-ink-3);
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.rd-label span {
+  margin-left: 4px;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.rd-tab {
+  padding: 5px 10px;
+  border-radius: 8px;
+  color: var(--color-ink-2);
+  font-size: 12.5px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.rd-tab[data-on] {
+  background: var(--color-ink);
+  color: #fff;
+}
+.rd-add {
+  margin-left: auto;
+  padding: 6px 12px;
+  border-radius: 8px;
+  background: var(--color-ink);
+  color: #fff;
+  font-size: 12.5px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* ---------- rules and activity ---------- */
+
+.rd-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 260px;
+  gap: 14px;
+  margin-top: 14px;
+}
+.rd-rules {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  /* the rules share one height (the row's), feet aligned; the row itself
+     doesn't stretch to the Activity column */
+  align-items: stretch;
+  align-self: start;
+  gap: 12px;
+}
+.rd-rule {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 12px 0;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow:
+    0 0 0 1px rgb(0 0 0 / 6%),
+    0 1px 2px rgb(0 0 0 / 4%),
+    0 10px 28px -16px rgb(0 0 0 / 18%);
+  transition:
+    transform 180ms var(--ease),
+    box-shadow 180ms var(--ease);
+}
+.rd-rule[data-hover] {
+  transform: translateY(-2px);
+  box-shadow:
+    0 0 0 1px rgb(0 0 0 / 8%),
+    0 2px 4px rgb(0 0 0 / 4%),
+    0 18px 36px -16px rgb(0 0 0 / 26%);
+}
+
+/* the rule's cards, fanned on a radial well */
+.rd-art {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 128px;
+  border-radius: 10px;
+  background: radial-gradient(circle at 50% 35%, #fafafa, #ececec);
+}
+.rd-art img {
+  width: 64px;
+  aspect-ratio: 733 / 1024;
+  border-radius: 4px;
+  box-shadow: 0 5px 12px rgb(0 0 0 / 22%);
+}
+.rd-art[data-fan] img {
+  position: absolute;
+}
+.rd-art[data-fan] img:nth-child(1) {
+  transform: translateX(-30px) rotate(-8deg) scale(0.9);
+}
+.rd-art[data-fan] img:nth-child(2) {
+  z-index: 1;
+}
+.rd-art[data-fan] img:nth-child(3) {
+  transform: translateX(30px) rotate(8deg) scale(0.9);
+}
+
+.rd-name {
+  margin-top: 10px;
+  font-size: 13.5px;
+  font-weight: 650;
+  letter-spacing: -0.012em;
+}
+.rd-scope {
+  color: var(--color-set);
+  font-size: 12.5px;
+  font-weight: 500;
+}
+.rd-formula {
+  margin-top: 4px;
+  color: var(--color-ink-2);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.rd-foot {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  margin-top: auto;
+  padding: 10px 0;
+  border-top: 1px solid rgb(0 0 0 / 6%);
+  font-size: 12px;
+}
+.rd-formula {
+  margin-bottom: 12px;
+}
+.rd-when {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+  color: #12724a;
+  font-weight: 600;
+  line-height: 1.3;
+}
+.rd-when svg {
+  flex: none;
+  width: 14px;
+  height: 14px;
+}
+.rd-run {
+  flex: none;
+  padding: 3px 6px;
+  border-radius: 6px;
+  color: var(--color-ink-3);
+  font-weight: 500;
+  transition:
+    background-color 180ms var(--ease),
+    color 180ms var(--ease),
+    transform 80ms var(--ease);
+}
+.rd-rule[data-hover] .rd-run {
+  background: var(--color-well);
+  color: var(--color-ink);
+}
+.rd-run {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.rd-run[data-press] {
+  transform: scale(0.92);
+}
+/* the tap: a ring leaves the button */
+.rd-run::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow: 0 0 0 2px var(--color-ink);
+  opacity: 0;
+}
+.rd-run[data-press]::after {
+  animation: rd-ripple 420ms var(--ease);
+}
+@keyframes rd-ripple {
+  0% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(2.4);
+  }
+}
+/* after the tap, the button stays answered until the camera moves on */
+.rd-rule .rd-run[data-tapped] {
+  background: var(--color-ink);
+  color: #fff;
+  font-weight: 600;
+}
+.rd-more {
+  flex: none;
+  color: var(--color-ink-4);
+  letter-spacing: 1px;
+}
+
+/* ---------- activity ---------- */
+
+.rd-activity {
+  padding: 14px 14px 6px;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow:
+    0 0 0 1px rgb(0 0 0 / 6%),
+    0 1px 2px rgb(0 0 0 / 4%),
+    0 10px 28px -16px rgb(0 0 0 / 18%);
+}
+.rd-activity ul {
+  margin-top: 8px;
+}
+.rd-activity li {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 9px 4px;
+  border-top: 1px solid rgb(0 0 0 / 6%);
+}
+.rd-activity li:first-child {
+  border-top: 0;
+}
+.rd-activity li b {
+  font-size: 13px;
+  font-weight: 650;
+}
+.rd-activity li > span {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  color: var(--color-ink-2);
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+.rd-state {
+  padding: 1px 7px;
+  border-radius: 999px;
+  background: #e3f5ea;
+  color: #12724a;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+}
+.rd-up,
+.rd-down {
+  font-size: 11.5px;
+  font-style: normal;
+  font-weight: 650;
+}
+.rd-up {
+  color: #12724a;
+}
+.rd-down {
+  color: #8e1f13;
+}
+/* the run: its slot opens on top of the list and pushes the rest down */
+.rd-activity li.rd-slot {
+  display: grid;
+  grid-template-rows: 0fr;
+  padding: 0;
+  border-top: 0;
+  transition: grid-template-rows 420ms var(--ease);
+}
+.rd-activity li.rd-slot[data-open] {
+  grid-template-rows: 1fr;
+}
+.rd-slot + li {
+  border-top: 0;
+}
+.rd-new {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-height: 0;
+  margin: 0 -6px;
+  padding: 9px 10px;
+  overflow: hidden;
+  border-radius: 10px;
+  background: var(--color-well);
+  opacity: 0;
+  transform: translateY(-6px);
+  transition:
+    opacity 260ms var(--ease) 140ms,
+    transform 320ms var(--ease) 140ms,
+    background-color 600ms ease-out;
+}
+.rd-slot[data-open] .rd-new {
+  opacity: 1;
+  transform: none;
+}
+.rd-new[data-settled] {
+  background: #e3f5ea;
+}
+.rd-new b {
+  font-size: 13px;
+  font-weight: 650;
+}
+.rd-new > span {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  color: var(--color-ink-2);
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- the note beside a close-up ---------- */
+
+.rd-note {
+  position: absolute;
+  top: 50%;
+  left: 58%;
+  z-index: 6;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 34%;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+.rd-note-k {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--color-ink);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+}
+.rd-note b {
+  font-size: 28px;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+  line-height: 1.12;
+  text-wrap: balance;
+}
+.rd-note span:last-child {
+  color: var(--color-ink-2);
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+/* ---------- cursor ---------- */
+
+.rd-cursor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 20px;
+  pointer-events: none;
+  opacity: 0;
+  /* follows the scroll; only a short smoothing so wheel steps don't jump */
+  transition:
+    transform 120ms linear,
+    opacity 200ms linear;
+}
+.rd-cursor[data-on] {
+  opacity: 1;
+}
+.rd-cursor svg {
+  display: block;
+  width: 100%;
+  filter: drop-shadow(0 1px 2px rgb(0 0 0 / 30%));
+  transition: transform 80ms var(--ease);
+}
+.rd-cursor svg {
+  transform-origin: 20% 10%;
+}
+.rd-cursor[data-press] svg {
+  transform: scale(0.8);
+}
+.rd-cursor path {
+  fill: var(--color-ink);
+  stroke: #fff;
+  stroke-width: 1.4;
+  stroke-linejoin: round;
+}
+
+/* ---------- narrower screens: fewer rules, activity below ---------- */
+
+@media (max-width: 1100px) {
+  .rd-body {
+    grid-template-columns: 1fr;
+  }
+  .rd-rules {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .rd-rule:nth-child(4) {
+    display: none;
+  }
+}
+@media (max-width: 720px) {
+  .rd {
+    padding: 16px;
+  }
+  .rd-bar .rd-tab:not([data-on]),
+  .rd-label {
+    display: none;
+  }
+  .rd-rules {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .rd-rule:nth-child(3) {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .rd-rules {
+    grid-template-columns: 1fr;
+  }
+  .rd-rule:nth-child(2) {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rd *,
+  .rd *::before,
+  .rd *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+  .rd-cursor {
+    display: none;
+  }
+}

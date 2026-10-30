@@ -1,0 +1,280 @@
+/* The contact modal: the app's modal (white card, 260ms in, 160ms out) with
+   the landing's room to breathe. */
+
+.contact-modal {
+  width: min(560px, calc(100vw - 32px));
+  max-width: none;
+  max-height: calc(100dvh - 32px);
+  margin: auto;
+  padding: 0;
+  border: 0;
+  border-radius: 22px;
+  background: #fff;
+  color: var(--color-ink);
+  box-shadow:
+    0 0 0 1px rgb(0 0 0 / 6%),
+    0 30px 80px -20px rgb(0 0 0 / 45%);
+  overflow: auto;
+  overscroll-behavior: contain;
+}
+.contact-modal::backdrop {
+  background: rgb(20 18 16 / 55%);
+  backdrop-filter: blur(4px);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .contact-modal[open] {
+    animation: contact-in 260ms cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+  .contact-modal[open]::backdrop {
+    animation: contact-fade 260ms ease-out;
+  }
+}
+@keyframes contact-in {
+  from {
+    opacity: 0;
+    transform: translateY(14px) scale(0.975);
+  }
+}
+@keyframes contact-fade {
+  from {
+    opacity: 0;
+  }
+}
+
+.contact-panel {
+  position: relative;
+  padding: 32px 32px 28px;
+}
+.contact-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  background: var(--color-well);
+  color: var(--color-ink-2);
+  transition: background-color 180ms, color 180ms;
+}
+.contact-close:hover {
+  background: #ececec;
+  color: var(--color-ink);
+}
+
+.contact-avatar {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 18px;
+  border-radius: 12px;
+  background: var(--color-ink);
+}
+.contact-avatar img {
+  filter: brightness(0) invert(1);
+}
+.contact-title {
+  font-size: 24px;
+  font-weight: 650;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+.contact-lede {
+  margin-top: 8px;
+  max-width: 44ch;
+  color: var(--color-ink-2);
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.contact-label {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--color-ink-2);
+  font-size: 12.5px;
+  font-weight: 600;
+}
+.contact-label i {
+  color: var(--color-ink-3);
+  font-style: normal;
+  font-weight: 500;
+}
+
+/* the topic: chips, like the app's pinned sets */
+.contact-topics {
+  margin-top: 24px;
+  border: 0;
+  padding: 0;
+}
+.contact-topics > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.contact-chip {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  height: 32px;
+  padding: 0 12px;
+  border-radius: 8px;
+  background: var(--color-well);
+  color: var(--color-ink-2);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 180ms, color 180ms;
+}
+.contact-chip:hover {
+  color: var(--color-ink);
+}
+.contact-chip[data-on] {
+  background: var(--color-ink);
+  color: #fff;
+}
+.contact-chip input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.contact-chip:has(input:focus-visible) {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px var(--color-ink);
+}
+
+.contact-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.contact-field {
+  display: block;
+  margin-top: 16px;
+}
+.contact-field input,
+.contact-field textarea {
+  display: block;
+  width: 100%;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow:
+    0 0 0 1px rgb(0 0 0 / 10%),
+    0 1px 2px rgb(0 0 0 / 4%);
+  color: var(--color-ink);
+  font-size: 15px;
+  outline: none;
+  transition: box-shadow 180ms;
+}
+.contact-field input {
+  height: 44px;
+  padding: 0 14px;
+}
+.contact-field textarea {
+  min-height: 120px;
+  padding: 12px 14px;
+  line-height: 1.5;
+  resize: vertical;
+}
+.contact-field input::placeholder,
+.contact-field textarea::placeholder {
+  color: var(--color-ink-3);
+}
+.contact-field input:focus,
+.contact-field textarea:focus {
+  box-shadow: 0 0 0 2px var(--color-ink);
+}
+.contact-trap {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+}
+
+.contact-error {
+  margin-top: 16px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: #fde8e6;
+  color: #8e1f13;
+  font-size: 13.5px;
+}
+.contact-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 24px;
+}
+.contact-foot p {
+  color: var(--color-ink-3);
+  font-size: 13px;
+}
+.contact-foot a,
+.contact-error a {
+  color: inherit;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.contact-submit {
+  flex: none;
+  height: 44px;
+  padding: 0 22px;
+  border-radius: 999px;
+  background: var(--color-ink);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  transition: transform 180ms cubic-bezier(0.2, 0.8, 0.2, 1), opacity 180ms;
+}
+.contact-submit:hover {
+  transform: translateY(-1px);
+}
+.contact-submit:active {
+  transform: scale(0.985);
+}
+.contact-submit:disabled {
+  opacity: 0.6;
+  transform: none;
+}
+.contact-submit:focus-visible,
+.contact-close:focus-visible {
+  outline: 2px solid var(--color-ink);
+  outline-offset: 2px;
+}
+
+.contact-sent {
+  padding: 12px 0 4px;
+}
+.contact-sent-mark {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 18px;
+  border-radius: 999px;
+  background: var(--color-green-bg);
+  color: var(--color-green);
+}
+.contact-sent .contact-submit {
+  margin-top: 24px;
+}
+
+@media (max-width: 560px) {
+  .contact-panel {
+    padding: 28px 20px 20px;
+  }
+  .contact-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .contact-field input,
+  .contact-field textarea {
+    font-size: 16px; /* iOS zooms into anything smaller */
+  }
+  .contact-foot {
+    flex-direction: column-reverse;
+    align-items: stretch;
+  }
+}

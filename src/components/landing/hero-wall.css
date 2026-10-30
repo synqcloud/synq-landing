@@ -1,0 +1,199 @@
+/* Variant D, the wall of cards: real scans from many games in tilted columns
+   that drift past, dimmed under a warm lamp so the headline reads first.
+   Only transform and opacity move. */
+
+.hero-wall {
+  --wall-ground: #161413;
+  /* card width: ~7-8 columns across a laptop, 3-4 on a phone */
+  --wall-w: clamp(112px, 11.6vw, 196px);
+  --wall-gap: clamp(10px, 1.05vw, 16px);
+  --wall-ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+  background: var(--wall-ground);
+  isolation: isolate;
+}
+
+/* hero.css styles .hero-scene for the desk variant; this hero's scene is
+   the whole frame */
+.hero-wall .hero-scene {
+  position: absolute;
+  inset: 0;
+  top: 0;
+  right: 0;
+  width: auto;
+  aspect-ratio: auto;
+  translate: none;
+  opacity: 1;
+  overflow: hidden;
+}
+
+/* ---------- the wall ---------- */
+
+/* oversized and turned, so the turned edges never show */
+.wall-tilt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  gap: var(--wall-gap);
+  height: 150%;
+  transform: translate(-50%, -50%) rotate(-6deg);
+  animation: wall-in 1100ms var(--wall-ease) both;
+}
+@keyframes wall-in {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -50%) rotate(-6deg) scale(1.04);
+  }
+}
+
+.wall-col {
+  flex: none;
+  width: var(--wall-w);
+  height: 100%;
+}
+
+/* two identical runs of cards; moving by exactly one run loops seamlessly */
+.wall-track {
+  display: flex;
+  flex-direction: column;
+  animation: var(--wall-dir) var(--wall-dur) linear var(--wall-delay) infinite;
+  will-change: transform;
+  contain: layout paint;
+}
+.wall-col.is-up {
+  --wall-dir: wall-up;
+}
+.wall-col.is-down {
+  --wall-dir: wall-down;
+}
+@keyframes wall-up {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(0, -50%, 0);
+  }
+}
+@keyframes wall-down {
+  from {
+    transform: translate3d(0, -50%, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+.hero-wall[data-paused] .wall-track {
+  animation-play-state: paused;
+  will-change: auto;
+}
+.hero-wall:not([data-ready]) .wall-tilt {
+  animation-play-state: paused;
+}
+
+/* each card keeps its own bottom margin (not a flex gap) so both runs are
+   exactly the same height */
+.wall-item {
+  position: relative;
+  margin-bottom: var(--wall-gap);
+}
+.wall-card {
+  position: relative;
+  aspect-ratio: 733 / 1024;
+  overflow: hidden;
+  border-radius: calc(var(--wall-w) * 0.045);
+  background: #2a2420;
+  box-shadow:
+    0 0 0 1px rgb(255 255 255 / 4%),
+    0 10px 18px -12px rgb(0 0 0 / 70%);
+}
+.wall-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* the wall is the backdrop, a touch quieter than the scans */
+  filter: saturate(0.85) brightness(0.92);
+}
+/* ---------- light and shade ---------- */
+
+/* the scrim: dark where the words are, the wall at full warmth on the right */
+.wall-scrim {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(40% 50% at max(30%, calc(50% - 300px)) 46%, rgb(232 160 80 / 7%) 0%, transparent 70%),
+    radial-gradient(130% 100% at 66% 48%, rgb(10 8 7 / 0%) 58%, rgb(10 8 7 / 45%) 100%),
+    radial-gradient(760px 640px at max(32%, calc(50% - 286px)) 52%, rgb(22 20 19 / 82%) 0%, rgb(22 20 19 / 55%) 55%, rgb(22 20 19 / 0%) 100%),
+    linear-gradient(90deg, rgb(22 20 19 / 96%) 0%, rgb(22 20 19 / 90%) max(34%, calc(50% - 120px)), rgb(22 20 19 / 52%) max(54%, calc(50% + 120px)), rgb(22 20 19 / 8%) max(70%, calc(50% + 330px)), rgb(22 20 19 / 18%) 100%),
+    linear-gradient(180deg, rgb(22 20 19 / 80%) 0%, rgb(22 20 19 / 0%) 22%, rgb(22 20 19 / 0%) 72%, rgb(22 20 19 / 88%) 100%);
+}
+.wall-grain {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  /* no blend mode: a blend over moving layers costs a full-screen pass each frame */
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+}
+
+.wall-proof {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 32px;
+  font-size: 13.5px;
+  color: rgb(255 255 255 / 64%);
+  font-variant-numeric: tabular-nums;
+}
+.wall-proof i {
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: #1f9d63;
+  box-shadow: 0 0 0 3px rgb(31 157 99 / 22%);
+}
+
+/* ---------- below desktop: the wall above, the words at the foot ---------- */
+
+@media (max-width: 1023px) {
+  .wall-scrim {
+    background:
+      linear-gradient(180deg, rgb(22 20 19 / 78%) 0%, rgb(22 20 19 / 22%) 16%, rgb(22 20 19 / 28%) 34%, rgb(22 20 19 / 88%) 56%, var(--wall-ground) 74%);
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .hero-wall {
+    --wall-w: 150px;
+  }
+  .wall-scrim {
+    background: linear-gradient(180deg, rgb(22 20 19 / 70%) 0%, rgb(22 20 19 / 6%) 14%, rgb(22 20 19 / 10%) 48%, rgb(22 20 19 / 86%) 66%, var(--wall-ground) 80%);
+  }
+}
+@media (max-width: 767px) {
+  .hero-wall {
+    --wall-w: 104px;
+    --wall-gap: 9px;
+  }
+  .wall-scrim {
+    background: linear-gradient(180deg, rgb(22 20 19 / 72%) 0%, rgb(22 20 19 / 8%) 13%, rgb(22 20 19 / 14%) 40%, rgb(22 20 19 / 90%) 56%, var(--wall-ground) 70%);
+  }
+  /* fewer columns on phones: fewer images, same wall */
+  .wall-col:nth-child(n + 6) {
+    display: none;
+  }
+  .wall-proof {
+    margin-top: 22px;
+    font-size: 12.5px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wall-tilt {
+    animation: none;
+  }
+  /* paused, not removed: each column keeps its own offset */
+  .wall-track {
+    animation-play-state: paused;
+  }
+}

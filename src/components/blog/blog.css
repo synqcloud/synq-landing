@@ -1,0 +1,463 @@
+/* The blog: covers, prose, table of contents. Same tokens as the landing
+   (ink, canvas, well, the three-layer card shadow), at reading size. */
+
+/* ── Cover ─────────────────────────────────────────────────────────── */
+
+.blog-cover {
+    --tone-a: #faf9f7;
+    --tone-b: #ebe8e3;
+    position: relative;
+    container-type: inline-size;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    border-radius: 12px;
+    background:
+        radial-gradient(120% 90% at 50% 18%, var(--tone-a) 0%, var(--tone-b) 100%);
+    isolation: isolate;
+}
+.blog-cover[data-size="hero"] {
+    aspect-ratio: 21 / 9;
+}
+.blog-cover[data-tone="amber"] {
+    --tone-a: #fffaf0;
+    --tone-b: #f6e6c6;
+}
+.blog-cover[data-tone="sage"] {
+    --tone-a: #f7faf6;
+    --tone-b: #dfe9de;
+}
+.blog-cover[data-tone="slate"] {
+    --tone-a: #f7f8fa;
+    --tone-b: #dfe2e8;
+}
+.blog-cover[data-tone="stone"] {
+    --tone-a: #faf9f7;
+    --tone-b: #e7e3dd;
+}
+/* a faint dot grid: the counter's surface, not decoration for its own sake */
+.blog-cover::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-image: radial-gradient(rgb(0 0 0 / 7%) 1px, transparent 1px);
+    background-size: 14px 14px;
+    mask-image: radial-gradient(80% 70% at 50% 40%, #000 0%, transparent 100%);
+}
+
+.blog-cover-fan {
+    --w: 22cqw;
+    position: absolute;
+    left: 50%;
+    top: 14%;
+    width: 0;
+    height: 0;
+}
+.blog-cover[data-size="hero"] .blog-cover-fan {
+    --w: 15cqw;
+    top: 12%;
+}
+.blog-cover-card {
+    position: absolute;
+    left: calc(var(--w) / -2);
+    top: 0;
+    width: var(--w);
+    max-width: none;
+    height: auto;
+    border-radius: calc(var(--w) * 0.045);
+    transform-origin: 50% 120%;
+    transform: translateX(calc(var(--i) * var(--w) * 0.62)) rotate(calc(var(--i) * 7deg))
+        translateY(calc(var(--i) * var(--i) * var(--w) * 0.05));
+    box-shadow: 0 5px 12px rgb(0 0 0 / 20%);
+    transition: transform 420ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+@media (hover: hover) and (pointer: fine) {
+    .blog-cover-card {
+        box-shadow: none;
+        filter: drop-shadow(0 6px 14px rgb(0 0 0 / 22%)) drop-shadow(0 1px 2px rgb(0 0 0 / 12%));
+    }
+    .blog-card:hover .blog-cover-card {
+        transform: translateX(calc(var(--i) * var(--w) * 0.72)) rotate(calc(var(--i) * 9deg))
+            translateY(calc(var(--i) * var(--i) * var(--w) * 0.06 - var(--w) * 0.03));
+    }
+}
+
+/* one piece of Synq UI, sitting on the cards like it would in the app */
+.blog-cover-chip {
+    position: absolute;
+    left: 50%;
+    bottom: 9%;
+    z-index: 2;
+    display: inline-flex;
+    max-width: 88%;
+    align-items: center;
+    gap: 10px;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    border-radius: 10px;
+    background: #fff;
+    padding: 8px 10px 8px 12px;
+    font-size: clamp(11px, 3.4cqw, 14px);
+    box-shadow:
+        0 0 0 1px rgb(0 0 0 / 6%),
+        0 1px 2px rgb(0 0 0 / 4%),
+        0 10px 28px -12px rgb(0 0 0 / 28%);
+}
+.blog-cover[data-size="hero"] .blog-cover-chip {
+    font-size: clamp(11px, 1.8cqw, 15px);
+    bottom: 10%;
+}
+.blog-cover-chip-label {
+    font-weight: 600;
+    color: var(--color-ink-2);
+}
+.blog-cover-chip-price {
+    font-weight: 650;
+    letter-spacing: -0.01em;
+    color: var(--color-ink);
+    font-variant-numeric: tabular-nums;
+}
+.blog-cover-chip-pill {
+    border-radius: 999px;
+    background: var(--color-green-bg);
+    color: var(--color-green);
+    padding: 2px 8px;
+    font-size: 0.86em;
+    font-weight: 600;
+}
+.blog-cover-chip-code {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-radius: 6px;
+    background: var(--color-well);
+    padding: 3px 7px;
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    font-size: 0.88em;
+    color: var(--color-ink);
+}
+
+.blog-card:focus-visible {
+    outline: 2px solid var(--color-ink);
+    outline-offset: 3px;
+}
+
+/* ── Closing call to action ────────────────────────────────────────── */
+
+.blog-cta-art {
+    display: none;
+}
+@media (min-width: 768px) {
+    .blog-cta-art {
+        --w: 120px;
+        display: block;
+        position: absolute;
+        right: 120px;
+        top: 50%;
+        width: 0;
+        height: 0;
+    }
+    .blog-cta-art img {
+        position: absolute;
+        left: calc(var(--w) / -2);
+        top: calc(var(--w) * -0.7);
+        width: var(--w);
+        max-width: none;
+        height: auto;
+        border-radius: 6px;
+        transform-origin: 50% 120%;
+        transform: translateX(calc(var(--i) * 70px)) rotate(calc(var(--i) * 8deg));
+        box-shadow: 0 14px 30px -8px rgb(0 0 0 / 55%);
+    }
+}
+@media (min-width: 1024px) {
+    .blog-cta-art {
+        --w: 136px;
+        right: 170px;
+    }
+}
+
+/* ── Table of contents ─────────────────────────────────────────────── */
+
+.blog-toc-link {
+    display: block;
+    border-left: 2px solid rgb(0 0 0 / 8%);
+    padding: 6px 0 6px 14px;
+    font-size: 13.5px;
+    line-height: 1.4;
+    color: var(--color-ink-2);
+    transition:
+        color 150ms,
+        border-color 150ms;
+}
+.blog-toc-link[data-level="3"] {
+    padding-left: 26px;
+}
+.blog-toc-link:hover {
+    color: var(--color-ink);
+}
+.blog-toc-link[aria-current] {
+    border-left-color: var(--color-ink);
+    color: var(--color-ink);
+    font-weight: 600;
+}
+.blog-toc-link:focus-visible {
+    outline: 2px solid var(--color-ink);
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+/* ── FAQ ───────────────────────────────────────────────────────────── */
+
+.blog-faq + .blog-faq {
+    border-top: 1px solid rgb(0 0 0 / 6%);
+}
+.blog-faq summary::-webkit-details-marker {
+    display: none;
+}
+.blog-faq summary:focus-visible {
+    outline: 2px solid var(--color-ink);
+    outline-offset: -2px;
+}
+.blog-faq-icon svg {
+    transition: transform 200ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.blog-faq[open] .blog-faq-icon {
+    background: var(--color-ink);
+    color: #fff;
+}
+.blog-faq[open] .blog-faq-icon svg {
+    transform: rotate(45deg);
+}
+
+/* ── Prose ─────────────────────────────────────────────────────────── */
+
+.blog-prose {
+    max-width: 68ch;
+    font-size: 17px;
+    line-height: 1.72;
+    color: #3a3836;
+    font-feature-settings: "kern", "liga";
+    text-wrap: pretty;
+}
+@media (min-width: 1024px) {
+    .blog-prose {
+        font-size: 18px;
+    }
+}
+.blog-prose > :first-child {
+    margin-top: 0;
+}
+/* the first paragraph reads as the lede */
+.blog-prose > p:first-child {
+    font-size: 1.12em;
+    line-height: 1.62;
+    color: var(--color-ink);
+}
+
+.blog-prose p,
+.blog-prose ul,
+.blog-prose ol,
+.blog-prose blockquote,
+.blog-prose pre,
+.blog-prose .blog-table,
+.blog-prose figure,
+.blog-prose img {
+    margin-top: 1.25em;
+}
+
+.blog-prose h2,
+.blog-prose h3,
+.blog-prose h4 {
+    color: var(--color-ink);
+    font-weight: 650;
+    scroll-margin-top: 110px;
+    text-wrap: balance;
+}
+.blog-prose h2 {
+    margin-top: 2.4em;
+    font-size: 1.6em;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+}
+.blog-prose h3 {
+    margin-top: 2em;
+    font-size: 1.2em;
+    line-height: 1.3;
+    letter-spacing: -0.012em;
+}
+.blog-prose h4 {
+    margin-top: 1.8em;
+    font-size: 1em;
+}
+.blog-prose h2 + *,
+.blog-prose h3 + *,
+.blog-prose h4 + * {
+    margin-top: 0.6em;
+}
+
+.blog-prose strong {
+    font-weight: 650;
+    color: var(--color-ink);
+}
+
+.blog-prose a {
+    color: var(--color-ink);
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-color: rgb(0 0 0 / 22%);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.22em;
+    transition: text-decoration-color 150ms;
+}
+.blog-prose a:hover {
+    text-decoration-color: var(--color-ink);
+}
+.blog-prose a:focus-visible {
+    outline: 2px solid var(--color-ink);
+    outline-offset: 2px;
+    border-radius: 3px;
+}
+
+/* lists: small ink dots and tabular numbers, as in the app's stories */
+.blog-prose ul,
+.blog-prose ol {
+    padding-left: 1.5em;
+}
+.blog-prose ul {
+    list-style: none;
+}
+.blog-prose li {
+    position: relative;
+    padding-left: 0.2em;
+}
+.blog-prose li + li {
+    margin-top: 0.5em;
+}
+.blog-prose ul > li::before {
+    content: "";
+    position: absolute;
+    left: -1.05em;
+    top: 0.72em;
+    width: 5px;
+    height: 5px;
+    border-radius: 999px;
+    background: var(--color-ink);
+}
+.blog-prose ol {
+    list-style: decimal;
+}
+.blog-prose ol > li::marker {
+    color: var(--color-ink-3);
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+}
+.blog-prose li > ul,
+.blog-prose li > ol,
+.blog-prose li > p {
+    margin-top: 0.5em;
+}
+
+.blog-prose blockquote {
+    border-left: 2px solid var(--color-ink);
+    padding: 0.1em 0 0.1em 1.2em;
+    font-size: 1.08em;
+    color: var(--color-ink);
+}
+.blog-prose blockquote > :first-child {
+    margin-top: 0;
+}
+
+.blog-prose hr {
+    margin: 3em 0;
+    border: 0;
+    border-top: 1px solid rgb(0 0 0 / 8%);
+}
+
+.blog-prose code {
+    border-radius: 6px;
+    background: rgb(0 0 0 / 5.5%);
+    padding: 0.12em 0.4em;
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    font-size: 0.84em;
+    color: var(--color-ink);
+    overflow-wrap: anywhere;
+}
+.blog-prose pre {
+    overflow-x: auto;
+    border-radius: 12px;
+    background: var(--color-ink);
+    padding: 1.1em 1.25em;
+    font-size: 0.85em;
+    line-height: 1.6;
+    color: #f2f1ee;
+}
+.blog-prose pre code {
+    background: none;
+    padding: 0;
+    color: inherit;
+    font-size: inherit;
+    overflow-wrap: normal;
+}
+
+.blog-prose img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow:
+        0 0 0 1px rgb(0 0 0 / 6%),
+        0 10px 28px -16px rgb(0 0 0 / 18%);
+}
+
+/* tables: a white card on the canvas, scrolling sideways on a phone */
+.blog-table {
+    overflow-x: auto;
+    border-radius: 14px;
+    background: #fff;
+    box-shadow:
+        0 0 0 1px rgb(0 0 0 / 6%),
+        0 1px 2px rgb(0 0 0 / 4%),
+        0 10px 28px -16px rgb(0 0 0 / 18%);
+}
+.blog-table:focus-visible {
+    outline: 2px solid var(--color-ink);
+    outline-offset: 2px;
+}
+.blog-table table {
+    width: 100%;
+    min-width: 520px;
+    border-collapse: collapse;
+    font-size: 0.82em;
+    line-height: 1.45;
+    font-variant-numeric: tabular-nums;
+}
+.blog-table th {
+    background: #faf9f8;
+    padding: 0.85em 1.1em;
+    text-align: left;
+    font-size: 0.86em;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: var(--color-ink-2);
+    white-space: nowrap;
+}
+.blog-table td {
+    border-top: 1px solid rgb(0 0 0 / 6%);
+    padding: 0.85em 1.1em;
+    color: #3a3836;
+    vertical-align: top;
+}
+.blog-table td:first-child {
+    color: var(--color-ink);
+    font-weight: 500;
+}
+.blog-table tr:last-child td:has(strong) {
+    background: #faf9f8;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .blog-cover-card,
+    .blog-faq-icon svg {
+        transition: none;
+    }
+}
