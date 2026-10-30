@@ -15,6 +15,7 @@ export default function HeroCopy({
 }) {
   const t = useTranslations("hero");
   const tl = useTranslations("landing");
+  const tn = useTranslations("nav");
   const center = align === "center";
   const dark = tone === "dark";
 
@@ -54,8 +55,7 @@ export default function HeroCopy({
             dark ? "focus-visible:outline-white" : "focus-visible:outline-[var(--color-ink)]"
           }`}
         >
-          {/* Shopify's own button wording, the same in every language */}
-          <span lang="en">Add to Shopify</span>
+          {tn("cta")}
           <span className="sr-only"> ({tl("newTab")})</span>
         </a>
         <button
