@@ -6,6 +6,7 @@ import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { routing } from "@/i18n/routing";
 import ContactModal from "@/components/contact/ContactModal";
+import LocaleHint from "@/components/i18n/LocaleHint";
 import AttributionTracker from "@/components/analytics/AttributionTracker";
 import { SITE_NAME, SITE_URL, TWITTER_HANDLE } from "@/lib/site";
 import { bareTitle } from "@/lib/seo";
@@ -96,6 +97,7 @@ export default async function LocaleLayout({
         <NextIntlClientProvider messages={messages}>
           {children}
           <ContactModal />
+          <LocaleHint />
         </NextIntlClientProvider>
         <AttributionTracker />
         <Analytics />
