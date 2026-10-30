@@ -1,0 +1,2479 @@
+{
+  "meta": {
+    "title": "Synq · Gestió d'inventari de cartes per a Shopify",
+    "description": "Synq és l'app de Shopify per a botigues de cartes. Afegeix cartes soltes i segellat amb un toc, segueix el mercat de TCGplayer i gestiona l'estoc sense feina."
+  },
+  "nav": {
+    "ariaMain": "Navegació principal",
+    "logoAria": "Inici de Synq",
+    "menu": "Menú",
+    "langAria": "Tria l'idioma",
+    "links": {
+      "features": "Funcions",
+      "pricing": "Preus",
+      "docs": "Ajuda"
+    },
+    "cta": "Afegeix a Shopify"
+  },
+  "hero": {
+    "title": "La teva botiga de cartes, en marxa.",
+    "subtitle": "Afegeix cartes soltes i producte segellat a Shopify amb un toc, amb foto i estat inclosos. Els preus segueixen el mercat de TCGplayer cada dia, i t'oblides de canviar-los a mà.",
+    "cta": "Mira com surt a la venda una carta",
+    "note": "Gratuït per a les teves primeres 100 cartes. Es factura a través de Shopify."
+  },
+  "footer": {
+    "tagline": "La capa operativa per a les botigues de cartes col·leccionables a Shopify.",
+    "rights": "Tots els drets reservats.",
+    "columns": {
+      "product": {
+        "title": "Producte",
+        "links": {
+          "features": "Funcions",
+          "pricing": "Preus",
+          "docs": "Ajuda"
+        }
+      },
+      "company": {
+        "title": "Empresa",
+        "links": {
+          "about": "Qui som",
+          "contact": "Contacte",
+          "blog": "Blog"
+        }
+      },
+      "legal": {
+        "title": "Legal",
+        "links": {
+          "terms": "Condicions",
+          "privacy": "Privadesa",
+          "cookies": "Galetes",
+          "legal": "Avís legal"
+        }
+      }
+    }
+  },
+  "landing": {
+    "chapters": {
+      "rail": {
+        "add": {
+          "title": "Arriba estoc nou"
+        },
+        "prices": {
+          "title": "Els preus es mouen"
+        },
+        "counter": {
+          "title": "Al taulell"
+        }
+      },
+      "add": {
+        "title": "Les cartes dins d'una caixa no es venen.",
+        "body": "Amb Synq, l'estoc nou passa de la caixa a la botiga el mateix dia que arriba.",
+        "steps": {
+          "open": {
+            "title": "Obres la caixa. A dalt de tot, un Charizard ex.",
+            "body": "Escriu-ne el nom o el número de la cantonada. Synq et mostra totes les versions, i en les que ja vens hi veus el teu estoc.",
+            "short": "Troba-la",
+            "label": "Totes les versions"
+          },
+          "tap": {
+            "title": "Toca + a la que tens a la mà.",
+            "body": "Synq crea el producte a Shopify amb la foto i l'estat que has triat. Cada vegada que l'afegeixes, n'afegeixes un estat.",
+            "short": "Toca +",
+            "label": "Un producte a Shopify"
+          },
+          "sale": {
+            "title": "Ja és a la venda abans d'arribar al prestatge.",
+            "body": "Els clients la troben a la teva botiga amb la foto, l'estat i el preu ja posats.",
+            "short": "A la venda",
+            "label": "A la teva botiga"
+          }
+        }
+      },
+      "prices": {
+        "title": "Els preus es mouen. Els teus, també.",
+        "body": "Escriu una regla un sol cop: el preu de mercat més el teu marge, un mínim segons el teu cost i com arrodonir. Synq l'executa amb la programació que triïs i actualitza els preus a Shopify.",
+        "notes": {
+          "rule": {
+            "title": "Executa-la ara o deixa que funcioni sola amb la seva programació.",
+            "body": "La regla «Pokémon singles» actualitza el preu dels seus 9 productes cada dia a les 6:00: un 5 % per sobre del mercat, mai per sota del teu cost més un 20 %."
+          },
+          "activity": {
+            "title": "Cada execució queda registrada a Activity.",
+            "body": "Quan s'ha executat i quants preus han pujat i baixat. Els teus preus a Shopify ja estan actualitzats."
+          }
+        }
+      },
+      "result": {
+        "title": "Botigues de cartes que funcionen amb Synq.",
+        "body": "Estoc nou a la venda el dia que arriba, preus que s'actualitzen sols i un taulell al dia amb la botiga en línia. Així ens expliquen les botigues com ho viuen.",
+        "week": {
+          "note": "Dades en directe de Synq a botigues de cartes reals, octubre de 2026",
+          "rows": [
+            {
+              "label": "cartes posades a la venda a Shopify amb Synq",
+              "value": 66000,
+              "suffix": "+"
+            },
+            {
+              "label": "preus comparats amb el mercat, automàticament",
+              "value": 2.2,
+              "decimals": 1,
+              "suffix": "M"
+            },
+            {
+              "label": "jocs al catàleg, de Magic i Pokémon a Riftbound",
+              "value": 19
+            }
+          ]
+        },
+        "quotes": [
+          {
+            "text": "La vostra app ha estat increïble. Ens encanta i ens ha fet la vida molt més fàcil a la botiga. … les podem escanejar, obtenir el preu de mercat actual amb el nostre marge i no haver de tornar a etiquetar les cartes a mà mai més.",
+            "name": "",
+            "store": "Green Door Collectibles",
+            "source": "D'un correu a l'equip de Synq",
+            "logo": "/stores/greendoor.webp",
+            "tone": "light"
+          },
+          {
+            "text": "De debò que ens ho ha fet tot molt més fàcil de gestionar, i tenir-ho tot actualitzat al preu de mercat cada dia ens dona un gran avantatge sobre la competència.",
+            "name": "Andrew",
+            "store": "Collection House Cafe",
+            "source": "Chicago · d'un correu a l'equip de Synq",
+            "logo": "/stores/collection-house.webp",
+            "tone": "dark"
+          },
+          {
+            "text": "Aquesta app ens ha fet la feina molt més fàcil. … el que m'encanta és que sempre l'estan actualitzant i millorant.",
+            "name": "",
+            "store": "Mint Cards & Collectibles",
+            "source": "Ressenya a la Shopify App Store · 6 mesos amb Synq",
+            "logo": "/stores/mint.webp",
+            "tone": "light"
+          },
+          {
+            "text": "El programa ha anat molt bé i ha agilitzat molt el nostre sistema. Als clients també els ha agradat.",
+            "name": "Jason",
+            "store": "Do Big Things Collectibles",
+            "source": "New Castle, DE · d'un correu a l'equip de Synq",
+            "logo": "/stores/dbt.webp",
+            "tone": "light"
+          }
+        ],
+        "reviewsLink": "Llegeix les ressenyes a la Shopify App Store",
+        "cta": "Afegeix a Shopify"
+      }
+    },
+    "features": {
+      "pill": "Com funciona Synq",
+      "title": "I la resta de la botiga, al mateix lloc.",
+      "body": "Totes les cartes una al costat de l'altra, els teus fulls de càlcul importats i cada carta a punt per al taulell. Tot des de l'administrador de Shopify.",
+      "link": "Mira com funciona",
+      "cards": {
+        "rules": {
+          "title": "Regles de preu",
+          "lead": "Preus automàtics amb les dades de mercat de TCGplayer.",
+          "body": "Configura els preus un sol cop. Abans d'executar-se, cada regla et mostra tots els preus que canviaria.",
+          "alt": "Quatre regles de preu de Synq amb les seves fórmules i programacions, al costat de l'activitat de les últimes execucions"
+        },
+        "add": {
+          "title": "Afegir productes",
+          "lead": "Afegeix cartes des del catàleg de Synq.",
+          "body": "Synq crea el producte a Shopify amb la imatge i una variant per a cada estat.",
+          "alt": "Cerca de Charizard ex al catàleg de Synq, amb les versions que ja són a la botiga en primer lloc"
+        },
+        "import": {
+          "title": "Importació",
+          "lead": "Porta el teu full de càlcul.",
+          "body": "Cada fila s'associa a la seva carta, i quan un nom encaixa amb diverses versions, tries la teva.",
+          "alt": "Revisió d'una importació de full de càlcul a Synq: deu files a punt i Lightning Bolt preguntant quina versió tens al prestatge"
+        },
+        "inventory": {
+          "title": "Inventari",
+          "lead": "Totes les cartes, una al costat de l'altra.",
+          "body": "Preu de mercat, el teu preu, cost i marge. Canvia moltes cartes alhora, o posa el preu d'una carta a mà perquè cap regla no el toqui.",
+          "alt": "Inventari de Synq filtrat per Pokémon, amb el preu de mercat, el preu publicat, el cost i el marge de cada carta"
+        },
+        "pos": {
+          "title": "Punt de venda",
+          "lead": "Ven al taulell.",
+          "body": "Cada carta i cada estat tenen el seu propi codi de barres per a Shopify POS.",
+          "alt": "Configuració de Punt de venda de Synq: codis de barres per a producte segellat i cartes soltes"
+        }
+      }
+    },
+    "faq": {
+      "eyebrow": "Preguntes",
+      "title": "El que pregunten les botigues abans d'instal·lar.",
+      "body": "Respostes clares sobre preus, estats, les cartes que ja tens i el taulell.",
+      "contact": {
+        "title": "Si encara tens dubtes, escriu-nos.",
+        "body": "Respon el fundador, normalment el mateix dia."
+      },
+      "items": [
+        {
+          "q": "Synq substitueix Shopify?",
+          "a": "No. Synq és una app dins de l'administrador de Shopify. La teva botiga, el tema, la caixa i els pagaments continuen a Shopify. Synq afegeix les teves cartes, en manté els preus al dia i les deixa a punt per al taulell."
+        },
+        {
+          "q": "D'on surten els preus?",
+          "a": "Del preu de mercat de TCGplayer: una mitjana mòbil de les vendes completades recentment de cada carta. Synq l'importa cada dia, el converteix a la moneda de la teva botiga, i les teves regles de preu decideixen quant cobres."
+        },
+        {
+          "q": "No soc als Estats Units. Els preus s'adaptaran al meu mercat?",
+          "a": "Els preus surten del mercat dels Estats Units a TCGplayer i es converteixen cada dia a la moneda de la teva botiga. Si al teu mercat local una carta té un altre preu, ajusta el marge de la regla per a aquell joc o posa el preu de la carta a mà."
+        },
+        {
+          "q": "Quins jocs són compatibles?",
+          "a": "Magic: The Gathering, Pokémon (en anglès i en japonès), Yu-Gi-Oh!, One Piece, Lorcana, Riftbound, Digimon, Gundam, Union Arena, Weiss Schwarz, Star Wars Unlimited, Dragon Ball Super: Fusion World, Flesh and Blood, Sorcery, Grand Archive i més. Si vens un joc que és a TCGplayer però no surt aquí, demana'l amb «Request this game» a la importació de fulls de càlcul, o escriu-nos."
+        },
+        {
+          "q": "Com funcionen els estats?",
+          "a": "Cada estat és una variant del producte de la carta a Shopify. Quan afegeixes una carta, tries l'estat en què es troba, i per a una còpia jugada la tornes a afegir. Cada estat pot seguir el seu propi preu de mercat de TCGplayer."
+        },
+        {
+          "q": "Puc posar el meu propi preu a una carta?",
+          "a": "Sí. Posa el preu d'una carta a Synq i, a partir d'aquell moment, les regles de preu ja no toquen aquell estat. Un preu canviat a l'administrador de Shopify no queda protegit: la següent execució de la regla el torna a fixar, tret que excloguis aquell estat. Una regla també pot tenir un mínim basat en el teu cost, perquè cap carta no tingui mai un preu per sota d'aquest mínim."
+        },
+        {
+          "q": "Puc portar les cartes que ja venc?",
+          "a": "Sí. Exporta el teu inventari de TCGplayer, o desa qualsevol full de càlcul com a CSV, TSV o TXT, i importa'l. Synq associa cada fila a la seva carta i crea el que és nou, sense duplicats. Per al que ja vens, tu tries: sumar l'estoc del fitxer, substituir-lo o deixar-ho tal com està (una exportació de TCGplayer el substitueix per defecte). Quan un nom encaixa amb diverses versions, tries la que tens al prestatge."
+        },
+        {
+          "q": "Synq actualitza la meva botiga de TCGplayer?",
+          "a": "No. TCGplayer no obre la seva API a apps com Synq, així que Synq no hi pot publicar cartes ni canviar-hi l'estoc. Synq manté al dia la teva botiga de Shopify, en línia i al taulell."
+        },
+        {
+          "q": "Puc vendre al taulell?",
+          "a": "Sí, amb Shopify POS. El producte segellat fa servir el codi de barres imprès a la caixa, i cada carta solta té un codi propi per a cada estat. Imprimeix etiquetes amb l'app gratuïta Retail Barcode Labels de Shopify: en escanejar-les es cobra la carta i l'estat exactes, i l'estoc també s'actualitza en línia."
+        },
+        {
+          "q": "Què passa després de la prova gratuïta?",
+          "a": "Els plans de pagament comencen amb 7 dies gratuïts. Si no tries cap pla, el teu compte passa al pla Free, fins a 100 cartes. No s'esborra res i la teva botiga de Shopify continua funcionant. El cobrament va a la factura de Shopify, i pots cancel·lar quan vulguis."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Deixa d'obrir productes un per un.",
+      "body": "Instal·la Synq des de la Shopify App Store i deixa que la feina operativa vagi sola.",
+      "primary": "Afegeix a Shopify",
+      "secondary": "Parla amb nosaltres"
+    },
+    "pricing": {
+      "label": "Preus",
+      "title": "Tria la mida de la teva botiga.",
+      "subtitle": "Els plans van segons quantes cartes vens. Tots els plans de pagament comencen amb una prova gratuïta de 7 dies, i el pla Free continua sent gratuït.",
+      "slider": {
+        "label": "Quantes cartes vens?",
+        "unit": "cartes",
+        "fit": "<plan></plan> encaixa amb una botiga com la teva."
+      },
+      "fits": "Encaixa amb la teva botiga",
+      "upTo": "Fins a {n} cartes",
+      "perMonth": "/mes",
+      "orYearly": "o ${total}/any, estalvia un 33 %",
+      "billedYearly": "${total} facturats cada any",
+      "cta": "Comença la prova gratuïta",
+      "ctaFree": "Instal·la gratis",
+      "billing": {
+        "monthly": "Mensual",
+        "yearly": "Anual",
+        "save": "Estalvia un 33 %"
+      },
+      "plans": {
+        "free": {
+          "name": "Free"
+        },
+        "starter": {
+          "name": "Starter"
+        },
+        "pro": {
+          "name": "Pro"
+        },
+        "scale": {
+          "name": "Scale"
+        }
+      },
+      "perCard": "{c} cèntims per carta al mes",
+      "free": {
+        "line": "<b>Menys de 100 cartes?</b> Synq és gratuït, per sempre.",
+        "same": "Les mateixes funcions, fins a 100 cartes."
+      },
+      "trust": [
+        "7 dies gratuïts en tots els plans de pagament",
+        "Cancel·la quan vulguis des de l'administrador de Shopify",
+        "Facturat en USD a la teva factura de Shopify"
+      ],
+      "proof": {
+        "quote": "Aquesta app ens ha fet la feina molt més fàcil.",
+        "store": "Mint Cards & Collectibles",
+        "source": "Ressenya a la Shopify App Store · 6 mesos amb Synq"
+      },
+      "includes": {
+        "title": "Tots els plans ho fan tot. Només tries quantes cartes.",
+        "items": [
+          "Preus de mercat de TCGplayer, per estat",
+          "Regles de preu amb la teva programació",
+          "Tots els jocs, cartes soltes i segellat",
+          "Edició en bloc a l'inventari",
+          "Importació des de full de càlcul i de TCGplayer",
+          "Codis de barres per a Shopify POS"
+        ]
+      }
+    },
+    "getStarted": {
+      "label": "Primers passos",
+      "title": "Guies per posar en marxa la teva botiga de pressa.",
+      "subtitle": "Guies breves i concretes per a les passes que faràs la primera setmana amb Synq.",
+      "cta": "Explora el centre d'ajuda",
+      "guides": {
+        "install": {
+          "category": "Primers passos",
+          "title": "Instal·la Synq",
+          "body": "Instal·la'l des de la Shopify App Store, tria els teus jocs i crea la primera regla de preu."
+        },
+        "firstCards": {
+          "category": "Afegir estoc",
+          "title": "Afegeix cartes i producte segellat",
+          "body": "Cerca, toca i la carta ja és a la teva botiga amb la foto i l'estat."
+        },
+        "rules": {
+          "category": "Preus",
+          "title": "Crea una regla de preu",
+          "body": "Segueix el mercat per joc, expansió, versió i estat, amb un mínim."
+        },
+        "bulk": {
+          "category": "Inventari",
+          "title": "Edita molts productes alhora",
+          "body": "Canvia l'estoc, el cost, els estats i les excepcions de molts productes de cop."
+        },
+        "variants": {
+          "category": "Afegir estoc",
+          "title": "Estats i versions",
+          "body": "Cada versió és un producte, i cada estat, una variant amb preu i estoc propis."
+        },
+        "marketPrices": {
+          "category": "Preus",
+          "title": "Com funcionen els preus de mercat",
+          "body": "D'on surten els preus, per estat, i com es converteixen a la teva moneda."
+        }
+      }
+    },
+    "newTab": "s'obre en una pestanya nova"
+  },
+  "docs": {
+    "meta": {
+      "title": "Centre d'ajuda · Synq",
+      "description": "Guies de Synq per a Shopify: instal·lació, afegir cartes i producte segellat, preus amb regles, gestió de l'estoc i plans."
+    },
+    "hero": {
+      "eyebrow": "Centre d'ajuda",
+      "title": "Guies per gestionar la teva botiga amb Synq.",
+      "subtitle": "Afegeix cartes, posa'ls preu amb regles i mantén al dia la teva botiga de Shopify.",
+      "searchPlaceholder": "Cerca a les guies, p. ex. «regla de preu»",
+      "contact": "Escriu a help@synq.cards",
+      "noResults": "Cap article coincideix amb aquesta cerca. Prova amb altres paraules o escriu-nos."
+    },
+    "categories": {
+      "start": {
+        "title": "Primers passos",
+        "body": "Instal·la Synq, tria els teus jocs i desa la primera regla de preu.",
+        "articles": [
+          "install",
+          "setup",
+          "pick-games"
+        ]
+      },
+      "stock": {
+        "title": "Afegir estoc",
+        "body": "Afegeix cartes i producte segellat, vincula el que ja vens o importa un full de càlcul.",
+        "articles": [
+          "add-cards",
+          "conditions-printings",
+          "link-products",
+          "import"
+        ]
+      },
+      "prices": {
+        "title": "Preus",
+        "body": "Segueix els preus de mercat de TCGplayer amb regles, programacions i excepcions.",
+        "articles": [
+          "market-prices",
+          "price-rules",
+          "run-and-schedule",
+          "minimums-rounding",
+          "exceptions",
+          "which-rule-wins"
+        ]
+      },
+      "inventory": {
+        "title": "Inventari",
+        "body": "Troba productes, edita'n molts alhora i controla el teu marge.",
+        "articles": [
+          "find-products",
+          "bulk-edit",
+          "cost-margin"
+        ]
+      },
+      "shopify": {
+        "title": "Shopify",
+        "body": "Què escriu Synq a la teva botiga i què es manté sincronitzat.",
+        "articles": [
+          "what-synq-creates",
+          "templates",
+          "sync",
+          "pos",
+          "uninstall"
+        ]
+      },
+      "billing": {
+        "title": "Plans i facturació",
+        "body": "Plans, límits de productes i facturació a través de Shopify.",
+        "articles": [
+          "plans",
+          "billing",
+          "help"
+        ]
+      }
+    },
+    "articlesLabel": "articles",
+    "support": {
+      "eyebrow": "Més ajuda",
+      "title": "Escriu-nos. Respon el fundador, normalment el mateix dia.",
+      "body": "Envia un missatge amb Feedback a Home, o escriu-nos un correu si la teva pregunta no surt aquí.",
+      "primary": "Escriu a help@synq.cards",
+      "secondary": "Afegeix a Shopify"
+    },
+    "article": {
+      "home": "Centre d'ajuda",
+      "updated": "Actualitzat l'octubre de 2026",
+      "tocLabel": "En aquesta pàgina",
+      "prev": "Anterior",
+      "next": "Següent",
+      "feedback": {
+        "question": "T'ha estat útil aquesta guia?",
+        "yes": "Sí",
+        "no": "No, necessito més ajuda",
+        "thanks": "Gràcies pels comentaris.",
+        "sorry": "Gràcies. Escriu a help@synq.cards i t'ajudarem."
+      }
+    },
+    "articles": {
+      "install": {
+        "meta": {
+          "title": "Instal·la Synq · Centre d'ajuda de Synq",
+          "description": "Instal·la Synq des de la Shopify App Store. S'obre dins de l'administrador de Shopify i no canvia res de la botiga fins que afegeixes o vincules un producte."
+        },
+        "category": "start",
+        "title": "Instal·la Synq",
+        "intro": "Instal·la Synq des de la Shopify App Store. S'obre dins de l'administrador de Shopify i no canvia res de la teva botiga fins que afegeixes o vincules un producte.",
+        "readTime": "2 min de lectura",
+        "sections": [
+          {
+            "id": "install",
+            "title": "Instal·la'l des de la Shopify App Store",
+            "steps": [
+              "Obre la [pàgina de Synq a la Shopify App Store](https://apps.shopify.com/synq-tcg-card-manager).",
+              "Fes clic per instal·lar-lo i tria la botiga on el vols fer servir.",
+              "Revisa els permisos que mostra Shopify i aprova'ls.",
+              "Synq s'obre dins de l'administrador de Shopify a **Set up synq**."
+            ]
+          },
+          {
+            "id": "access",
+            "title": "Què pot veure i canviar Synq",
+            "paragraphs": [
+              "Shopify et demana que aprovis aquests permisos quan instal·les l'app."
+            ],
+            "list": [
+              "**Productes:** productes, variants, preus, imatges, SKU, codis de barres, col·leccions i Cost per item.",
+              "**Estoc:** quantitats a cadascuna de les teves ubicacions.",
+              "**Canals de venda:** a quins canals està publicat cada producte.",
+              "**Tema:** les plantilles de producte del teu tema, només de lectura."
+            ],
+            "note": {
+              "title": "Ni comandes ni clients",
+              "body": "Synq no té accés a les teves comandes, clients ni pagaments. No desa cap dada de clients."
+            }
+          },
+          {
+            "id": "first-run",
+            "title": "El que veus primer",
+            "paragraphs": [
+              "Synq comença a **Set up synq** i s'hi queda fins que tries almenys un joc que vens.",
+              "Després, el menú de l'esquerra mostra **Home**, **Add products**, **Inventory**, **Price rules** i **Settings**.",
+              "En instal·lar-lo no es copia res de la teva botiga. Els productes que ja vens es queden com estan fins que els vincules."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "Bo de saber",
+            "list": [
+              "**Els teus productes estan segurs.** Instal·lar l'app no crea, edita ni esborra res a Shopify.",
+              "**Pas següent:** [la configuració inicial](/docs/setup) dura un parell de minuts i crea la teva primera regla de preu."
+            ]
+          }
+        ]
+      },
+      "setup": {
+        "meta": {
+          "title": "Configuració: els teus jocs i la primera regla de preu · Centre d'ajuda de Synq",
+          "description": "La configuració inicial et pregunta quins jocs vens, com vols posar els preus i on tens les cartes avui. Desa la teva primera regla de preu per tu."
+        },
+        "category": "start",
+        "title": "La configuració inicial: els teus jocs i la primera regla de preu",
+        "intro": "La configuració inicial et pregunta quins jocs vens, com vols posar els preus i on tens les cartes avui. Desa la teva primera regla de preu per tu.",
+        "readTime": "3 min de lectura",
+        "sections": [
+          {
+            "id": "steps",
+            "title": "La configuració, pas a pas",
+            "paragraphs": [
+              "La pàgina es diu **Set up synq** i a dalt mostra «Step N of M». Prem Retorn o fes clic a **Continue** per avançar.",
+              "Algunes botigues veuen una configuració més curta, sense els passos de preus i de publicació. En aquest cas, la primera regla comença al preu de mercat, i la pots canviar més endavant a **Price rules**."
+            ],
+            "steps": [
+              "**Which games do you sell?** Marca tots els jocs que vens. Els que la teva botiga ja ven surten marcats. N'has de marcar almenys un.",
+              "**Set your prices.** Tria el teu preu respecte al preu de mercat de TCGplayer, des d'un 10 % per sota fins a un 10 % per sobre. Després tria com es posa preu a cada estat.",
+              "**What happens when you add a card?** Tria **Save it as a draft** o **Put it on sale right away**, i marca els canals de venda a **Sell it on**.",
+              "**Where are your cards today?** Tria **Link my products**, **Import my file** o **Add my first cards**.",
+              "**You're set up.** Revisa el resum. Fes clic a **Change** en qualsevol fila per tornar-hi."
+            ]
+          },
+          {
+            "id": "prices",
+            "title": "El pas dels preus",
+            "paragraphs": [
+              "**Your price** fixa on et situes respecte al preu de mercat de TCGplayer: -10 %, -5 %, **Market**, +5 % o +10 %.",
+              "**Each condition** decideix com es posa preu a les cartes jugades:"
+            ],
+            "list": [
+              "**Its own TCGplayer price:** cada estat segueix el seu propi preu de mercat. És l'opció per defecte.",
+              "**Standard:** LP un 10 % menys que Near Mint, MP un 25 % menys, HP un 40 % menys i DMG un 60 % menys.",
+              "**A little less:** LP un 5 % menys, MP un 15 % menys, HP un 25 % menys i DMG un 40 % menys.",
+              "**Same as Near Mint:** tots els estats al preu de Near Mint."
+            ]
+          },
+          {
+            "id": "minimum",
+            "title": "Mínim i arrodoniment",
+            "paragraphs": [
+              "Obre **Minimum and rounding**, sota el pas dels preus, per configurar dues coses més.",
+              "Una carta d'exemple mostra el preu de mercat i el teu preu per a cada estat, perquè vegis l'efecte abans de continuar."
+            ],
+            "list": [
+              "**Never below:** sense mínim, o uns 0,25 $, 0,50 $ o 1 $, convertits a la moneda de la teva botiga.",
+              "**Rounding:** Exact, Up to .99, Up to .49 o Nearest whole."
+            ]
+          },
+          {
+            "id": "what-it-saves",
+            "title": "Què desa la configuració",
+            "list": [
+              "**Els teus jocs.** La cerca d'**Add products** els mostra primer.",
+              "**Esborrany o a la venda,** i els canals de venda on van els productes nous.",
+              "**Una regla de preu anomenada «All products».** Cobreix tots els jocs, posa preu als productes nous a mesura que els afegeixes i actualitza els preus del teu inventari cada dia a les 6:00 en la zona horària de la teva botiga."
+            ],
+            "note": {
+              "title": "Només una primera regla",
+              "body": "La configuració crea la regla «All products» només si la teva botiga encara no té cap regla de preu."
+            }
+          },
+          {
+            "id": "home",
+            "title": "Després de la configuració: Home",
+            "paragraphs": [
+              "**Home** mostra una guia anomenada **Get your store ready**, pas a pas. La pots amagar, i desapareix quan acabes els passos obligatoris."
+            ],
+            "steps": [
+              "**Add your first 10 cards.** Cerca directament des del pas, o fes clic a **Add cards**.",
+              "**See a card on your store** (opcional). **Change how cards read** obre **Settings** › **Online Store**.",
+              "**Put your cards in collections.** **Pick collections** obre **Settings** › **What you sell**.",
+              "**Check your first price update.** **See price updates** obre **Price rules**. Aquest pas es completa després de la primera execució d'una regla.",
+              "**Sell in your physical store with Shopify POS** (opcional). Només surt si tens Shopify POS instal·lat."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "Bo de saber",
+            "list": [
+              "**Per defecte, esborrany.** Ningú no veu un esborrany fins que el publiques a Shopify.",
+              "**Tot es pot canviar més endavant.** Els jocs són a **Settings** › **What you sell**. Els preus, a **Price rules**.",
+              "**La primera actualització de preus** es fa a les 6:00 següents, o de seguida si executes la regla tu mateix. Consulta [Previsualitza, executa i programa](/docs/run-and-schedule)."
+            ]
+          }
+        ]
+      },
+      "pick-games": {
+        "meta": {
+          "title": "Tria els teus jocs i col·leccions · Centre d'ajuda de Synq",
+          "description": "Els teus jocs decideixen què mostra primer la cerca i a quines col·leccions van les cartes noves. Triar un joc no afegeix res a la teva botiga."
+        },
+        "category": "start",
+        "title": "Tria els teus jocs i col·leccions",
+        "intro": "Els teus jocs decideixen què mostra primer la cerca i a quines col·leccions van les cartes noves. Triar un joc no afegeix res a la teva botiga.",
+        "readTime": "2 min de lectura",
+        "sections": [
+          {
+            "id": "where",
+            "title": "On pots canviar els jocs",
+            "steps": [
+              "Obre **Settings** › **Configure what you sell**. La pàgina es diu **What you sell**.",
+              "Marca cada joc que vens. Sempre n'hi ha d'haver almenys un de marcat.",
+              "Tria una **Singles collection** i una **Sealed collection** per a cada joc, o **No collection**."
+            ],
+            "paragraphs": [
+              "A **Add products**, la icona de l'engranatge al costat de les icones dels jocs obre la mateixa pàgina."
+            ]
+          },
+          {
+            "id": "games",
+            "title": "Jocs que pots vendre",
+            "paragraphs": [
+              "Synq té 19 jocs, en aquest ordre a la configuració:"
+            ],
+            "list": [
+              "Magic: The Gathering",
+              "Disney Lorcana",
+              "Pokémon",
+              "Pokémon TCG Japan",
+              "One Piece",
+              "Flesh and Blood",
+              "Riftbound",
+              "Sorcery: Contested Realm",
+              "Digimon",
+              "Yu-Gi-Oh!",
+              "Gundam Card Game",
+              "Union Arena",
+              "UniVersus",
+              "Grand Archive",
+              "Final Fantasy TCG",
+              "Weiss Schwarz",
+              "Star Wars Unlimited",
+              "Elestrals",
+              "Dragon Ball Super: Fusion World"
+            ]
+          },
+          {
+            "id": "collections",
+            "title": "Com funcionen les col·leccions",
+            "paragraphs": [
+              "Una carta solta nova va a la col·lecció de cartes soltes del seu joc. Un producte segellat nou va a la col·lecció de segellat.",
+              "El pas **Put your cards in collections** de Home es completa quan cada joc que vens té una col·lecció.",
+              "Per afegir productes que ja tens a una col·lecció, ves a **Inventory** › selecciona els productes › ⋯ › **Add to collection(s)**."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "Bo de saber",
+            "list": [
+              "**Activar un joc no importa res.** Només et permet afegir-ne cartes.",
+              "**Els jocs no tenen una configuració d'estats pròpia.** Els estats són els mateixos per a tots els jocs. Consulta [Estats i versions](/docs/conditions-printings).",
+              "**Hi falta un joc.** Demana'l amb **Request this game** a la importació de fulls de càlcul, o amb **Feedback** a Home."
+            ]
+          }
+        ]
+      },
+      "add-cards": {
+        "meta": {
+          "title": "Afegeix cartes i producte segellat · Centre d'ajuda de Synq",
+          "description": "Cerca una carta o un producte segellat a Add products, tria la versió i l'estat, i Synq crea el producte a Shopify amb el seu preu."
+        },
+        "category": "stock",
+        "title": "Afegeix cartes i producte segellat",
+        "intro": "Cerca una carta o un producte segellat a **Add products**, tria la versió i l'estat, i Synq crea el producte a Shopify amb el seu preu.",
+        "readTime": "2 min de lectura",
+        "sections": [
+          {
+            "id": "search",
+            "title": "Cerca",
+            "paragraphs": [
+              "Els resultats surten mentre escrius. Una cerca necessita almenys 2 caràcters.",
+              "Cerca pel nom o el número de la carta. Les icones de sobre els resultats la limiten a un joc, o a **All**.",
+              "Amb la cerca buida, la pàgina mostra **Sets you added from recently** i **Recently added**."
+            ]
+          },
+          {
+            "id": "sets",
+            "title": "Cerca dins d'una expansió amb @",
+            "list": [
+              "**@ sol** mostra les últimes expansions.",
+              "**@ seguit d'un codi o un nom,** com ara `@paf` o `@paldean fates`, et suggereix expansions. Retorn o Tab tria la primera.",
+              "**L'expansió triada** surt com una etiqueta. Amb la cerca buida veus tota l'expansió en ordre.",
+              "**Per treure una expansió,** fes clic a la × de l'etiqueta o prem la tecla de retrocés."
+            ]
+          },
+          {
+            "id": "results",
+            "title": "Llegeix els resultats",
+            "paragraphs": [
+              "Les cartes que ja tens a la botiga surten primer, a **In your store**. La resta és a **More results**, 50 per pàgina.",
+              "Cada carta té una fila per versió, amb el preu de mercat en la teva moneda i el teu estoc.",
+              "Fes clic a la fila d'una versió per afegir-la."
+            ]
+          },
+          {
+            "id": "add",
+            "title": "Afegeix una carta",
+            "steps": [
+              "Tria l'**estat**. Cada botó d'estat mostra el seu preu. El producte segellat sempre és Unopened.",
+              "Tria la **versió** i la **ubicació**, si la carta o la teva botiga en tenen més d'una.",
+              "Indica la **quantitat**.",
+              "Revisa el preu. L'etiqueta del costat indica quina regla o excepció el fixa.",
+              "Revisa l'estat de publicació al peu: **Creating as Draft** o **Active**. Fes-hi clic per canviar-lo.",
+              "Fes clic a **Add to store**, o prem Retorn."
+            ],
+            "paragraphs": [
+              "Afegeixes els estats d'un en un. Per tenir una còpia Near Mint i una Lightly Played, afegeix la carta dues vegades."
+            ]
+          },
+          {
+            "id": "restock",
+            "title": "Afegeix més còpies d'una carta que ja tens",
+            "paragraphs": [
+              "Si la versió ja és a la teva botiga, la quantitat se suma a aquell estat i aquella ubicació. Veuràs «Stock updated».",
+              "Un estat que encara no tenies es converteix en una variant nova del mateix producte.",
+              "Afegir estoc manté el preu actual de la carta. La següent execució de la seva regla l'actualitza."
+            ]
+          },
+          {
+            "id": "more",
+            "title": "Més opcions abans d'afegir",
+            "list": [
+              "**Pricing configuration:** consulta la regla que posa preu a la carta, crea una excepció i indica què n'has pagat. Consulta [Excepcions](/docs/exceptions) i [Cost i marge](/docs/cost-margin).",
+              "**Títol i col·lecció** d'un producte nou, a més del títol i la descripció per als cercadors.",
+              "**Point of Sale:** l'SKU i el codi de barres, visibles si tens Shopify POS instal·lat.",
+              "**Foto:** la foto de la versió o la imatge de la carta."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "Bo de saber",
+            "list": [
+              "**Sense preu de mercat.** Si TCGplayer no té preu per a aquell estat, escriu-lo a **Your price** per afegir la carta.",
+              "**Les teves pròpies fotos** no es poden pujar des de Synq. Afegeix-les al producte a Shopify.",
+              "**Límit del pla.** Si arribes al límit de productes del teu pla, no es pot afegir la carta. Consulta [Plans i límits de productes](/docs/plans).",
+              "**Moltes cartes alhora.** Fes servir [Importa un full de càlcul](/docs/import)."
+            ]
+          }
+        ]
+      },
+      "conditions-printings": {
+        "meta": {
+          "title": "Estats i versions · Centre d'ajuda de Synq",
+          "description": "Cada versió d'una carta és un producte propi a Shopify. Cada estat és una variant d'aquell producte, amb preu i estoc propis."
+        },
+        "category": "stock",
+        "title": "Estats i versions",
+        "intro": "Cada versió d'una carta és un producte propi a Shopify. Cada estat és una variant d'aquell producte, amb preu i estoc propis.",
+        "readTime": "2 min de lectura",
+        "sections": [
+          {
+            "id": "how",
+            "title": "Com es converteix una carta en un producte",
+            "list": [
+              "**Un producte per carta i versió.** Una còpia Normal i una Foil de la mateixa carta són dos productes.",
+              "**Una variant per estat.** Les variants penjen d'una sola opció anomenada «Condition».",
+              "**Estoc per estat i ubicació.** Cada variant porta la seva pròpia quantitat."
+            ]
+          },
+          {
+            "id": "conditions",
+            "title": "Estats",
+            "table": {
+              "head": [
+                "Codi",
+                "Estat"
+              ],
+              "rows": [
+                [
+                  "NM",
+                  "Near Mint"
+                ],
+                [
+                  "LP",
+                  "Lightly Played"
+                ],
+                [
+                  "MP",
+                  "Moderately Played"
+                ],
+                [
+                  "HP",
+                  "Heavily Played"
+                ],
+                [
+                  "DMG",
+                  "Damaged"
+                ]
+              ]
+            },
+            "paragraphs": [
+              "El producte segellat té un sol estat, Unopened.",
+              "Els estats són els mateixos per a tots els jocs."
+            ]
+          },
+          {
+            "id": "names",
+            "title": "Com es veuen els noms dels estats a la botiga",
+            "steps": [
+              "Obre **Settings** › **Online Store** › **Condition variants**.",
+              "A **Condition names**, tria noms complets (Near Mint) o abreviatures (NM)."
+            ],
+            "note": {
+              "title": "Només productes nous",
+              "body": "L'opció s'aplica als productes que afegeixis a partir d'aleshores. Els que ja tens mantenen els noms de les variants."
+            }
+          },
+          {
+            "id": "printings",
+            "title": "Versions",
+            "paragraphs": [
+              "Les versions surten de TCGplayer: Normal, Foil, Holofoil, 1st Edition, Reverse Holofoil i més.",
+              "Cada versió té el seu propi preu de mercat, així que una Foil té un preu independent."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "Bo de saber",
+            "list": [
+              "**Pokémon TCG Japan** és un joc a part. Activa'l a **Settings** › **What you sell**.",
+              "**Treure un estat** esborra aquella variant a Shopify. Fes-ho a **Inventory** amb el panell **Conditions**.",
+              "**Els estats jugats sense preu de mercat** fan servir el percentatge per sota de Near Mint de la regla. Consulta [Crea una regla de preu](/docs/price-rules)."
+            ]
+          }
+        ]
+      },
+      "link-products": {
+        "meta": {
+          "title": "Vincula els productes que ja tens · Centre d'ajuda de Synq",
+          "description": "Vincula un producte que ja és a la teva botiga de Shopify amb la seva carta. Synq conserva el producte i se n'encarrega del preu i l'estoc."
+        },
+        "category": "stock",
+        "title": "Vincula els productes que ja tens",
+        "intro": "Vincula un producte que ja és a la teva botiga de Shopify amb la seva carta. Synq conserva el producte i se n'encarrega del preu i l'estoc.",
+        "readTime": "2 min de lectura",
+        "sections": [
+          {
+            "id": "open",
+            "title": "Per on començar",
+            "paragraphs": [
+              "A **Add products**, obre **Import** › **Link from Shopify**. A la configuració inicial, tria **Link my products**."
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Vincula un producte",
+            "steps": [
+              "**Link from Shopify** mostra els productes de la teva botiga que encara no estan vinculats, primer els més nous. Cerca amb **Search your store's products** i fes clic en un.",
+              "**Which card is it?** La cerca s'omple amb el títol del producte. Tria la carta.",
+              "**Add to synq.** Tria la versió i assigna a cada variant el seu estat.",
+              "Fes clic a **Add to synq**."
+            ]
+          },
+          {
+            "id": "matching",
+            "title": "Què omple Synq per tu",
+            "list": [
+              "**SKU d'1 a 9 xifres:** es llegeix com un SKU de TCGplayer, i així es troba la carta automàticament.",
+              "**Codi de barres o SKU de 10 a 14 xifres:** es llegeix com l'UPC o l'EAN del producte.",
+              "**Estats:** es llegeixen de l'SKU o del nom de la variant. Entén paraules com «NM-M», «Light Play» i «Excellent».",
+              "**Una carta d'un joc que no vens:** Synq t'ofereix **Enable** per a aquell joc."
+            ]
+          },
+          {
+            "id": "after",
+            "title": "Què passa després de vincular",
+            "list": [
+              "**En el moment de vincular, no canvia res a Shopify.** El títol i la descripció es queden com estan.",
+              "**El cost** es llegeix del Cost per item de Shopify.",
+              "**El preu** segueix la regla de preu del producte a partir de la següent execució de la regla.",
+              "**L'estoc** es manté sincronitzat a partir d'aleshores."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "Bo de saber",
+            "list": [
+              "**D'un en un.** De moment no es poden vincular productes en bloc.",
+              "**Revisa primer la regla.** Obre la previsualització de la regla a **Price rules** per veure el preu nou abans que s'executi.",
+              "**Tot vinculat.** Quan tots els productes estan vinculats, la llista diu «Everything is in synq»."
+            ]
+          }
+        ]
+      },
+      "import": {
+        "meta": {
+          "title": "Importa un full de càlcul · Centre d'ajuda de Synq",
+          "description": "Importa un CSV de TCGplayer o el teu propi full. Synq associa cada fila a la seva carta, crea el que és nou i suma estoc al que ja tens."
+        },
+        "category": "stock",
+        "title": "Importa un full de càlcul",
+        "intro": "Importa un CSV de TCGplayer o el teu propi full. Synq associa cada fila a la seva carta, crea el que és nou i suma estoc al que ja tens.",
+        "readTime": "2 min de lectura",
+        "sections": [
+          {
+            "id": "open",
+            "title": "Per on començar",
+            "paragraphs": [
+              "A **Add products**, obre **Import** › **From TCGplayer** o **From a spreadsheet**. A la configuració inicial, tria **Import my file**.",
+              "La pàgina es diu **Import a spreadsheet** i té quatre passos: **Spreadsheet**, **Columns**, **Review** i **Import**."
+            ]
+          },
+          {
+            "id": "file",
+            "title": "El teu fitxer",
+            "list": [
+              "**CSV, TSV o TXT.** No s'accepten fitxers d'Excel ni de Numbers. A Excel, fes servir Fitxer › Desa com a › CSV.",
+              "**Qualsevol separador.** Synq detecta tabulacions, punts i coma i comes, i també la codificació del text.",
+              "**Les files de títol** per sobre de la capçalera no són cap problema.",
+              "**Cada fila necessita** un nom de producte, un codi de barres o un TCGplayer ID.",
+              "**Download a template** et dona un CSV amb les columnes preparades."
+            ]
+          },
+          {
+            "id": "columns",
+            "title": "Columnes",
+            "paragraphs": [
+              "Synq llegeix capçaleres en anglès i en castellà. Revisa-les una per una al pas **Columns**, o marca-les com a **Don't import**.",
+              "Columnes que entén: Product name, TCGplayer ID, TCGplayer SKU, Barcode, Game, Set, Card number, Printing, Condition, Quantity, Location, Price, Cost i Status.",
+              "Si falta una columna, cada fila rep una quantitat d'1, la teva primera ubicació, el teu estat per defecte i el preu de mercat."
+            ]
+          },
+          {
+            "id": "tcgplayer",
+            "title": "Exportacions de TCGplayer",
+            "paragraphs": [
+              "Synq reconeix automàticament una exportació d'inventari de TCGplayer. Les seves files porten l'SKU exacte, així que la carta, la versió i l'estat són exactes.",
+              "Normalment salta directament a **Review**. Per defecte, el seu estoc substitueix el que tens."
+            ]
+          },
+          {
+            "id": "review",
+            "title": "Revisió",
+            "paragraphs": [
+              "Synq associa les files primer per TCGplayer SKU, després per TCGplayer ID, codi de barres, nom exacte i nom semblant.",
+              "Les pestanyes mostren **All**, **New**, **In your store** i **To answer**.",
+              "Una fila que encaixa amb diversos productes mostra «{n} products fit». Tria el que tens al prestatge. Una fila sense coincidència es pot cercar o deixar fora."
+            ]
+          },
+          {
+            "id": "options",
+            "title": "Opcions d'importació",
+            "list": [
+              "**Productes que ja vens:** **Add the sheet's stock**, **Make the sheet's stock their stock** o **Leave them as they are**.",
+              "**Preu dels productes nous:** **Your price rules** (per defecte) o **The price in your sheet**.",
+              "**Els productes nous comencen com a:** el que digui el full, Draft o Active.",
+              "**Canals** per als productes nous.",
+              "**Save the barcodes from your sheet** als productes."
+            ]
+          },
+          {
+            "id": "run",
+            "title": "Executa la importació",
+            "paragraphs": [
+              "La importació s'executa en segon pla, així que pots sortir de la pàgina.",
+              "Quan acaba, les files que s'han quedat fora es descarreguen en un CSV amb el motiu a cada fila. Les importacions anteriors són a **Sheets you imported**."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "Bo de saber",
+            "list": [
+              "**5.000 productes per importació.** Divideix els fitxers més grans.",
+              "**Límit del pla.** Els productes nous que superin el límit del teu pla no es creen. L'estoc dels productes que ja tens sí que s'hi suma.",
+              "**Un joc no és a Synq.** Fes servir **Request this game** a la importació.",
+              "**No hi ha exportació.** Synq no descarrega el teu estoc en un fitxer."
+            ]
+          }
+        ]
+      },
+      "market-prices": {
+        "meta": {
+          "title": "Com funcionen els preus de mercat · Centre d'ajuda de Synq",
+          "description": "Tots els preus de Synq parteixen del preu de mercat de TCGplayer per a aquella carta, versió i estat. Les teves regles de preu el converteixen en el teu preu."
+        },
+        "category": "prices",
+        "title": "Com funcionen els preus de mercat",
+        "intro": "Tots els preus de Synq parteixen del preu de mercat de TCGplayer per a aquella carta, versió i estat. Les teves regles de preu el converteixen en el teu preu.",
+        "readTime": "2 min de lectura",
+        "sections": [
+          {
+            "id": "source",
+            "title": "D'on surt el preu",
+            "list": [
+              "**Preu de mercat de TCGplayer,** en dòlars americans.",
+              "**Per estat.** Cada estat té el seu propi preu de mercat.",
+              "**Alternativa.** Si Near Mint o un producte segellat no tenen preu propi, es fa servir el preu de mercat de la versió.",
+              "**S'actualitza un cop al dia.** És la freqüència amb què es mou el mercat a TCGplayer."
+            ],
+            "paragraphs": [
+              "A **Inventory**, passa el cursor per sobre del preu **Market** per veure el Market, el Low, el Mid i el High de TCGplayer."
+            ]
+          },
+          {
+            "id": "when",
+            "title": "Quan canvien els teus preus",
+            "paragraphs": [
+              "Els teus preus només canvien quan s'executa una regla de preu. Entre execucions, res no els modifica.",
+              "La regla «All products» de la configuració inicial s'executa cada dia a les 6:00 en la zona horària de la teva botiga.",
+              "També pots executar qualsevol regla tu mateix. Consulta [Previsualitza, executa i programa](/docs/run-and-schedule)."
+            ]
+          },
+          {
+            "id": "currency",
+            "title": "La moneda de la teva botiga",
+            "list": [
+              "**Automàtica.** Synq fa servir la moneda de la teva botiga de Shopify. No has de triar res.",
+              "**Convertida des de dòlars americans** amb els tipus de canvi actuals.",
+              "**El mínim i l'arrodoniment** funcionen en la teva moneda, després de la conversió."
+            ],
+            "note": {
+              "title": "Moneda no compatible",
+              "body": "Si Synq no té tipus de canvi per a la teva moneda, no pot posar preu a les teves cartes. **Settings** mostra «Unsupported currency». Digues-nos-ho amb **Feedback** a Home."
+            }
+          },
+          {
+            "id": "good-to-know",
+            "title": "Bo de saber",
+            "list": [
+              "**Els preus són del mercat dels Estats Units.** Si el teu mercat local és diferent, ajusta el percentatge de la regla per a aquell joc. Consulta [Crea una regla de preu](/docs/price-rules).",
+              "**Sense preu de mercat.** La previsualització de la regla les mostra a **No market**. Posa'ls preu tu mateix amb una [excepció](/docs/exceptions).",
+              "**Synq no actualitza TCGplayer.** Només en fa servir els preus."
+            ]
+          }
+        ]
+      },
+      "price-rules": {
+        "meta": {
+          "title": "Crea una regla de preu · Centre d'ajuda de Synq",
+          "description": "Una regla de preu indica a quins productes posa preu i com. Crea'n una per a tots els jocs, o una per a un sol joc, expansió, raresa, versió o estat."
+        },
+        "category": "prices",
+        "title": "Crea una regla de preu",
+        "intro": "Una regla de preu indica a quins productes posa preu i com. Crea'n una per a tots els jocs, o una per a un sol joc, expansió, raresa, versió o estat.",
+        "readTime": "2 min de lectura",
+        "sections": [
+          {
+            "id": "start",
+            "title": "Comença una regla",
+            "steps": [
+              "Obre **Price rules**.",
+              "Fes clic a **New rule** i tria **Every game** o un dels teus jocs.",
+              "Posa un nom a la regla (fins a 40 caràcters).",
+              "Completa els quatre passos: **Define products**, **Define pricing**, **Define minimum** i **Confirm**."
+            ],
+            "paragraphs": [
+              "Una botiga pot tenir fins a 50 regles."
+            ]
+          },
+          {
+            "id": "products",
+            "title": "Defineix els productes",
+            "list": [
+              "**Sets** i **Rarities:** només en una regla per a un sol joc.",
+              "**Printings** i **Conditions:** de NM a DMG, i Unopened per al segellat.",
+              "**Applies to:** **New products** posa preu a les cartes quan les afegeixes o les importes. **Your inventory** posa preu al teu estoc cada vegada que s'executa la regla. Al principi totes dues estan marcades."
+            ],
+            "paragraphs": [
+              "Deixa un filtre buit per incloure-ho tot. Una regla només per a productes nous no té programació ni **Run**."
+            ]
+          },
+          {
+            "id": "pricing",
+            "title": "Defineix el preu",
+            "list": [
+              "**Base prices on:** el preu de mercat de TCGplayer.",
+              "**Modify by:** un percentatge a l'alça o a la baixa, de -99 % a +1000 %.",
+              "**Then add:** un import en la teva moneda, a l'alça o a la baixa."
+            ]
+          },
+          {
+            "id": "conditions",
+            "title": "Preu per a cada estat",
+            "paragraphs": [
+              "Tria com es posa preu als estats jugats:"
+            ],
+            "list": [
+              "**Each condition's market price:** cada estat segueix el seu propi preu de TCGplayer. És l'opció per defecte.",
+              "**Near Mint's, less a percent:** tots els estats parteixen del preu de Near Mint, menys el seu percentatge."
+            ]
+          },
+          {
+            "id": "below-nm",
+            "title": "Per sota de Near Mint",
+            "table": {
+              "head": [
+                "Estat",
+                "Per defecte"
+              ],
+              "rows": [
+                [
+                  "LP",
+                  "Un 10 % per sota de Near Mint"
+                ],
+                [
+                  "MP",
+                  "Un 25 % per sota de Near Mint"
+                ],
+                [
+                  "HP",
+                  "Un 40 % per sota de Near Mint"
+                ],
+                [
+                  "DMG",
+                  "Un 60 % per sota de Near Mint"
+                ]
+              ]
+            },
+            "paragraphs": [
+              "Amb **Each condition's market price**, aquests percentatges només s'apliquen a un estat jugat que no té preu de mercat propi.",
+              "Si deixes un percentatge buit, aquell estat no rep preu i es queda amb el que té."
+            ]
+          },
+          {
+            "id": "finish",
+            "title": "Arrodoniment, mínim i confirmació",
+            "paragraphs": [
+              "Tria un arrodoniment al pas dels preus i després un mínim. Consulta [Mínims i arrodoniment](/docs/minimums-rounding).",
+              "**Confirm** mostra la regla sencera. Fes clic a **Edit** en qualsevol part per canviar-la.",
+              "Quan la deses, la regla s'obre a la seva previsualització."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "Bo de saber",
+            "list": [
+              "**Desar no canvia els preus.** Els preus canvien quan s'executa la regla.",
+              "**Una regla per estat.** Quan les regles se superposen, la més específica posa preu a la carta. Consulta [Quina regla posa preu a un producte](/docs/which-rule-wins).",
+              "**Una carta concreta** pot seguir el seu propi preu. Consulta [Excepcions](/docs/exceptions)."
+            ]
+          }
+        ]
+      },
+      "run-and-schedule": {
+        "meta": {
+          "title": "Previsualitza, executa i programa una regla · Centre d'ajuda de Synq",
+          "description": "La previsualització mostra tots els preus que canviaria una regla. Executa-la tu mateix, o programa-la, i consulta què ha canviat a Activity."
+        },
+        "category": "prices",
+        "title": "Previsualitza, executa i programa una regla",
+        "intro": "La previsualització mostra tots els preus que canviaria una regla. Executa-la tu mateix, o programa-la, i consulta què ha canviat a Activity.",
+        "readTime": "2 min de lectura",
+        "sections": [
+          {
+            "id": "preview",
+            "title": "Previsualitza una regla",
+            "paragraphs": [
+              "Obre el menú ⋯ d'una regla i fes clic a **Preview rule**. Una regla acabada de desar també s'obre aquí.",
+              "Cada producte i estat mostra el seu **Original price** i el seu **Updated price**.",
+              "Les pestanyes mostren **All**, **Go up**, **Go down**, **Unchanged**, **No market** i **Exceptions**. Cerca per nom, expansió o estat, o filtra per expansió."
+            ]
+          },
+          {
+            "id": "run",
+            "title": "Executa una regla",
+            "steps": [
+              "A **Price rules**, fes clic a **Run** a la regla. A la previsualització, fes clic a **Run rule · N prices**.",
+              "Llegeix la confirmació i fes clic a **Run**. Fes clic a **Preview first** per tornar a revisar els preus.",
+              "L'execució entra a la cua i després els preus canvien a Shopify."
+            ],
+            "note": {
+              "title": "Una execució no es pot aturar",
+              "body": "Un cop comença una execució, arriba fins al final. Una execució que encara és a la cua es pot cancel·lar."
+            }
+          },
+          {
+            "id": "schedule",
+            "title": "Programa una regla",
+            "steps": [
+              "Obre el menú ⋯ de la regla i fes clic a **Edit schedule** o **Add schedule**.",
+              "Tria **Every day**, **Some days** o **Once**. **Once** va bé per a unes rebaixes: la regla s'executa aquell dia i la programació s'acaba.",
+              "Tria l'hora, en intervals de 15 minuts, en la zona horària de la teva botiga.",
+              "Activa-la amb **Active** o deixa-la en pausa amb **Paused**."
+            ],
+            "paragraphs": [
+              "Posa en pausa o reprèn la regla des del menú ⋯. **Remove schedule** la converteix en una regla que executes a mà.",
+              "Les pestanyes de **Price rules** mostren **All**, **Scheduled**, **Paused** i **By hand**."
+            ]
+          },
+          {
+            "id": "activity",
+            "title": "Activity",
+            "paragraphs": [
+              "**Activity**, al costat de les teves regles, mostra cada execució amb l'hora i quants preus han pujat o baixat.",
+              "Cada execució pot estar **Queued**, **Running**, **Complete**, **Failed** o **Cancelled**. Una icona de calendari vol dir que s'ha executat segons la programació.",
+              "Fes clic en una execució completada per veure tots els preus que ha canviat. Fes clic a **Retry** en una execució fallida."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "Bo de saber",
+            "list": [
+              "**Abans de la primera execució,** un avís et proposa previsualitzar la regla.",
+              "**Una execució cada vegada.** Les execucions d'una botiga esperen el seu torn.",
+              "**Les hores perdudes s'executen tard.** Si Synq no arriba a una hora programada, l'execució es fa més tard en lloc de saltar-se, fins a un dia després.",
+              "**Historial.** El detall de les execucions es conserva 90 dies, i la llista d'execucions, un any."
+            ]
+          }
+        ]
+      },
+      "minimums-rounding": {
+        "meta": {
+          "title": "Mínims i arrodoniment · Centre d'ajuda de Synq",
+          "description": "Un mínim evita que una carta es vengui per sota d'un preu que tries. L'arrodoniment dona als teus preus unes terminacions netes."
+        },
+        "category": "prices",
+        "title": "Mínims i arrodoniment",
+        "intro": "Un mínim evita que una carta es vengui per sota d'un preu que tries. L'arrodoniment dona als teus preus unes terminacions netes.",
+        "readTime": "2 min de lectura",
+        "sections": [
+          {
+            "id": "minimum",
+            "title": "Fixa un mínim",
+            "paragraphs": [
+              "Al pas **Define minimum** de la regla, tria una opció:"
+            ],
+            "list": [
+              "**None:** sense mínim.",
+              "**A fixed amount:** en la moneda de la teva botiga.",
+              "**Your cost:** el que has pagat, més o menys un percentatge o un import. Mai no vens per sota del que has pagat."
+            ]
+          },
+          {
+            "id": "per-condition",
+            "title": "El mateix per a tots els estats, o per estat",
+            "paragraphs": [
+              "Tria **Same for every condition**, o **Per condition** per fixar un mínim per a cada estat.",
+              "Si deixes un estat buit, no té mínim."
+            ]
+          },
+          {
+            "id": "rounding",
+            "title": "Arrodoniment",
+            "paragraphs": [
+              "Tria l'arrodoniment al pas **Define pricing** de la regla:"
+            ],
+            "list": [
+              "No rounding",
+              "Round up to x.49",
+              "Round up to x.99",
+              "Round up to x.00",
+              "Round to nearest x.00"
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "Bo de saber",
+            "list": [
+              "**No hi ha màxim.** Les regles tenen un mínim però no un sostre.",
+              "**Sense cost, no hi ha mínim per cost.** Un producte sense cost no té mínim basat en el cost, i la previsualització ho indica. Consulta [Cost i marge](/docs/cost-margin).",
+              "**La teva moneda.** El mínim i l'arrodoniment s'apliquen després de la conversió des de dòlars americans.",
+              "**El mínim propi d'una carta.** Si un producte té el seu propi mínim, s'aplica el més alt dels dos. Consulta [Excepcions](/docs/exceptions).",
+              "**Mai no es publica un zero.** Un preu de 0 o menys no s'envia mai a Shopify."
+            ]
+          }
+        ]
+      },
+      "exceptions": {
+        "meta": {
+          "title": "Excepcions: posa tu mateix el preu d'una carta · Centre d'ajuda de Synq",
+          "description": "Una excepció és una configuració de preu pròpia d'un producte. Té prioritat sobre la regla que li posa preu."
+        },
+        "category": "prices",
+        "title": "Excepcions: posa tu mateix el preu d'una carta",
+        "intro": "Una excepció és una configuració de preu pròpia d'un producte. Té prioritat sobre la regla que li posa preu.",
+        "readTime": "2 min de lectura",
+        "sections": [
+          {
+            "id": "kinds",
+            "title": "Tres tipus d'excepció",
+            "list": [
+              "**Own formula:** Market price, Market + % o Market - %, en lloc de la fórmula de la regla.",
+              "**Own minimum:** s'aplica el més alt entre el mínim del producte i el de la regla.",
+              "**Excluded from rules:** per a un estat. Cap execució no en canvia el preu. Es mostra com a «Excluded from rules · not changed»."
+            ]
+          },
+          {
+            "id": "own-price",
+            "title": "Posa el teu propi preu a una carta",
+            "steps": [
+              "Obre **Inventory** i desplega el producte.",
+              "Edita el preu **Listed** a la fila de l'estat.",
+              "Desa. Aquell estat queda exclòs de les regles."
+            ],
+            "paragraphs": [
+              "Per tornar el preu a la seva regla, fes clic a **Back to its rule** en aquella fila."
+            ]
+          },
+          {
+            "id": "where",
+            "title": "Altres llocs on crear una excepció",
+            "list": [
+              "**Inventory** › la cel·la **Exceptions** del producte.",
+              "**Inventory** › selecciona els productes › panell **Exceptions**, per a molts productes alhora.",
+              "**Add products** › **Pricing configuration** › **Exception**, quan afegeixes la carta. Tria **Your price** perquè les regles no la toquin."
+            ]
+          },
+          {
+            "id": "find",
+            "title": "Troba les teves excepcions",
+            "paragraphs": [
+              "A **Inventory**, obre **Views** i tria **Own formula** o **Excluded from rules**.",
+              "A **Price rules**, la línia de dalt compta les teves excepcions."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "Bo de saber",
+            "list": [
+              "**Els preus editats a l'administrador de Shopify se sobreescriuen** a la següent execució de la regla del producte. Posa el preu a Synq, o exclou l'estat.",
+              "**Els estats exclosos mantenen el preu per sempre,** encara que el mercat es mogui. Revisa de tant en tant la vista **Excluded from rules**."
+            ]
+          }
+        ]
+      },
+      "which-rule-wins": {
+        "meta": {
+          "title": "Quina regla posa preu a un producte · Centre d'ajuda de Synq",
+          "description": "Cada estat de cada producte té com a màxim una regla. Quan les regles se superposen, la més específica hi posa preu."
+        },
+        "category": "prices",
+        "title": "Quina regla posa preu a un producte",
+        "intro": "Cada estat de cada producte té com a màxim una regla. Quan les regles se superposen, la més específica hi posa preu.",
+        "readTime": "2 min de lectura",
+        "sections": [
+          {
+            "id": "specific",
+            "title": "Guanya la regla més específica",
+            "paragraphs": [
+              "Synq compta els filtres que defineix una regla: joc, expansió, raresa, versió i estat. Guanya la regla que defineix més filtres i encaixa amb el producte.",
+              "Si dues regles són igual d'específiques, guanya la més nova."
+            ]
+          },
+          {
+            "id": "example",
+            "title": "Un exemple",
+            "table": {
+              "head": [
+                "Regla",
+                "Filtres",
+                "Posa preu a"
+              ],
+              "rows": [
+                [
+                  "All products",
+                  "Cap",
+                  "Tota la resta"
+                ],
+                [
+                  "Pokémon",
+                  "Joc",
+                  "Cartes de Pokémon"
+                ],
+                [
+                  "Pokémon foils",
+                  "Joc, versió",
+                  "Cartes foil de Pokémon"
+                ]
+              ]
+            },
+            "paragraphs": [
+              "A una carta foil de Pokémon li posa preu «Pokémon foils». A una carta normal de Pokémon, «Pokémon». A una carta de Magic, «All products»."
+            ]
+          },
+          {
+            "id": "no-rule",
+            "title": "Productes sense regla",
+            "paragraphs": [
+              "Cap execució no toca mai un producte que no cobreix cap regla. Es queda amb el seu preu.",
+              "Un producte nou sense cap regla per a **New products** rep el preu de mercat tal qual.",
+              "La línia de dalt de **Price rules** mostra quants productes tenen preu per regla, quants no tenen regla i quants tenen excepcions."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "Bo de saber",
+            "list": [
+              "**Les excepcions guanyen** a qualsevol regla. Consulta [Excepcions](/docs/exceptions).",
+              "**Revisa abans d'executar.** La previsualització mostra a quins productes posa preu una regla.",
+              "**Dues regles mai no posen preu al mateix estat** del mateix producte."
+            ]
+          }
+        ]
+      },
+      "find-products": {
+        "meta": {
+          "title": "Troba i filtra productes · Centre d'ajuda de Synq",
+          "description": "Inventory mostra tots els productes que gestiona Synq. Cerca, filtra i desa les vistes que fas servir cada dia."
+        },
+        "category": "inventory",
+        "title": "Troba i filtra productes",
+        "intro": "**Inventory** mostra tots els productes que gestiona Synq. Cerca, filtra i desa les vistes que fas servir cada dia.",
+        "readTime": "2 min de lectura",
+        "sections": [
+          {
+            "id": "open",
+            "title": "Obre Inventory",
+            "paragraphs": [
+              "Fes clic a **Inventory** al menú de l'esquerra. Home i Add products anomenen aquesta mateixa pàgina **My products**.",
+              "Les pestanyes mostren **All**, una pestanya per joc i **Views**."
+            ]
+          },
+          {
+            "id": "search",
+            "title": "Cerca",
+            "paragraphs": [
+              "**Search all products** busca al nom de la carta, el títol de Shopify, el nom i el codi de l'expansió, el número, la versió, l'UPC, el TCGplayer ID, l'SKU i el codi de barres.",
+              "Han de coincidir totes les paraules, així que `Charizard PAF` limita la cerca a una sola expansió."
+            ]
+          },
+          {
+            "id": "filters",
+            "title": "Filtres i ordenació",
+            "list": [
+              "**Vendor:** el joc. Surt quan vens 2 jocs o més.",
+              "**Condition**",
+              "**Stock:** In stock o Sold out.",
+              "**Formula:** Follows its rule, Market price, Market + % o Market - %.",
+              "**Price rules:** Excluded from rules.",
+              "**Set name** i **Product type**",
+              "**Imported from:** surt després d'una importació."
+            ],
+            "paragraphs": [
+              "Ordena per data de creació, nom del producte, nom de l'expansió, preu, cost o marge."
+            ]
+          },
+          {
+            "id": "views",
+            "title": "Desa una vista",
+            "paragraphs": [
+              "Una vista desa els teus filtres, la cerca i l'ordenació. Fes clic a **Save as view** i posa-li un nom.",
+              "Canvia una vista i fes clic a **Update** amb el seu nom per tornar-la a desar. També la pots canviar de nom o esborrar.",
+              "N'hi ha dues de preparades: **Own formula** i **Excluded from rules**."
+            ]
+          },
+          {
+            "id": "columns",
+            "title": "Columnes i files",
+            "paragraphs": [
+              "Tria les columnes amb **Columns**: Printing, Rarity, Number, Stock, Exceptions, Market, Listed, Cost, Margin i Minimum. L'elecció es desa per a tota la botiga.",
+              "Desplega un producte per veure una línia per estat i ubicació, amb l'estoc, el preu de mercat, el cost i el preu **Listed**.",
+              "Cada fila permet **Set as active** o **Set as draft**, i obrir la carta a TCGplayer o el producte a Shopify."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "Bo de saber",
+            "list": [
+              "**No hi ha filtre per estat de publicació, etiquetes, col·leccions ni raresa.** Mostra la columna **Rarity** i ordena-la.",
+              "**Listed** és el preu a Shopify. Si l'edites, crees una excepció. Consulta [Excepcions](/docs/exceptions)."
+            ]
+          }
+        ]
+      },
+      "bulk-edit": {
+        "meta": {
+          "title": "Edita molts productes alhora · Centre d'ajuda de Synq",
+          "description": "Selecciona productes a Inventory per canviar l'estoc, el cost, els estats o les excepcions de tots alhora."
+        },
+        "category": "inventory",
+        "title": "Edita molts productes alhora",
+        "intro": "Selecciona productes a **Inventory** per canviar l'estoc, el cost, els estats o les excepcions de tots alhora.",
+        "readTime": "2 min de lectura",
+        "sections": [
+          {
+            "id": "select",
+            "title": "Selecciona productes",
+            "paragraphs": [
+              "Marca les files que vulguis, o filtra primer i fes clic a **Select all N matching**.",
+              "S'obre una barra amb quatre panells i un menú ⋯."
+            ]
+          },
+          {
+            "id": "panels",
+            "title": "Els quatre panells",
+            "list": [
+              "**Stock:** afegeix, treu o fixa una quantitat per a un estat en una ubicació. Treure mai no baixa de 0.",
+              "**Cost:** una part del preu de mercat o un import, per a un estat o per a tots. Marca **Replace costs already set** per sobreescriure'ls. Els preus no canvien.",
+              "**Conditions:** treu estats. Això esborra aquelles variants a Shopify.",
+              "**Exceptions:** fixa una fórmula, un mínim, estats exclosos o el teu preu."
+            ]
+          },
+          {
+            "id": "menu",
+            "title": "El menú ⋯",
+            "list": [
+              "**Set as active** i **Set as draft**",
+              "**Add to collection(s)** i **Remove from collection(s):** només col·leccions manuals.",
+              "**Unlink from synq:** els productes es queden a Shopify tal com estan. Synq deixa d'actualitzar-ne els preus i l'estoc.",
+              "**Delete N products:** els esborra de Synq i de Shopify per sempre."
+            ]
+          },
+          {
+            "id": "not-here",
+            "title": "El que no fa l'edició en bloc",
+            "list": [
+              "**Etiquetes:** Synq no afegeix etiquetes.",
+              "**Canals de venda per producte,** arxivar i exportar.",
+              "**Afegir estats:** afegeix un estat des d'**Add products**.",
+              "**Preus:** fixa els preus amb una [regla de preu](/docs/price-rules) o una [excepció](/docs/exceptions)."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "Bo de saber",
+            "list": [
+              "**Esborrar no es pot desfer.** Els productes també s'eliminen de la teva botiga de Shopify.",
+              "**Desvincular conserva el producte.** Per tornar-lo a gestionar, fes servir [Vincula els productes que ja tens](/docs/link-products)."
+            ]
+          }
+        ]
+      },
+      "cost-margin": {
+        "meta": {
+          "title": "Cost i marge · Centre d'ajuda de Synq",
+          "description": "Indica què has pagat per les cartes per veure el teu marge i per fixar un mínim perquè cap carta no es vengui per sota del cost."
+        },
+        "category": "inventory",
+        "title": "Cost i marge",
+        "intro": "Indica què has pagat per les cartes per veure el teu marge i per fixar un mínim perquè cap carta no es vengui per sota del cost.",
+        "readTime": "2 min de lectura",
+        "sections": [
+          {
+            "id": "what",
+            "title": "Què és el cost",
+            "paragraphs": [
+              "El cost és el Cost per item de Shopify, per estat. Synq i Shopify el comparteixen, així que si l'edites en un lloc es veu als dos."
+            ]
+          },
+          {
+            "id": "set",
+            "title": "Indica el teu cost",
+            "list": [
+              "**Quan afegeixes una carta:** **Cost paid** a **Pricing configuration**, com a import o com a percentatge del mercat (de l'1 al 100 %).",
+              "**Per a molts productes:** **Inventory** › selecciona els productes › panell **Cost**.",
+              "**Un valor per defecte per als productes nous:** **Settings** › **Pricing** › **What you pay** › **Share of market price**. Deixa-ho buit si no vols cap cost per defecte.",
+              "**Els productes vinculats** porten el cost que tenen a Shopify."
+            ]
+          },
+          {
+            "id": "margin",
+            "title": "Consulta el teu marge",
+            "paragraphs": [
+              "Mostra les columnes **Cost** i **Margin** a **Inventory** amb **Columns**.",
+              "El marge és el preu **Listed** menys el cost, amb el seu percentatge. Una etiqueta vermella **Below cost** marca els productes que es venen per sota del cost.",
+              "Ordena per cost o per marge per trobar-los de seguida."
+            ]
+          },
+          {
+            "id": "minimum",
+            "title": "No vendre mai per sota del cost",
+            "paragraphs": [
+              "Al pas **Define minimum** d'una regla de preu, tria **Your cost** i afegeix-hi un percentatge o un import. Consulta [Mínims i arrodoniment](/docs/minimums-rounding)."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "Bo de saber",
+            "list": [
+              "**El cost no canvia els preus per si sol.** Només el fa servir un mínim basat en el cost.",
+              "**Sense cost, no hi ha mínim per cost** per a aquell producte."
+            ]
+          }
+        ]
+      },
+      "what-synq-creates": {
+        "meta": {
+          "title": "Què crea Synq a la teva botiga · Centre d'ajuda de Synq",
+          "description": "Cada carta que afegeixes es converteix en un producte normal de Shopify. Aquí tens el que omple Synq."
+        },
+        "category": "shopify",
+        "title": "Què crea Synq a la teva botiga",
+        "intro": "Cada carta que afegeixes es converteix en un producte normal de Shopify. Aquí tens el que omple Synq.",
+        "readTime": "2 min de lectura",
+        "sections": [
+          {
+            "id": "product",
+            "title": "El producte",
+            "list": [
+              "**Un producte per carta i versió,** amb una variant per estat sota una opció «Condition».",
+              "**Títol:** per defecte, el nom de la carta. Consulta [Títols i descripcions de producte](/docs/templates).",
+              "**Descripció:** el text de la carta de TCGplayer.",
+              "**Imatges:** fins a 3, de la versió o de la carta.",
+              "**Vendor:** l'editorial del joc.",
+              "**Product type:** el nom del joc.",
+              "**Categoria:** Gaming Cards per a cartes soltes i baralles, Collectible Trading Cards per a segellat."
+            ]
+          },
+          {
+            "id": "stock-price",
+            "title": "Estoc, preu i cost",
+            "list": [
+              "**L'estoc** es controla a la ubicació que triïs.",
+              "**El preu** el fixa la regla o l'excepció que posa preu a la carta.",
+              "**El Cost per item** s'omple quan indiques un cost."
+            ]
+          },
+          {
+            "id": "status",
+            "title": "Estat de publicació, canals i col·leccions",
+            "list": [
+              "**Estat de publicació:** Draft o Active. Per defecte és Draft, i el pots canviar a la finestra d'afegir.",
+              "**Canals:** els que marquis. Synq gestiona Online Store, Shop i Point of Sale.",
+              "**Col·lecció:** la col·lecció de cartes soltes o de segellat del joc."
+            ]
+          },
+          {
+            "id": "pos",
+            "title": "SKU i codi de barres",
+            "paragraphs": [
+              "Amb Shopify POS instal·lat, cada estat rep l'SKU de TCGplayer i un codi de barres. Consulta [Ven a la teva botiga física amb Shopify POS](/docs/pos)."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "Bo de saber",
+            "list": [
+              "**Sense etiquetes.** Synq no afegeix etiquetes als productes.",
+              "**Sense duplicats.** Synq marca cada producte amb la seva carta i versió, així que la mateixa versió no es pot crear dues vegades.",
+              "**Els esborranys queden ocults.** Publica'ls a Shopify, o fes servir **Set as active** a **Inventory**."
+            ]
+          }
+        ]
+      },
+      "templates": {
+        "meta": {
+          "title": "Títols i descripcions de producte · Centre d'ajuda de Synq",
+          "description": "Les plantilles decideixen com es llegeixen el títol, la descripció i el text per als cercadors d'un producte nou. Configura-les per joc i per tipus de producte."
+        },
+        "category": "shopify",
+        "title": "Títols i descripcions de producte",
+        "intro": "Les plantilles decideixen com es llegeixen el títol, la descripció i el text per als cercadors d'un producte nou. Configura-les per joc i per tipus de producte.",
+        "readTime": "2 min de lectura",
+        "sections": [
+          {
+            "id": "where",
+            "title": "On són",
+            "paragraphs": [
+              "Obre **Settings** › **Online Store**. El botó **Change how cards read** de Home obre la mateixa pàgina.",
+              "Les plantilles poden variar segons el joc i el tipus: Singles, Sealed, Decks i Accessories."
+            ]
+          },
+          {
+            "id": "title",
+            "title": "Títol i descripció",
+            "paragraphs": [
+              "Per defecte, el títol és `{name}`, només el nom de la carta. La descripció és el text de la carta.",
+              "Afegeix dades de la carta al títol a partir d'aquesta llista:"
+            ],
+            "list": [
+              "Product name",
+              "Set i Set code",
+              "Number",
+              "Rarity",
+              "Printing",
+              "Kind",
+              "Game i Vendor",
+              "Product description"
+            ]
+          },
+          {
+            "id": "seo",
+            "title": "Títol i descripció per als cercadors",
+            "paragraphs": [
+              "El text per als cercadors està desactivat per defecte. Activa'l per omplir-lo en tots els productes nous.",
+              "També pots triar una plantilla del tema, perquè els productes de cartes facin servir un disseny de pàgina del teu tema."
+            ]
+          },
+          {
+            "id": "update",
+            "title": "Actualitza els productes que ja tens",
+            "paragraphs": [
+              "Una plantilla s'aplica als productes nous. Per posar al dia els que ja tens, fes clic a **Update products** a la mateixa pàgina. S'executa en segon pla.",
+              "Els productes que has editat a Shopify conserven els teus canvis. Synq et diu quants els han conservat."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "Bo de saber",
+            "list": [
+              "**Els noms dels estats** (Near Mint o NM) són a **Condition variants**, a la mateixa pàgina. Consulta [Estats i versions](/docs/conditions-printings).",
+              "**El títol d'una sola carta.** Canvia'l a la finestra d'afegir abans de fer clic a **Add to store**."
+            ]
+          }
+        ]
+      },
+      "sync": {
+        "meta": {
+          "title": "Què es manté sincronitzat amb Shopify · Centre d'ajuda de Synq",
+          "description": "Synq i Shopify comparteixen l'estoc, el cost i les dades dels productes. Els preus són l'única cosa que controlen les teves regles de preu."
+        },
+        "category": "shopify",
+        "title": "Què es manté sincronitzat amb Shopify",
+        "intro": "Synq i Shopify comparteixen l'estoc, el cost i les dades dels productes. Els preus són l'única cosa que controlen les teves regles de preu.",
+        "readTime": "2 min de lectura",
+        "sections": [
+          {
+            "id": "table",
+            "title": "Canvis fets a l'administrador de Shopify",
+            "table": {
+              "head": [
+                "Canvies a Shopify",
+                "Què fa Synq"
+              ],
+              "rows": [
+                [
+                  "Preu",
+                  "El mostra com a Listed. La següent execució de la regla el substitueix, tret que l'estat estigui exclòs"
+                ],
+                [
+                  "Estoc, per comandes o edicions",
+                  "El copia, a totes les ubicacions"
+                ],
+                [
+                  "Cost per item",
+                  "El copia"
+                ],
+                [
+                  "Títol, descripció, tipus",
+                  "Manté el teu canvi"
+                ],
+                [
+                  "Esborrar una variant",
+                  "Treu aquell estat"
+                ],
+                [
+                  "Esborrar un producte",
+                  "Treu el producte de Synq"
+                ],
+                [
+                  "Afegir, canviar de nom o tancar una ubicació",
+                  "Segueix el canvi"
+                ]
+              ]
+            }
+          },
+          {
+            "id": "prices",
+            "title": "Preus",
+            "paragraphs": [
+              "Un preu que edites a l'administrador de Shopify dura fins a la següent execució de la regla del producte.",
+              "Per mantenir un preu, posa'l a Synq: edita **Listed** a **Inventory**. Això exclou l'estat de les regles. Consulta [Excepcions](/docs/exceptions)."
+            ]
+          },
+          {
+            "id": "locations",
+            "title": "Ubicacions",
+            "paragraphs": [
+              "L'estoc es porta per ubicació. Si no en tries cap, l'estoc nou va a la teva ubicació principal."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "Bo de saber",
+            "list": [
+              "**Els canvis que has fet es mantenen** quan actualitzes productes des d'una plantilla.",
+              "**Els productes desvinculats** es queden a Shopify, i Synq deixa d'actualitzar-los."
+            ]
+          }
+        ]
+      },
+      "pos": {
+        "meta": {
+          "title": "Ven a la teva botiga física amb Shopify POS · Centre d'ajuda de Synq",
+          "description": "Amb Shopify POS, cada carta i cada estat tenen el seu propi codi de barres, i en escanejar al taulell es cobra la carta exacta."
+        },
+        "category": "shopify",
+        "title": "Ven a la teva botiga física amb Shopify POS",
+        "intro": "Amb Shopify POS, cada carta i cada estat tenen el seu propi codi de barres, i en escanejar al taulell es cobra la carta exacta.",
+        "readTime": "2 min de lectura",
+        "sections": [
+          {
+            "id": "settings",
+            "title": "Configuració de Point of Sale",
+            "paragraphs": [
+              "Obre **Settings** › **Point of Sale**. Cal tenir Shopify POS instal·lat. Sense, les opcions surten desactivades.",
+              "Al principi, totes les opcions estan activades:"
+            ],
+            "list": [
+              "**Include new products in Point of Sale:** afegeix els productes nous al canal de venda POS.",
+              "**Sealed products:** l'UPC imprès a la caixa, o un codi de Synq si no en té.",
+              "**Single cards:** un codi únic per a cada estat.",
+              "**TCGplayer SKUs** a cada estat."
+            ]
+          },
+          {
+            "id": "labels",
+            "title": "Imprimeix etiquetes",
+            "steps": [
+              "Instal·la l'app gratuïta **Retail Barcode Labels** de Shopify.",
+              "Imprimeix etiquetes per als teus productes. Salta't l'opció d'aquesta app de crear codis de barres, perquè Synq ja ho ha fet.",
+              "Enganxa l'etiqueta a la funda o al toploader de la carta."
+            ],
+            "paragraphs": [
+              "Synq no imprimeix etiquetes directament."
+            ]
+          },
+          {
+            "id": "selling",
+            "title": "Al taulell",
+            "paragraphs": [
+              "En escanejar es cobra la carta i l'estat exactes. L'estoc també baixa en línia."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "Bo de saber",
+            "list": [
+              "**Els codis es generen quan es crea el producte.** Els productes afegits abans d'instal·lar POS potser no en tenen.",
+              "**Canvia el codi** d'una carta a la finestra d'afegir, a **Point of Sale**.",
+              "**El pas de POS a Home** surt quan tens Shopify POS instal·lat: **Set up Shopify POS**."
+            ]
+          }
+        ]
+      },
+      "uninstall": {
+        "meta": {
+          "title": "Desinstal·la Synq · Centre d'ajuda de Synq",
+          "description": "Desinstal·la Synq des de l'administrador de Shopify. Els teus productes es queden a la botiga."
+        },
+        "category": "shopify",
+        "title": "Desinstal·la Synq",
+        "intro": "Desinstal·la Synq des de l'administrador de Shopify. Els teus productes es queden a la botiga.",
+        "readTime": "2 min de lectura",
+        "sections": [
+          {
+            "id": "how",
+            "title": "Desinstal·lació",
+            "steps": [
+              "A l'administrador de Shopify, obre **Settings** › **Apps**.",
+              "Busca Synq i fes clic a **Uninstall**."
+            ]
+          },
+          {
+            "id": "after",
+            "title": "Què passa",
+            "list": [
+              "**Els teus productes es queden a Shopify** amb els preus, l'estoc i les dades.",
+              "**Els preus deixen d'actualitzar-se.** Cap regla no s'executa després de desinstal·lar.",
+              "**Unes 48 hores després,** Shopify demana a Synq que esborri les dades de la teva botiga, i Synq ho fa."
+            ]
+          },
+          {
+            "id": "reinstall",
+            "title": "Torna a instal·lar-lo",
+            "paragraphs": [
+              "Dins de les 48 hores, Synq continua on ho havies deixat.",
+              "Passat aquest temps, Synq comença de zero. Tornes a fer la configuració inicial, i potser hauràs de tornar a vincular els productes amb [Vincula els productes que ja tens](/docs/link-products)."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "Bo de saber",
+            "list": [
+              "**Si només vols deixar de pagar,** passa al pla Free. Consulta [Facturació, millores i cancel·lació](/docs/billing).",
+              "**Atura un sol producte** sense desinstal·lar: **Inventory** › ⋯ › **Unlink from synq**."
+            ]
+          }
+        ]
+      },
+      "plans": {
+        "meta": {
+          "title": "Plans i límits de productes · Centre d'ajuda de Synq",
+          "description": "Els plans només es diferencien en quants productes pots tenir. Totes les funcions són a tots els plans, Free inclòs."
+        },
+        "category": "billing",
+        "title": "Plans i límits de productes",
+        "intro": "Els plans només es diferencien en quants productes pots tenir. Totes les funcions són a tots els plans, Free inclòs.",
+        "readTime": "2 min de lectura",
+        "sections": [
+          {
+            "id": "plans",
+            "title": "Els plans",
+            "table": {
+              "head": [
+                "Pla",
+                "Mensual",
+                "Anual",
+                "Productes"
+              ],
+              "rows": [
+                [
+                  "Free",
+                  "0 $",
+                  "0 $",
+                  "100"
+                ],
+                [
+                  "Starter",
+                  "29 $",
+                  "232 $",
+                  "2.000"
+                ],
+                [
+                  "Pro",
+                  "79 $",
+                  "632 $",
+                  "15.000"
+                ],
+                [
+                  "Scale",
+                  "149 $",
+                  "1.192 $",
+                  "50.000"
+                ]
+              ]
+            },
+            "paragraphs": [
+              "En anual surt a uns 19 $, 53 $ i 99 $ al mes."
+            ]
+          },
+          {
+            "id": "count",
+            "title": "Què compta el límit",
+            "paragraphs": [
+              "El límit compta productes. Un producte és una carta en una versió, amb tots els seus estats i tot l'estoc que tingui.",
+              "Deu còpies Near Mint i dues Lightly Played d'una mateixa versió són un sol producte."
+            ]
+          },
+          {
+            "id": "every-plan",
+            "title": "A tots els plans",
+            "list": [
+              "Tots els jocs",
+              "Regles de preu amb programació diària",
+              "Importació des de full de càlcul i de TCGplayer",
+              "Codis de barres per a Shopify POS",
+              "Edició en bloc a Inventory"
+            ]
+          },
+          {
+            "id": "limit",
+            "title": "A prop del límit o al límit",
+            "paragraphs": [
+              "**Inventory** i **Add products** mostren quants productes fas servir.",
+              "Al pla Free, la barra es posa ambre als 80 productes i vermella als 100.",
+              "Al límit, no es poden afegir ni importar productes nous. Els que tens continuen funcionant: l'estoc, les execucions de preus i la sincronització amb Shopify segueixen igual."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "Bo de saber",
+            "list": [
+              "**Passar a un pla més petit no esborra res.** Si superes el seu límit, no pots afegir productes nous fins que en baixis.",
+              "**Proves.** Els plans de pagament comencen amb una prova gratuïta. La pàgina de plans de Shopify en mostra la durada."
+            ]
+          }
+        ]
+      },
+      "billing": {
+        "meta": {
+          "title": "Facturació, millores i cancel·lació · Centre d'ajuda de Synq",
+          "description": "Synq factura a través de Shopify. Els càrrecs surten a la teva factura de Shopify, i canvies de pla a la pàgina de plans de Shopify."
+        },
+        "category": "billing",
+        "title": "Facturació, millores i cancel·lació",
+        "intro": "Synq factura a través de Shopify. Els càrrecs surten a la teva factura de Shopify, i canvies de pla a la pàgina de plans de Shopify.",
+        "readTime": "2 min de lectura",
+        "sections": [
+          {
+            "id": "change",
+            "title": "Millora o canvia de pla",
+            "steps": [
+              "Fes clic a **Upgrade** a **Inventory** o **Add products**, o a **Change plan** a **Settings** › **Billing**.",
+              "S'obre la pàgina de plans de Synq a Shopify.",
+              "Tria un pla, mensual o anual, i aprova'l."
+            ]
+          },
+          {
+            "id": "invoices",
+            "title": "Factures",
+            "paragraphs": [
+              "Obre **Settings** › **Billing** › **Manage** per veure les teves factures a Shopify.",
+              "Els càrrecs de Synq surten a la teva factura de Shopify, amb la resta d'apps."
+            ]
+          },
+          {
+            "id": "downgrade",
+            "title": "Passa a un pla inferior",
+            "paragraphs": [
+              "Tria un pla més petit a la pàgina de plans de Shopify. No s'esborra res.",
+              "Si tens més productes que el nou límit, no en pots afegir de nous fins que en baixis."
+            ]
+          },
+          {
+            "id": "cancel",
+            "title": "Cancel·la",
+            "paragraphs": [
+              "Cancel·la el pla de pagament des de **Change plan** a la pàgina de plans de Shopify. La teva botiga passa al pla Free, amb fins a 100 productes.",
+              "Els teus productes, regles i estoc es mantenen. Per deixar de fer servir Synq del tot, consulta [Desinstal·la Synq](/docs/uninstall)."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "Bo de saber",
+            "list": [
+              "**Després d'una prova gratuïta,** una botiga sense pla de pagament passa al pla Free, amb fins a 100 productes.",
+              "**Totes les funcions** són a tots els plans, així que només pagues per tenir més productes. Consulta [Plans i límits de productes](/docs/plans)."
+            ]
+          }
+        ]
+      },
+      "help": {
+        "meta": {
+          "title": "Demana ajuda · Centre d'ajuda de Synq",
+          "description": "Escriu-nos des de Home o per correu. Respon el fundador, normalment el mateix dia."
+        },
+        "category": "billing",
+        "title": "Demana ajuda",
+        "intro": "Escriu-nos des de Home o per correu. Respon el fundador, normalment el mateix dia.",
+        "readTime": "2 min de lectura",
+        "sections": [
+          {
+            "id": "feedback",
+            "title": "Des de l'app",
+            "steps": [
+              "Obre **Home**.",
+              "Fes clic a **Feedback**, a dalt.",
+              "Escriu el missatge i envia'l. Va directament a la safata d'entrada del fundador."
+            ],
+            "paragraphs": [
+              "Pots enviar un missatge per minut."
+            ]
+          },
+          {
+            "id": "email",
+            "title": "Per correu",
+            "paragraphs": [
+              "Escriu a [help@synq.cards](mailto:help@synq.cards)."
+            ]
+          },
+          {
+            "id": "include",
+            "title": "Què has d'incloure",
+            "list": [
+              "**L'adreça de la teva botiga,** com ara latevabotiga.myshopify.com.",
+              "**La carta o el producte,** amb l'expansió i la versió.",
+              "**La pàgina de Synq** i on has fet clic.",
+              "**Una captura de pantalla,** si en tens."
+            ]
+          },
+          {
+            "id": "whats-new",
+            "title": "Novetats",
+            "paragraphs": [
+              "Fes clic a **What's new** a Home per llegir què ha canviat a Synq. Un número indica quantes notes no has llegit."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "Bo de saber",
+            "list": [
+              "**Hi falta un joc.** Demana'l amb **Feedback**, o amb **Request this game** a la importació de fulls de càlcul.",
+              "**Dubtes sobre preus.** Revisa primer la previsualització de la regla i **Activity**. Consulta [Previsualitza, executa i programa](/docs/run-and-schedule)."
+            ]
+          }
+        ]
+      }
+    },
+    "tracks": {
+      "label": "Tria per on començar",
+      "title": "Comença segons com tens la botiga avui.",
+      "items": {
+        "new": {
+          "title": "Comences a vendre cartes en línia",
+          "body": "Instal·la Synq, tria els teus jocs i afegeix les primeres cartes.",
+          "audience": "Des de zero",
+          "articles": [
+            "install",
+            "setup",
+            "add-cards",
+            "conditions-printings"
+          ]
+        },
+        "existing": {
+          "title": "Ja vens a Shopify",
+          "body": "Porta les cartes que ja vens i deixa que les regles els posin preu.",
+          "audience": "Canvi a Synq",
+          "articles": [
+            "link-products",
+            "import",
+            "price-rules",
+            "run-and-schedule"
+          ]
+        },
+        "counter": {
+          "title": "També vens al taulell",
+          "body": "Codis de barres per a Shopify POS, estoc per ubicació i marges.",
+          "audience": "Botiga física",
+          "articles": [
+            "pos",
+            "sync",
+            "bulk-edit",
+            "cost-margin"
+          ]
+        }
+      }
+    }
+  },
+  "legal": {
+    "terms": {
+      "meta": {
+        "title": "Terms of Service · Synq",
+        "description": "The terms that govern your use of Synq, the Shopify trading card pricing and inventory app."
+      },
+      "title": "Terms of Service",
+      "updated": "Last updated: October 12, 2026",
+      "intro": "The short version: your store and your data are yours, you stay in control of your prices, and you can leave whenever you want. The details are below; if anything isn't clear, write to us at iamtelmoo@gmail.com.",
+      "numbered": true,
+      "sections": [
+        {
+          "id": "who-we-are",
+          "title": "Who we are",
+          "body": [
+            "Synq (\"we\", \"us\") makes a Shopify app for trading card stores (\"Synq ‑ TCG Card Manager\"). These terms cover the app, this website and any related service (the \"Service\"). Our legal details are in the [legal notice](/legal), and you can always reach us at iamtelmoo@gmail.com."
+          ]
+        },
+        {
+          "id": "using-synq",
+          "title": "What Synq does",
+          "body": [
+            "Synq helps you find cards and sealed products in a catalog, add them to your Shopify store, keep their stock in sync and, if you want, keep their prices in step with the market. It only does what the permissions you approve at install allow. If you use Synq for a business, these terms apply to that business."
+          ]
+        },
+        {
+          "id": "your-store",
+          "title": "Your store is yours",
+          "body": [
+            "Your products, stock, prices and store data belong to you. We only use them to run Synq for you. If you uninstall, we delete them as described in our [Privacy Policy](/privacy), and the products in your Shopify store stay exactly where they are.",
+            "You know your store best, so what it sells and publishes is your call, along with the laws and platform rules that apply to your business."
+          ]
+        },
+        {
+          "id": "prices",
+          "title": "Prices: you stay in control",
+          "body": [
+            "Market prices in Synq come from third parties, mainly TCGplayer. They can be late or wrong, and card markets move fast.",
+            "Automatic price updates follow the rules you set: strategy, rounding, minimum prices and which products are included. Because you choose those rules, the prices they produce are yours, and we can't take responsibility for a sale made at one of them, even when the market data behind it was off. A minimum price and a quick look at price changes now and then go a long way; if something looks wrong, tell us and we'll look into it."
+          ]
+        },
+        {
+          "id": "images",
+          "title": "Card images and trademarks",
+          "body": [
+            "Card images, names and set symbols belong to their publishers, such as The Pokémon Company, Wizards of the Coast and Konami. Synq isn't affiliated with or endorsed by any of them, or by TCGplayer.",
+            "The images Synq adds to your products are there so shoppers can see which card they're buying. They come mainly from TCGplayer's public catalog and community card databases. They aren't ours, so we can't license them to you, and how you use them is up to you. You can swap any of them for your own photos whenever you like."
+          ]
+        },
+        {
+          "id": "plans",
+          "title": "Plans and billing",
+          "body": [
+            {
+              "list": [
+                "Synq has a free plan and paid plans, billed monthly or yearly through Shopify. Charges appear on your Shopify invoice.",
+                "You can change or cancel your plan at any time from the app, and uninstalling cancels it too.",
+                "Payments already made aren't refunded, except where the law says otherwise. If you think we charged you by mistake, write to us and we'll put it right.",
+                "If our prices change, we'll tell you at least 30 days ahead, and the new price starts with your next billing period."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "fair-use",
+          "title": "Fair use",
+          "body": [
+            "To keep Synq working well for every store, please don't:",
+            {
+              "list": [
+                "use it for anything unlawful;",
+                "use it or its catalog data to build a competing product or database, or resell access to it;",
+                "access it by automated means outside the app, or put unusual load on it;",
+                "try to get into systems or data that aren't yours."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "the-service",
+          "title": "Keeping Synq running",
+          "body": [
+            "We work hard to keep Synq up and accurate, but it depends on Shopify and other providers, so we can't promise it will never be down or never make a mistake. We keep improving it, which means features can change; if we ever remove one your paid plan relies on, we'll tell you in advance."
+          ]
+        },
+        {
+          "id": "our-property",
+          "title": "What belongs to us",
+          "body": [
+            "The Synq software, website, name and design are ours. While you have the app installed, you're free to use them through the Service."
+          ]
+        },
+        {
+          "id": "liability",
+          "title": "The legal part",
+          "body": [
+            "Every software company needs this section. Here is ours, as plainly as we can put it:",
+            {
+              "list": [
+                "Synq is provided \"as is\". As far as the law allows, we don't give warranties beyond what these terms say, including about the accuracy of catalog or price data.",
+                "As far as the law allows, we aren't liable for indirect losses such as lost profits, sales or data, and our total liability for any claim is limited to what you paid us in the 12 months before it. Nothing here limits what the law doesn't allow to be limited.",
+                "If someone makes a claim against us because of something in your store, such as your listings or your use of images, or because these terms were broken, that claim is yours to handle."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "termination",
+          "title": "If things end",
+          "body": [
+            "You can stop using Synq any time by uninstalling it. We would only suspend an account if these terms are broken or the Service is being harmed, and unless it's urgent we'll talk to you first and give you a chance to sort it out."
+          ]
+        },
+        {
+          "id": "changes",
+          "title": "Changes to these terms",
+          "body": [
+            "If we update these terms, we change the date at the top. For anything that matters, we'll let you know by email or in the app at least 15 days before it applies. Continuing to use Synq after that means you accept the update."
+          ]
+        },
+        {
+          "id": "law",
+          "title": "Governing law",
+          "body": [
+            "These terms are governed by Spanish law, and disputes go to the courts of Spain, unless the law gives you the right to bring them elsewhere."
+          ]
+        }
+      ]
+    },
+    "privacy": {
+      "meta": {
+        "title": "Privacy Policy · Synq",
+        "description": "How Synq collects, uses, and protects data for its Shopify trading card pricing app."
+      },
+      "title": "Privacy Policy",
+      "updated": "Last updated: October 12, 2026",
+      "intro": "Our rule is simple: collect only what Synq needs to do its job, and never sell it. Here is what that means in practice.",
+      "numbered": true,
+      "sections": [
+        {
+          "id": "who-we-are",
+          "title": "Who we are",
+          "body": [
+            "Synq (\"we\", \"us\") makes a Shopify app that helps trading card stores list cards, keep stock in sync and price them from market data. This policy covers the app and this website. Our legal details are in the [legal notice](/legal). For anything about your data, write to iamtelmoo@gmail.com."
+          ]
+        },
+        {
+          "id": "what-we-collect",
+          "title": "What we collect",
+          "body": [
+            "We collect only what we need to run the app:",
+            {
+              "list": [
+                "**Store details**: your shop's domain, name, contact email, currency and timezone, from Shopify when you install.",
+                "**Staff details**: the name and email of the people who open the app.",
+                "**Catalog data**: the products, variants, inventory, locations and sales channels Synq manages for you.",
+                "**Analytics**: how the app is used (pages opened, clicks, browser and device), so we can see where it gets in your way. This covers Synq's pages only, never the rest of your Shopify admin or your screen.",
+                "**Messages**: what you send us by email, the contact form or Shopify's support channel."
+              ]
+            },
+            "We don't collect your customers' data. Synq does not ask Shopify for access to orders or customers, and passwords and payment details never pass through it."
+          ]
+        },
+        {
+          "id": "how-we-use-it",
+          "title": "How we use it",
+          "body": [
+            {
+              "list": [
+                "To run the app: create and update your products, sync stock and prices, run imports and bill your plan.",
+                "To help you when you write to us, and to send service emails such as job results or billing notices.",
+                "To find and fix problems and decide what to build next.",
+                "To keep the service secure and prevent abuse.",
+                "To keep the billing and tax records the law requires."
+              ]
+            },
+            "We never sell your data or use it for advertising.",
+            "If you are in the EU or UK: we rely on our contract with you to run the app, on our legitimate interest to improve and secure it, and on legal obligation for billing records."
+          ]
+        },
+        {
+          "id": "who-we-share-it-with",
+          "title": "Who we share it with",
+          "body": [
+            "Only with the providers that run parts of Synq for us (hosting, database, background jobs, image storage, email and analytics), under contracts that limit them to our instructions. Ask us at iamtelmoo@gmail.com and we'll send you the current list.",
+            "We may also disclose data when the law requires it, or to a buyer if Synq is ever sold, under this same policy."
+          ]
+        },
+        {
+          "id": "shopify-and-merchants",
+          "title": "Shopify and merchants",
+          "body": [
+            "Synq works through the permissions you approve when you install it: products, inventory, locations and sales channels. For the data in your store, Synq acts on your behalf.",
+            "Shopify sends us its privacy requests and we answer them. When you uninstall, Shopify asks us to erase your store's data 48 hours later and we delete it. The products in your store stay there; they are yours.",
+            "If you shop at a store that uses Synq, your data is held by that store and Shopify, not by us. Please contact the store."
+          ]
+        },
+        {
+          "id": "retention",
+          "title": "How long we keep it",
+          "body": [
+            {
+              "list": [
+                "Store, staff and catalog data: while the app is installed, then deleted after uninstall as above.",
+                "Analytics: for the retention period of our analytics plan, then deleted.",
+                "Messages: as long as needed to help you.",
+                "Billing records: as long as tax law requires."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "security",
+          "title": "Security",
+          "body": [
+            "Data is encrypted in transit, access to production systems is limited to the people who run Synq, and every read and write is scoped to a single store. No system is perfectly secure; if a breach affects your data, we will tell you and the authorities as the law requires."
+          ]
+        },
+        {
+          "id": "international-transfers",
+          "title": "International transfers",
+          "body": [
+            "Several of our providers are in the United States. Those transfers rely on the EU–US Data Privacy Framework where the provider is certified, and otherwise on the European Commission's Standard Contractual Clauses."
+          ]
+        },
+        {
+          "id": "cookies",
+          "title": "Cookies",
+          "body": [
+            "The app keeps a small analytics identifier in your browser's local storage, and Shopify uses its own cookies to sign you in. This website uses privacy-friendly analytics and no advertising cookies."
+          ]
+        },
+        {
+          "id": "your-rights",
+          "title": "Your rights",
+          "body": [
+            "You can ask us to access, correct, delete or export your personal data, or object to how we use it. Write to iamtelmoo@gmail.com and we will answer within a month.",
+            "In the EU you can also complain to your data protection authority; ours is Spain's Agencia Española de Protección de Datos (aepd.es)."
+          ]
+        },
+        {
+          "id": "changes",
+          "title": "Changes to this policy",
+          "body": [
+            "When we change this policy we update the date at the top. If a change matters, we tell you by email or in the app first."
+          ]
+        }
+      ]
+    },
+    "cookies": {
+      "meta": {
+        "title": "Cookies Policy · Synq",
+        "description": "Information about the cookies used by Synq's website and application."
+      },
+      "title": "Cookies Policy",
+      "updated": "Last updated: May 18, 2026",
+      "intro": "This Cookies Policy explains what cookies are, which cookies we use on synq.cards (the \"Site\") and inside the Synq application, and how you can control them.",
+      "sections": [
+        {
+          "id": "what",
+          "title": "1. What are cookies",
+          "body": [
+            "Cookies are small text files stored on your device when you visit a website. They allow the site to remember your actions and preferences over time. Similar technologies such as localStorage, sessionStorage and pixels are covered by this policy."
+          ]
+        },
+        {
+          "id": "types",
+          "title": "2. Cookies we use",
+          "body": [
+            "Strictly necessary cookies: required for the Site and application to function (session, authentication, security, language preference). These cookies do not require your consent under Spanish law.",
+            "Analytics cookies: used to understand how visitors interact with the Site. We use privacy-friendly analytics that do not track individuals across sites. If enabled, these cookies are loaded only after consent.",
+            "We do not use advertising or third-party tracking cookies."
+          ]
+        },
+        {
+          "id": "manage",
+          "title": "3. How to manage cookies",
+          "body": [
+            "You can configure your browser to refuse cookies, delete existing ones or alert you when cookies are being set. Most browsers offer this option under \"Settings\" or \"Preferences\".",
+            "If you disable strictly necessary cookies, some features of the Site or the application may not work properly."
+          ]
+        },
+        {
+          "id": "changes",
+          "title": "4. Changes to this policy",
+          "body": [
+            "We may update this Cookies Policy. Material changes will be communicated via the Site."
+          ]
+        },
+        {
+          "id": "contact",
+          "title": "5. Contact",
+          "body": [
+            "Questions about this policy can be sent to help@synq.cards."
+          ]
+        }
+      ]
+    },
+    "notice": {
+      "meta": {
+        "title": "Legal Notice · Synq",
+        "description": "Who operates Synq, the Shopify trading card pricing and inventory app."
+      },
+      "title": "Legal Notice",
+      "updated": "Last updated: October 12, 2026",
+      "intro": "Synq is operated by:",
+      "sections": [
+        {
+          "id": "holder",
+          "title": "Service provider",
+          "body": [
+            "**Holder**: Telmo Beroiz Bilbao, sole trader",
+            "**Tax ID (NIF)**: 73234079D",
+            "**Address**: 20800 Zarautz (Gipuzkoa), Spain",
+            "**Email**: iamtelmoo@gmail.com",
+            "**Activity**: software for online stores (the Synq Shopify app)",
+            "Use of Synq is governed by our [Terms of Service](/terms) and [Privacy Policy](/privacy)."
+          ]
+        }
+      ]
+    }
+  },
+  "contact": {
+    "title": "Escriu-nos",
+    "body": "Una persona de debò llegeix cada missatge i respon en un dia laborable.",
+    "topic": "De què es tracta",
+    "topics": {
+      "before": "Abans d'instal·lar",
+      "app": "Ajuda amb l'app",
+      "billing": "Plans i facturació",
+      "other": "Una altra cosa"
+    },
+    "name": "El teu nom",
+    "email": "Correu electrònic",
+    "store": "La teva botiga",
+    "optional": "(opcional)",
+    "storePlaceholder": "latevabotiga.myshopify.com",
+    "message": "Missatge",
+    "placeholders": {
+      "before": "Explica'ns com és la teva botiga i què vols saber.",
+      "app": "Què estaves fent, què esperaves i què ha passat en realitat.",
+      "billing": "El teu pla i què necessites canviar.",
+      "other": "Explica'ns com et podem ajudar."
+    },
+    "send": "Envia el missatge",
+    "sending": "S'està enviant…",
+    "direct": "O escriu a <mail>{email}</mail>",
+    "error": "El missatge no s'ha pogut enviar. Torna-ho a provar o escriu a <mail>{email}</mail>.",
+    "close": "Tanca",
+    "sent": {
+      "title": "Missatge enviat",
+      "body": "Gràcies per escriure'ns. T'hem enviat un correu de confirmació, i et respondrem en un dia laborable.",
+      "done": "Fet"
+    }
+  },
+  "notFound": {
+    "title": "Aquesta pàgina no és aquí.",
+    "body": "Potser l'enllaç és antic o té una errada. Aquestes són les pàgines que més es busquen:"
+  }
+}

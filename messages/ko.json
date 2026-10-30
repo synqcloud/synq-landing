@@ -1,0 +1,2479 @@
+{
+  "meta": {
+    "title": "Synq · Shopify용 카드 재고 관리",
+    "description": "Synq는 트레이딩 카드 매장을 위한 Shopify 앱입니다. 싱글 카드와 미개봉 상품을 탭 한 번으로 올리고, 가격은 TCGplayer 시세에 맞춰 유지하고, 재고는 수작업 없이 관리하세요."
+  },
+  "nav": {
+    "ariaMain": "주요 메뉴",
+    "logoAria": "Synq 홈",
+    "menu": "메뉴",
+    "langAria": "언어 선택",
+    "links": {
+      "features": "기능",
+      "pricing": "요금",
+      "docs": "도움말"
+    },
+    "cta": "Shopify에 추가"
+  },
+  "hero": {
+    "title": "카드 매장, 잘 돌아갑니다.",
+    "subtitle": "싱글 카드와 미개봉 상품을 탭 한 번으로 Shopify에 올리세요. 사진과 상태까지 함께 들어갑니다. 가격은 매일 TCGplayer 시세를 따라가므로, 손으로 가격을 다시 매길 일이 없습니다.",
+    "cta": "카드가 스토어에 올라가는 과정 보기",
+    "note": "처음 100장까지 무료입니다. 요금은 Shopify를 통해 청구됩니다."
+  },
+  "footer": {
+    "tagline": "Shopify에서 트레이딩 카드를 판매하는 매장을 위한 운영 도구.",
+    "rights": "모든 권리 보유.",
+    "columns": {
+      "product": {
+        "title": "제품",
+        "links": {
+          "features": "기능",
+          "pricing": "요금",
+          "docs": "도움말"
+        }
+      },
+      "company": {
+        "title": "회사",
+        "links": {
+          "about": "소개",
+          "contact": "문의",
+          "blog": "블로그"
+        }
+      },
+      "legal": {
+        "title": "법률",
+        "links": {
+          "terms": "이용약관",
+          "privacy": "개인정보처리방침",
+          "cookies": "쿠키",
+          "legal": "법적 고지"
+        }
+      }
+    }
+  },
+  "landing": {
+    "chapters": {
+      "rail": {
+        "add": {
+          "title": "새 재고 입고"
+        },
+        "prices": {
+          "title": "가격 변동"
+        },
+        "counter": {
+          "title": "매장 카운터에서"
+        }
+      },
+      "add": {
+        "title": "박스 속 카드는 팔리지 않습니다.",
+        "body": "Synq를 쓰면 새 재고가 들어온 날 바로 박스에서 스토어로 올라갑니다.",
+        "steps": {
+          "open": {
+            "title": "박스를 엽니다. 맨 위에 Charizard ex가 있습니다.",
+            "body": "카드명이나 카드 구석의 번호를 입력하세요. Synq가 모든 버전을 보여 주고, 이미 판매 중인 버전에는 재고가 표시됩니다.",
+            "short": "찾기",
+            "label": "모든 버전"
+          },
+          "tap": {
+            "title": "손에 든 카드와 같은 버전에서 +를 탭하세요.",
+            "body": "Synq가 사진과 선택한 상태를 넣어 Shopify 상품을 만듭니다. 한 번 추가할 때 상태 하나씩입니다.",
+            "short": "+ 탭",
+            "label": "Shopify 상품"
+          },
+          "sale": {
+            "title": "진열대에 놓기도 전에 판매가 시작됩니다.",
+            "body": "고객은 사진, 상태, 가격까지 갖춰진 카드를 스토어에서 바로 찾을 수 있습니다.",
+            "short": "판매 중",
+            "label": "내 스토어에"
+          }
+        }
+      },
+      "prices": {
+        "title": "가격은 움직입니다. 내 가격도 따라갑니다.",
+        "body": "규칙은 한 번만 만들면 됩니다. 시세에 붙일 마진, 매입가 기준 최저가, 반올림 방식을 정하세요. Synq가 원하는 일정에 맞춰 규칙을 실행하고 Shopify의 가격을 업데이트합니다.",
+        "notes": {
+          "rule": {
+            "title": "지금 실행하거나, 일정대로 실행되게 두세요.",
+            "body": "'Pokémon 싱글' 규칙은 매일 오전 6시에 상품 9개의 가격을 다시 매깁니다. 시세보다 5% 높게, 그리고 매입가 +20% 밑으로는 절대 내려가지 않습니다."
+          },
+          "activity": {
+            "title": "모든 실행은 Activity에 남습니다.",
+            "body": "언제 실행됐는지, 가격이 몇 개 오르고 몇 개 내렸는지 보여 줍니다. Shopify의 가격은 이미 업데이트되어 있습니다."
+          }
+        }
+      },
+      "result": {
+        "title": "Synq로 돌아가는 카드 매장.",
+        "body": "새 재고는 들어온 날 판매되고, 가격은 알아서 시세를 따라가고, 매장 카운터는 온라인 스토어와 맞춰 움직입니다. 카드 매장들이 직접 전해 주는 Synq 사용 경험입니다.",
+        "week": {
+          "note": "실제 카드 매장에서 집계한 Synq 실시간 수치, 2026년 10월",
+          "rows": [
+            {
+              "label": "Synq로 Shopify에서 판매를 시작한 카드",
+              "value": 66000,
+              "suffix": "+"
+            },
+            {
+              "label": "시세와 자동으로 비교한 가격",
+              "value": 2.2,
+              "decimals": 1,
+              "suffix": "M"
+            },
+            {
+              "label": "데이터베이스의 게임 수, Magic과 Pokémon부터 Riftbound까지",
+              "value": 19
+            }
+          ]
+        },
+        "quotes": [
+          {
+            "text": "앱이 정말 훌륭해요. 정말 잘 쓰고 있고, 덕분에 매장 일이 훨씬 편해졌어요. … 스캔만 하면 마진을 붙인 현재 시세가 바로 나와서, 이제 카드 가격표를 손으로 다시 붙일 일이 없어요.",
+            "name": "",
+            "store": "Green Door Collectibles",
+            "source": "Synq 팀에 보낸 이메일 중에서",
+            "logo": "/stores/greendoor.webp",
+            "tone": "light"
+          },
+          {
+            "text": "관리가 정말 훨씬 쉬워졌어요. 매일 모든 상품을 시세에 맞춰 업데이트할 수 있어서 경쟁 매장보다 확실히 유리해요.",
+            "name": "Andrew",
+            "store": "Collection House Cafe",
+            "source": "시카고 · Synq 팀에 보낸 이메일 중에서",
+            "logo": "/stores/collection-house.webp",
+            "tone": "dark"
+          },
+          {
+            "text": "이 앱 덕분에 일이 훨씬 쉬워졌어요. … 무엇보다 꾸준히 업데이트하면서 계속 좋아진다는 점이 마음에 들어요.",
+            "name": "",
+            "store": "Mint Cards & Collectibles",
+            "source": "Shopify App Store 리뷰 · Synq 6개월 사용",
+            "logo": "/stores/mint.webp",
+            "tone": "light"
+          },
+          {
+            "text": "프로그램이 정말 좋고, 매장 운영이 훨씬 매끄러워졌어요. 고객들도 좋아해요.",
+            "name": "Jason",
+            "store": "Do Big Things Collectibles",
+            "source": "델라웨어주 뉴캐슬 · Synq 팀에 보낸 이메일 중에서",
+            "logo": "/stores/dbt.webp",
+            "tone": "light"
+          }
+        ],
+        "reviewsLink": "Shopify App Store에서 리뷰 보기",
+        "cta": "Shopify에 추가"
+      }
+    },
+    "features": {
+      "pill": "Synq 작동 방식",
+      "title": "매장의 나머지 일도, 한곳에서.",
+      "body": "모든 카드를 나란히 보고, 스프레드시트는 그대로 가져오고, 모든 카드를 카운터에서 바로 팔 수 있게. 모두 Shopify 관리자에서 합니다.",
+      "link": "작동 방식 보기",
+      "cards": {
+        "rules": {
+          "title": "가격 규칙",
+          "lead": "TCGplayer 시세 데이터로 가격을 자동으로 매깁니다.",
+          "body": "가격 설정은 한 번이면 됩니다. 각 규칙은 실행 전에 바뀔 가격을 모두 미리 보여 줍니다.",
+          "alt": "수식과 일정이 설정된 Synq 가격 규칙 4개와 최근 실행 기록"
+        },
+        "add": {
+          "title": "상품 추가",
+          "lead": "카드 데이터베이스에서 바로 추가하세요.",
+          "body": "Synq가 이미지와 상태별 옵션을 갖춘 Shopify 상품을 만듭니다.",
+          "alt": "Synq에서 Charizard ex를 검색한 화면. 이미 스토어에 있는 버전이 먼저 표시됩니다."
+        },
+        "import": {
+          "title": "가져오기",
+          "lead": "스프레드시트를 그대로 가져오세요.",
+          "body": "각 행을 해당 카드와 연결하고, 같은 이름에 버전이 여러 개면 직접 고르면 됩니다.",
+          "alt": "Synq에서 스프레드시트 가져오기를 검토하는 화면: 10개 행 준비 완료, Lightning Bolt는 진열대에 있는 버전을 묻는 중"
+        },
+        "inventory": {
+          "title": "재고",
+          "lead": "모든 카드를 나란히.",
+          "body": "시세, 내 가격, 매입가, 마진을 한눈에. 여러 카드를 한 번에 바꾸거나, 카드 가격을 직접 정해 어떤 규칙도 손대지 않게 할 수 있습니다.",
+          "alt": "Pokémon으로 필터링한 Synq 재고 화면. 카드별 시세, 판매가, 매입가, 마진이 표시됩니다."
+        },
+        "pos": {
+          "title": "POS",
+          "lead": "카운터에서 판매하세요.",
+          "body": "카드와 상태마다 Shopify POS용 바코드가 따로 생깁니다.",
+          "alt": "Synq의 Point of Sale 설정: 미개봉 상품과 싱글 카드용 바코드"
+        }
+      }
+    },
+    "faq": {
+      "eyebrow": "자주 묻는 질문",
+      "title": "설치 전에 매장들이 묻는 것.",
+      "body": "가격, 상태, 지금 판매 중인 카드, 카운터 판매에 대한 솔직한 답변입니다.",
+      "contact": {
+        "title": "아직 고민된다면 연락 주세요.",
+        "body": "창업자가 직접, 보통 당일에 답장합니다."
+      },
+      "items": [
+        {
+          "q": "Synq가 Shopify를 대체하나요?",
+          "a": "아닙니다. Synq는 Shopify 관리자 안에서 쓰는 앱입니다. 스토어, 테마, 체크아웃, 결제는 Shopify에 그대로 있습니다. Synq는 카드를 추가하고, 가격을 시세에 맞춰 유지하고, 카운터 판매를 준비합니다."
+        },
+        {
+          "q": "가격은 어디서 가져오나요?",
+          "a": "TCGplayer의 시세(market price)에서 가져옵니다. 카드별로 최근 완료된 거래 가격의 이동 평균입니다. Synq가 매일 가져와 스토어 통화로 환산하고, 실제 판매가는 내 가격 규칙이 정합니다."
+        },
+        {
+          "q": "미국 외 지역입니다. 가격이 현지 시장에 맞을까요?",
+          "a": "가격은 TCGplayer의 미국 시장 기준이며, 매일 스토어 통화로 환산됩니다. 현지 시세가 다른 카드가 있다면 해당 게임 규칙의 마진을 조정하거나 카드 가격을 직접 정하세요."
+        },
+        {
+          "q": "어떤 게임을 지원하나요?",
+          "a": "Magic: The Gathering, Pokémon(영어판, 일본판), Yu-Gi-Oh!, One Piece, Lorcana, Riftbound, Digimon, Gundam, Union Arena, Weiss Schwarz, Star Wars Unlimited, Dragon Ball Super: Fusion World, Flesh and Blood, Sorcery, Grand Archive 등을 지원합니다. 판매하는 게임이 TCGplayer에는 있는데 여기에 없다면 스프레드시트 가져오기의 'Request this game'으로 요청하거나 문의해 주세요."
+        },
+        {
+          "q": "상태는 어떻게 관리되나요?",
+          "a": "상태는 카드 Shopify 상품의 옵션 하나입니다. 카드를 추가할 때 그 카드의 상태를 고르고, 사용감 있는 카드는 한 번 더 추가하면 됩니다. 상태마다 각자의 TCGplayer 시세를 따라갈 수 있습니다."
+        },
+        {
+          "q": "카드 가격을 직접 정할 수 있나요?",
+          "a": "네. Synq에서 카드 가격을 정하면 그때부터 가격 규칙이 그 상태는 건드리지 않습니다. Shopify 관리자에서 바꾼 가격은 보호되지 않습니다. 해당 상태를 제외하지 않으면 다음 규칙 실행 때 다시 바뀝니다. 규칙에 매입가 기준 최저가를 둘 수도 있어서, 카드가 그보다 낮은 가격에 팔리지 않습니다."
+        },
+        {
+          "q": "지금 판매 중인 카드를 가져올 수 있나요?",
+          "a": "네. TCGplayer에서 재고를 내보내거나, 갖고 있는 스프레드시트를 CSV, TSV 또는 TXT로 저장해 가져오면 됩니다. Synq가 각 행을 해당 카드와 연결해 새 카드를 만들며, 중복은 생기지 않습니다. 이미 판매 중인 카드는 파일의 재고를 더할지, 바꿀지, 그대로 둘지 고를 수 있습니다(TCGplayer 내보내기 파일은 기본값이 바꾸기). 같은 이름에 버전이 여러 개면 진열대에 있는 버전을 고르면 됩니다."
+        },
+        {
+          "q": "Synq가 TCGplayer 스토어도 업데이트하나요?",
+          "a": "아닙니다. TCGplayer는 Synq 같은 앱에 API를 열어 두지 않아서, Synq가 그곳에 카드를 올리거나 재고를 바꿀 수 없습니다. Synq는 온라인과 카운터 모두에서 Shopify 스토어를 최신 상태로 유지합니다."
+        },
+        {
+          "q": "카운터에서 판매할 수 있나요?",
+          "a": "네, Shopify POS로 가능합니다. 미개봉 상품은 박스에 인쇄된 바코드를 쓰고, 싱글 카드는 상태마다 고유 코드를 받습니다. Shopify의 무료 앱 Retail Barcode Labels로 라벨을 인쇄하면, 스캔 한 번으로 정확한 카드와 상태가 계산되고 온라인 재고도 함께 업데이트됩니다."
+        },
+        {
+          "q": "무료 체험이 끝나면 어떻게 되나요?",
+          "a": "유료 요금제는 7일 무료로 시작합니다. 요금제를 고르지 않으면 계정은 카드 100장까지 쓸 수 있는 Free 요금제로 바뀝니다. 아무것도 삭제되지 않고 Shopify 스토어도 계속 운영됩니다. 요금은 Shopify 청구서에 함께 청구되며, 언제든 해지할 수 있습니다."
+        }
+      ]
+    },
+    "cta": {
+      "title": "상품을 하나씩 여는 일은 이제 그만.",
+      "body": "Shopify App Store에서 Synq를 설치하고, 반복 업무는 알아서 돌아가게 맡기세요.",
+      "primary": "Shopify에 추가",
+      "secondary": "문의하기"
+    },
+    "pricing": {
+      "label": "요금",
+      "title": "매장 규모에 맞게 고르세요.",
+      "subtitle": "요금제는 판매하는 카드 수에 따라 정해집니다. 모든 유료 요금제는 7일 무료 체험으로 시작하고, Free 요금제는 계속 무료입니다.",
+      "slider": {
+        "label": "판매하는 카드 수",
+        "unit": "장",
+        "fit": "이 규모의 매장에는 <plan></plan> 요금제가 맞습니다."
+      },
+      "fits": "내 매장에 맞음",
+      "upTo": "최대 {n}장",
+      "perMonth": "/월",
+      "orYearly": "또는 연 ${total}, 33% 절약",
+      "billedYearly": "연 ${total} 청구",
+      "cta": "무료 체험 시작",
+      "ctaFree": "무료로 설치",
+      "billing": {
+        "monthly": "월간",
+        "yearly": "연간",
+        "save": "33% 절약"
+      },
+      "plans": {
+        "free": {
+          "name": "Free"
+        },
+        "starter": {
+          "name": "Starter"
+        },
+        "pro": {
+          "name": "Pro"
+        },
+        "scale": {
+          "name": "Scale"
+        }
+      },
+      "perCard": "카드 1장당 월 {c}센트",
+      "free": {
+        "line": "<b>100장 미만이라면</b> Synq는 계속 무료입니다.",
+        "same": "기능은 똑같고, 카드 100장까지."
+      },
+      "trust": [
+        "모든 유료 요금제 7일 무료",
+        "Shopify 관리자에서 언제든 해지",
+        "Shopify 청구서에 USD로 청구"
+      ],
+      "proof": {
+        "quote": "이 앱 덕분에 일이 훨씬 쉬워졌어요.",
+        "store": "Mint Cards & Collectibles",
+        "source": "Shopify App Store 리뷰 · Synq 6개월 사용"
+      },
+      "includes": {
+        "title": "모든 요금제에서 모든 기능을 씁니다. 고를 것은 카드 수뿐입니다.",
+        "items": [
+          "상태별 TCGplayer 시세",
+          "원하는 일정에 실행되는 가격 규칙",
+          "모든 게임, 싱글 카드와 미개봉 상품",
+          "재고 화면에서 일괄 수정",
+          "스프레드시트 및 TCGplayer 가져오기",
+          "Shopify POS용 바코드"
+        ]
+      }
+    },
+    "getStarted": {
+      "label": "시작하기",
+      "title": "매장을 빠르게 시작하는 가이드.",
+      "subtitle": "Synq를 쓰는 첫 주에 하게 될 일을 짧고 핵심만 담아 안내합니다.",
+      "cta": "도움말 센터 둘러보기",
+      "guides": {
+        "install": {
+          "category": "시작하기",
+          "title": "Synq 설치",
+          "body": "Shopify App Store에서 설치하고, 게임을 고른 뒤 첫 가격 규칙을 정하세요."
+        },
+        "firstCards": {
+          "category": "재고 추가",
+          "title": "카드와 미개봉 상품 추가",
+          "body": "검색하고 탭하면, 사진과 상태가 들어간 카드가 스토어에 올라갑니다."
+        },
+        "rules": {
+          "category": "가격",
+          "title": "가격 규칙 만들기",
+          "body": "게임, 세트, 버전, 상태별로 시세를 따르고 최저가도 정하세요."
+        },
+        "bulk": {
+          "category": "재고",
+          "title": "여러 상품 한 번에 수정",
+          "body": "여러 상품의 재고, 매입가, 상태, 예외를 한 번에 바꿉니다."
+        },
+        "variants": {
+          "category": "재고 추가",
+          "title": "상태와 버전",
+          "body": "버전마다 상품 하나, 상태마다 가격과 재고를 따로 가진 옵션 하나입니다."
+        },
+        "marketPrices": {
+          "category": "가격",
+          "title": "시세는 이렇게 정해집니다",
+          "body": "가격은 어디서 오는지, 상태별로 어떻게 다른지, 내 통화로 어떻게 환산되는지."
+        }
+      }
+    },
+    "newTab": "새 탭에서 열림"
+  },
+  "docs": {
+    "meta": {
+      "title": "도움말 센터 · Synq",
+      "description": "Shopify용 Synq 가이드: 설치, 카드와 미개봉 상품 추가, 규칙으로 가격 매기기, 재고 관리, POS 바코드, 요금제와 결제."
+    },
+    "hero": {
+      "eyebrow": "도움말 센터",
+      "title": "Synq로 스토어를 운영하는 가이드.",
+      "subtitle": "카드를 추가하고, 규칙으로 가격을 매기고, Shopify 스토어를 늘 최신으로 유지하세요.",
+      "searchPlaceholder": "가이드 검색 (예: \"가격 규칙\")",
+      "contact": "이메일: help@synq.cards",
+      "noResults": "검색과 일치하는 문서가 없습니다. 다른 단어로 찾아보시거나 문의해 주세요."
+    },
+    "categories": {
+      "start": {
+        "title": "시작하기",
+        "body": "Synq를 설치하고, 게임을 고르고, 첫 가격 규칙을 저장하세요.",
+        "articles": [
+          "install",
+          "setup",
+          "pick-games"
+        ]
+      },
+      "stock": {
+        "title": "재고 추가",
+        "body": "카드와 미개봉 상품을 추가하고, 판매 중인 상품을 연결하거나, 스프레드시트를 가져오세요.",
+        "articles": [
+          "add-cards",
+          "conditions-printings",
+          "link-products",
+          "import"
+        ]
+      },
+      "prices": {
+        "title": "가격",
+        "body": "규칙, 일정, 예외로 TCGplayer 시세를 따라가세요.",
+        "articles": [
+          "market-prices",
+          "price-rules",
+          "run-and-schedule",
+          "minimums-rounding",
+          "exceptions",
+          "which-rule-wins"
+        ]
+      },
+      "inventory": {
+        "title": "재고",
+        "body": "상품을 찾고, 여러 상품을 한 번에 수정하고, 마진을 확인하세요.",
+        "articles": [
+          "find-products",
+          "bulk-edit",
+          "cost-margin"
+        ]
+      },
+      "shopify": {
+        "title": "Shopify",
+        "body": "Synq가 스토어에 쓰는 내용과 동기화되는 항목.",
+        "articles": [
+          "what-synq-creates",
+          "templates",
+          "sync",
+          "pos",
+          "uninstall"
+        ]
+      },
+      "billing": {
+        "title": "요금제와 결제",
+        "body": "요금제, 상품 한도, Shopify를 통한 결제.",
+        "articles": [
+          "plans",
+          "billing",
+          "help"
+        ]
+      }
+    },
+    "articlesLabel": "개 문서",
+    "support": {
+      "eyebrow": "추가 도움",
+      "title": "연락 주세요. 창업자가 직접, 보통 당일에 답합니다.",
+      "body": "앱의 Home에서 Feedback으로 메시지를 보내거나, 여기서 답을 찾지 못했다면 이메일을 보내 주세요.",
+      "primary": "이메일: help@synq.cards",
+      "secondary": "Shopify에 추가"
+    },
+    "article": {
+      "home": "도움말 센터",
+      "updated": "2026년 10월 업데이트",
+      "tocLabel": "이 페이지의 내용",
+      "prev": "이전",
+      "next": "다음",
+      "feedback": {
+        "question": "이 가이드가 도움이 되었나요?",
+        "yes": "네",
+        "no": "아니요, 더 도움이 필요합니다",
+        "thanks": "의견 감사합니다.",
+        "sorry": "감사합니다. help@synq.cards로 연락 주시면 도와드리겠습니다."
+      }
+    },
+    "articles": {
+      "install": {
+        "meta": {
+          "title": "Synq 설치 · Synq 도움말 센터",
+          "description": "Shopify App Store에서 Synq를 설치하세요. Synq는 Shopify 관리자 안에서 열리며, 상품을 추가하거나 연결하기 전까지는 스토어의 어떤 것도 바꾸지 않습니다."
+        },
+        "category": "start",
+        "title": "Synq 설치",
+        "intro": "Shopify App Store에서 Synq를 설치하세요. Synq는 Shopify 관리자 안에서 열리며, 상품을 추가하거나 연결하기 전까지는 스토어의 어떤 것도 바꾸지 않습니다.",
+        "readTime": "읽는 데 2분",
+        "sections": [
+          {
+            "id": "install",
+            "title": "Shopify App Store에서 설치하기",
+            "steps": [
+              "[Shopify App Store의 Synq 페이지](https://apps.shopify.com/synq-tcg-card-manager)를 여세요.",
+              "설치를 클릭하고 사용할 스토어를 고르세요.",
+              "Shopify가 보여 주는 접근 권한을 확인하고 승인하세요.",
+              "Synq가 Shopify 관리자 안에서 **Set up synq** 화면으로 열립니다."
+            ]
+          },
+          {
+            "id": "access",
+            "title": "Synq가 보고 바꿀 수 있는 것",
+            "paragraphs": [
+              "설치할 때 Shopify가 이 접근 권한의 승인을 요청합니다."
+            ],
+            "list": [
+              "**상품:** 상품, 옵션, 가격, 이미지, SKU, 바코드, 컬렉션, Cost per item.",
+              "**재고:** 각 위치의 수량.",
+              "**판매 채널:** 상품이 게시된 채널.",
+              "**테마:** 테마의 상품 템플릿 (읽기 전용)."
+            ],
+            "note": {
+              "title": "주문과 고객 정보에는 접근하지 않음",
+              "body": "Synq는 주문, 고객, 결제에 접근하지 않습니다. 고객 정보도 저장하지 않습니다."
+            }
+          },
+          {
+            "id": "first-run",
+            "title": "처음 보이는 화면",
+            "paragraphs": [
+              "Synq는 **Set up synq**에서 시작하며, 판매하는 게임을 하나 이상 고를 때까지 이 화면에 머뭅니다.",
+              "그다음 왼쪽 메뉴에 **Home**, **Add products**, **Inventory**, **Price rules**, **Settings**가 표시됩니다.",
+              "설치할 때 스토어에서 복사해 오는 것은 없습니다. 이미 판매 중인 상품은 연결하기 전까지 그대로 있습니다."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "알아 두기",
+            "list": [
+              "**상품은 안전합니다.** 설치만으로는 Shopify에서 아무것도 만들거나 수정하거나 삭제하지 않습니다.",
+              "**다음 단계:** [초기 설정](/docs/setup)은 몇 분이면 끝나며, 첫 가격 규칙을 만들어 줍니다."
+            ]
+          }
+        ]
+      },
+      "setup": {
+        "meta": {
+          "title": "초기 설정: 게임과 첫 가격 규칙 · Synq 도움말 센터",
+          "description": "초기 설정에서는 판매하는 게임, 원하는 가격 방식, 지금 카드가 어디에 있는지를 묻습니다. 첫 가격 규칙도 대신 저장해 줍니다."
+        },
+        "category": "start",
+        "title": "초기 설정: 게임과 첫 가격 규칙",
+        "intro": "초기 설정에서는 판매하는 게임, 원하는 가격 방식, 지금 카드가 어디에 있는지를 묻습니다. 첫 가격 규칙도 대신 저장해 줍니다.",
+        "readTime": "읽는 데 3분",
+        "sections": [
+          {
+            "id": "steps",
+            "title": "초기 설정 단계별 안내",
+            "paragraphs": [
+              "페이지 맨 위에는 **Set up synq**라는 제목과 \"Step N of M\"이 표시됩니다. Enter를 누르거나 **Continue**를 클릭하면 다음으로 넘어갑니다.",
+              "일부 스토어에는 가격과 게시 단계가 빠진 짧은 설정이 표시됩니다. 이 경우 첫 규칙은 시세 그대로 시작하며, 나중에 **Price rules**에서 바꿀 수 있습니다."
+            ],
+            "steps": [
+              "**Which games do you sell?** 판매하는 게임을 모두 체크하세요. 스토어에서 이미 판매 중인 게임은 미리 체크되어 있습니다. 하나 이상 골라야 합니다.",
+              "**Set your prices.** TCGplayer 시세 대비 내 가격을 10% 낮게부터 10% 높게까지 고르세요. 그다음 상태별 가격 방식을 고르세요.",
+              "**What happens when you add a card?** **Save it as a draft** 또는 **Put it on sale right away**를 고르고, **Sell it on** 아래에서 판매 채널을 체크하세요.",
+              "**Where are your cards today?** **Link my products**, **Import my file**, **Add my first cards** 중 하나를 고르세요.",
+              "**You're set up.** 요약을 확인하세요. 어느 행이든 **Change**를 클릭하면 해당 단계로 돌아갑니다."
+            ]
+          },
+          {
+            "id": "prices",
+            "title": "가격 단계",
+            "paragraphs": [
+              "**Your price**는 TCGplayer 시세 대비 내 가격의 위치를 정합니다: -10%, -5%, **Market**, +5%, +10%.",
+              "**Each condition**은 사용감 있는 카드의 가격 방식을 정합니다:"
+            ],
+            "list": [
+              "**Its own TCGplayer price:** 상태마다 각자의 TCGplayer 시세를 따릅니다. 기본값입니다.",
+              "**Standard:** Near Mint 대비 LP 10%, MP 25%, HP 40%, DMG 60% 할인.",
+              "**A little less:** Near Mint 대비 LP 5%, MP 15%, HP 25%, DMG 40% 할인.",
+              "**Same as Near Mint:** 모든 상태를 Near Mint 가격으로."
+            ]
+          },
+          {
+            "id": "minimum",
+            "title": "최저가와 반올림",
+            "paragraphs": [
+              "가격 단계 아래의 **Minimum and rounding**을 열면 두 가지를 더 정할 수 있습니다.",
+              "샘플 카드에 상태별 시세와 내 가격이 표시되므로, 다음으로 넘어가기 전에 결과를 미리 확인할 수 있습니다."
+            ],
+            "list": [
+              "**Never below:** 최저가 없음, 또는 약 $0.25, $0.50, $1 (스토어 통화로 환산).",
+              "**Rounding:** Exact, Up to .99, Up to .49, Nearest whole 중 하나."
+            ]
+          },
+          {
+            "id": "what-it-saves",
+            "title": "초기 설정이 저장하는 것",
+            "list": [
+              "**내 게임.** **Add products**에서 검색하면 이 게임이 먼저 표시됩니다.",
+              "**초안 또는 판매 중** 여부와 새 상품이 들어갈 판매 채널.",
+              "**\"All products\"라는 가격 규칙.** 모든 게임을 대상으로 하며, 새 상품을 추가할 때 가격을 매기고, 매일 스토어 시간대 기준 오전 6시에 재고 가격을 다시 매깁니다."
+            ],
+            "note": {
+              "title": "첫 규칙은 하나만",
+              "body": "초기 설정은 스토어에 가격 규칙이 하나도 없을 때만 \"All products\" 규칙을 만듭니다."
+            }
+          },
+          {
+            "id": "home",
+            "title": "초기 설정 후: Home",
+            "paragraphs": [
+              "**Home**에는 **Get your store ready**라는 가이드가 한 단계씩 표시됩니다. 숨길 수 있으며, 필수 단계를 마치면 사라집니다."
+            ],
+            "steps": [
+              "**Add your first 10 cards.** 단계 안에서 바로 검색하거나 **Add cards**를 클릭하세요.",
+              "**See a card on your store** (선택). **Change how cards read** 버튼을 누르면 **Settings** › **Online Store**가 열립니다.",
+              "**Put your cards in collections.** **Pick collections** 버튼을 누르면 **Settings** › **What you sell**이 열립니다.",
+              "**Check your first price update.** **See price updates** 버튼을 누르면 **Price rules**가 열립니다. 첫 규칙 실행이 끝나면 이 단계가 완료됩니다.",
+              "**Sell in your physical store with Shopify POS** (선택). Shopify POS가 설치되어 있을 때만 표시됩니다."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "알아 두기",
+            "list": [
+              "**기본값은 초안입니다.** 초안은 Shopify에서 게시하기 전까지 아무도 볼 수 없습니다.",
+              "**모든 설정은 나중에 바꿀 수 있습니다.** 게임은 **Settings** › **What you sell**에, 가격은 **Price rules**에 있습니다.",
+              "**첫 가격 업데이트**는 다음 오전 6시에 이루어지며, 규칙을 직접 실행하면 바로 이루어집니다. [미리 보기, 실행, 일정](/docs/run-and-schedule)을 참고하세요."
+            ]
+          }
+        ]
+      },
+      "pick-games": {
+        "meta": {
+          "title": "게임과 컬렉션 고르기 · Synq 도움말 센터",
+          "description": "선택한 게임에 따라 검색에서 먼저 보이는 카드와 새 카드가 들어갈 컬렉션이 정해집니다. 게임을 고른다고 스토어에 추가되는 것은 없습니다."
+        },
+        "category": "start",
+        "title": "게임과 컬렉션 고르기",
+        "intro": "선택한 게임에 따라 검색에서 먼저 보이는 카드와 새 카드가 들어갈 컬렉션이 정해집니다. 게임을 고른다고 스토어에 추가되는 것은 없습니다.",
+        "readTime": "읽는 데 2분",
+        "sections": [
+          {
+            "id": "where",
+            "title": "게임을 바꾸는 곳",
+            "steps": [
+              "**Settings** › **Configure what you sell**을 여세요. 페이지 이름은 **What you sell**입니다.",
+              "판매하는 게임을 각각 체크하세요. 게임은 최소 하나가 체크된 상태로 남습니다.",
+              "게임마다 **Singles collection**과 **Sealed collection**을 고르거나, **No collection**을 고르세요."
+            ],
+            "paragraphs": [
+              "**Add products**에서 게임 아이콘 옆의 톱니바퀴 아이콘을 눌러도 같은 페이지가 열립니다."
+            ]
+          },
+          {
+            "id": "games",
+            "title": "판매할 수 있는 게임",
+            "paragraphs": [
+              "Synq는 19개 게임을 지원하며, 초기 설정에는 이 순서로 표시됩니다:"
+            ],
+            "list": [
+              "Magic: The Gathering",
+              "Disney Lorcana",
+              "Pokémon",
+              "Pokémon TCG Japan",
+              "One Piece",
+              "Flesh and Blood",
+              "Riftbound",
+              "Sorcery: Contested Realm",
+              "Digimon",
+              "Yu-Gi-Oh!",
+              "Gundam Card Game",
+              "Union Arena",
+              "UniVersus",
+              "Grand Archive",
+              "Final Fantasy TCG",
+              "Weiss Schwarz",
+              "Star Wars Unlimited",
+              "Elestrals",
+              "Dragon Ball Super: Fusion World"
+            ]
+          },
+          {
+            "id": "collections",
+            "title": "컬렉션 작동 방식",
+            "paragraphs": [
+              "새 싱글 카드는 해당 게임의 싱글 컬렉션에 들어갑니다. 새 미개봉 상품은 미개봉 컬렉션에 들어갑니다.",
+              "Home의 **Put your cards in collections** 단계는 판매하는 모든 게임에 컬렉션이 정해지면 완료됩니다.",
+              "기존 상품을 컬렉션에 추가하려면 **Inventory** › 상품 선택 › ⋯ › **Add to collection(s)**를 사용하세요."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "알아 두기",
+            "list": [
+              "**게임을 켜도 가져오는 것은 없습니다.** 그 게임의 카드를 추가할 수 있게 될 뿐입니다.",
+              "**게임별 상태 설정은 없습니다.** 상태는 모든 게임에서 같습니다. [상태와 버전](/docs/conditions-printings)을 참고하세요.",
+              "**찾는 게임이 없다면** 스프레드시트 가져오기의 **Request this game**이나 Home의 **Feedback**으로 요청하세요."
+            ]
+          }
+        ]
+      },
+      "add-cards": {
+        "meta": {
+          "title": "카드와 미개봉 상품 추가 · Synq 도움말 센터",
+          "description": "Add products에서 카드나 미개봉 상품을 검색하고 버전과 상태를 고르면, Synq가 가격까지 매긴 Shopify 상품을 만듭니다."
+        },
+        "category": "stock",
+        "title": "카드와 미개봉 상품 추가",
+        "intro": "**Add products**에서 카드나 미개봉 상품을 검색하고 버전과 상태를 고르면, Synq가 가격까지 매긴 Shopify 상품을 만듭니다.",
+        "readTime": "읽는 데 2분",
+        "sections": [
+          {
+            "id": "search",
+            "title": "검색",
+            "paragraphs": [
+              "입력하는 대로 결과가 표시됩니다. 검색어는 2자 이상이어야 합니다.",
+              "카드명이나 번호로 검색하세요. 결과 위의 아이콘으로 게임 하나로 좁히거나 **All**을 고를 수 있습니다.",
+              "검색어가 비어 있으면 **Sets you added from recently**와 **Recently added**가 표시됩니다."
+            ]
+          },
+          {
+            "id": "sets",
+            "title": "@ 기호로 세트 안에서 검색하기",
+            "list": [
+              "**@만 입력하면** 최신 세트가 표시됩니다.",
+              "**@ 뒤에 코드나 이름을 붙이면** (`@paf`, `@paldean fates` 등) 세트를 추천합니다. Enter나 Tab을 누르면 첫 번째 세트가 선택됩니다.",
+              "**선택한 세트**는 칩으로 표시됩니다. 검색어가 비어 있으면 세트 전체가 순서대로 보입니다.",
+              "**세트를 지우려면** 칩의 ×를 클릭하거나 Backspace를 누르세요."
+            ]
+          },
+          {
+            "id": "results",
+            "title": "검색 결과 보기",
+            "paragraphs": [
+              "스토어에 이미 있는 카드가 **In your store** 아래에 먼저 표시됩니다. 나머지는 **More results** 아래에 페이지당 50개씩 표시됩니다.",
+              "각 카드는 버전마다 한 줄씩 표시되며, 스토어 통화로 환산한 시세와 내 재고가 함께 나옵니다.",
+              "추가하려면 해당 버전의 줄을 클릭하세요."
+            ]
+          },
+          {
+            "id": "add",
+            "title": "카드 추가",
+            "steps": [
+              "**condition**(상태)을 고르세요. 상태 버튼마다 가격이 표시됩니다. 미개봉 상품은 항상 Unopened입니다.",
+              "카드나 스토어에 둘 이상 있다면 **printing**(버전)과 **location**(위치)을 고르세요.",
+              "**quantity**(수량)를 정하세요.",
+              "가격을 확인하세요. 옆의 칩에 이 가격을 정하는 규칙이나 예외가 표시됩니다.",
+              "하단의 게시 상태를 확인하세요: **Creating as Draft** 또는 **Active**. 클릭하면 바뀝니다.",
+              "**Add to store**를 클릭하거나 Enter를 누르세요."
+            ],
+            "paragraphs": [
+              "상태는 한 번에 하나씩 추가합니다. Near Mint와 Lightly Played를 함께 들여놓으려면 카드를 두 번 추가하세요."
+            ]
+          },
+          {
+            "id": "restock",
+            "title": "이미 있는 카드를 더 추가하기",
+            "paragraphs": [
+              "스토어에 이미 있는 버전이면, 해당 위치의 해당 상태에 수량이 더해지고 \"Stock updated\"가 표시됩니다.",
+              "아직 없던 상태는 같은 상품의 새 옵션이 됩니다.",
+              "재고를 추가해도 카드의 현재 가격은 그대로입니다. 해당 규칙이 다음에 실행될 때 업데이트됩니다."
+            ]
+          },
+          {
+            "id": "more",
+            "title": "추가 전에 쓸 수 있는 옵션",
+            "list": [
+              "**Pricing configuration:** 카드에 적용되는 규칙을 확인하고, 예외를 정하고, 매입가를 입력합니다. [예외](/docs/exceptions)와 [매입가와 마진](/docs/cost-margin)을 참고하세요.",
+              "새 상품의 **Title and collection**, 그리고 검색 엔진용 제목과 설명.",
+              "**Point of Sale:** SKU와 바코드. Shopify POS가 설치되어 있을 때 표시됩니다.",
+              "**Photo:** 해당 버전의 사진 또는 카드 이미지."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "알아 두기",
+            "list": [
+              "**시세가 없을 때.** TCGplayer에 해당 상태의 가격이 없으면 **Your price**를 입력해 추가하세요.",
+              "**직접 찍은 사진**은 Synq에서 올릴 수 없습니다. Shopify에서 상품에 추가하세요.",
+              "**요금제 한도.** 요금제의 상품 한도에 도달하면 추가가 거부됩니다. [요금제와 상품 한도](/docs/plans)를 참고하세요.",
+              "**많은 카드를 한 번에.** [스프레드시트 가져오기](/docs/import)를 이용하세요."
+            ]
+          }
+        ]
+      },
+      "conditions-printings": {
+        "meta": {
+          "title": "상태와 버전 · Synq 도움말 센터",
+          "description": "카드의 버전마다 각각 하나의 Shopify 상품이 됩니다. 상태는 그 상품의 옵션이며, 가격과 재고를 따로 가집니다. 상태는 NM, LP, MP, HP, DMG 다섯 가지입니다."
+        },
+        "category": "stock",
+        "title": "상태와 버전",
+        "intro": "카드의 버전마다 각각 하나의 Shopify 상품이 됩니다. 상태는 그 상품의 옵션이며, 가격과 재고를 따로 가집니다.",
+        "readTime": "읽는 데 2분",
+        "sections": [
+          {
+            "id": "how",
+            "title": "카드가 상품이 되는 방식",
+            "list": [
+              "**카드와 버전마다 상품 하나.** 같은 카드라도 Normal과 Foil은 서로 다른 상품입니다.",
+              "**상태마다 옵션 하나.** 옵션은 모두 \"Condition\"이라는 옵션 항목 아래에 있습니다.",
+              "**상태와 위치마다 재고.** 옵션마다 수량을 따로 관리합니다."
+            ]
+          },
+          {
+            "id": "conditions",
+            "title": "상태",
+            "table": {
+              "head": [
+                "코드",
+                "상태"
+              ],
+              "rows": [
+                [
+                  "NM",
+                  "Near Mint"
+                ],
+                [
+                  "LP",
+                  "Lightly Played"
+                ],
+                [
+                  "MP",
+                  "Moderately Played"
+                ],
+                [
+                  "HP",
+                  "Heavily Played"
+                ],
+                [
+                  "DMG",
+                  "Damaged"
+                ]
+              ]
+            },
+            "paragraphs": [
+              "미개봉 상품의 상태는 Unopened(미개봉) 하나뿐입니다.",
+              "상태는 모든 게임에서 같습니다."
+            ]
+          },
+          {
+            "id": "names",
+            "title": "스토어에 상태 이름이 표시되는 방식",
+            "steps": [
+              "**Settings** › **Online Store** › **Condition variants**를 여세요.",
+              "**Condition names**에서 전체 이름(Near Mint) 또는 약어(NM)를 고르세요."
+            ],
+            "note": {
+              "title": "새 상품에만 적용",
+              "body": "선택한 방식은 그 이후 추가하는 상품에 적용됩니다. 기존 상품의 옵션 이름은 그대로입니다."
+            }
+          },
+          {
+            "id": "printings",
+            "title": "버전",
+            "paragraphs": [
+              "버전 정보는 TCGplayer에서 가져옵니다: Normal, Foil, Holofoil, 1st Edition, Reverse Holofoil 등.",
+              "버전마다 시세가 따로 있어서, Foil은 Foil대로 가격이 매겨집니다."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "알아 두기",
+            "list": [
+              "**Pokémon TCG Japan**은 별도 게임입니다. **Settings** › **What you sell**에서 켜세요.",
+              "**상태를 삭제하면** Shopify에서도 해당 옵션이 삭제됩니다. **Inventory**의 **Conditions** 패널에서 하세요.",
+              "**시세가 없는 사용감 있는 상태**에는 규칙에 정한 Near Mint 대비 할인율이 적용됩니다. [가격 규칙 만들기](/docs/price-rules)를 참고하세요."
+            ]
+          }
+        ]
+      },
+      "link-products": {
+        "meta": {
+          "title": "이미 있는 상품 연결 · Synq 도움말 센터",
+          "description": "Shopify 스토어에 이미 있는 상품을 해당 카드와 연결하세요. Synq는 상품을 그대로 두고 가격과 재고 관리를 넘겨받습니다."
+        },
+        "category": "stock",
+        "title": "이미 있는 상품 연결",
+        "intro": "Shopify 스토어에 이미 있는 상품을 해당 카드와 연결하세요. Synq는 상품을 그대로 두고 가격과 재고 관리를 넘겨받습니다.",
+        "readTime": "읽는 데 2분",
+        "sections": [
+          {
+            "id": "open",
+            "title": "시작하는 곳",
+            "paragraphs": [
+              "**Add products**에서 **Import** › **Link from Shopify**를 여세요. 초기 설정에서는 **Link my products**를 고르세요."
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "상품 연결하기",
+            "steps": [
+              "**Link from Shopify**에는 아직 연결되지 않은 스토어 상품이 최신순으로 표시됩니다. **Search your store's products**로 검색한 다음 하나를 클릭하세요.",
+              "**Which card is it?** 검색창에 상품 제목이 미리 채워져 있습니다. 카드를 고르세요.",
+              "**Add to synq.** 버전을 고른 다음, 옵션마다 상태를 지정하세요.",
+              "**Add to synq**를 클릭하세요."
+            ]
+          },
+          {
+            "id": "matching",
+            "title": "Synq가 대신 채워 주는 것",
+            "list": [
+              "**1~9자리 SKU:** TCGplayer SKU로 인식해 카드를 자동으로 찾아 줍니다.",
+              "**10~14자리 바코드나 SKU:** 상품의 UPC 또는 EAN으로 인식합니다.",
+              "**상태:** SKU나 옵션 이름에서 읽어 옵니다. \"NM-M\", \"Light Play\", \"Excellent\" 같은 표현도 알아듣습니다.",
+              "**판매하지 않는 게임의 카드:** Synq가 그 게임의 **Enable** 버튼을 보여 줍니다."
+            ]
+          },
+          {
+            "id": "after",
+            "title": "연결한 뒤에 일어나는 일",
+            "list": [
+              "**연결하는 순간 Shopify에서는 아무것도 바뀌지 않습니다.** 제목과 설명은 그대로입니다.",
+              "**매입가**는 Shopify의 Cost per item에서 읽어 옵니다.",
+              "**가격**은 다음 규칙 실행부터 상품의 가격 규칙을 따릅니다.",
+              "**재고**는 그때부터 계속 동기화됩니다."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "알아 두기",
+            "list": [
+              "**한 번에 상품 하나씩.** 아직 일괄 연결은 없습니다.",
+              "**먼저 규칙을 확인하세요.** **Price rules**에서 규칙 미리 보기를 열면 실행 전에 새 가격을 볼 수 있습니다.",
+              "**모두 연결됨.** 모든 상품이 연결되면 목록에 \"Everything is in synq\"가 표시됩니다."
+            ]
+          }
+        ]
+      },
+      "import": {
+        "meta": {
+          "title": "스프레드시트 가져오기 · Synq 도움말 센터",
+          "description": "TCGplayer에서 내보낸 CSV나 직접 만든 시트를 가져오세요. Synq가 모든 행을 해당 카드와 연결해, 새 상품은 만들고 이미 있는 상품에는 재고를 더합니다."
+        },
+        "category": "stock",
+        "title": "스프레드시트 가져오기",
+        "intro": "TCGplayer에서 내보낸 CSV나 직접 만든 시트를 가져오세요. Synq가 모든 행을 해당 카드와 연결해, 새 상품은 만들고 이미 있는 상품에는 재고를 더합니다.",
+        "readTime": "읽는 데 2분",
+        "sections": [
+          {
+            "id": "open",
+            "title": "시작하는 곳",
+            "paragraphs": [
+              "**Add products**에서 **Import** › **From TCGplayer** 또는 **From a spreadsheet**를 여세요. 초기 설정에서는 **Import my file**을 고르세요.",
+              "**Import a spreadsheet** 페이지는 **Spreadsheet**, **Columns**, **Review**, **Import**의 네 단계로 진행됩니다."
+            ]
+          },
+          {
+            "id": "file",
+            "title": "파일",
+            "list": [
+              "**CSV, TSV, TXT 파일.** Excel과 Numbers 파일은 받지 않습니다. Excel에서는 File › Save As › CSV로 저장하세요.",
+              "**구분자는 상관없습니다.** 탭, 세미콜론, 쉼표를 자동으로 찾고, 텍스트 인코딩도 자동으로 인식합니다.",
+              "헤더 위에 **제목 행**이 있어도 괜찮습니다.",
+              "**각 행에는** 상품명, 바코드, TCGplayer ID 중 하나가 있어야 합니다.",
+              "**Download a template**을 누르면 열이 미리 준비된 CSV를 받을 수 있습니다."
+            ]
+          },
+          {
+            "id": "columns",
+            "title": "열",
+            "paragraphs": [
+              "Synq는 영어와 스페인어 헤더를 읽습니다. **Columns** 단계에서 각 열을 확인하거나 **Don't import**로 설정하세요.",
+              "인식하는 열: 상품명(Product name), TCGplayer ID, TCGplayer SKU, 바코드(Barcode), 게임(Game), 세트(Set), 카드 번호(Card number), 버전(Printing), 상태(Condition), 수량(Quantity), 위치(Location), 가격(Price), 매입가(Cost), 판매 상태(Status).",
+              "열이 없으면 각 행에 수량 1, 첫 번째 위치, 기본 상태, 시세가 적용됩니다."
+            ]
+          },
+          {
+            "id": "tcgplayer",
+            "title": "TCGplayer 내보내기 파일",
+            "paragraphs": [
+              "TCGplayer 재고 내보내기 파일은 자동으로 인식됩니다. 각 행에 정확한 SKU가 들어 있어서 카드, 버전, 상태가 정확히 맞습니다.",
+              "보통 바로 **Review** 단계로 넘어갑니다. 기본 설정에서는 파일의 재고가 기존 재고를 대체합니다."
+            ]
+          },
+          {
+            "id": "review",
+            "title": "검토",
+            "paragraphs": [
+              "Synq는 TCGplayer SKU를 먼저 보고, 그다음 TCGplayer ID, 바코드, 정확한 이름, 비슷한 이름 순으로 행을 연결합니다.",
+              "탭은 **All**, **New**, **In your store**, **To answer**입니다.",
+              "여러 상품에 해당하는 행에는 \"{n} products fit\"이 표시됩니다. 진열대에 있는 것을 고르세요. 일치하는 상품이 없는 행은 검색하거나 빼 둘 수 있습니다."
+            ]
+          },
+          {
+            "id": "options",
+            "title": "가져오기 옵션",
+            "list": [
+              "**이미 판매 중인 상품:** **Add the sheet's stock**, **Make the sheet's stock their stock**, **Leave them as they are** 중에서 고릅니다.",
+              "**새 상품 가격:** **Your price rules**(기본값) 또는 **The price in your sheet**.",
+              "**새 상품의 시작 상태:** 시트에 적힌 대로, 또는 Draft나 Active.",
+              "새 상품의 **Channels**(판매 채널).",
+              "**Save the barcodes from your sheet**: 시트의 바코드를 상품에 저장합니다."
+            ]
+          },
+          {
+            "id": "run",
+            "title": "가져오기 실행",
+            "paragraphs": [
+              "가져오기는 백그라운드에서 진행되므로 페이지를 떠나도 됩니다.",
+              "완료되면 제외된 행이 행마다 사유가 적힌 CSV로 다운로드됩니다. 지난 가져오기 기록은 **Sheets you imported**에 있습니다."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "알아 두기",
+            "list": [
+              "**가져오기 한 번에 상품 5,000개.** 더 큰 파일은 나눠서 가져오세요.",
+              "**요금제 한도.** 한도를 넘는 새 상품은 만들어지지 않습니다. 이미 있는 상품의 재고는 그대로 반영됩니다.",
+              "**Synq에 없는 게임.** 가져오기 화면의 **Request this game**을 이용하세요.",
+              "**내보내기 기능은 없습니다.** Synq는 재고를 파일로 내려받는 기능을 제공하지 않습니다."
+            ]
+          }
+        ]
+      },
+      "market-prices": {
+        "meta": {
+          "title": "시세는 이렇게 정해집니다 · Synq 도움말 센터",
+          "description": "Synq의 모든 가격은 해당 카드, 버전, 상태의 TCGplayer 시세에서 시작합니다. 가격 규칙이 이를 내 판매가로 바꿉니다."
+        },
+        "category": "prices",
+        "title": "시세는 이렇게 정해집니다",
+        "intro": "Synq의 모든 가격은 해당 카드, 버전, 상태의 TCGplayer 시세에서 시작합니다. 가격 규칙이 이를 내 판매가로 바꿉니다.",
+        "readTime": "읽는 데 2분",
+        "sections": [
+          {
+            "id": "source",
+            "title": "가격의 출처",
+            "list": [
+              "**TCGplayer 시세,** 미국 달러 기준.",
+              "**상태별.** 상태마다 시세가 따로 있습니다.",
+              "**대체 가격.** Near Mint나 미개봉 상품에 따로 가격이 없으면 해당 버전의 시세를 씁니다.",
+              "**하루 한 번 업데이트.** TCGplayer의 시세가 움직이는 주기가 그 정도입니다."
+            ],
+            "paragraphs": [
+              "**Inventory**에서 **Market** 가격에 마우스를 올리면 TCGplayer의 Market, Low, Mid, High 가격이 보입니다."
+            ]
+          },
+          {
+            "id": "when",
+            "title": "가격이 바뀌는 때",
+            "paragraphs": [
+              "가격은 가격 규칙이 실행될 때만 바뀝니다. 실행과 실행 사이에는 가격이 바뀌지 않습니다.",
+              "초기 설정에서 만든 \"All products\" 규칙은 매일 스토어 시간대 기준 오전 6시에 실행됩니다.",
+              "어떤 규칙이든 직접 실행할 수도 있습니다. [미리 보기, 실행, 일정](/docs/run-and-schedule)을 참고하세요."
+            ]
+          },
+          {
+            "id": "currency",
+            "title": "스토어 통화",
+            "list": [
+              "**자동으로 맞춥니다.** Synq는 Shopify 스토어의 통화를 씁니다. 따로 고를 것은 없습니다.",
+              "**미국 달러에서 환산.** 현재 환율을 적용합니다.",
+              "**최저가와 반올림**은 환산 후 내 통화 기준으로 적용됩니다."
+            ],
+            "note": {
+              "title": "지원하지 않는 통화",
+              "body": "Synq에 해당 통화의 환율이 없으면 카드 가격을 매길 수 없습니다. **Settings**에 \"Unsupported currency\"가 표시됩니다. Home의 **Feedback**으로 알려 주세요."
+            }
+          },
+          {
+            "id": "good-to-know",
+            "title": "알아 두기",
+            "list": [
+              "**가격은 미국 시세입니다.** 현지 시세가 다르면 해당 게임 규칙의 비율을 조정하세요. [가격 규칙 만들기](/docs/price-rules)를 참고하세요.",
+              "**시세가 없을 때.** 규칙 미리 보기의 **No market** 아래에 표시됩니다. [예외](/docs/exceptions)로 직접 가격을 정하세요.",
+              "**Synq는 TCGplayer를 업데이트하지 않습니다.** 가격 정보만 가져다 씁니다."
+            ]
+          }
+        ]
+      },
+      "price-rules": {
+        "meta": {
+          "title": "가격 규칙 만들기 · Synq 도움말 센터",
+          "description": "가격 규칙은 어떤 상품에 어떻게 가격을 매길지 정합니다. 모든 게임에 하나를 만들거나, 특정 게임, 세트, 레어도, 버전, 상태에 하나씩 만들 수 있습니다."
+        },
+        "category": "prices",
+        "title": "가격 규칙 만들기",
+        "intro": "가격 규칙은 어떤 상품에 어떻게 가격을 매길지 정합니다. 모든 게임에 하나를 만들거나, 특정 게임, 세트, 레어도, 버전, 상태에 하나씩 만들 수 있습니다.",
+        "readTime": "읽는 데 2분",
+        "sections": [
+          {
+            "id": "start",
+            "title": "규칙 시작하기",
+            "steps": [
+              "**Price rules**를 여세요.",
+              "**New rule**을 클릭하고 **Every game** 또는 내 게임 중 하나를 고르세요.",
+              "규칙 이름을 정하세요 (최대 40자).",
+              "**Define products**, **Define pricing**, **Define minimum**, **Confirm**의 네 단계를 차례로 진행하세요."
+            ],
+            "paragraphs": [
+              "스토어 하나에 규칙을 최대 50개까지 만들 수 있습니다."
+            ]
+          },
+          {
+            "id": "products",
+            "title": "대상 상품 정하기",
+            "list": [
+              "**Sets**와 **Rarities:** 게임 하나에 대한 규칙에서만 쓸 수 있습니다.",
+              "**Printings**와 **Conditions:** NM부터 DMG까지, 미개봉 상품은 Unopened.",
+              "**Applies to:** **New products**는 카드를 추가하거나 가져올 때 가격을 매깁니다. **Your inventory**는 규칙이 실행될 때마다 재고 가격을 매깁니다. 처음에는 둘 다 체크되어 있습니다."
+            ],
+            "paragraphs": [
+              "조건을 비워 두면 모든 항목이 포함됩니다. 새 상품에만 적용되는 규칙에는 일정과 **Run**이 없습니다."
+            ]
+          },
+          {
+            "id": "pricing",
+            "title": "가격 방식 정하기",
+            "list": [
+              "**Base prices on:** TCGplayer 시세.",
+              "**Modify by:** -99%부터 +1000%까지, 올리거나 내릴 비율.",
+              "**Then add:** 내 통화로 더하거나 뺄 금액."
+            ]
+          },
+          {
+            "id": "conditions",
+            "title": "상태별 가격",
+            "paragraphs": [
+              "사용감 있는 상태의 가격 방식을 고르세요:"
+            ],
+            "list": [
+              "**Each condition's market price:** 상태마다 각자의 TCGplayer 가격을 따릅니다. 기본값입니다.",
+              "**Near Mint's, less a percent:** 모든 상태가 Near Mint 가격에서 각자의 비율만큼 뺀 값으로 정해집니다."
+            ]
+          },
+          {
+            "id": "below-nm",
+            "title": "Near Mint 대비 할인율",
+            "table": {
+              "head": [
+                "상태",
+                "기본값"
+              ],
+              "rows": [
+                [
+                  "LP",
+                  "Near Mint보다 10% 낮게"
+                ],
+                [
+                  "MP",
+                  "Near Mint보다 25% 낮게"
+                ],
+                [
+                  "HP",
+                  "Near Mint보다 40% 낮게"
+                ],
+                [
+                  "DMG",
+                  "Near Mint보다 60% 낮게"
+                ]
+              ]
+            },
+            "paragraphs": [
+              "**Each condition's market price**를 쓰면, 이 비율은 자체 시세가 없는 사용감 있는 상태에만 적용됩니다.",
+              "비율을 비워 두면 그 상태에는 가격을 매기지 않습니다. 기존 가격이 그대로 유지됩니다."
+            ]
+          },
+          {
+            "id": "finish",
+            "title": "반올림, 최저가, 확인",
+            "paragraphs": [
+              "가격 단계에서 반올림 방식을 고른 다음 최저가를 정하세요. [최저가와 반올림](/docs/minimums-rounding)을 참고하세요.",
+              "**Confirm** 단계에서 규칙 전체를 보여 줍니다. 바꾸고 싶은 부분의 **Edit**을 클릭하세요.",
+              "저장하면 규칙의 미리 보기가 열립니다."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "알아 두기",
+            "list": [
+              "**저장만으로는 가격이 바뀌지 않습니다.** 가격은 규칙이 실행될 때 바뀝니다.",
+              "**상태 하나에 규칙 하나.** 규칙이 겹치면 가장 구체적인 규칙이 가격을 매깁니다. [상품에 적용되는 규칙](/docs/which-rule-wins)을 참고하세요.",
+              "**카드 한 장**만 따로 가격을 정할 수도 있습니다. [예외](/docs/exceptions)를 참고하세요."
+            ]
+          }
+        ]
+      },
+      "run-and-schedule": {
+        "meta": {
+          "title": "규칙 미리 보기, 실행, 일정 · Synq 도움말 센터",
+          "description": "미리 보기에는 규칙이 바꿀 가격이 모두 표시됩니다. 직접 실행하거나 일정을 정하고, Activity에서 바뀐 내용을 확인하세요."
+        },
+        "category": "prices",
+        "title": "규칙 미리 보기, 실행, 일정",
+        "intro": "미리 보기에는 규칙이 바꿀 가격이 모두 표시됩니다. 직접 실행하거나 일정을 정하고, Activity에서 바뀐 내용을 확인하세요.",
+        "readTime": "읽는 데 2분",
+        "sections": [
+          {
+            "id": "preview",
+            "title": "규칙 미리 보기",
+            "paragraphs": [
+              "규칙의 ⋯ 메뉴를 열고 **Preview rule**을 클릭하세요. 규칙을 저장해도 이 화면이 열립니다.",
+              "상품과 상태마다 **Original price**와 **Updated price**가 표시됩니다.",
+              "탭은 **All**, **Go up**, **Go down**, **Unchanged**, **No market**, **Exceptions**입니다. 이름, 세트, 상태로 검색하거나 세트로 필터링할 수 있습니다."
+            ]
+          },
+          {
+            "id": "run",
+            "title": "규칙 실행",
+            "steps": [
+              "**Price rules**에서 규칙의 **Run**을 클릭하세요. 미리 보기에서는 **Run rule · N prices**를 클릭하세요.",
+              "확인 메시지를 읽고 **Run**을 클릭하세요. 가격을 다시 확인하려면 **Preview first**를 클릭하세요.",
+              "실행이 대기열에 들어간 뒤 Shopify의 가격이 바뀝니다."
+            ],
+            "note": {
+              "title": "실행은 멈출 수 없습니다",
+              "body": "실행이 시작되면 끝까지 진행됩니다. 아직 대기 중인 실행은 취소할 수 있습니다."
+            }
+          },
+          {
+            "id": "schedule",
+            "title": "규칙 일정 정하기",
+            "steps": [
+              "규칙의 ⋯ 메뉴를 열고 **Edit schedule** 또는 **Add schedule**을 클릭하세요.",
+              "**Every day**, **Some days**, **Once** 중에서 고르세요. **Once**는 세일에 알맞습니다. 그날 규칙이 실행되고 일정이 끝납니다.",
+              "시간을 고르세요. 15분 단위이며, 스토어 시간대 기준입니다.",
+              "실행 상태를 **Active** 또는 **Paused**로 정하세요."
+            ],
+            "paragraphs": [
+              "⋯ 메뉴에서 일시 중지하거나 다시 시작할 수 있습니다. **Remove schedule**을 누르면 직접 실행하는 규칙이 됩니다.",
+              "**Price rules**의 탭은 **All**, **Scheduled**, **Paused**, **By hand**입니다."
+            ]
+          },
+          {
+            "id": "activity",
+            "title": "Activity(실행 기록)",
+            "paragraphs": [
+              "규칙 옆의 **Activity**에는 모든 실행 기록이 표시됩니다. 실행 시각과 오르거나 내린 가격 수를 볼 수 있습니다.",
+              "각 실행의 진행 상태는 **Queued**, **Running**, **Complete**, **Failed**, **Cancelled** 중 하나입니다. 달력 아이콘은 일정에 따라 실행됐다는 뜻입니다.",
+              "완료된 실행을 클릭하면 바뀐 가격을 모두 볼 수 있습니다. 실패한 실행에서는 **Retry**를 클릭하세요."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "알아 두기",
+            "list": [
+              "**첫 실행 전에는** 먼저 규칙을 미리 보라는 배너가 표시됩니다.",
+              "**한 번에 하나씩 실행.** 같은 스토어의 실행은 차례를 기다립니다.",
+              "**놓친 일정은 늦게라도 실행됩니다.** Synq가 예정된 시간을 놓치면 건너뛰지 않고 늦게 실행합니다. 최대 하루까지 늦어질 수 있습니다.",
+              "**기록.** 실행 세부 내용은 90일, 실행 목록은 1년 동안 보관됩니다."
+            ]
+          }
+        ]
+      },
+      "minimums-rounding": {
+        "meta": {
+          "title": "최저가와 반올림 · Synq 도움말 센터",
+          "description": "최저가를 정하면 카드가 그 가격 밑으로 팔리지 않습니다. 반올림은 가격 끝자리를 깔끔하게 맞춰 줍니다. 둘 다 가격 규칙마다 정합니다."
+        },
+        "category": "prices",
+        "title": "최저가와 반올림",
+        "intro": "최저가를 정하면 카드가 그 가격 밑으로 팔리지 않습니다. 반올림은 가격 끝자리를 깔끔하게 맞춰 줍니다.",
+        "readTime": "읽는 데 2분",
+        "sections": [
+          {
+            "id": "minimum",
+            "title": "최저가 정하기",
+            "paragraphs": [
+              "규칙의 **Define minimum** 단계에서 하나를 고르세요:"
+            ],
+            "list": [
+              "**None:** 최저가 없음.",
+              "**A fixed amount:** 스토어 통화로 정한 금액.",
+              "**Your cost:** 매입가에 비율이나 금액을 더하거나 뺀 값. 매입가 밑으로는 절대 팔리지 않습니다."
+            ]
+          },
+          {
+            "id": "per-condition",
+            "title": "모든 상태에 같게, 또는 상태별로",
+            "paragraphs": [
+              "**Same for every condition**을 고르거나, 상태마다 최저가를 따로 정하려면 **Per condition**을 고르세요.",
+              "상태를 비워 두면 그 상태에는 최저가가 없습니다."
+            ]
+          },
+          {
+            "id": "rounding",
+            "title": "반올림",
+            "paragraphs": [
+              "규칙의 **Define pricing** 단계에서 반올림 방식을 고르세요:"
+            ],
+            "list": [
+              "반올림 안 함 (No rounding)",
+              "x.49로 올림 (Round up to x.49)",
+              "x.99로 올림 (Round up to x.99)",
+              "x.00으로 올림 (Round up to x.00)",
+              "가장 가까운 x.00으로 반올림 (Round to nearest x.00)"
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "알아 두기",
+            "list": [
+              "**최고가는 없습니다.** 규칙에는 최저가만 있고 상한은 없습니다.",
+              "**매입가가 없으면 매입가 기준 최저가도 없습니다.** 매입가가 없는 상품에는 매입가 기준 최저가가 적용되지 않으며, 미리 보기에 그렇게 표시됩니다. [매입가와 마진](/docs/cost-margin)을 참고하세요.",
+              "**내 통화 기준.** 최저가와 반올림은 미국 달러에서 환산한 뒤에 적용됩니다.",
+              "**카드 자체의 최저가.** 상품에 따로 최저가가 있으면 둘 중 높은 쪽이 적용됩니다. [예외](/docs/exceptions)를 참고하세요.",
+              "**0 이하 가격은 게시되지 않습니다.** 0 이하의 가격은 Shopify로 절대 보내지 않습니다."
+            ]
+          }
+        ]
+      },
+      "exceptions": {
+        "meta": {
+          "title": "예외: 카드 가격 직접 정하기 · Synq 도움말 센터",
+          "description": "예외는 상품 자체에 정한 가격 설정입니다. 해당 상품에 적용되는 규칙보다 우선합니다. 자체 공식, 자체 최저가, 규칙 제외 중에서 고를 수 있습니다."
+        },
+        "category": "prices",
+        "title": "예외: 카드 가격 직접 정하기",
+        "intro": "예외는 상품 자체에 정한 가격 설정입니다. 해당 상품에 적용되는 규칙보다 우선합니다.",
+        "readTime": "읽는 데 2분",
+        "sections": [
+          {
+            "id": "kinds",
+            "title": "예외의 세 가지 종류",
+            "list": [
+              "**Own formula:** 규칙의 공식 대신 Market price, Market + %, Market - % 중 하나를 씁니다.",
+              "**Own minimum:** 상품의 최저가와 규칙의 최저가 중 높은 쪽이 적용됩니다.",
+              "**Excluded from rules:** 상태 하나에 적용됩니다. 어떤 실행도 그 가격을 바꾸지 않으며, \"Excluded from rules · not changed\"로 표시됩니다."
+            ]
+          },
+          {
+            "id": "own-price",
+            "title": "카드 가격 직접 정하기",
+            "steps": [
+              "**Inventory**를 열고 상품을 펼치세요.",
+              "해당 상태 행의 **Listed** 가격을 수정하세요.",
+              "저장하세요. 이제 그 상태는 규칙에서 제외됩니다."
+            ],
+            "paragraphs": [
+              "가격을 다시 규칙에 맡기려면 그 행에서 **Back to its rule**을 클릭하세요."
+            ]
+          },
+          {
+            "id": "where",
+            "title": "예외를 정하는 다른 방법",
+            "list": [
+              "**Inventory** › 상품의 **Exceptions** 칸.",
+              "**Inventory** › 상품 선택 › **Exceptions** 패널. 여러 상품에 한 번에 적용합니다.",
+              "카드를 추가할 때 **Add products** › **Pricing configuration** › **Exception**. 규칙이 손대지 않게 하려면 **Your price**를 고르세요."
+            ]
+          },
+          {
+            "id": "find",
+            "title": "예외 찾기",
+            "paragraphs": [
+              "**Inventory**에서 **Views**를 열고 **Own formula** 또는 **Excluded from rules**를 고르세요.",
+              "**Price rules** 맨 위의 줄에 예외 개수가 표시됩니다."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "알아 두기",
+            "list": [
+              "**Shopify 관리자에서 수정한 가격은 덮어쓰입니다.** 상품 규칙이 다음에 실행될 때 바뀝니다. 대신 Synq에서 가격을 정하거나 해당 상태를 제외하세요.",
+              "**제외된 상태는 시세가 움직여도 가격이 계속 그대로입니다.** 가끔 **Excluded from rules** 보기를 확인하세요."
+            ]
+          }
+        ]
+      },
+      "which-rule-wins": {
+        "meta": {
+          "title": "상품에 적용되는 규칙 · Synq 도움말 센터",
+          "description": "상품의 각 상태에는 규칙이 최대 하나만 적용됩니다. 규칙이 겹치면 가장 구체적인 규칙이 가격을 매깁니다. 예외가 있는 상품은 예외가 우선합니다."
+        },
+        "category": "prices",
+        "title": "상품에 적용되는 규칙",
+        "intro": "상품의 각 상태에는 규칙이 최대 하나만 적용됩니다. 규칙이 겹치면 가장 구체적인 규칙이 가격을 매깁니다.",
+        "readTime": "읽는 데 2분",
+        "sections": [
+          {
+            "id": "specific",
+            "title": "가장 구체적인 규칙이 우선",
+            "paragraphs": [
+              "Synq는 규칙에 지정된 조건(게임, 세트, 레어도, 버전, 상태)의 수를 셉니다. 상품에 맞으면서 조건이 가장 많은 규칙이 적용됩니다.",
+              "두 규칙이 똑같이 구체적이면 가장 최근에 만든 규칙이 적용됩니다."
+            ]
+          },
+          {
+            "id": "example",
+            "title": "예시",
+            "table": {
+              "head": [
+                "규칙",
+                "조건",
+                "적용 대상"
+              ],
+              "rows": [
+                [
+                  "All products",
+                  "없음",
+                  "그 외 모든 상품"
+                ],
+                [
+                  "Pokémon",
+                  "게임",
+                  "Pokémon 카드"
+                ],
+                [
+                  "Pokémon 포일",
+                  "게임, 버전",
+                  "Pokémon 포일 카드"
+                ]
+              ]
+            },
+            "paragraphs": [
+              "Pokémon 포일 카드는 \"Pokémon 포일\" 규칙이, 일반 Pokémon 카드는 \"Pokémon\" 규칙이, Magic 카드는 \"All products\" 규칙이 가격을 매깁니다."
+            ]
+          },
+          {
+            "id": "no-rule",
+            "title": "규칙이 없는 상품",
+            "paragraphs": [
+              "어떤 규칙에도 해당하지 않는 상품은 실행되어도 바뀌지 않습니다. 기존 가격이 그대로 유지됩니다.",
+              "**New products**용 규칙이 없으면 새 상품에는 시세 그대로의 가격이 매겨집니다.",
+              "**Price rules** 맨 위의 줄에 규칙이 가격을 매기는 상품 수, 규칙이 없는 상품 수, 예외가 있는 상품 수가 표시됩니다."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "알아 두기",
+            "list": [
+              "**예외가 우선합니다.** 예외는 모든 규칙보다 앞섭니다. [예외](/docs/exceptions)를 참고하세요.",
+              "**실행 전에 확인하세요.** 미리 보기에서 규칙이 어떤 상품에 가격을 매기는지 볼 수 있습니다.",
+              "**같은 상품의 같은 상태**에 두 규칙이 동시에 가격을 매기는 일은 없습니다."
+            ]
+          }
+        ]
+      },
+      "find-products": {
+        "meta": {
+          "title": "상품 찾기와 필터 · Synq 도움말 센터",
+          "description": "Inventory에는 Synq가 관리하는 모든 상품이 표시됩니다. 검색하고, 필터링하고, 매일 쓰는 보기를 저장하세요. 세트 코드, 번호, SKU, 바코드로도 검색됩니다."
+        },
+        "category": "inventory",
+        "title": "상품 찾기와 필터",
+        "intro": "**Inventory**에는 Synq가 관리하는 모든 상품이 표시됩니다. 검색하고, 필터링하고, 매일 쓰는 보기를 저장하세요.",
+        "readTime": "읽는 데 2분",
+        "sections": [
+          {
+            "id": "open",
+            "title": "Inventory 열기",
+            "paragraphs": [
+              "왼쪽 메뉴에서 **Inventory**를 클릭하세요. Home과 Add products에서는 같은 페이지를 **My products**라고 부릅니다.",
+              "탭은 **All**, 게임별 탭, **Views**입니다."
+            ]
+          },
+          {
+            "id": "search",
+            "title": "검색",
+            "paragraphs": [
+              "**Search all products**는 카드명, Shopify 제목, 세트 이름과 코드, 번호, 버전, UPC, TCGplayer ID, SKU, 바코드에서 찾습니다.",
+              "모든 단어가 일치해야 하므로, `Charizard PAF`라고 입력하면 한 세트로 좁혀집니다."
+            ]
+          },
+          {
+            "id": "filters",
+            "title": "필터와 정렬",
+            "list": [
+              "**Vendor:** 게임. 게임을 2개 이상 판매할 때 표시됩니다.",
+              "**Condition**(상태)",
+              "**Stock:** In stock 또는 Sold out.",
+              "**Formula:** Follows its rule, Market price, Market + %, Market - % 중 선택.",
+              "**Price rules:** Excluded from rules(규칙에서 제외).",
+              "**Set name**과 **Product type**",
+              "**Imported from:** 가져오기를 한 뒤에 표시됩니다."
+            ],
+            "paragraphs": [
+              "생성일, 상품명, 세트 이름, 가격, 매입가, 마진으로 정렬할 수 있습니다."
+            ]
+          },
+          {
+            "id": "views",
+            "title": "보기 저장",
+            "paragraphs": [
+              "보기는 필터, 검색어, 정렬을 저장합니다. **Save as view**를 클릭하고 이름을 붙이세요.",
+              "보기를 바꾼 뒤 이름이 적힌 **Update**를 클릭하면 다시 저장됩니다. 이름을 바꾸거나 삭제할 수도 있습니다.",
+              "**Own formula**와 **Excluded from rules**, 두 가지 보기가 기본으로 준비되어 있습니다."
+            ]
+          },
+          {
+            "id": "columns",
+            "title": "열과 행",
+            "paragraphs": [
+              "**Columns**에서 열을 고르세요: Printing, Rarity, Number, Stock, Exceptions, Market, Listed, Cost, Margin, Minimum. 선택한 열은 스토어 전체에 저장됩니다.",
+              "상품을 펼치면 상태와 위치마다 한 줄씩, 재고, 시세, 매입가, **Listed** 가격이 표시됩니다.",
+              "각 행에서 **Set as active** 또는 **Set as draft**를 고를 수 있고, TCGplayer의 카드 페이지나 Shopify의 상품을 열 수 있습니다."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "알아 두기",
+            "list": [
+              "**판매 상태, 태그, 컬렉션, 레어도 필터는 없습니다.** 대신 **Rarity** 열을 표시하고 정렬하세요.",
+              "**Listed**는 Shopify에 표시되는 가격입니다. 수정하면 예외가 설정됩니다. [예외](/docs/exceptions)를 참고하세요."
+            ]
+          }
+        ]
+      },
+      "bulk-edit": {
+        "meta": {
+          "title": "여러 상품 한 번에 수정 · Synq 도움말 센터",
+          "description": "Inventory에서 상품을 선택해 재고, 매입가, 상태, 예외를 한꺼번에 바꾸세요. 선택한 모든 상품에 한 번에 적용됩니다."
+        },
+        "category": "inventory",
+        "title": "여러 상품 한 번에 수정",
+        "intro": "**Inventory**에서 상품을 선택해 재고, 매입가, 상태, 예외를 한꺼번에 바꾸세요.",
+        "readTime": "읽는 데 2분",
+        "sections": [
+          {
+            "id": "select",
+            "title": "상품 선택",
+            "paragraphs": [
+              "원하는 행을 체크하거나, 먼저 필터링한 뒤 **Select all N matching**을 클릭하세요.",
+              "작업 바가 열리며, 패널 네 개와 ⋯ 메뉴가 있습니다."
+            ]
+          },
+          {
+            "id": "panels",
+            "title": "네 가지 패널",
+            "list": [
+              "**Stock:** 한 위치의 한 상태에 수량을 더하거나, 빼거나, 정합니다. 빼더라도 0 밑으로는 내려가지 않습니다.",
+              "**Cost:** 시세 대비 비율이나 금액으로, 한 상태 또는 모든 상태에 적용합니다. 덮어쓰려면 **Replace costs already set**을 체크하세요. 가격은 바뀌지 않습니다.",
+              "**Conditions:** 상태를 삭제합니다. Shopify에서도 해당 옵션이 삭제됩니다.",
+              "**Exceptions:** 공식, 최저가, 제외할 상태, 내 가격을 정합니다."
+            ]
+          },
+          {
+            "id": "menu",
+            "title": "⋯ 메뉴",
+            "list": [
+              "**Set as active**와 **Set as draft**",
+              "**Add to collection(s)**와 **Remove from collection(s):** 수동 컬렉션에만 해당합니다.",
+              "**Unlink from synq:** 상품은 Shopify에 그대로 남고, Synq는 가격과 재고 업데이트를 멈춥니다.",
+              "**Delete N products:** Synq와 Shopify에서 영구히 삭제합니다."
+            ]
+          },
+          {
+            "id": "not-here",
+            "title": "일괄 수정으로 할 수 없는 것",
+            "list": [
+              "**태그:** Synq는 태그를 추가하지 않습니다.",
+              "**상품별 판매 채널,** 보관, 내보내기.",
+              "**상태 추가:** 상태는 **Add products**에서 추가하세요.",
+              "**가격:** 가격은 [가격 규칙](/docs/price-rules)이나 [예외](/docs/exceptions)로 정하세요."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "알아 두기",
+            "list": [
+              "**삭제는 되돌릴 수 없습니다.** Shopify 스토어에서도 상품이 삭제됩니다.",
+              "**연결을 해제해도 상품은 남습니다.** 다시 관리하려면 [이미 있는 상품 연결](/docs/link-products)을 이용하세요."
+            ]
+          }
+        ]
+      },
+      "cost-margin": {
+        "meta": {
+          "title": "매입가와 마진 · Synq 도움말 센터",
+          "description": "카드 매입가를 입력하면 마진을 확인할 수 있고, 매입가 밑으로 팔리지 않도록 최저가도 정할 수 있습니다. 매입가는 금액이나 시세 대비 비율로 입력합니다."
+        },
+        "category": "inventory",
+        "title": "매입가와 마진",
+        "intro": "카드 매입가를 입력하면 마진을 확인할 수 있고, 매입가 밑으로 팔리지 않도록 최저가도 정할 수 있습니다.",
+        "readTime": "읽는 데 2분",
+        "sections": [
+          {
+            "id": "what",
+            "title": "매입가란",
+            "paragraphs": [
+              "매입가는 상태별로 저장되는 Shopify의 Cost per item입니다. Synq와 Shopify가 같은 값을 쓰므로, 어느 쪽에서 수정해도 양쪽에 반영됩니다."
+            ]
+          },
+          {
+            "id": "set",
+            "title": "매입가 입력하기",
+            "list": [
+              "**카드를 추가할 때:** **Pricing configuration**의 **Cost paid**에 금액이나 시세 대비 비율(1~100%)로 입력합니다.",
+              "**여러 상품에:** **Inventory** › 상품 선택 › **Cost** 패널.",
+              "**새 상품 기본값:** **Settings** › **Pricing** › **What you pay** › **Share of market price**. 비워 두면 기본 매입가가 없습니다.",
+              "**연결한 상품**은 Shopify에 있는 매입가를 그대로 가져옵니다."
+            ]
+          },
+          {
+            "id": "margin",
+            "title": "마진 확인하기",
+            "paragraphs": [
+              "**Inventory**의 **Columns**에서 **Cost**와 **Margin** 열을 표시하세요.",
+              "마진은 **Listed** 가격에서 매입가를 뺀 값이며, 비율도 함께 표시됩니다. 매입가 밑으로 팔리는 상품에는 빨간색 **Below cost** 배지가 붙습니다.",
+              "매입가나 마진으로 정렬하면 빨리 찾을 수 있습니다."
+            ]
+          },
+          {
+            "id": "minimum",
+            "title": "매입가 밑으로 팔지 않기",
+            "paragraphs": [
+              "가격 규칙의 **Define minimum** 단계에서 **Your cost**를 고르고 비율이나 금액을 더하세요. [최저가와 반올림](/docs/minimums-rounding)을 참고하세요."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "알아 두기",
+            "list": [
+              "**매입가만으로는 가격이 바뀌지 않습니다.** 매입가 기준 최저가에서만 쓰입니다.",
+              "**매입가가 없으면** 그 상품에는 매입가 기준 최저가가 없습니다."
+            ]
+          }
+        ]
+      },
+      "what-synq-creates": {
+        "meta": {
+          "title": "Synq가 스토어에 만드는 것 · Synq 도움말 센터",
+          "description": "추가하는 카드는 모두 일반 Shopify 상품이 됩니다. Synq가 채우는 항목은 다음과 같습니다. 제목, 설명, 이미지, 상태별 옵션 등입니다."
+        },
+        "category": "shopify",
+        "title": "Synq가 스토어에 만드는 것",
+        "intro": "추가하는 카드는 모두 일반 Shopify 상품이 됩니다. Synq가 채우는 항목은 다음과 같습니다.",
+        "readTime": "읽는 데 2분",
+        "sections": [
+          {
+            "id": "product",
+            "title": "상품",
+            "list": [
+              "**카드와 버전마다 상품 하나.** \"Condition\" 옵션 아래에 상태마다 옵션이 하나씩 있습니다.",
+              "**Title:** 기본값은 카드명입니다. [상품 제목과 설명](/docs/templates)을 참고하세요.",
+              "**Description:** TCGplayer의 카드 텍스트.",
+              "**Images:** 버전 또는 카드의 이미지, 최대 3장.",
+              "**Vendor:** 게임 발행사.",
+              "**Product type:** 게임 이름.",
+              "**Category:** 싱글 카드와 덱은 Gaming Cards, 미개봉 상품은 Collectible Trading Cards."
+            ]
+          },
+          {
+            "id": "stock-price",
+            "title": "재고, 가격, 매입가",
+            "list": [
+              "**재고**는 선택한 위치에서 관리됩니다.",
+              "**가격**은 카드에 적용되는 규칙이나 예외에서 정해집니다.",
+              "**Cost per item**은 매입가를 입력하면 채워집니다."
+            ]
+          },
+          {
+            "id": "status",
+            "title": "판매 상태, 채널, 컬렉션",
+            "list": [
+              "**Status:** Draft 또는 Active. 기본값은 Draft이고, 추가 창에서 바꿀 수 있습니다.",
+              "**Channels:** 체크한 채널. Synq가 관리하는 채널은 Online Store, Shop, Point of Sale입니다.",
+              "**Collection:** 게임의 싱글 컬렉션 또는 미개봉 컬렉션."
+            ]
+          },
+          {
+            "id": "pos",
+            "title": "SKU와 바코드",
+            "paragraphs": [
+              "Shopify POS가 설치되어 있으면 상태마다 TCGplayer SKU와 바코드가 들어갑니다. [Shopify POS로 매장에서 판매하기](/docs/pos)를 참고하세요."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "알아 두기",
+            "list": [
+              "**태그 없음.** Synq는 상품에 태그를 추가하지 않습니다.",
+              "**중복 없음.** Synq가 상품마다 카드와 버전을 표시해 두므로, 같은 버전이 두 번 만들어지지 않습니다.",
+              "**초안은 숨겨진 채로 남습니다.** Shopify에서 게시하거나 **Inventory**의 **Set as active**를 사용하세요."
+            ]
+          }
+        ]
+      },
+      "templates": {
+        "meta": {
+          "title": "상품 제목과 설명 · Synq 도움말 센터",
+          "description": "템플릿은 새 상품의 제목, 설명, 검색 엔진용 문구를 어떻게 구성할지 정합니다. 게임별, 상품 종류별로 정할 수 있습니다. 기본 제목은 카드 이름뿐입니다."
+        },
+        "category": "shopify",
+        "title": "상품 제목과 설명",
+        "intro": "템플릿은 새 상품의 제목, 설명, 검색 엔진용 문구를 어떻게 구성할지 정합니다. 게임별, 상품 종류별로 정할 수 있습니다.",
+        "readTime": "읽는 데 2분",
+        "sections": [
+          {
+            "id": "where",
+            "title": "템플릿 위치",
+            "paragraphs": [
+              "**Settings** › **Online Store**를 여세요. Home의 **Change how cards read** 버튼을 눌러도 같은 페이지가 열립니다.",
+              "템플릿은 게임별, 종류별로 다르게 정할 수 있습니다: Singles, Sealed, Decks, Accessories."
+            ]
+          },
+          {
+            "id": "title",
+            "title": "제목과 설명",
+            "paragraphs": [
+              "제목의 기본값은 카드명만 들어가는 `{name}`입니다. 설명은 카드 텍스트입니다.",
+              "다음 목록에서 카드 정보를 골라 제목에 넣을 수 있습니다:"
+            ],
+            "list": [
+              "Product name (상품명)",
+              "Set, Set code (세트, 세트 코드)",
+              "Number (번호)",
+              "Rarity (레어도)",
+              "Printing (버전)",
+              "Kind (종류)",
+              "Game, Vendor (게임, 발행사)",
+              "Product description (상품 설명)"
+            ]
+          },
+          {
+            "id": "seo",
+            "title": "검색 엔진용 제목과 설명",
+            "paragraphs": [
+              "검색 엔진용 문구는 기본적으로 꺼져 있습니다. 켜면 모든 새 상품에 채워집니다.",
+              "테마 템플릿도 지정할 수 있어서, 카드 상품에 테마의 페이지 레이아웃을 쓸 수 있습니다."
+            ]
+          },
+          {
+            "id": "update",
+            "title": "기존 상품 업데이트",
+            "paragraphs": [
+              "템플릿은 새 상품에 적용됩니다. 기존 상품도 맞추려면 같은 페이지에서 **Update products**를 클릭하세요. 백그라운드에서 진행됩니다.",
+              "Shopify에서 직접 수정한 상품은 수정 내용이 유지됩니다. 몇 개가 유지됐는지 Synq가 알려 줍니다."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "알아 두기",
+            "list": [
+              "**상태 이름**(Near Mint 또는 NM)은 같은 페이지의 **Condition variants**에 있습니다. [상태와 버전](/docs/conditions-printings)을 참고하세요.",
+              "**카드 한 장의 제목.** **Add to store**를 클릭하기 전에 추가 창에서 바꾸세요."
+            ]
+          }
+        ]
+      },
+      "sync": {
+        "meta": {
+          "title": "Shopify와 동기화되는 항목 · Synq 도움말 센터",
+          "description": "Synq와 Shopify는 재고, 매입가, 상품 정보를 공유합니다. 가격만큼은 가격 규칙이 관리합니다. Shopify 관리자에서 바꾼 가격은 다음 규칙 실행 때 덮어씁니다."
+        },
+        "category": "shopify",
+        "title": "Shopify와 동기화되는 항목",
+        "intro": "Synq와 Shopify는 재고, 매입가, 상품 정보를 공유합니다. 가격만큼은 가격 규칙이 관리합니다.",
+        "readTime": "읽는 데 2분",
+        "sections": [
+          {
+            "id": "table",
+            "title": "Shopify 관리자에서 수정한 내용",
+            "table": {
+              "head": [
+                "Shopify에서 바꾸는 것",
+                "Synq의 동작"
+              ],
+              "rows": [
+                [
+                  "가격",
+                  "Listed에 표시. 상태를 제외하지 않았다면 다음 규칙 실행 때 덮어씀"
+                ],
+                [
+                  "주문이나 수정으로 바뀐 재고",
+                  "모든 위치에 반영"
+                ],
+                [
+                  "Cost per item",
+                  "그대로 반영"
+                ],
+                [
+                  "제목, 설명, 상품 유형",
+                  "수정한 내용 유지"
+                ],
+                [
+                  "옵션 삭제",
+                  "해당 상태 삭제"
+                ],
+                [
+                  "상품 삭제",
+                  "Synq에서 상품 삭제"
+                ],
+                [
+                  "위치 추가, 이름 변경, 폐쇄",
+                  "변경 사항 반영"
+                ]
+              ]
+            }
+          },
+          {
+            "id": "prices",
+            "title": "가격",
+            "paragraphs": [
+              "Shopify 관리자에서 수정한 가격은 상품 규칙이 다음에 실행될 때까지만 유지됩니다.",
+              "가격을 유지하려면 Synq에서 정하세요. **Inventory**에서 **Listed**를 수정하면 해당 상태가 규칙에서 제외됩니다. [예외](/docs/exceptions)를 참고하세요."
+            ]
+          },
+          {
+            "id": "locations",
+            "title": "위치",
+            "paragraphs": [
+              "재고는 위치별로 관리됩니다. 위치를 고르지 않으면 새 재고는 기본 위치로 들어갑니다."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "알아 두기",
+            "list": [
+              "**직접 수정한 내용은 유지됩니다.** 템플릿으로 상품을 업데이트해도 그대로입니다.",
+              "**연결을 해제한 상품**은 Shopify에 남고, Synq는 더 이상 업데이트하지 않습니다."
+            ]
+          }
+        ]
+      },
+      "pos": {
+        "meta": {
+          "title": "Shopify POS로 매장에서 판매하기 · Synq 도움말 센터",
+          "description": "Shopify POS를 쓰면 카드와 상태마다 고유 바코드가 생겨서, 카운터에서 스캔 한 번으로 정확한 카드가 계산됩니다. Shopify POS 설치가 필요합니다."
+        },
+        "category": "shopify",
+        "title": "Shopify POS로 매장에서 판매하기",
+        "intro": "Shopify POS를 쓰면 카드와 상태마다 고유 바코드가 생겨서, 카운터에서 스캔 한 번으로 정확한 카드가 계산됩니다.",
+        "readTime": "읽는 데 2분",
+        "sections": [
+          {
+            "id": "settings",
+            "title": "Point of Sale 설정",
+            "paragraphs": [
+              "**Settings** › **Point of Sale**을 여세요. Shopify POS가 설치되어 있어야 하며, 없으면 설정이 비활성화되어 표시됩니다.",
+              "처음에는 아래 옵션이 모두 켜져 있습니다:"
+            ],
+            "list": [
+              "**Include new products in Point of Sale:** 새 상품을 POS 판매 채널에 추가합니다.",
+              "**Sealed products:** 박스에 인쇄된 UPC를 쓰고, 없으면 Synq 코드를 씁니다.",
+              "**Single cards:** 상태마다 고유 코드를 만듭니다.",
+              "상태마다 **TCGplayer SKUs**를 넣습니다."
+            ]
+          },
+          {
+            "id": "labels",
+            "title": "라벨 인쇄",
+            "steps": [
+              "Shopify의 무료 앱 **Retail Barcode Labels**를 설치하세요.",
+              "상품 라벨을 인쇄하세요. Synq가 이미 바코드를 만들었으므로, 그 앱의 바코드 생성 옵션은 건너뛰세요.",
+              "라벨을 카드 슬리브나 탑로더에 붙이세요."
+            ],
+            "paragraphs": [
+              "Synq가 직접 라벨을 인쇄하지는 않습니다."
+            ]
+          },
+          {
+            "id": "selling",
+            "title": "카운터에서",
+            "paragraphs": [
+              "스캔 한 번으로 정확한 카드와 상태가 계산됩니다. 온라인 재고도 함께 줄어듭니다."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "알아 두기",
+            "list": [
+              "**코드는 상품을 만들 때 생성됩니다.** POS를 설치하기 전에 추가한 상품에는 코드가 없을 수 있습니다.",
+              "**카드 한 장의 코드를 바꾸려면** 추가 창의 **Point of Sale**에서 바꾸세요.",
+              "**Home의 POS 단계**는 Shopify POS가 설치되어 있을 때 **Set up Shopify POS**로 표시됩니다."
+            ]
+          }
+        ]
+      },
+      "uninstall": {
+        "meta": {
+          "title": "Synq 제거 · Synq 도움말 센터",
+          "description": "Shopify 관리자에서 Synq를 제거하세요. 상품은 스토어에 그대로 남습니다. 데이터는 약 48시간 후 삭제되며, 그 전에 다시 설치하면 이어서 쓸 수 있습니다."
+        },
+        "category": "shopify",
+        "title": "Synq 제거",
+        "intro": "Shopify 관리자에서 Synq를 제거하세요. 상품은 스토어에 그대로 남습니다.",
+        "readTime": "읽는 데 2분",
+        "sections": [
+          {
+            "id": "how",
+            "title": "제거하기",
+            "steps": [
+              "Shopify 관리자에서 **Settings** › **Apps**를 여세요.",
+              "Synq를 찾아 **Uninstall**을 클릭하세요."
+            ]
+          },
+          {
+            "id": "after",
+            "title": "제거하면 일어나는 일",
+            "list": [
+              "**상품은 Shopify에 남습니다.** 가격, 재고, 상세 정보도 그대로입니다.",
+              "**가격 업데이트가 멈춥니다.** 제거한 뒤에는 어떤 규칙도 실행되지 않습니다.",
+              "**약 48시간 뒤** Shopify가 Synq에 스토어 데이터 삭제를 요청하고, Synq는 데이터를 삭제합니다."
+            ]
+          },
+          {
+            "id": "reinstall",
+            "title": "다시 설치하기",
+            "paragraphs": [
+              "48시간 안에 다시 설치하면 Synq가 하던 그대로 이어서 시작합니다.",
+              "그 이후에는 Synq가 처음부터 시작합니다. 초기 설정을 다시 거쳐야 하고, [이미 있는 상품 연결](/docs/link-products)로 상품을 다시 연결해야 할 수도 있습니다."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "알아 두기",
+            "list": [
+              "**요금만 그만 내고 싶다면** 제거 대신 Free 요금제로 바꾸세요. [결제, 업그레이드, 해지](/docs/billing)를 참고하세요.",
+              "**제거하지 않고 상품 하나만 멈추려면:** **Inventory** › ⋯ › **Unlink from synq**."
+            ]
+          }
+        ]
+      },
+      "plans": {
+        "meta": {
+          "title": "요금제와 상품 한도 · Synq 도움말 센터",
+          "description": "요금제의 차이는 보유할 수 있는 상품 수뿐입니다. Free를 포함한 모든 요금제에서 모든 기능을 쓸 수 있습니다. Free는 상품 100개, Starter는 2,000개, Pro는 15,000개, Scale은 50,000개까지입니다."
+        },
+        "category": "billing",
+        "title": "요금제와 상품 한도",
+        "intro": "요금제의 차이는 보유할 수 있는 상품 수뿐입니다. Free를 포함한 모든 요금제에서 모든 기능을 쓸 수 있습니다.",
+        "readTime": "읽는 데 2분",
+        "sections": [
+          {
+            "id": "plans",
+            "title": "요금제",
+            "table": {
+              "head": [
+                "요금제",
+                "월간",
+                "연간",
+                "상품 수"
+              ],
+              "rows": [
+                [
+                  "Free",
+                  "$0",
+                  "$0",
+                  "100"
+                ],
+                [
+                  "Starter",
+                  "$29",
+                  "$232",
+                  "2,000"
+                ],
+                [
+                  "Pro",
+                  "$79",
+                  "$632",
+                  "15,000"
+                ],
+                [
+                  "Scale",
+                  "$149",
+                  "$1,192",
+                  "50,000"
+                ]
+              ]
+            },
+            "paragraphs": [
+              "연간 결제는 월 약 $19, $53, $99에 해당합니다."
+            ]
+          },
+          {
+            "id": "count",
+            "title": "한도 계산 방식",
+            "paragraphs": [
+              "한도는 상품 수로 계산합니다. 상품 하나는 한 버전의 카드 한 종류이며, 모든 상태와 재고가 포함됩니다.",
+              "한 버전의 Near Mint 10장과 Lightly Played 2장은 상품 하나입니다."
+            ]
+          },
+          {
+            "id": "every-plan",
+            "title": "모든 요금제에 포함",
+            "list": [
+              "모든 게임",
+              "매일 일정으로 실행되는 가격 규칙",
+              "스프레드시트 및 TCGplayer 가져오기",
+              "Shopify POS 바코드",
+              "Inventory에서 일괄 수정"
+            ]
+          },
+          {
+            "id": "limit",
+            "title": "한도에 가까워지거나 도달했을 때",
+            "paragraphs": [
+              "**Inventory**와 **Add products**에 사용 중인 상품 수가 표시됩니다.",
+              "Free 요금제에서는 상품이 80개가 되면 막대가 주황색으로, 100개가 되면 빨간색으로 바뀝니다.",
+              "한도에 도달하면 새 상품을 추가하거나 가져올 수 없습니다. 기존 상품은 계속 작동합니다: 재고, 가격 규칙 실행, Shopify 동기화가 그대로 이어집니다."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "알아 두기",
+            "list": [
+              "**작은 요금제로 바꿔도 삭제되는 것은 없습니다.** 새 한도를 넘는다면, 한도 아래로 줄어들 때까지 새 상품을 추가할 수 없습니다.",
+              "**무료 체험.** 유료 요금제는 무료 체험으로 시작합니다. 체험 기간은 Shopify 요금제 페이지에 표시됩니다."
+            ]
+          }
+        ]
+      },
+      "billing": {
+        "meta": {
+          "title": "결제, 업그레이드, 해지 · Synq 도움말 센터",
+          "description": "Synq 요금은 Shopify를 통해 청구됩니다. 요금은 Shopify 청구서에 표시되며, 요금제 변경은 Shopify의 요금제 페이지에서 합니다."
+        },
+        "category": "billing",
+        "title": "결제, 업그레이드, 해지",
+        "intro": "Synq 요금은 Shopify를 통해 청구됩니다. 요금은 Shopify 청구서에 표시되며, 요금제 변경은 Shopify의 요금제 페이지에서 합니다.",
+        "readTime": "읽는 데 2분",
+        "sections": [
+          {
+            "id": "change",
+            "title": "업그레이드 또는 요금제 변경",
+            "steps": [
+              "**Inventory**나 **Add products**에서 **Upgrade**를 클릭하거나, **Settings** › **Billing**에서 **Change plan**을 클릭하세요.",
+              "Shopify의 Synq 요금제 페이지가 열립니다.",
+              "요금제와 월간 또는 연간 결제를 고르고 승인하세요."
+            ]
+          },
+          {
+            "id": "invoices",
+            "title": "청구서",
+            "paragraphs": [
+              "**Settings** › **Billing** › **Manage**를 열면 Shopify에서 청구서를 볼 수 있습니다.",
+              "Synq 요금은 다른 앱 요금과 함께 Shopify 청구서에 표시됩니다."
+            ]
+          },
+          {
+            "id": "downgrade",
+            "title": "다운그레이드",
+            "paragraphs": [
+              "Shopify의 요금제 페이지에서 더 작은 요금제를 고르세요. 삭제되는 것은 없습니다.",
+              "새 한도보다 상품이 많으면, 한도 아래로 줄어들 때까지 새 상품을 추가할 수 없습니다."
+            ]
+          },
+          {
+            "id": "cancel",
+            "title": "해지",
+            "paragraphs": [
+              "Shopify 요금제 페이지의 **Change plan**에서 유료 요금제를 해지하세요. 스토어는 상품 100개까지 쓸 수 있는 Free 요금제로 바뀝니다.",
+              "상품, 규칙, 재고는 그대로 남습니다. Synq 사용을 완전히 그만두려면 [Synq 제거](/docs/uninstall)를 참고하세요."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "알아 두기",
+            "list": [
+              "**무료 체험이 끝난 뒤** 유료 요금제가 없는 스토어는 상품 100개까지 쓸 수 있는 Free 요금제가 됩니다.",
+              "**모든 기능**이 모든 요금제에 있으므로, 상품이 더 많아질 때만 더 내면 됩니다. [요금제와 상품 한도](/docs/plans)를 참고하세요."
+            ]
+          }
+        ]
+      },
+      "help": {
+        "meta": {
+          "title": "도움 받기 · Synq 도움말 센터",
+          "description": "Home이나 이메일로 연락 주세요. 창업자가 직접, 보통 당일에 답합니다. 사용법, 요금, 게임 추가 요청 등 무엇이든 물어보세요."
+        },
+        "category": "billing",
+        "title": "도움 받기",
+        "intro": "Home이나 이메일로 연락 주세요. 창업자가 직접, 보통 당일에 답합니다.",
+        "readTime": "읽는 데 2분",
+        "sections": [
+          {
+            "id": "feedback",
+            "title": "앱에서",
+            "steps": [
+              "**Home**을 여세요.",
+              "맨 위의 **Feedback**을 클릭하세요.",
+              "메시지를 쓰고 보내세요. 창업자의 메일함으로 바로 전달됩니다."
+            ],
+            "paragraphs": [
+              "메시지는 1분에 하나씩 보낼 수 있습니다."
+            ]
+          },
+          {
+            "id": "email",
+            "title": "이메일로",
+            "paragraphs": [
+              "[help@synq.cards](mailto:help@synq.cards)로 메일을 보내 주세요."
+            ]
+          },
+          {
+            "id": "include",
+            "title": "함께 알려 주실 내용",
+            "list": [
+              "**스토어 주소** (예: yourstore.myshopify.com).",
+              "**카드나 상품** 이름과 세트, 버전.",
+              "**Synq의 페이지**와 클릭한 항목.",
+              "**스크린샷** (있다면)."
+            ]
+          },
+          {
+            "id": "whats-new",
+            "title": "새로운 기능",
+            "paragraphs": [
+              "Home에서 **What's new**를 클릭하면 Synq의 변경 사항을 볼 수 있습니다. 읽지 않은 소식 수가 숫자로 표시됩니다."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "알아 두기",
+            "list": [
+              "**찾는 게임이 없을 때.** **Feedback**이나 스프레드시트 가져오기의 **Request this game**으로 요청하세요.",
+              "**가격 관련 문의.** 먼저 규칙 미리 보기와 **Activity**를 확인하세요. [미리 보기, 실행, 일정](/docs/run-and-schedule)을 참고하세요."
+            ]
+          }
+        ]
+      }
+    },
+    "tracks": {
+      "label": "시작점 고르기",
+      "title": "지금 스토어 상황에 맞게 시작하세요.",
+      "items": {
+        "new": {
+          "title": "카드 온라인 판매가 처음이라면",
+          "body": "Synq를 설치하고, 게임을 고르고, 첫 카드를 추가하세요.",
+          "audience": "처음 시작",
+          "articles": [
+            "install",
+            "setup",
+            "add-cards",
+            "conditions-printings"
+          ]
+        },
+        "existing": {
+          "title": "이미 Shopify에서 판매 중이라면",
+          "body": "지금 판매 중인 카드를 가져오고, 가격은 규칙에 맡기세요.",
+          "audience": "Synq로 이전",
+          "articles": [
+            "link-products",
+            "import",
+            "price-rules",
+            "run-and-schedule"
+          ]
+        },
+        "counter": {
+          "title": "매장 카운터에서도 판매한다면",
+          "body": "Shopify POS용 바코드, 위치별 재고, 마진.",
+          "audience": "오프라인 매장",
+          "articles": [
+            "pos",
+            "sync",
+            "bulk-edit",
+            "cost-margin"
+          ]
+        }
+      }
+    }
+  },
+  "legal": {
+    "terms": {
+      "meta": {
+        "title": "Terms of Service · Synq",
+        "description": "The terms that govern your use of Synq, the Shopify trading card pricing and inventory app."
+      },
+      "title": "Terms of Service",
+      "updated": "Last updated: October 12, 2026",
+      "intro": "The short version: your store and your data are yours, you stay in control of your prices, and you can leave whenever you want. The details are below; if anything isn't clear, write to us at iamtelmoo@gmail.com.",
+      "numbered": true,
+      "sections": [
+        {
+          "id": "who-we-are",
+          "title": "Who we are",
+          "body": [
+            "Synq (\"we\", \"us\") makes a Shopify app for trading card stores (\"Synq ‑ TCG Card Manager\"). These terms cover the app, this website and any related service (the \"Service\"). Our legal details are in the [legal notice](/legal), and you can always reach us at iamtelmoo@gmail.com."
+          ]
+        },
+        {
+          "id": "using-synq",
+          "title": "What Synq does",
+          "body": [
+            "Synq helps you find cards and sealed products in a catalog, add them to your Shopify store, keep their stock in sync and, if you want, keep their prices in step with the market. It only does what the permissions you approve at install allow. If you use Synq for a business, these terms apply to that business."
+          ]
+        },
+        {
+          "id": "your-store",
+          "title": "Your store is yours",
+          "body": [
+            "Your products, stock, prices and store data belong to you. We only use them to run Synq for you. If you uninstall, we delete them as described in our [Privacy Policy](/privacy), and the products in your Shopify store stay exactly where they are.",
+            "You know your store best, so what it sells and publishes is your call, along with the laws and platform rules that apply to your business."
+          ]
+        },
+        {
+          "id": "prices",
+          "title": "Prices: you stay in control",
+          "body": [
+            "Market prices in Synq come from third parties, mainly TCGplayer. They can be late or wrong, and card markets move fast.",
+            "Automatic price updates follow the rules you set: strategy, rounding, minimum prices and which products are included. Because you choose those rules, the prices they produce are yours, and we can't take responsibility for a sale made at one of them, even when the market data behind it was off. A minimum price and a quick look at price changes now and then go a long way; if something looks wrong, tell us and we'll look into it."
+          ]
+        },
+        {
+          "id": "images",
+          "title": "Card images and trademarks",
+          "body": [
+            "Card images, names and set symbols belong to their publishers, such as The Pokémon Company, Wizards of the Coast and Konami. Synq isn't affiliated with or endorsed by any of them, or by TCGplayer.",
+            "The images Synq adds to your products are there so shoppers can see which card they're buying. They come mainly from TCGplayer's public catalog and community card databases. They aren't ours, so we can't license them to you, and how you use them is up to you. You can swap any of them for your own photos whenever you like."
+          ]
+        },
+        {
+          "id": "plans",
+          "title": "Plans and billing",
+          "body": [
+            {
+              "list": [
+                "Synq has a free plan and paid plans, billed monthly or yearly through Shopify. Charges appear on your Shopify invoice.",
+                "You can change or cancel your plan at any time from the app, and uninstalling cancels it too.",
+                "Payments already made aren't refunded, except where the law says otherwise. If you think we charged you by mistake, write to us and we'll put it right.",
+                "If our prices change, we'll tell you at least 30 days ahead, and the new price starts with your next billing period."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "fair-use",
+          "title": "Fair use",
+          "body": [
+            "To keep Synq working well for every store, please don't:",
+            {
+              "list": [
+                "use it for anything unlawful;",
+                "use it or its catalog data to build a competing product or database, or resell access to it;",
+                "access it by automated means outside the app, or put unusual load on it;",
+                "try to get into systems or data that aren't yours."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "the-service",
+          "title": "Keeping Synq running",
+          "body": [
+            "We work hard to keep Synq up and accurate, but it depends on Shopify and other providers, so we can't promise it will never be down or never make a mistake. We keep improving it, which means features can change; if we ever remove one your paid plan relies on, we'll tell you in advance."
+          ]
+        },
+        {
+          "id": "our-property",
+          "title": "What belongs to us",
+          "body": [
+            "The Synq software, website, name and design are ours. While you have the app installed, you're free to use them through the Service."
+          ]
+        },
+        {
+          "id": "liability",
+          "title": "The legal part",
+          "body": [
+            "Every software company needs this section. Here is ours, as plainly as we can put it:",
+            {
+              "list": [
+                "Synq is provided \"as is\". As far as the law allows, we don't give warranties beyond what these terms say, including about the accuracy of catalog or price data.",
+                "As far as the law allows, we aren't liable for indirect losses such as lost profits, sales or data, and our total liability for any claim is limited to what you paid us in the 12 months before it. Nothing here limits what the law doesn't allow to be limited.",
+                "If someone makes a claim against us because of something in your store, such as your listings or your use of images, or because these terms were broken, that claim is yours to handle."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "termination",
+          "title": "If things end",
+          "body": [
+            "You can stop using Synq any time by uninstalling it. We would only suspend an account if these terms are broken or the Service is being harmed, and unless it's urgent we'll talk to you first and give you a chance to sort it out."
+          ]
+        },
+        {
+          "id": "changes",
+          "title": "Changes to these terms",
+          "body": [
+            "If we update these terms, we change the date at the top. For anything that matters, we'll let you know by email or in the app at least 15 days before it applies. Continuing to use Synq after that means you accept the update."
+          ]
+        },
+        {
+          "id": "law",
+          "title": "Governing law",
+          "body": [
+            "These terms are governed by Spanish law, and disputes go to the courts of Spain, unless the law gives you the right to bring them elsewhere."
+          ]
+        }
+      ]
+    },
+    "privacy": {
+      "meta": {
+        "title": "Privacy Policy · Synq",
+        "description": "How Synq collects, uses, and protects data for its Shopify trading card pricing app."
+      },
+      "title": "Privacy Policy",
+      "updated": "Last updated: October 12, 2026",
+      "intro": "Our rule is simple: collect only what Synq needs to do its job, and never sell it. Here is what that means in practice.",
+      "numbered": true,
+      "sections": [
+        {
+          "id": "who-we-are",
+          "title": "Who we are",
+          "body": [
+            "Synq (\"we\", \"us\") makes a Shopify app that helps trading card stores list cards, keep stock in sync and price them from market data. This policy covers the app and this website. Our legal details are in the [legal notice](/legal). For anything about your data, write to iamtelmoo@gmail.com."
+          ]
+        },
+        {
+          "id": "what-we-collect",
+          "title": "What we collect",
+          "body": [
+            "We collect only what we need to run the app:",
+            {
+              "list": [
+                "**Store details**: your shop's domain, name, contact email, currency and timezone, from Shopify when you install.",
+                "**Staff details**: the name and email of the people who open the app.",
+                "**Catalog data**: the products, variants, inventory, locations and sales channels Synq manages for you.",
+                "**Analytics**: how the app is used (pages opened, clicks, browser and device), so we can see where it gets in your way. This covers Synq's pages only, never the rest of your Shopify admin or your screen.",
+                "**Messages**: what you send us by email, the contact form or Shopify's support channel."
+              ]
+            },
+            "We don't collect your customers' data. Synq does not ask Shopify for access to orders or customers, and passwords and payment details never pass through it."
+          ]
+        },
+        {
+          "id": "how-we-use-it",
+          "title": "How we use it",
+          "body": [
+            {
+              "list": [
+                "To run the app: create and update your products, sync stock and prices, run imports and bill your plan.",
+                "To help you when you write to us, and to send service emails such as job results or billing notices.",
+                "To find and fix problems and decide what to build next.",
+                "To keep the service secure and prevent abuse.",
+                "To keep the billing and tax records the law requires."
+              ]
+            },
+            "We never sell your data or use it for advertising.",
+            "If you are in the EU or UK: we rely on our contract with you to run the app, on our legitimate interest to improve and secure it, and on legal obligation for billing records."
+          ]
+        },
+        {
+          "id": "who-we-share-it-with",
+          "title": "Who we share it with",
+          "body": [
+            "Only with the providers that run parts of Synq for us (hosting, database, background jobs, image storage, email and analytics), under contracts that limit them to our instructions. Ask us at iamtelmoo@gmail.com and we'll send you the current list.",
+            "We may also disclose data when the law requires it, or to a buyer if Synq is ever sold, under this same policy."
+          ]
+        },
+        {
+          "id": "shopify-and-merchants",
+          "title": "Shopify and merchants",
+          "body": [
+            "Synq works through the permissions you approve when you install it: products, inventory, locations and sales channels. For the data in your store, Synq acts on your behalf.",
+            "Shopify sends us its privacy requests and we answer them. When you uninstall, Shopify asks us to erase your store's data 48 hours later and we delete it. The products in your store stay there; they are yours.",
+            "If you shop at a store that uses Synq, your data is held by that store and Shopify, not by us. Please contact the store."
+          ]
+        },
+        {
+          "id": "retention",
+          "title": "How long we keep it",
+          "body": [
+            {
+              "list": [
+                "Store, staff and catalog data: while the app is installed, then deleted after uninstall as above.",
+                "Analytics: for the retention period of our analytics plan, then deleted.",
+                "Messages: as long as needed to help you.",
+                "Billing records: as long as tax law requires."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "security",
+          "title": "Security",
+          "body": [
+            "Data is encrypted in transit, access to production systems is limited to the people who run Synq, and every read and write is scoped to a single store. No system is perfectly secure; if a breach affects your data, we will tell you and the authorities as the law requires."
+          ]
+        },
+        {
+          "id": "international-transfers",
+          "title": "International transfers",
+          "body": [
+            "Several of our providers are in the United States. Those transfers rely on the EU–US Data Privacy Framework where the provider is certified, and otherwise on the European Commission's Standard Contractual Clauses."
+          ]
+        },
+        {
+          "id": "cookies",
+          "title": "Cookies",
+          "body": [
+            "The app keeps a small analytics identifier in your browser's local storage, and Shopify uses its own cookies to sign you in. This website uses privacy-friendly analytics and no advertising cookies."
+          ]
+        },
+        {
+          "id": "your-rights",
+          "title": "Your rights",
+          "body": [
+            "You can ask us to access, correct, delete or export your personal data, or object to how we use it. Write to iamtelmoo@gmail.com and we will answer within a month.",
+            "In the EU you can also complain to your data protection authority; ours is Spain's Agencia Española de Protección de Datos (aepd.es)."
+          ]
+        },
+        {
+          "id": "changes",
+          "title": "Changes to this policy",
+          "body": [
+            "When we change this policy we update the date at the top. If a change matters, we tell you by email or in the app first."
+          ]
+        }
+      ]
+    },
+    "cookies": {
+      "meta": {
+        "title": "Cookies Policy · Synq",
+        "description": "Information about the cookies used by Synq's website and application."
+      },
+      "title": "Cookies Policy",
+      "updated": "Last updated: May 18, 2026",
+      "intro": "This Cookies Policy explains what cookies are, which cookies we use on synq.cards (the \"Site\") and inside the Synq application, and how you can control them.",
+      "sections": [
+        {
+          "id": "what",
+          "title": "1. What are cookies",
+          "body": [
+            "Cookies are small text files stored on your device when you visit a website. They allow the site to remember your actions and preferences over time. Similar technologies such as localStorage, sessionStorage and pixels are covered by this policy."
+          ]
+        },
+        {
+          "id": "types",
+          "title": "2. Cookies we use",
+          "body": [
+            "Strictly necessary cookies: required for the Site and application to function (session, authentication, security, language preference). These cookies do not require your consent under Spanish law.",
+            "Analytics cookies: used to understand how visitors interact with the Site. We use privacy-friendly analytics that do not track individuals across sites. If enabled, these cookies are loaded only after consent.",
+            "We do not use advertising or third-party tracking cookies."
+          ]
+        },
+        {
+          "id": "manage",
+          "title": "3. How to manage cookies",
+          "body": [
+            "You can configure your browser to refuse cookies, delete existing ones or alert you when cookies are being set. Most browsers offer this option under \"Settings\" or \"Preferences\".",
+            "If you disable strictly necessary cookies, some features of the Site or the application may not work properly."
+          ]
+        },
+        {
+          "id": "changes",
+          "title": "4. Changes to this policy",
+          "body": [
+            "We may update this Cookies Policy. Material changes will be communicated via the Site."
+          ]
+        },
+        {
+          "id": "contact",
+          "title": "5. Contact",
+          "body": [
+            "Questions about this policy can be sent to help@synq.cards."
+          ]
+        }
+      ]
+    },
+    "notice": {
+      "meta": {
+        "title": "Legal Notice · Synq",
+        "description": "Who operates Synq, the Shopify trading card pricing and inventory app."
+      },
+      "title": "Legal Notice",
+      "updated": "Last updated: October 12, 2026",
+      "intro": "Synq is operated by:",
+      "sections": [
+        {
+          "id": "holder",
+          "title": "Service provider",
+          "body": [
+            "**Holder**: Telmo Beroiz Bilbao, sole trader",
+            "**Tax ID (NIF)**: 73234079D",
+            "**Address**: 20800 Zarautz (Gipuzkoa), Spain",
+            "**Email**: iamtelmoo@gmail.com",
+            "**Activity**: software for online stores (the Synq Shopify app)",
+            "Use of Synq is governed by our [Terms of Service](/terms) and [Privacy Policy](/privacy)."
+          ]
+        }
+      ]
+    }
+  },
+  "contact": {
+    "title": "연락 주세요",
+    "body": "모든 메시지는 사람이 직접 읽고, 영업일 기준 1일 안에 답합니다.",
+    "topic": "문의 내용",
+    "topics": {
+      "before": "설치 전 문의",
+      "app": "앱 사용 도움",
+      "billing": "요금제와 결제",
+      "other": "기타"
+    },
+    "name": "이름",
+    "email": "이메일",
+    "store": "스토어",
+    "optional": "(선택)",
+    "storePlaceholder": "yourstore.myshopify.com",
+    "message": "메시지",
+    "placeholders": {
+      "before": "매장 소개와 궁금한 점을 알려 주세요.",
+      "app": "무엇을 하던 중이었는지, 어떻게 될 거라 예상했는지, 실제로 어떻게 됐는지 알려 주세요.",
+      "billing": "현재 요금제와 바꾸고 싶은 내용을 알려 주세요.",
+      "other": "무엇을 도와드릴지 알려 주세요."
+    },
+    "send": "메시지 보내기",
+    "sending": "보내는 중…",
+    "direct": "또는 <mail>{email}</mail> 주소로 이메일을 보내 주세요",
+    "error": "메시지가 전송되지 않았습니다. 다시 시도하거나 <mail>{email}</mail> 주소로 이메일을 보내 주세요.",
+    "close": "닫기",
+    "sent": {
+      "title": "메시지를 보냈습니다",
+      "body": "보내 주셔서 감사합니다. 확인 메일을 보내 드렸으며, 영업일 기준 1일 안에 답장을 드립니다.",
+      "done": "완료"
+    }
+  },
+  "notFound": {
+    "title": "이 페이지를 찾을 수 없습니다.",
+    "body": "링크가 오래되었거나 잘못 입력되었을 수 있습니다. 많이 찾는 페이지는 다음과 같습니다."
+  }
+}

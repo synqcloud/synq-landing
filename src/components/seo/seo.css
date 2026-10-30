@@ -1,0 +1,182 @@
+/* SEO pages (/for/<game>, /synq-vs-spreadsheets): a dark top band under the
+   fixed navbar, lit like the home's payoff band, then the light canvas. */
+
+.seo-hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: #161413;
+  border-radius: 0 0 28px 28px;
+}
+.seo-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(55% 60% at 72% 0%, rgb(232 160 80 / 20%) 0%, rgb(232 160 80 / 0%) 70%),
+    radial-gradient(40% 40% at 10% 100%, rgb(201 120 60 / 8%) 0%, rgb(201 120 60 / 0%) 70%);
+}
+@media (max-width: 767px) {
+  .seo-hero {
+    border-radius: 0 0 20px 20px;
+  }
+}
+
+/* ---------- the fan: three real scans, held like a hand of cards ---------- */
+
+.card-fan {
+  --fan-ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  aspect-ratio: 5 / 4;
+  margin-inline: auto;
+}
+.card-fan__item {
+  position: absolute;
+  top: 7%;
+  width: 44%;
+  transition: transform 260ms var(--fan-ease);
+}
+.card-fan__card {
+  aspect-ratio: 300 / 419;
+  overflow: hidden;
+  border-radius: 4.6% / 3.3%;
+  background: #2a2420;
+  box-shadow:
+    0 0 0 1px rgb(255 255 255 / 6%),
+    0 8px 16px -8px rgb(0 0 0 / 55%),
+    0 32px 56px -24px rgb(0 0 0 / 85%);
+}
+.card-fan__card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card-fan__item:nth-child(1) {
+  left: 3%;
+  transform: translateY(7%) rotate(-9deg);
+}
+.card-fan__item:nth-child(2) {
+  left: 28%;
+  top: 0;
+  z-index: 2;
+}
+.card-fan__item:nth-child(3) {
+  left: 53%;
+  transform: translateY(7%) rotate(9deg);
+}
+
+/* sealed product on white: each sits in a light art well, like an app tile */
+.card-fan--sealed .card-fan__item {
+  padding: 4%;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow:
+    0 0 0 1px rgb(255 255 255 / 8%),
+    0 8px 16px -8px rgb(0 0 0 / 50%),
+    0 32px 56px -24px rgb(0 0 0 / 80%);
+}
+.card-fan--sealed .card-fan__well {
+  overflow: hidden;
+  border-radius: 10px;
+  background: radial-gradient(120% 90% at 50% 20%, #fafafa 0%, #ececec 100%);
+}
+.card-fan--sealed .card-fan__well img {
+  display: block;
+  width: 100%;
+  height: auto;
+  /* the product shots have a white ground: let the well show through */
+  mix-blend-mode: multiply;
+}
+.card-fan--sealed .card-fan__item:nth-child(1) {
+  left: 2%;
+  top: 16%;
+  width: 60%;
+  transform: rotate(-5deg);
+}
+.card-fan--sealed .card-fan__item:nth-child(2) {
+  left: 60%;
+  top: 0;
+  width: 37%;
+  transform: rotate(6deg);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .card-fan:hover .card-fan__item:nth-child(1) {
+    transform: translate(-5%, 6%) rotate(-12deg);
+  }
+  .card-fan:hover .card-fan__item:nth-child(2) {
+    transform: translateY(-3%);
+  }
+  .card-fan:hover .card-fan__item:nth-child(3) {
+    transform: translate(5%, 6%) rotate(12deg);
+  }
+  .card-fan--sealed:hover .card-fan__item:nth-child(1) {
+    transform: translateX(-3%) rotate(-7deg);
+  }
+  .card-fan--sealed:hover .card-fan__item:nth-child(2) {
+    transform: translate(3%, -3%) rotate(8deg);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .card-fan__item {
+    transition: none;
+  }
+}
+
+/* ---------- comparison table: a table on wide screens, cards on phones ---------- */
+
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.compare-table th,
+.compare-table td {
+  padding: 18px 20px;
+  text-align: left;
+  vertical-align: top;
+}
+.compare-table tbody tr + tr {
+  border-top: 1px solid rgb(0 0 0 / 6%);
+}
+@media (max-width: 767px) {
+  .compare-table thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+  .compare-table,
+  .compare-table tbody,
+  .compare-table tr,
+  .compare-table th,
+  .compare-table td {
+    display: block;
+  }
+  .compare-table tr {
+    padding: 16px 16px 18px;
+  }
+  .compare-table th,
+  .compare-table td {
+    padding: 0;
+  }
+  .compare-table td {
+    margin-top: 10px;
+  }
+  .compare-table td::before {
+    content: attr(data-label);
+    display: block;
+    margin-bottom: 2px;
+    font-size: 11.5px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--color-ink-3);
+  }
+}

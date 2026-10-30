@@ -1,0 +1,2479 @@
+{
+  "meta": {
+    "title": "Synq · Gestion du stock de cartes pour Shopify",
+    "description": "Synq, l'app Shopify des boutiques de cartes. Ajoutez cartes à l'unité et scellé d'une touche, suivez le marché TCGplayer et gérez votre stock sans saisie."
+  },
+  "nav": {
+    "ariaMain": "Navigation principale",
+    "logoAria": "Accueil Synq",
+    "menu": "Menu",
+    "langAria": "Choisir la langue",
+    "links": {
+      "features": "Fonctionnalités",
+      "pricing": "Tarifs",
+      "docs": "Aide"
+    },
+    "cta": "Ajouter à Shopify"
+  },
+  "hero": {
+    "title": "Votre boutique de cartes, bien rodée.",
+    "subtitle": "Ajoutez vos cartes à l'unité et vos produits scellés sur Shopify d'une simple touche, photo et état compris. Vos prix suivent le marché TCGplayer chaque jour : vous ne les retouchez plus à la main.",
+    "cta": "Voir une carte passer en ligne",
+    "note": "Gratuit pour vos 100 premières cartes. Facturé via Shopify."
+  },
+  "footer": {
+    "tagline": "L'outil de gestion des boutiques de cartes à collectionner sur Shopify.",
+    "rights": "Tous droits réservés.",
+    "columns": {
+      "product": {
+        "title": "Produit",
+        "links": {
+          "features": "Fonctionnalités",
+          "pricing": "Tarifs",
+          "docs": "Aide"
+        }
+      },
+      "company": {
+        "title": "Entreprise",
+        "links": {
+          "about": "À propos",
+          "contact": "Contact",
+          "blog": "Blog"
+        }
+      },
+      "legal": {
+        "title": "Juridique",
+        "links": {
+          "terms": "Conditions d'utilisation",
+          "privacy": "Confidentialité",
+          "cookies": "Cookies",
+          "legal": "Mentions légales"
+        }
+      }
+    }
+  },
+  "landing": {
+    "chapters": {
+      "rail": {
+        "add": {
+          "title": "Le nouveau stock arrive"
+        },
+        "prices": {
+          "title": "Les prix bougent"
+        },
+        "counter": {
+          "title": "Au comptoir"
+        }
+      },
+      "add": {
+        "title": "Des cartes dans une boîte ne se vendent pas.",
+        "body": "Avec Synq, le nouveau stock passe de la boîte à votre boutique le jour même de son arrivée.",
+        "steps": {
+          "open": {
+            "title": "Vous ouvrez la boîte. Un Charizard ex est sur le dessus.",
+            "body": "Tapez son nom ou le numéro inscrit dans le coin. Synq affiche toutes ses versions, avec votre stock pour celles que vous vendez déjà.",
+            "short": "Trouvez-la",
+            "label": "Toutes les versions"
+          },
+          "tap": {
+            "title": "Touchez + sur celle que vous avez en main.",
+            "body": "Synq crée le produit Shopify avec sa photo et l'état choisi. Chaque ajout correspond à un état.",
+            "short": "Touchez +",
+            "label": "Un produit Shopify"
+          },
+          "sale": {
+            "title": "Elle est en vente avant même d'arriver en rayon.",
+            "body": "Vos clients la trouvent dans votre boutique, avec la photo, l'état et le prix déjà en place.",
+            "short": "En vente",
+            "label": "Dans votre boutique"
+          }
+        }
+      },
+      "prices": {
+        "title": "Les prix bougent. Les vôtres suivent.",
+        "body": "Écrivez une règle une fois pour toutes : le prix du marché plus votre marge, un minimum basé sur votre coût d'achat, et l'arrondi voulu. Synq l'exécute aux horaires que vous choisissez et met à jour les prix dans Shopify.",
+        "notes": {
+          "rule": {
+            "title": "Lancez-la maintenant, ou laissez-la tourner aux horaires prévus.",
+            "body": "La règle « Pokémon à l'unité » met à jour le prix de ses 9 produits chaque jour à 6 h : 5 % au-dessus du marché, jamais sous votre coût plus 20 %."
+          },
+          "activity": {
+            "title": "Chaque exécution est consignée dans Activity.",
+            "body": "L'heure de l'exécution, et combien de prix ont monté ou baissé. Vos prix dans Shopify sont déjà à jour."
+          }
+        }
+      },
+      "result": {
+        "title": "Des boutiques de cartes qui tournent avec Synq.",
+        "body": "Le nouveau stock en vente le jour de son arrivée, des prix qui suivent tout seuls et un comptoir aligné sur votre boutique en ligne. Voilà ce que nous en disent les boutiques.",
+        "week": {
+          "note": "Chiffres réels de Synq, relevés dans de vraies boutiques de cartes, octobre 2026",
+          "rows": [
+            {
+              "label": "cartes mises en vente sur Shopify avec Synq",
+              "value": 66000,
+              "suffix": "+"
+            },
+            {
+              "label": "prix comparés au marché, automatiquement",
+              "value": 2.2,
+              "decimals": 1,
+              "suffix": "M"
+            },
+            {
+              "label": "jeux dans la base Synq, de Magic et Pokémon à Riftbound",
+              "value": 19
+            }
+          ]
+        },
+        "quotes": [
+          {
+            "text": "Votre app est géniale. On l'adore et elle nous a beaucoup simplifié la vie en boutique. … on peut les scanner, obtenir le prix du marché actuel avec notre marge et ne plus jamais réétiqueter nos cartes à la main.",
+            "name": "",
+            "store": "Green Door Collectibles",
+            "source": "Extrait d'un e-mail à l'équipe Synq",
+            "logo": "/stores/greendoor.webp",
+            "tone": "light"
+          },
+          {
+            "text": "Ça nous a vraiment simplifié la gestion, et avoir tout à jour au prix du marché chaque jour nous donne une vraie longueur d'avance sur nos concurrents.",
+            "name": "Andrew",
+            "store": "Collection House Cafe",
+            "source": "Chicago · extrait d'un e-mail à l'équipe Synq",
+            "logo": "/stores/collection-house.webp",
+            "tone": "dark"
+          },
+          {
+            "text": "Cette app nous a beaucoup simplifié le travail. … ce que j'adore, c'est qu'ils la mettent à jour et l'améliorent en permanence.",
+            "name": "",
+            "store": "Mint Cards & Collectibles",
+            "source": "Avis sur le Shopify App Store · 6 mois d'utilisation de Synq",
+            "logo": "/stores/mint.webp",
+            "tone": "light"
+          },
+          {
+            "text": "Le programme est super et a rendu notre fonctionnement bien plus fluide. Les clients l'apprécient aussi.",
+            "name": "Jason",
+            "store": "Do Big Things Collectibles",
+            "source": "New Castle, DE · extrait d'un e-mail à l'équipe Synq",
+            "logo": "/stores/dbt.webp",
+            "tone": "light"
+          }
+        ],
+        "reviewsLink": "Lire les avis sur le Shopify App Store",
+        "cta": "Ajouter à Shopify"
+      }
+    },
+    "features": {
+      "pill": "Comment fonctionne Synq",
+      "title": "Et le reste de la boutique, au même endroit.",
+      "body": "Toutes vos cartes côte à côte, vos tableurs importés et chaque carte prête pour le comptoir. Le tout depuis votre admin Shopify.",
+      "link": "Voir comment ça marche",
+      "cards": {
+        "rules": {
+          "title": "Règles de prix",
+          "lead": "Des prix automatiques basés sur le marché TCGplayer.",
+          "body": "Réglez vos prix une fois : avant chaque exécution, la règle vous montre tous les prix qui vont changer.",
+          "alt": "Quatre règles de prix Synq avec leurs formules et leurs plannings, à côté de l'activité de leurs dernières exécutions"
+        },
+        "add": {
+          "title": "Ajouter des produits",
+          "lead": "Ajoutez des cartes depuis la base Synq.",
+          "body": "Synq crée le produit Shopify avec son image et une variante par état.",
+          "alt": "Recherche de Charizard ex dans la base Synq, avec les versions déjà en boutique affichées en premier"
+        },
+        "import": {
+          "title": "Import",
+          "lead": "Apportez votre tableur.",
+          "body": "Chaque ligne est associée à sa carte, et vous choisissez la version quand un nom en désigne plusieurs.",
+          "alt": "Vérification d'un import de tableur dans Synq : dix lignes prêtes et Lightning Bolt qui demande quelle version est en rayon"
+        },
+        "inventory": {
+          "title": "Inventaire",
+          "lead": "Toutes vos cartes, côte à côte.",
+          "body": "Prix du marché, votre prix, coût et marge. Modifiez plusieurs cartes d'un coup, ou fixez le prix d'une carte à la main pour qu'aucune règle n'y touche.",
+          "alt": "Inventaire Synq filtré sur Pokémon, avec prix du marché, prix affiché, coût et marge par carte"
+        },
+        "pos": {
+          "title": "Point de vente",
+          "lead": "Vendez au comptoir.",
+          "body": "Chaque carte et chaque état a son propre code-barres pour Shopify POS.",
+          "alt": "Réglages Point de vente de Synq : codes-barres pour les produits scellés et les cartes à l'unité"
+        }
+      }
+    },
+    "faq": {
+      "eyebrow": "Questions",
+      "title": "Ce que les boutiques demandent avant d'installer Synq.",
+      "body": "Des réponses claires sur les prix, les états, vos cartes existantes et le comptoir.",
+      "contact": {
+        "title": "Un doute ? Écrivez-nous.",
+        "body": "C'est le fondateur qui répond, en général le jour même."
+      },
+      "items": [
+        {
+          "q": "Synq remplace-t-il Shopify ?",
+          "a": "Non. Synq est une app dans votre admin Shopify. Votre boutique, votre thème, le paiement et les encaissements restent dans Shopify. Synq ajoute vos cartes, garde leurs prix à jour et les prépare pour le comptoir."
+        },
+        {
+          "q": "D'où viennent les prix ?",
+          "a": "Du prix du marché TCGplayer : une moyenne glissante des ventes récentes de chaque carte. Synq le récupère chaque jour, le convertit dans la devise de votre boutique, et vos règles de prix décident de ce que vous facturez."
+        },
+        {
+          "q": "Je ne suis pas aux États-Unis. Les prix conviennent-ils à mon marché ?",
+          "a": "Les prix viennent du marché américain sur TCGplayer et sont convertis chaque jour dans la devise de votre boutique. Si une carte se vend à un autre prix sur votre marché local, ajustez la marge de la règle pour ce jeu ou fixez le prix de la carte à la main."
+        },
+        {
+          "q": "Quels jeux sont pris en charge ?",
+          "a": "Magic: The Gathering, Pokémon (anglais et japonais), Yu-Gi-Oh!, One Piece, Lorcana, Riftbound, Digimon, Gundam, Union Arena, Weiss Schwarz, Star Wars Unlimited, Dragon Ball Super: Fusion World, Flesh and Blood, Sorcery, Grand Archive et d'autres. Si vous vendez un jeu présent sur TCGplayer qui manque ici, demandez-le avec « Request this game » dans l'import de tableur, ou écrivez-nous."
+        },
+        {
+          "q": "Comment fonctionnent les états ?",
+          "a": "Chaque état est une variante du produit Shopify de la carte. Quand vous ajoutez une carte, vous choisissez son état, et un exemplaire joué est un ajout de plus. Chaque état peut suivre son propre prix du marché TCGplayer."
+        },
+        {
+          "q": "Puis-je fixer mon propre prix sur une carte ?",
+          "a": "Oui. Fixez le prix d'une carte dans Synq et les règles de prix ne touchent plus à cet état. Un prix modifié dans l'admin Shopify n'est pas protégé : la prochaine exécution de la règle le remplace, sauf si vous excluez cet état. Une règle peut aussi avoir un minimum basé sur votre coût, pour qu'aucune carte ne soit vendue en dessous."
+        },
+        {
+          "q": "Puis-je importer les cartes que je vends déjà ?",
+          "a": "Oui. Exportez votre inventaire depuis TCGplayer, ou enregistrez n'importe quel tableur en CSV, TSV ou TXT, et importez-le. Synq associe chaque ligne à sa carte et crée ce qui est nouveau, sans doublons. Pour ce que vous vendez déjà, vous choisissez : ajouter le stock du fichier, le remplacer ou ne rien changer (un export TCGplayer remplace le stock par défaut). Quand un nom correspond à plusieurs versions, vous choisissez celle qui est en rayon."
+        },
+        {
+          "q": "Synq met-il à jour ma boutique TCGplayer ?",
+          "a": "Non. TCGplayer n'ouvre pas son API aux apps comme Synq : Synq ne peut donc ni y mettre de cartes en vente ni y modifier le stock. Synq garde votre boutique Shopify à jour, en ligne comme au comptoir."
+        },
+        {
+          "q": "Puis-je vendre au comptoir ?",
+          "a": "Oui, avec Shopify POS. Les produits scellés utilisent le code-barres imprimé sur la boîte, et chaque carte à l'unité a son propre code pour chaque état. Imprimez les étiquettes avec l'app gratuite Retail Barcode Labels de Shopify : un scan encaisse la carte exacte dans le bon état, et le stock en ligne est mis à jour aussi."
+        },
+        {
+          "q": "Que se passe-t-il après l'essai gratuit ?",
+          "a": "Les forfaits payants commencent par 7 jours gratuits. Si vous ne choisissez pas de forfait, votre compte passe au forfait Free, jusqu'à 100 cartes. Rien n'est supprimé et votre boutique Shopify continue de tourner. La facturation passe par votre facture Shopify, et vous pouvez résilier à tout moment."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Arrêtez d'ouvrir vos produits un par un.",
+      "body": "Installez Synq depuis le Shopify App Store et laissez la gestion courante tourner toute seule.",
+      "primary": "Ajouter à Shopify",
+      "secondary": "Nous contacter"
+    },
+    "pricing": {
+      "label": "Tarifs",
+      "title": "Choisissez la formule à la taille de votre boutique.",
+      "subtitle": "Les forfaits dépendent du nombre de cartes que vous vendez. Chaque forfait payant commence par 7 jours d'essai gratuit, et le forfait Free reste gratuit.",
+      "slider": {
+        "label": "Combien de cartes vendez-vous ?",
+        "unit": "cartes",
+        "fit": "<plan></plan> convient à une boutique de votre taille."
+      },
+      "fits": "Adapté à votre boutique",
+      "upTo": "Jusqu'à {n} cartes",
+      "perMonth": "/mois",
+      "orYearly": "ou ${total}/an, 33 % d'économie",
+      "billedYearly": "${total} facturés par an",
+      "cta": "Commencer l'essai gratuit",
+      "ctaFree": "Installer gratuitement",
+      "billing": {
+        "monthly": "Mensuel",
+        "yearly": "Annuel",
+        "save": "33 % d'économie"
+      },
+      "plans": {
+        "free": {
+          "name": "Free"
+        },
+        "starter": {
+          "name": "Starter"
+        },
+        "pro": {
+          "name": "Pro"
+        },
+        "scale": {
+          "name": "Scale"
+        }
+      },
+      "perCard": "{c} cents par carte et par mois",
+      "free": {
+        "line": "<b>Moins de 100 cartes ?</b> Synq est gratuit, pour toujours.",
+        "same": "Les mêmes fonctionnalités, jusqu'à 100 cartes."
+      },
+      "trust": [
+        "7 jours gratuits sur chaque forfait payant",
+        "Résiliable à tout moment depuis votre admin Shopify",
+        "Facturé en USD sur votre facture Shopify"
+      ],
+      "proof": {
+        "quote": "Cette app nous a beaucoup simplifié le travail.",
+        "store": "Mint Cards & Collectibles",
+        "source": "Avis sur le Shopify App Store · 6 mois d'utilisation de Synq"
+      },
+      "includes": {
+        "title": "Chaque forfait inclut tout. Vous choisissez seulement le nombre de cartes.",
+        "items": [
+          "Prix du marché TCGplayer, par état",
+          "Règles de prix aux horaires de votre choix",
+          "Tous les jeux, cartes à l'unité et produits scellés",
+          "Modifications en masse dans Inventory",
+          "Import depuis un tableur ou TCGplayer",
+          "Codes-barres pour Shopify POS"
+        ]
+      }
+    },
+    "getStarted": {
+      "label": "Bien démarrer",
+      "title": "Des guides pour lancer votre boutique rapidement.",
+      "subtitle": "Des tutoriels courts et ciblés pour ce que vous ferez pendant votre première semaine avec Synq.",
+      "cta": "Parcourir le centre d'aide",
+      "guides": {
+        "install": {
+          "category": "Premiers pas",
+          "title": "Installer Synq",
+          "body": "Installez Synq depuis le Shopify App Store, choisissez vos jeux et créez votre première règle de prix."
+        },
+        "firstCards": {
+          "category": "Ajouter du stock",
+          "title": "Ajouter des cartes et des produits scellés",
+          "body": "Cherchez, touchez, et la carte est en boutique avec sa photo et son état."
+        },
+        "rules": {
+          "category": "Prix",
+          "title": "Créer une règle de prix",
+          "body": "Suivez le marché par jeu, extension, version et état, avec un minimum."
+        },
+        "bulk": {
+          "category": "Inventaire",
+          "title": "Modifier plusieurs produits à la fois",
+          "body": "Changez le stock, le coût, les états et les exceptions de nombreux produits d'un coup."
+        },
+        "variants": {
+          "category": "Ajouter du stock",
+          "title": "États et versions",
+          "body": "Chaque version est un produit, chaque état une variante avec son prix et son stock."
+        },
+        "marketPrices": {
+          "category": "Prix",
+          "title": "Comment fonctionnent les prix du marché",
+          "body": "D'où viennent les prix, par état, et leur conversion dans votre devise."
+        }
+      }
+    },
+    "newTab": "s'ouvre dans un nouvel onglet"
+  },
+  "docs": {
+    "meta": {
+      "title": "Centre d'aide · Synq",
+      "description": "Les guides de Synq sur Shopify : installation, ajout de cartes et de produits scellés, prix par règles, gestion du stock et forfaits."
+    },
+    "hero": {
+      "eyebrow": "Centre d'aide",
+      "title": "Des guides pour faire tourner votre boutique avec Synq.",
+      "subtitle": "Ajoutez vos cartes, tarifez-les avec des règles et gardez votre boutique Shopify à jour.",
+      "searchPlaceholder": "Rechercher un guide, par ex. « règle de prix »",
+      "contact": "Écrire à help@synq.cards",
+      "noResults": "Aucun article ne correspond à cette recherche. Essayez d'autres mots ou écrivez-nous."
+    },
+    "categories": {
+      "start": {
+        "title": "Premiers pas",
+        "body": "Installez Synq, choisissez vos jeux et enregistrez votre première règle de prix.",
+        "articles": [
+          "install",
+          "setup",
+          "pick-games"
+        ]
+      },
+      "stock": {
+        "title": "Ajouter du stock",
+        "body": "Ajoutez des cartes et des produits scellés, liez ce que vous vendez déjà ou importez un tableur.",
+        "articles": [
+          "add-cards",
+          "conditions-printings",
+          "link-products",
+          "import"
+        ]
+      },
+      "prices": {
+        "title": "Prix",
+        "body": "Suivez les prix du marché TCGplayer avec des règles, des planifications et des exceptions.",
+        "articles": [
+          "market-prices",
+          "price-rules",
+          "run-and-schedule",
+          "minimums-rounding",
+          "exceptions",
+          "which-rule-wins"
+        ]
+      },
+      "inventory": {
+        "title": "Inventaire",
+        "body": "Retrouvez vos produits, modifiez-en plusieurs à la fois et suivez votre marge.",
+        "articles": [
+          "find-products",
+          "bulk-edit",
+          "cost-margin"
+        ]
+      },
+      "shopify": {
+        "title": "Shopify",
+        "body": "Ce que Synq écrit dans votre boutique et ce qui reste synchronisé.",
+        "articles": [
+          "what-synq-creates",
+          "templates",
+          "sync",
+          "pos",
+          "uninstall"
+        ]
+      },
+      "billing": {
+        "title": "Forfaits et facturation",
+        "body": "Forfaits, limites de produits et facturation via Shopify.",
+        "articles": [
+          "plans",
+          "billing",
+          "help"
+        ]
+      }
+    },
+    "articlesLabel": "articles",
+    "support": {
+      "eyebrow": "Besoin d'aide ?",
+      "title": "Écrivez-nous. C'est le fondateur qui répond, en général le jour même.",
+      "body": "Envoyez un message avec Feedback sur Home, ou écrivez-nous si votre question n'est pas traitée ici.",
+      "primary": "Écrire à help@synq.cards",
+      "secondary": "Ajouter à Shopify"
+    },
+    "article": {
+      "home": "Centre d'aide",
+      "updated": "Mis à jour en octobre 2026",
+      "tocLabel": "Sur cette page",
+      "prev": "Précédent",
+      "next": "Suivant",
+      "feedback": {
+        "question": "Ce guide vous a-t-il été utile ?",
+        "yes": "Oui",
+        "no": "Non, j'ai besoin d'aide",
+        "thanks": "Merci pour votre retour.",
+        "sorry": "Merci. Écrivez à help@synq.cards et nous vous aiderons."
+      }
+    },
+    "articles": {
+      "install": {
+        "meta": {
+          "title": "Installer Synq · Centre d'aide Synq",
+          "description": "Installez Synq depuis le Shopify App Store. Elle s'ouvre dans votre admin Shopify et ne change rien à la boutique avant que vous ajoutiez ou liiez un produit."
+        },
+        "category": "start",
+        "title": "Installer Synq",
+        "intro": "Installez Synq depuis le Shopify App Store. L'app s'ouvre dans votre admin Shopify et ne modifie rien dans votre boutique tant que vous n'ajoutez ou ne liez aucun produit.",
+        "readTime": "2 min de lecture",
+        "sections": [
+          {
+            "id": "install",
+            "title": "Installer depuis le Shopify App Store",
+            "steps": [
+              "Ouvrez la [page de Synq sur le Shopify App Store](https://apps.shopify.com/synq-tcg-card-manager).",
+              "Cliquez sur Installer et choisissez la boutique concernée.",
+              "Vérifiez les accès affichés par Shopify et approuvez-les.",
+              "Synq s'ouvre dans votre admin Shopify, sur **Set up synq**."
+            ]
+          },
+          {
+            "id": "access",
+            "title": "Ce que Synq peut voir et modifier",
+            "paragraphs": [
+              "Shopify vous demande d'approuver ces accès au moment de l'installation."
+            ],
+            "list": [
+              "**Produits** : produits, variantes, prix, images, SKU, codes-barres, collections et coût par article (Cost per item).",
+              "**Stock** : les quantités dans chacun de vos emplacements.",
+              "**Canaux de vente** : les canaux sur lesquels un produit est publié.",
+              "**Thème** : les modèles de produit de votre thème, en lecture seule."
+            ],
+            "note": {
+              "title": "Ni commandes ni clients",
+              "body": "Synq n'a accès ni à vos commandes, ni à vos clients, ni à vos paiements. Aucune donnée client n'est conservée."
+            }
+          },
+          {
+            "id": "first-run",
+            "title": "Ce que vous voyez en premier",
+            "paragraphs": [
+              "Synq s'ouvre sur **Set up synq** et y reste tant que vous n'avez pas choisi au moins un jeu que vous vendez.",
+              "Ensuite, le menu de gauche affiche **Home**, **Add products**, **Inventory**, **Price rules** et **Settings**.",
+              "Rien n'est copié depuis votre boutique à l'installation. Les produits que vous vendez déjà restent tels quels jusqu'à ce que vous les liiez."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "Bon à savoir",
+            "list": [
+              "**Vos produits ne risquent rien.** L'installation ne crée, ne modifie et ne supprime rien dans Shopify.",
+              "**Étape suivante** : [la configuration](/docs/setup) prend deux minutes et crée votre première règle de prix."
+            ]
+          }
+        ]
+      },
+      "setup": {
+        "meta": {
+          "title": "Configuration : vos jeux et votre première règle de prix · Centre d'aide Synq",
+          "description": "La configuration vous demande quels jeux vous vendez, comment fixer vos prix et où sont vos cartes aujourd'hui. Elle enregistre votre première règle de prix."
+        },
+        "category": "start",
+        "title": "La configuration : vos jeux et votre première règle de prix",
+        "intro": "La configuration vous demande quels jeux vous vendez, comment vous voulez fixer vos prix et où se trouvent vos cartes aujourd'hui. Elle enregistre votre première règle de prix pour vous.",
+        "readTime": "3 min de lecture",
+        "sections": [
+          {
+            "id": "steps",
+            "title": "La configuration, étape par étape",
+            "paragraphs": [
+              "La page s'appelle **Set up synq** et affiche « Step N of M » en haut. Appuyez sur Entrée ou cliquez sur **Continue** pour avancer.",
+              "Certaines boutiques voient une configuration plus courte, sans les étapes de prix et de publication. Dans ce cas, votre première règle part du prix du marché, et vous pourrez la modifier plus tard dans **Price rules**."
+            ],
+            "steps": [
+              "**Which games do you sell?** Cochez chaque jeu que vous vendez. Ceux que votre boutique vend déjà sont cochés d'office. Il en faut au moins un.",
+              "**Set your prices.** Placez votre prix par rapport au prix du marché TCGplayer, de 10 % en dessous à 10 % au-dessus. Choisissez ensuite comment chaque état est tarifé.",
+              "**What happens when you add a card?** Choisissez **Save it as a draft** ou **Put it on sale right away**, puis cochez les canaux de vente sous **Sell it on**.",
+              "**Where are your cards today?** Choisissez **Link my products**, **Import my file** ou **Add my first cards**.",
+              "**You're set up.** Vérifiez le récapitulatif. Cliquez sur **Change** sur une ligne pour y revenir."
+            ]
+          },
+          {
+            "id": "prices",
+            "title": "L'étape des prix",
+            "paragraphs": [
+              "**Your price** fixe votre position par rapport au prix du marché TCGplayer : -10 %, -5 %, **Market**, +5 % ou +10 %.",
+              "**Each condition** détermine le prix des cartes jouées :"
+            ],
+            "list": [
+              "**Its own TCGplayer price** : chaque état suit son propre prix du marché. C'est l'option par défaut.",
+              "**Standard** : LP à -10 % du Near Mint, MP à -25 %, HP à -40 %, DMG à -60 %.",
+              "**A little less** : LP à -5 %, MP à -15 %, HP à -25 %, DMG à -40 %.",
+              "**Same as Near Mint** : tous les états au prix du Near Mint."
+            ]
+          },
+          {
+            "id": "minimum",
+            "title": "Minimum et arrondi",
+            "paragraphs": [
+              "Ouvrez **Minimum and rounding** sous l'étape des prix pour régler deux paramètres de plus.",
+              "Une carte d'exemple affiche le prix du marché et votre prix pour chaque état : vous voyez l'effet avant de continuer."
+            ],
+            "list": [
+              "**Never below** : pas de minimum, ou environ 0,25 $, 0,50 $ ou 1 $, convertis dans la devise de votre boutique.",
+              "**Rounding** : Exact, Up to .99, Up to .49 ou Nearest whole."
+            ]
+          },
+          {
+            "id": "what-it-saves",
+            "title": "Ce que la configuration enregistre",
+            "list": [
+              "**Vos jeux.** La recherche dans **Add products** les affiche en premier.",
+              "**Brouillon ou en vente,** ainsi que les canaux de vente des nouveaux produits.",
+              "**Une règle de prix nommée « All products ».** Elle couvre tous les jeux, fixe le prix des nouveaux produits dès leur ajout et met à jour les prix de votre inventaire chaque jour à 6 h, dans le fuseau horaire de votre boutique."
+            ],
+            "note": {
+              "title": "Une seule première règle",
+              "body": "La configuration ne crée la règle « All products » que si votre boutique n'a encore aucune règle de prix."
+            }
+          },
+          {
+            "id": "home",
+            "title": "Après la configuration : Home",
+            "paragraphs": [
+              "**Home** affiche un guide nommé **Get your store ready**, une étape à la fois. Vous pouvez le masquer, et il disparaît une fois les étapes obligatoires terminées."
+            ],
+            "steps": [
+              "**Add your first 10 cards.** Cherchez directement dans l'étape, ou cliquez sur **Add cards**.",
+              "**See a card on your store** (facultatif). **Change how cards read** ouvre **Settings** › **Online Store**.",
+              "**Put your cards in collections.** **Pick collections** ouvre **Settings** › **What you sell**.",
+              "**Check your first price update.** **See price updates** ouvre **Price rules**. Cette étape est validée après la première exécution d'une règle.",
+              "**Sell in your physical store with Shopify POS** (facultatif). Affichée seulement si Shopify POS est installé."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "Bon à savoir",
+            "list": [
+              "**Les brouillons sont la règle par défaut.** Personne ne voit un brouillon tant que vous ne l'avez pas publié dans Shopify.",
+              "**Tout reste modifiable.** Les jeux se trouvent dans **Settings** › **What you sell**, les prix dans **Price rules**.",
+              "**Votre première mise à jour des prix** a lieu au prochain 6 h, ou tout de suite si vous exécutez la règle vous-même. Voir [Prévisualiser, exécuter et planifier une règle](/docs/run-and-schedule)."
+            ]
+          }
+        ]
+      },
+      "pick-games": {
+        "meta": {
+          "title": "Choisir vos jeux et vos collections · Centre d'aide Synq",
+          "description": "Vos jeux décident de ce que la recherche affiche en premier et des collections où arrivent les nouvelles cartes. Choisir un jeu n'ajoute rien à la boutique."
+        },
+        "category": "start",
+        "title": "Choisir vos jeux et vos collections",
+        "intro": "Vos jeux déterminent ce que la recherche affiche en premier et dans quelles collections arrivent les nouvelles cartes. Choisir un jeu n'ajoute rien à votre boutique.",
+        "readTime": "2 min de lecture",
+        "sections": [
+          {
+            "id": "where",
+            "title": "Où modifier vos jeux",
+            "steps": [
+              "Ouvrez **Settings** › **Configure what you sell**. La page s'appelle **What you sell**.",
+              "Cochez chaque jeu que vous vendez. Au moins un jeu reste coché.",
+              "Pour chaque jeu, choisissez une **Singles collection** et une **Sealed collection**, ou **No collection**."
+            ],
+            "paragraphs": [
+              "Dans **Add products**, l'icône d'engrenage à côté des icônes de jeux ouvre la même page."
+            ]
+          },
+          {
+            "id": "games",
+            "title": "Les jeux que vous pouvez vendre",
+            "paragraphs": [
+              "Synq propose 19 jeux, dans cet ordre lors de la configuration :"
+            ],
+            "list": [
+              "Magic: The Gathering",
+              "Disney Lorcana",
+              "Pokémon",
+              "Pokémon TCG Japan",
+              "One Piece",
+              "Flesh and Blood",
+              "Riftbound",
+              "Sorcery: Contested Realm",
+              "Digimon",
+              "Yu-Gi-Oh!",
+              "Gundam Card Game",
+              "Union Arena",
+              "UniVersus",
+              "Grand Archive",
+              "Final Fantasy TCG",
+              "Weiss Schwarz",
+              "Star Wars Unlimited",
+              "Elestrals",
+              "Dragon Ball Super: Fusion World"
+            ]
+          },
+          {
+            "id": "collections",
+            "title": "Comment fonctionnent les collections",
+            "paragraphs": [
+              "Une nouvelle carte à l'unité va dans la collection des cartes à l'unité de son jeu. Un nouveau produit scellé va dans la collection des produits scellés.",
+              "L'étape **Put your cards in collections** de Home est validée quand chaque jeu que vous vendez a une collection.",
+              "Pour ajouter des produits existants à une collection, passez par **Inventory** › sélection des produits › ⋯ › **Add to collection(s)**."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "Bon à savoir",
+            "list": [
+              "**Activer un jeu n'importe rien.** Cela vous permet seulement d'en ajouter des cartes.",
+              "**Les jeux n'ont pas de réglages d'état propres.** Les états sont les mêmes pour tous les jeux. Voir [États et versions](/docs/conditions-printings).",
+              "**Un jeu manque.** Demandez-le avec **Request this game** dans l'import de tableur, ou avec **Feedback** sur Home."
+            ]
+          }
+        ]
+      },
+      "add-cards": {
+        "meta": {
+          "title": "Ajouter des cartes et des produits scellés · Centre d'aide Synq",
+          "description": "Cherchez une carte ou un produit scellé dans Add products, choisissez la version et l'état, et Synq crée le produit Shopify avec son prix."
+        },
+        "category": "stock",
+        "title": "Ajouter des cartes et des produits scellés",
+        "intro": "Cherchez une carte ou un produit scellé dans **Add products**, choisissez la version et l'état, et Synq crée le produit Shopify avec son prix.",
+        "readTime": "2 min de lecture",
+        "sections": [
+          {
+            "id": "search",
+            "title": "Rechercher",
+            "paragraphs": [
+              "Les résultats s'affichent pendant la saisie. Une recherche demande au moins 2 caractères.",
+              "Cherchez par nom ou par numéro de carte. Les icônes au-dessus des résultats limitent la recherche à un jeu, ou à **All**.",
+              "Quand la recherche est vide, la page affiche **Sets you added from recently** et **Recently added**."
+            ]
+          },
+          {
+            "id": "sets",
+            "title": "Chercher dans une extension avec @",
+            "list": [
+              "**@ seul** affiche les dernières extensions.",
+              "**@ suivi d'un code ou d'un nom,** comme `@paf` ou `@paldean fates`, propose des extensions. Entrée ou Tab sélectionne la première.",
+              "**L'extension choisie** apparaît sous forme de pastille. Avec une recherche vide, vous voyez toute l'extension dans l'ordre.",
+              "**Pour retirer une extension,** cliquez sur le × de la pastille ou appuyez sur Retour arrière."
+            ]
+          },
+          {
+            "id": "results",
+            "title": "Lire les résultats",
+            "paragraphs": [
+              "Les cartes déjà présentes dans votre boutique apparaissent d'abord, sous **In your store**. Tout le reste figure sous **More results**, 50 par page.",
+              "Chaque carte a une ligne par version, avec son prix du marché dans votre devise et votre stock.",
+              "Cliquez sur la ligne d'une version pour l'ajouter."
+            ]
+          },
+          {
+            "id": "add",
+            "title": "Ajouter une carte",
+            "steps": [
+              "Choisissez l'**état**. Chaque bouton d'état affiche son prix. Les produits scellés sont toujours Unopened.",
+              "Choisissez la **version** et l'**emplacement**, si la carte ou votre boutique en a plusieurs.",
+              "Indiquez la **quantité**.",
+              "Vérifiez le prix. La pastille à côté indique quelle règle ou exception le fixe.",
+              "Vérifiez le statut en bas de la fenêtre : **Creating as Draft** ou **Active**. Cliquez dessus pour changer.",
+              "Cliquez sur **Add to store**, ou appuyez sur Entrée."
+            ],
+            "paragraphs": [
+              "Vous ajoutez un état à la fois. Pour mettre en stock un exemplaire Near Mint et un Lightly Played, ajoutez la carte deux fois."
+            ]
+          },
+          {
+            "id": "restock",
+            "title": "Ajouter des exemplaires d'une carte que vous avez déjà",
+            "paragraphs": [
+              "Quand la version est déjà dans votre boutique, la quantité s'ajoute à cet état, dans cet emplacement. Le message « Stock updated » s'affiche.",
+              "Un état que vous n'aviez pas encore devient une nouvelle variante du même produit.",
+              "Ajouter du stock conserve le prix actuel de la carte. La prochaine exécution de sa règle le met à jour."
+            ]
+          },
+          {
+            "id": "more",
+            "title": "Autres options avant l'ajout",
+            "list": [
+              "**Pricing configuration** : voyez la règle qui fixe le prix de la carte, créez une exception et indiquez ce que vous l'avez payée. Voir [Exceptions](/docs/exceptions) et [Coût et marge](/docs/cost-margin).",
+              "**Titre et collection** d'un nouveau produit, ainsi que son titre et sa description pour les moteurs de recherche.",
+              "**Point of Sale** : le SKU et le code-barres, affichés si Shopify POS est installé.",
+              "**Photo** : la photo de la version ou l'image de la carte."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "Bon à savoir",
+            "list": [
+              "**Pas de prix du marché.** Si TCGplayer n'a pas de prix pour cet état, saisissez **Your price** pour l'ajouter.",
+              "**Vos propres photos** ne peuvent pas être envoyées depuis Synq. Ajoutez-les au produit dans Shopify.",
+              "**Limite du forfait.** Une fois la limite de produits de votre forfait atteinte, l'ajout est refusé. Voir [Forfaits et limites de produits](/docs/plans).",
+              "**Beaucoup de cartes d'un coup.** Utilisez [Importer un tableur](/docs/import)."
+            ]
+          }
+        ]
+      },
+      "conditions-printings": {
+        "meta": {
+          "title": "États et versions · Centre d'aide Synq",
+          "description": "Chaque version d'une carte est un produit Shopify à part entière. Chaque état est une variante de ce produit, avec son propre prix et son propre stock."
+        },
+        "category": "stock",
+        "title": "États et versions",
+        "intro": "Chaque version d'une carte est un produit Shopify à part entière. Chaque état est une variante de ce produit, avec son propre prix et son propre stock.",
+        "readTime": "2 min de lecture",
+        "sections": [
+          {
+            "id": "how",
+            "title": "Comment une carte devient un produit",
+            "list": [
+              "**Un produit par carte et par version.** Un exemplaire Normal et un exemplaire Foil de la même carte font deux produits.",
+              "**Une variante par état.** Les variantes sont regroupées sous une option nommée « Condition ».",
+              "**Du stock par état et par emplacement.** Chaque variante suit sa propre quantité."
+            ]
+          },
+          {
+            "id": "conditions",
+            "title": "Les états",
+            "table": {
+              "head": [
+                "Code",
+                "État"
+              ],
+              "rows": [
+                [
+                  "NM",
+                  "Near Mint"
+                ],
+                [
+                  "LP",
+                  "Lightly Played"
+                ],
+                [
+                  "MP",
+                  "Moderately Played"
+                ],
+                [
+                  "HP",
+                  "Heavily Played"
+                ],
+                [
+                  "DMG",
+                  "Damaged"
+                ]
+              ]
+            },
+            "paragraphs": [
+              "Les produits scellés n'ont qu'un état : Unopened.",
+              "Les états sont les mêmes pour tous les jeux."
+            ]
+          },
+          {
+            "id": "names",
+            "title": "Comment les noms d'état s'affichent dans votre boutique",
+            "steps": [
+              "Ouvrez **Settings** › **Online Store** › **Condition variants**.",
+              "Sous **Condition names**, choisissez les noms complets (Near Mint) ou les abréviations (NM)."
+            ],
+            "note": {
+              "title": "Nouveaux produits uniquement",
+              "body": "Ce choix s'applique aux produits que vous ajoutez à partir de ce moment. Les produits existants gardent leurs noms de variantes."
+            }
+          },
+          {
+            "id": "printings",
+            "title": "Les versions",
+            "paragraphs": [
+              "Les versions viennent de TCGplayer : Normal, Foil, Holofoil, 1st Edition, Reverse Holofoil et d'autres.",
+              "Chaque version a son propre prix du marché : une Foil a donc son propre prix."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "Bon à savoir",
+            "list": [
+              "**Pokémon TCG Japan** est un jeu à part. Activez-le dans **Settings** › **What you sell**.",
+              "**Retirer un état** supprime la variante correspondante dans Shopify. Faites-le dans **Inventory**, avec le panneau **Conditions**.",
+              "**Les états joués sans prix du marché** utilisent le pourcentage sous Near Mint défini dans la règle. Voir [Créer une règle de prix](/docs/price-rules)."
+            ]
+          }
+        ]
+      },
+      "link-products": {
+        "meta": {
+          "title": "Lier les produits que vous avez déjà · Centre d'aide Synq",
+          "description": "Liez à sa carte un produit déjà présent dans votre boutique Shopify. Synq conserve le produit et prend en charge son prix et son stock."
+        },
+        "category": "stock",
+        "title": "Lier les produits que vous avez déjà",
+        "intro": "Liez à sa carte un produit déjà présent dans votre boutique Shopify. Synq conserve le produit et prend en charge son prix et son stock.",
+        "readTime": "2 min de lecture",
+        "sections": [
+          {
+            "id": "open",
+            "title": "Par où commencer",
+            "paragraphs": [
+              "Dans **Add products**, ouvrez **Import** › **Link from Shopify**. Pendant la configuration, choisissez **Link my products**."
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Lier un produit",
+            "steps": [
+              "**Link from Shopify** liste les produits de votre boutique qui ne sont pas encore liés, du plus récent au plus ancien. Cherchez avec **Search your store's products**, puis cliquez sur un produit.",
+              "**Which card is it?** La recherche est préremplie avec le titre du produit. Choisissez la carte.",
+              "**Add to synq.** Choisissez la version, puis attribuez un état à chaque variante.",
+              "Cliquez sur **Add to synq**."
+            ]
+          },
+          {
+            "id": "matching",
+            "title": "Ce que Synq remplit pour vous",
+            "list": [
+              "**SKU de 1 à 9 chiffres** : lu comme un SKU TCGplayer, la carte est donc trouvée pour vous.",
+              "**Code-barres ou SKU de 10 à 14 chiffres** : lu comme l'UPC ou l'EAN du produit.",
+              "**États** : déduits du SKU ou du nom de la variante. Des mentions comme « NM-M », « Light Play » ou « Excellent » sont reconnues.",
+              "**Une carte d'un jeu que vous ne vendez pas** : Synq propose **Enable** pour ce jeu."
+            ]
+          },
+          {
+            "id": "after",
+            "title": "Ce qui se passe après la liaison",
+            "list": [
+              "**Rien ne change dans Shopify au moment de la liaison.** Le titre et la description restent tels quels.",
+              "**Le coût** est repris du coût par article (Cost per item) de Shopify.",
+              "**Le prix** suit la règle de prix du produit à partir de sa prochaine exécution.",
+              "**Le stock** reste synchronisé à partir de là."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "Bon à savoir",
+            "list": [
+              "**Un produit à la fois.** La liaison en masse n'existe pas encore.",
+              "**Vérifiez d'abord la règle.** Ouvrez l'aperçu de la règle dans **Price rules** pour voir le nouveau prix avant l'exécution.",
+              "**Tout est lié.** Quand tous les produits sont liés, la liste affiche « Everything is in synq »."
+            ]
+          }
+        ]
+      },
+      "import": {
+        "meta": {
+          "title": "Importer un tableur · Centre d'aide Synq",
+          "description": "Importez un CSV exporté de TCGplayer ou votre propre tableur. Synq associe chaque ligne à sa carte, crée ce qui est nouveau et met à jour le stock existant."
+        },
+        "category": "stock",
+        "title": "Importer un tableur",
+        "intro": "Importez un CSV exporté de TCGplayer ou votre propre tableur. Synq associe chaque ligne à sa carte, crée ce qui est nouveau et ajoute du stock à ce que vous avez déjà.",
+        "readTime": "2 min de lecture",
+        "sections": [
+          {
+            "id": "open",
+            "title": "Par où commencer",
+            "paragraphs": [
+              "Dans **Add products**, ouvrez **Import** › **From TCGplayer** ou **From a spreadsheet**. Pendant la configuration, choisissez **Import my file**.",
+              "La page s'appelle **Import a spreadsheet** et compte quatre étapes : **Spreadsheet**, **Columns**, **Review** et **Import**."
+            ]
+          },
+          {
+            "id": "file",
+            "title": "Votre fichier",
+            "list": [
+              "**CSV, TSV ou TXT.** Les fichiers Excel et Numbers sont refusés. Dans Excel, utilisez Fichier › Enregistrer sous › CSV.",
+              "**N'importe quel séparateur.** Tabulations, points-virgules et virgules sont détectés automatiquement, tout comme l'encodage du texte.",
+              "**Des lignes de titre** au-dessus de l'en-tête ne posent aucun problème.",
+              "**Chaque ligne doit contenir** un nom de produit, un code-barres ou un identifiant TCGplayer.",
+              "**Download a template** vous fournit un CSV avec les colonnes prêtes."
+            ]
+          },
+          {
+            "id": "columns",
+            "title": "Les colonnes",
+            "paragraphs": [
+              "Synq lit les en-têtes en anglais et en espagnol. Vérifiez chacun à l'étape **Columns**, ou réglez-le sur **Don't import**.",
+              "Colonnes reconnues : Product name, TCGplayer ID, TCGplayer SKU, Barcode, Game, Set, Card number, Printing, Condition, Quantity, Location, Price, Cost et Status.",
+              "Quand une colonne manque, chaque ligne reçoit une quantité de 1, votre premier emplacement, votre état par défaut et le prix du marché."
+            ]
+          },
+          {
+            "id": "tcgplayer",
+            "title": "Les exports TCGplayer",
+            "paragraphs": [
+              "Un export d'inventaire TCGplayer est reconnu automatiquement. Ses lignes contiennent le SKU exact : carte, version et état sont donc exacts.",
+              "Il passe en général directement à **Review**. Par défaut, son stock remplace celui que vous avez."
+            ]
+          },
+          {
+            "id": "review",
+            "title": "La vérification",
+            "paragraphs": [
+              "Synq associe les lignes d'abord par SKU TCGplayer, puis par identifiant TCGplayer, code-barres, nom exact et nom approchant.",
+              "Les onglets affichent **All**, **New**, **In your store** et **To answer**.",
+              "Une ligne qui correspond à plusieurs produits affiche « {n} products fit ». Choisissez celui qui est en rayon. Une ligne sans correspondance peut être recherchée ou écartée."
+            ]
+          },
+          {
+            "id": "options",
+            "title": "Options d'import",
+            "list": [
+              "**Produits que vous vendez déjà** : **Add the sheet's stock**, **Make the sheet's stock their stock** ou **Leave them as they are**.",
+              "**Prix des nouveaux produits** : **Your price rules** (par défaut) ou **The price in your sheet**.",
+              "**Statut de départ des nouveaux produits** : celui indiqué dans votre tableur, Draft ou Active.",
+              "**Les canaux** des nouveaux produits.",
+              "**Save the barcodes from your sheet** pour enregistrer sur les produits les codes-barres de votre tableur."
+            ]
+          },
+          {
+            "id": "run",
+            "title": "Lancer l'import",
+            "paragraphs": [
+              "L'import tourne en arrière-plan : vous pouvez quitter la page.",
+              "Une fois terminé, les lignes écartées se téléchargent dans un CSV, avec le motif sur chaque ligne. Les imports passés se trouvent sous **Sheets you imported**."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "Bon à savoir",
+            "list": [
+              "**5 000 produits par import.** Découpez un fichier plus volumineux.",
+              "**Limite du forfait.** Les nouveaux produits au-delà de la limite de votre forfait ne sont pas créés. Le stock des produits que vous avez déjà est quand même ajouté.",
+              "**Un jeu n'est pas dans Synq.** Utilisez **Request this game** dans l'import.",
+              "**Pas d'export.** Synq ne permet pas de télécharger votre stock sous forme de fichier."
+            ]
+          }
+        ]
+      },
+      "market-prices": {
+        "meta": {
+          "title": "Comment fonctionnent les prix du marché · Centre d'aide Synq",
+          "description": "Chaque prix dans Synq part du prix du marché TCGplayer pour la carte, la version et l'état. Vos règles de prix en font votre prix de vente."
+        },
+        "category": "prices",
+        "title": "Comment fonctionnent les prix du marché",
+        "intro": "Chaque prix dans Synq part du prix du marché TCGplayer pour la carte, la version et l'état. Vos règles de prix en font votre prix de vente.",
+        "readTime": "2 min de lecture",
+        "sections": [
+          {
+            "id": "source",
+            "title": "D'où vient le prix",
+            "list": [
+              "**Le prix du marché TCGplayer,** en dollars américains.",
+              "**Par état.** Chaque état a son propre prix du marché.",
+              "**Solution de repli.** Si le Near Mint ou un produit scellé n'a pas de prix propre, le prix du marché de la version est utilisé.",
+              "**Mis à jour une fois par jour.** C'est le rythme auquel le marché évolue sur TCGplayer."
+            ],
+            "paragraphs": [
+              "Dans **Inventory**, survolez le prix **Market** pour voir les prix Market, Low, Mid et High de TCGplayer."
+            ]
+          },
+          {
+            "id": "when",
+            "title": "Quand vos prix changent",
+            "paragraphs": [
+              "Vos prix ne changent que lorsqu'une règle de prix s'exécute. Entre deux exécutions, rien ne les modifie.",
+              "La règle « All products » créée pendant la configuration s'exécute chaque jour à 6 h, dans le fuseau horaire de votre boutique.",
+              "Vous pouvez aussi exécuter vous-même n'importe quelle règle. Voir [Prévisualiser, exécuter et planifier une règle](/docs/run-and-schedule)."
+            ]
+          },
+          {
+            "id": "currency",
+            "title": "La devise de votre boutique",
+            "list": [
+              "**Reprise automatiquement.** Synq utilise la devise de votre boutique Shopify. Vous n'avez rien à choisir.",
+              "**Convertie depuis le dollar américain** aux taux de change actuels.",
+              "**Le minimum et l'arrondi** s'appliquent dans votre devise, après la conversion."
+            ],
+            "note": {
+              "title": "Devise non prise en charge",
+              "body": "Si Synq n'a pas de taux de change pour votre devise, il ne peut pas fixer le prix de vos cartes. **Settings** affiche « Unsupported currency ». Prévenez-nous avec **Feedback** sur Home."
+            }
+          },
+          {
+            "id": "good-to-know",
+            "title": "Bon à savoir",
+            "list": [
+              "**Ce sont des prix du marché américain.** Si votre marché local diffère, ajustez le pourcentage de la règle pour ce jeu. Voir [Créer une règle de prix](/docs/price-rules).",
+              "**Pas de prix du marché.** L'aperçu de la règle les regroupe sous **No market**. Fixez leur prix vous-même avec une [exception](/docs/exceptions).",
+              "**Synq ne met pas à jour TCGplayer.** Il se contente d'utiliser ses prix."
+            ]
+          }
+        ]
+      },
+      "price-rules": {
+        "meta": {
+          "title": "Créer une règle de prix · Centre d'aide Synq",
+          "description": "Une règle de prix dit quels produits elle tarife et comment. Créez-en une pour tous les jeux, ou pour un jeu, une extension, une rareté, une version ou un état."
+        },
+        "category": "prices",
+        "title": "Créer une règle de prix",
+        "intro": "Une règle de prix indique quels produits elle tarife et comment. Créez-en une pour tous les jeux, ou une pour un seul jeu, une extension, une rareté, une version ou un état.",
+        "readTime": "2 min de lecture",
+        "sections": [
+          {
+            "id": "start",
+            "title": "Commencer une règle",
+            "steps": [
+              "Ouvrez **Price rules**.",
+              "Cliquez sur **New rule** et choisissez **Every game** ou l'un de vos jeux.",
+              "Donnez un nom à la règle (40 caractères maximum).",
+              "Suivez les quatre étapes : **Define products**, **Define pricing**, **Define minimum** et **Confirm**."
+            ],
+            "paragraphs": [
+              "Une boutique peut avoir jusqu'à 50 règles."
+            ]
+          },
+          {
+            "id": "products",
+            "title": "L'étape Define products",
+            "list": [
+              "**Sets** et **Rarities** : uniquement dans une règle pour un seul jeu.",
+              "**Printings** et **Conditions** : de NM à DMG, et Unopened pour les produits scellés.",
+              "**Applies to** : **New products** fixe le prix des cartes au moment où vous les ajoutez ou les importez. **Your inventory** met à jour le prix de votre stock à chaque exécution de la règle. Les deux sont cochés au départ."
+            ],
+            "paragraphs": [
+              "Laissez un critère vide pour tout inclure. Une règle limitée aux nouveaux produits n'a ni planification ni bouton **Run**."
+            ]
+          },
+          {
+            "id": "pricing",
+            "title": "L'étape Define pricing",
+            "list": [
+              "**Base prices on** : le prix du marché TCGplayer.",
+              "**Modify by** : un pourcentage à la hausse ou à la baisse, de -99 % à +1000 %.",
+              "**Then add** : un montant dans votre devise, en plus ou en moins."
+            ]
+          },
+          {
+            "id": "conditions",
+            "title": "Tarifer chaque état",
+            "paragraphs": [
+              "Choisissez comment les états joués sont tarifés :"
+            ],
+            "list": [
+              "**Each condition's market price** : chaque état suit son propre prix TCGplayer. C'est l'option par défaut.",
+              "**Near Mint's, less a percent** : chaque état part du prix du Near Mint, moins son pourcentage."
+            ]
+          },
+          {
+            "id": "below-nm",
+            "title": "Sous le Near Mint",
+            "table": {
+              "head": [
+                "État",
+                "Par défaut"
+              ],
+              "rows": [
+                [
+                  "LP",
+                  "10 % sous le Near Mint"
+                ],
+                [
+                  "MP",
+                  "25 % sous le Near Mint"
+                ],
+                [
+                  "HP",
+                  "40 % sous le Near Mint"
+                ],
+                [
+                  "DMG",
+                  "60 % sous le Near Mint"
+                ]
+              ]
+            },
+            "paragraphs": [
+              "Avec **Each condition's market price**, ces pourcentages ne servent que pour un état joué qui n'a pas de prix du marché propre.",
+              "Laissez un pourcentage vide et cet état n'est pas tarifé : il garde son prix actuel."
+            ]
+          },
+          {
+            "id": "finish",
+            "title": "Arrondi, minimum et confirmation",
+            "paragraphs": [
+              "Choisissez un arrondi à l'étape des prix, puis un minimum. Voir [Minimums et arrondis](/docs/minimums-rounding).",
+              "**Confirm** affiche la règle complète. Cliquez sur **Edit** sur n'importe quelle partie pour la modifier.",
+              "Quand vous enregistrez, la règle s'ouvre sur son aperçu."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "Bon à savoir",
+            "list": [
+              "**Enregistrer ne change pas les prix.** Les prix changent quand la règle s'exécute.",
+              "**Une seule règle par état.** Quand des règles se recoupent, c'est la plus précise qui fixe le prix de la carte. Voir [Quelle règle fixe le prix d'un produit](/docs/which-rule-wins).",
+              "**Une carte précise** peut suivre son propre prix. Voir [Exceptions](/docs/exceptions)."
+            ]
+          }
+        ]
+      },
+      "run-and-schedule": {
+        "meta": {
+          "title": "Prévisualiser, exécuter et planifier une règle · Centre d'aide Synq",
+          "description": "L'aperçu montre chaque prix qu'une règle modifierait. Exécutez-la vous-même ou planifiez-la, puis vérifiez ce qui a changé dans Activity."
+        },
+        "category": "prices",
+        "title": "Prévisualiser, exécuter et planifier une règle",
+        "intro": "L'aperçu montre chaque prix qu'une règle modifierait. Exécutez-la vous-même ou planifiez-la, puis vérifiez ce qui a changé dans Activity.",
+        "readTime": "2 min de lecture",
+        "sections": [
+          {
+            "id": "preview",
+            "title": "Prévisualiser une règle",
+            "paragraphs": [
+              "Ouvrez le menu ⋯ d'une règle et cliquez sur **Preview rule**. Une règle qui vient d'être enregistrée s'ouvre aussi ici.",
+              "Chaque produit et chaque état affiche son **Original price** et son **Updated price**.",
+              "Les onglets affichent **All**, **Go up**, **Go down**, **Unchanged**, **No market** et **Exceptions**. Cherchez par nom, extension ou état, ou filtrez par extension."
+            ]
+          },
+          {
+            "id": "run",
+            "title": "Exécuter une règle",
+            "steps": [
+              "Dans **Price rules**, cliquez sur **Run** sur la règle. Dans l'aperçu, cliquez sur **Run rule · N prices**.",
+              "Lisez la confirmation et cliquez sur **Run**. Cliquez sur **Preview first** pour revérifier les prix.",
+              "L'exécution est mise en file d'attente, puis les prix changent dans Shopify."
+            ],
+            "note": {
+              "title": "Une exécution ne peut pas être interrompue",
+              "body": "Une fois lancée, une exécution va jusqu'au bout. Une exécution encore en file d'attente peut être annulée."
+            }
+          },
+          {
+            "id": "schedule",
+            "title": "Planifier une règle",
+            "steps": [
+              "Ouvrez le menu ⋯ de la règle et cliquez sur **Edit schedule** ou **Add schedule**.",
+              "Choisissez **Every day**, **Some days** ou **Once**. **Once** convient à une promotion : la règle s'exécute ce jour-là, puis sa planification prend fin.",
+              "Choisissez l'heure, par tranches de 15 minutes, dans le fuseau horaire de votre boutique.",
+              "Réglez le statut sur **Active** ou **Paused**."
+            ],
+            "paragraphs": [
+              "Mettez en pause ou relancez depuis le menu ⋯. **Remove schedule** transforme la règle en règle à exécuter manuellement.",
+              "Les onglets de **Price rules** affichent **All**, **Scheduled**, **Paused** et **By hand**."
+            ]
+          },
+          {
+            "id": "activity",
+            "title": "L'historique Activity",
+            "paragraphs": [
+              "**Activity**, à côté de vos règles, liste chaque exécution avec son heure et le nombre de prix en hausse ou en baisse.",
+              "Chaque exécution est **Queued**, **Running**, **Complete**, **Failed** ou **Cancelled**. Une icône de calendrier indique qu'elle a tourné selon sa planification.",
+              "Cliquez sur une exécution terminée pour voir tous les prix qu'elle a modifiés. Cliquez sur **Retry** sur une exécution en échec."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "Bon à savoir",
+            "list": [
+              "**Avant votre première exécution,** une bannière vous propose de prévisualiser la règle.",
+              "**Une exécution à la fois.** Dans une boutique, les exécutions attendent leur tour.",
+              "**Les horaires manqués sont rattrapés.** Si Synq manque un horaire prévu, l'exécution a lieu en retard au lieu d'être sautée, jusqu'à un jour plus tard.",
+              "**Historique.** Le détail des exécutions est conservé 90 jours, et la liste des exécutions un an."
+            ]
+          }
+        ]
+      },
+      "minimums-rounding": {
+        "meta": {
+          "title": "Minimums et arrondis · Centre d'aide Synq",
+          "description": "Un minimum empêche une carte de se vendre sous le prix que vous choisissez. L'arrondi donne à vos prix des terminaisons nettes."
+        },
+        "category": "prices",
+        "title": "Minimums et arrondis",
+        "intro": "Un minimum empêche une carte de se vendre sous le prix que vous choisissez. L'arrondi donne à vos prix des terminaisons nettes.",
+        "readTime": "2 min de lecture",
+        "sections": [
+          {
+            "id": "minimum",
+            "title": "Définir un minimum",
+            "paragraphs": [
+              "À l'étape **Define minimum** de la règle, choisissez une option :"
+            ],
+            "list": [
+              "**None** : pas de minimum.",
+              "**A fixed amount** : un montant dans la devise de votre boutique.",
+              "**Your cost** : ce que vous avez payé, plus ou moins un pourcentage ou un montant. La carte ne se vend jamais sous son prix d'achat."
+            ]
+          },
+          {
+            "id": "per-condition",
+            "title": "Le même pour tous les états, ou un par état",
+            "paragraphs": [
+              "Choisissez **Same for every condition**, ou **Per condition** pour définir un minimum pour chacun.",
+              "Laissez un état vide et il n'a pas de minimum."
+            ]
+          },
+          {
+            "id": "rounding",
+            "title": "L'arrondi",
+            "paragraphs": [
+              "Choisissez l'arrondi à l'étape **Define pricing** de la règle :"
+            ],
+            "list": [
+              "Pas d'arrondi (No rounding)",
+              "Arrondi supérieur à x,49 (Round up to x.49)",
+              "Arrondi supérieur à x,99 (Round up to x.99)",
+              "Arrondi supérieur à x,00 (Round up to x.00)",
+              "Arrondi au x,00 le plus proche (Round to nearest x.00)"
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "Bon à savoir",
+            "list": [
+              "**Pas de maximum.** Les règles ont un plancher, mais pas de plafond.",
+              "**Pas de coût, pas de minimum basé sur le coût.** Un produit sans coût n'a pas de minimum basé sur le coût, et l'aperçu le signale. Voir [Coût et marge](/docs/cost-margin).",
+              "**Votre devise.** Le minimum et l'arrondi s'appliquent après la conversion depuis le dollar américain.",
+              "**Le minimum propre à une carte.** Quand un produit a son propre minimum, c'est le plus élevé des deux qui s'applique. Voir [Exceptions](/docs/exceptions).",
+              "**Un prix nul n'est jamais publié.** Un prix de 0 ou moins n'est jamais envoyé à Shopify."
+            ]
+          }
+        ]
+      },
+      "exceptions": {
+        "meta": {
+          "title": "Exceptions : fixer vous-même le prix d'une carte · Centre d'aide Synq",
+          "description": "Une exception est un réglage de prix propre à un produit. Elle l'emporte sur la règle qui le tarife."
+        },
+        "category": "prices",
+        "title": "Exceptions : fixer vous-même le prix d'une carte",
+        "intro": "Une exception est un réglage de prix propre à un produit. Elle l'emporte sur la règle qui le tarife.",
+        "readTime": "2 min de lecture",
+        "sections": [
+          {
+            "id": "kinds",
+            "title": "Trois types d'exception",
+            "list": [
+              "**Formule propre** : Market price, Market + % ou Market - %, utilisée à la place de la formule de la règle.",
+              "**Minimum propre** : c'est le plus élevé entre le minimum du produit et celui de la règle qui s'applique.",
+              "**Exclu des règles** : pour un état. Aucune exécution ne modifie son prix. Il apparaît comme « Excluded from rules · not changed »."
+            ]
+          },
+          {
+            "id": "own-price",
+            "title": "Fixer votre propre prix sur une carte",
+            "steps": [
+              "Ouvrez **Inventory** et dépliez le produit.",
+              "Modifiez le prix **Listed** sur la ligne de l'état.",
+              "Enregistrez. Cet état est désormais exclu des règles."
+            ],
+            "paragraphs": [
+              "Pour rendre le prix à sa règle, cliquez sur **Back to its rule** sur cette ligne."
+            ]
+          },
+          {
+            "id": "where",
+            "title": "Autres endroits pour créer une exception",
+            "list": [
+              "**Inventory** › la cellule **Exceptions** du produit.",
+              "**Inventory** › sélection des produits › panneau **Exceptions**, pour plusieurs produits à la fois.",
+              "**Add products** › **Pricing configuration** › **Exception**, au moment d'ajouter la carte. Choisissez **Your price** pour la soustraire aux règles."
+            ]
+          },
+          {
+            "id": "find",
+            "title": "Retrouver vos exceptions",
+            "paragraphs": [
+              "Dans **Inventory**, ouvrez **Views** et choisissez **Own formula** ou **Excluded from rules**.",
+              "Sur **Price rules**, la ligne en haut de la page compte vos exceptions."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "Bon à savoir",
+            "list": [
+              "**Les prix modifiés dans l'admin Shopify sont écrasés** à la prochaine exécution de la règle du produit. Fixez plutôt le prix dans Synq, ou excluez l'état.",
+              "**Les états exclus gardent leur prix pour de bon,** même quand le marché bouge. Jetez un œil à la vue **Excluded from rules** de temps en temps."
+            ]
+          }
+        ]
+      },
+      "which-rule-wins": {
+        "meta": {
+          "title": "Quelle règle fixe le prix d'un produit · Centre d'aide Synq",
+          "description": "Chaque état de chaque produit dépend d'une règle au plus. Quand des règles se recoupent, c'est la plus précise qui fixe le prix."
+        },
+        "category": "prices",
+        "title": "Quelle règle fixe le prix d'un produit",
+        "intro": "Chaque état de chaque produit dépend d'une règle au plus. Quand des règles se recoupent, c'est la plus précise qui fixe le prix.",
+        "readTime": "2 min de lecture",
+        "sections": [
+          {
+            "id": "specific",
+            "title": "La règle la plus précise l'emporte",
+            "paragraphs": [
+              "Synq compte les critères qu'une règle précise : jeu, extension, rareté, version et état. La règle qui en précise le plus et qui correspond au produit l'emporte.",
+              "Si deux règles sont aussi précises l'une que l'autre, c'est la plus récente qui l'emporte."
+            ]
+          },
+          {
+            "id": "example",
+            "title": "Un exemple",
+            "table": {
+              "head": [
+                "Règle",
+                "Critères",
+                "Tarife"
+              ],
+              "rows": [
+                [
+                  "All products",
+                  "Aucun",
+                  "Tout le reste"
+                ],
+                [
+                  "Pokémon",
+                  "Jeu",
+                  "Les cartes Pokémon"
+                ],
+                [
+                  "Pokémon foils",
+                  "Jeu, version",
+                  "Les foils Pokémon"
+                ]
+              ]
+            },
+            "paragraphs": [
+              "Une foil Pokémon est tarifée par « Pokémon foils ». Une carte Pokémon normale, par « Pokémon ». Une carte Magic, par « All products »."
+            ]
+          },
+          {
+            "id": "no-rule",
+            "title": "Les produits sans règle",
+            "paragraphs": [
+              "Un produit qu'aucune règle ne couvre n'est jamais modifié par une exécution. Il garde son prix.",
+              "Un nouveau produit sans règle pour **New products** reçoit le prix du marché brut.",
+              "La ligne en haut de **Price rules** indique combien de produits sont tarifés par une règle, combien n'en ont pas et combien ont des exceptions."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "Bon à savoir",
+            "list": [
+              "**Les exceptions l'emportent** sur toutes les règles. Voir [Exceptions](/docs/exceptions).",
+              "**Vérifiez avant d'exécuter.** L'aperçu montre les produits qu'une règle tarife.",
+              "**Deux règles ne tarifent jamais le même état** d'un même produit."
+            ]
+          }
+        ]
+      },
+      "find-products": {
+        "meta": {
+          "title": "Trouver et filtrer des produits · Centre d'aide Synq",
+          "description": "Inventory liste tous les produits gérés par Synq. Cherchez, filtrez et enregistrez les vues que vous utilisez au quotidien."
+        },
+        "category": "inventory",
+        "title": "Trouver et filtrer des produits",
+        "intro": "**Inventory** liste tous les produits gérés par Synq. Cherchez, filtrez et enregistrez les vues que vous utilisez au quotidien.",
+        "readTime": "2 min de lecture",
+        "sections": [
+          {
+            "id": "open",
+            "title": "Ouvrir Inventory",
+            "paragraphs": [
+              "Cliquez sur **Inventory** dans le menu de gauche. Home et Add products appellent cette même page **My products**.",
+              "Les onglets affichent **All**, un onglet par jeu, et **Views**."
+            ]
+          },
+          {
+            "id": "search",
+            "title": "Rechercher",
+            "paragraphs": [
+              "**Search all products** cherche dans le nom de la carte, le titre Shopify, le nom et le code de l'extension, le numéro, la version, l'UPC, l'identifiant TCGplayer, le SKU et le code-barres.",
+              "Chaque mot doit correspondre : `Charizard PAF` limite donc les résultats à une seule extension."
+            ]
+          },
+          {
+            "id": "filters",
+            "title": "Filtres et tri",
+            "list": [
+              "**Vendor** : le jeu. Affiché si vous vendez au moins 2 jeux.",
+              "**Condition**",
+              "**Stock** : In stock ou Sold out.",
+              "**Formula** : Follows its rule, Market price, Market + % ou Market - %.",
+              "**Price rules** : Excluded from rules.",
+              "**Set name** et **Product type**",
+              "**Imported from** : affiché après un import."
+            ],
+            "paragraphs": [
+              "Triez par date de création, nom du produit, nom de l'extension, prix, coût ou marge."
+            ]
+          },
+          {
+            "id": "views",
+            "title": "Enregistrer une vue",
+            "paragraphs": [
+              "Une vue enregistre vos filtres, votre recherche et votre tri. Cliquez sur **Save as view** et donnez-lui un nom.",
+              "Modifiez une vue et cliquez sur **Update** suivi de son nom pour l'enregistrer de nouveau. Vous pouvez aussi la renommer ou la supprimer.",
+              "Deux vues sont prêtes d'office : **Own formula** et **Excluded from rules**."
+            ]
+          },
+          {
+            "id": "columns",
+            "title": "Colonnes et lignes",
+            "paragraphs": [
+              "Choisissez les colonnes avec **Columns** : Printing, Rarity, Number, Stock, Exceptions, Market, Listed, Cost, Margin et Minimum. Ce choix est enregistré pour toute votre boutique.",
+              "Dépliez un produit pour voir une ligne par état et par emplacement, avec son stock, son prix du marché, son coût et son prix **Listed**.",
+              "Chaque ligne permet **Set as active** ou **Set as draft**, et ouvre la carte sur TCGplayer ou le produit dans Shopify."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "Bon à savoir",
+            "list": [
+              "**Pas de filtre par statut, tags, collections ou rareté.** Affichez plutôt la colonne **Rarity** et triez.",
+              "**Listed** est le prix affiché sur Shopify. Le modifier crée une exception. Voir [Exceptions](/docs/exceptions)."
+            ]
+          }
+        ]
+      },
+      "bulk-edit": {
+        "meta": {
+          "title": "Modifier plusieurs produits à la fois · Centre d'aide Synq",
+          "description": "Sélectionnez des produits dans Inventory pour modifier d'un coup leur stock, leur coût, leurs états ou leurs exceptions."
+        },
+        "category": "inventory",
+        "title": "Modifier plusieurs produits à la fois",
+        "intro": "Sélectionnez des produits dans **Inventory** pour modifier d'un coup leur stock, leur coût, leurs états ou leurs exceptions.",
+        "readTime": "2 min de lecture",
+        "sections": [
+          {
+            "id": "select",
+            "title": "Sélectionner des produits",
+            "paragraphs": [
+              "Cochez les lignes voulues, ou filtrez d'abord puis cliquez sur **Select all N matching**.",
+              "Une barre s'ouvre avec quatre panneaux et un menu ⋯."
+            ]
+          },
+          {
+            "id": "panels",
+            "title": "Les quatre panneaux",
+            "list": [
+              "**Stock** : ajoutez, retirez ou fixez une quantité pour un état dans un emplacement. Le retrait ne descend jamais sous 0.",
+              "**Cost** : une part du prix du marché ou un montant, pour un état ou pour tous. Cochez **Replace costs already set** pour écraser les coûts existants. Les prix ne changent pas.",
+              "**Conditions** : retirez des états. Les variantes correspondantes sont supprimées dans Shopify.",
+              "**Exceptions** : définissez une formule, un minimum, des états exclus ou votre prix."
+            ]
+          },
+          {
+            "id": "menu",
+            "title": "Le menu ⋯",
+            "list": [
+              "**Set as active** et **Set as draft**",
+              "**Add to collection(s)** et **Remove from collection(s)** : collections manuelles uniquement.",
+              "**Unlink from synq** : les produits restent tels quels dans Shopify. Synq cesse de mettre à jour leurs prix et leur stock.",
+              "**Delete N products** : les supprime définitivement de Synq et de Shopify."
+            ]
+          },
+          {
+            "id": "not-here",
+            "title": "Ce que la modification en masse ne fait pas",
+            "list": [
+              "**Les tags** : Synq n'ajoute pas de tags.",
+              "**Les canaux de vente par produit,** l'archivage et l'export.",
+              "**L'ajout d'états** : ajoutez un état depuis **Add products**.",
+              "**Les prix** : fixez-les avec une [règle de prix](/docs/price-rules) ou une [exception](/docs/exceptions)."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "Bon à savoir",
+            "list": [
+              "**La suppression est irréversible.** Les produits sont aussi supprimés de votre boutique Shopify.",
+              "**Délier conserve le produit.** Pour le gérer de nouveau, voir [Lier les produits que vous avez déjà](/docs/link-products)."
+            ]
+          }
+        ]
+      },
+      "cost-margin": {
+        "meta": {
+          "title": "Coût et marge · Centre d'aide Synq",
+          "description": "Indiquez ce que vous avez payé vos cartes pour voir votre marge et définir un minimum, afin qu'aucune carte ne se vende à perte."
+        },
+        "category": "inventory",
+        "title": "Coût et marge",
+        "intro": "Indiquez ce que vous avez payé vos cartes pour voir votre marge et définir un minimum, afin qu'aucune carte ne se vende à perte.",
+        "readTime": "2 min de lecture",
+        "sections": [
+          {
+            "id": "what",
+            "title": "Ce qu'est le coût",
+            "paragraphs": [
+              "Le coût correspond au coût par article (Cost per item) de Shopify, par état. Synq et Shopify le partagent : une modification d'un côté apparaît des deux."
+            ]
+          },
+          {
+            "id": "set",
+            "title": "Saisir votre coût",
+            "list": [
+              "**Quand vous ajoutez une carte** : **Cost paid** dans **Pricing configuration**, en montant ou en pourcentage du marché (de 1 à 100 %).",
+              "**Pour plusieurs produits** : **Inventory** › sélection des produits › panneau **Cost**.",
+              "**Une valeur par défaut pour les nouveaux produits** : **Settings** › **Pricing** › **What you pay** › **Share of market price**. Laissez vide pour ne pas avoir de coût par défaut.",
+              "**Les produits liés** reprennent le coût qu'ils ont dans Shopify."
+            ]
+          },
+          {
+            "id": "margin",
+            "title": "Voir votre marge",
+            "paragraphs": [
+              "Affichez les colonnes **Cost** et **Margin** dans **Inventory** avec **Columns**.",
+              "La marge est le prix **Listed** moins le coût, avec son pourcentage. Un badge rouge **Below cost** signale les produits vendus à perte.",
+              "Triez par coût ou par marge pour les repérer vite."
+            ]
+          },
+          {
+            "id": "minimum",
+            "title": "Ne jamais vendre à perte",
+            "paragraphs": [
+              "À l'étape **Define minimum** d'une règle de prix, choisissez **Your cost** et ajoutez un pourcentage ou un montant. Voir [Minimums et arrondis](/docs/minimums-rounding)."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "Bon à savoir",
+            "list": [
+              "**Le coût ne modifie pas les prix à lui seul.** Seul un minimum basé sur le coût l'utilise.",
+              "**Sans coût, pas de minimum basé sur le coût** pour ce produit."
+            ]
+          }
+        ]
+      },
+      "what-synq-creates": {
+        "meta": {
+          "title": "Ce que Synq crée dans votre boutique · Centre d'aide Synq",
+          "description": "Chaque carte que vous ajoutez devient un produit Shopify classique. Voici ce que Synq remplit."
+        },
+        "category": "shopify",
+        "title": "Ce que Synq crée dans votre boutique",
+        "intro": "Chaque carte que vous ajoutez devient un produit Shopify classique. Voici ce que Synq remplit.",
+        "readTime": "2 min de lecture",
+        "sections": [
+          {
+            "id": "product",
+            "title": "Le produit",
+            "list": [
+              "**Un produit par carte et par version,** avec une variante par état sous une option « Condition ».",
+              "**Titre** : le nom de la carte par défaut. Voir [Titres et descriptions des produits](/docs/templates).",
+              "**Description** : le texte de la carte fourni par TCGplayer.",
+              "**Images** : jusqu'à 3, issues de la version ou de la carte.",
+              "**Fournisseur (Vendor)** : l'éditeur du jeu.",
+              "**Type de produit** : le nom du jeu.",
+              "**Catégorie** : Gaming Cards pour les cartes à l'unité et les decks, Collectible Trading Cards pour les produits scellés."
+            ]
+          },
+          {
+            "id": "stock-price",
+            "title": "Stock, prix et coût",
+            "list": [
+              "**Le stock** est suivi dans l'emplacement que vous choisissez.",
+              "**Le prix** vient de la règle ou de l'exception qui tarife la carte.",
+              "**Le coût par article (Cost per item)** est rempli quand vous saisissez un coût."
+            ]
+          },
+          {
+            "id": "status",
+            "title": "Statut, canaux et collections",
+            "list": [
+              "**Statut** : Draft ou Active. Draft est la valeur par défaut, et vous pouvez la changer dans la fenêtre d'ajout.",
+              "**Canaux** : ceux que vous cochez. Synq gère Online Store, Shop et Point of Sale.",
+              "**Collection** : la collection des cartes à l'unité ou des produits scellés du jeu."
+            ]
+          },
+          {
+            "id": "pos",
+            "title": "SKU et code-barres",
+            "paragraphs": [
+              "Si Shopify POS est installé, chaque état reçoit le SKU TCGplayer et un code-barres. Voir [Vendre en boutique avec Shopify POS](/docs/pos)."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "Bon à savoir",
+            "list": [
+              "**Pas de tags.** Synq n'ajoute pas de tags aux produits.",
+              "**Pas de doublons.** Synq associe chaque produit à sa carte et à sa version : une même version ne peut pas être créée deux fois.",
+              "**Les brouillons restent masqués.** Publiez-les dans Shopify, ou utilisez **Set as active** dans **Inventory**."
+            ]
+          }
+        ]
+      },
+      "templates": {
+        "meta": {
+          "title": "Titres et descriptions des produits · Centre d'aide Synq",
+          "description": "Les modèles déterminent le titre, la description et le texte pour les moteurs de recherche d'un nouveau produit. Réglez-les par jeu et par type de produit."
+        },
+        "category": "shopify",
+        "title": "Titres et descriptions des produits",
+        "intro": "Les modèles déterminent le titre, la description et le texte pour les moteurs de recherche d'un nouveau produit. Réglez-les par jeu et par type de produit.",
+        "readTime": "2 min de lecture",
+        "sections": [
+          {
+            "id": "where",
+            "title": "Où les trouver",
+            "paragraphs": [
+              "Ouvrez **Settings** › **Online Store**. Le bouton **Change how cards read** de Home ouvre la même page.",
+              "Les modèles peuvent varier selon le jeu et le type : Singles, Sealed, Decks et Accessories."
+            ]
+          },
+          {
+            "id": "title",
+            "title": "Titre et description",
+            "paragraphs": [
+              "Par défaut, le titre est `{name}`, soit le nom de la carte seul. La description reprend le texte de la carte.",
+              "Ajoutez au titre des informations sur la carte, à choisir dans cette liste :"
+            ],
+            "list": [
+              "Nom du produit (Product name)",
+              "Extension et code d'extension (Set, Set code)",
+              "Numéro (Number)",
+              "Rareté (Rarity)",
+              "Version (Printing)",
+              "Type (Kind)",
+              "Jeu et fournisseur (Game, Vendor)",
+              "Description du produit (Product description)"
+            ]
+          },
+          {
+            "id": "seo",
+            "title": "Titre et description pour les moteurs de recherche",
+            "paragraphs": [
+              "Le texte pour les moteurs de recherche est désactivé par défaut. Activez-le pour le remplir sur chaque nouveau produit.",
+              "Vous pouvez aussi choisir un modèle de thème, pour que les produits de cartes utilisent une mise en page de votre thème."
+            ]
+          },
+          {
+            "id": "update",
+            "title": "Mettre à jour les produits existants",
+            "paragraphs": [
+              "Un modèle s'applique aux nouveaux produits. Pour aligner vos produits existants, cliquez sur **Update products** sur la même page. L'opération tourne en arrière-plan.",
+              "Les produits que vous avez modifiés dans Shopify conservent vos modifications. Synq vous indique combien les ont conservées."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "Bon à savoir",
+            "list": [
+              "**Les noms d'état** (Near Mint ou NM) se trouvent sous **Condition variants** sur la même page. Voir [États et versions](/docs/conditions-printings).",
+              "**Titre d'une seule carte.** Modifiez-le dans la fenêtre d'ajout avant de cliquer sur **Add to store**."
+            ]
+          }
+        ]
+      },
+      "sync": {
+        "meta": {
+          "title": "Ce qui reste synchronisé avec Shopify · Centre d'aide Synq",
+          "description": "Synq et Shopify partagent le stock, le coût et les informations produit. Les prix, eux, relèvent de vos règles de prix."
+        },
+        "category": "shopify",
+        "title": "Ce qui reste synchronisé avec Shopify",
+        "intro": "Synq et Shopify partagent le stock, le coût et les informations produit. Les prix, eux, relèvent de vos règles de prix.",
+        "readTime": "2 min de lecture",
+        "sections": [
+          {
+            "id": "table",
+            "title": "Les modifications faites dans l'admin Shopify",
+            "table": {
+              "head": [
+                "Ce que vous modifiez dans Shopify",
+                "Ce que fait Synq"
+              ],
+              "rows": [
+                [
+                  "Le prix",
+                  "L'affiche comme Listed. La prochaine exécution de la règle le remplace, sauf si l'état est exclu"
+                ],
+                [
+                  "Le stock, via des commandes ou des modifications",
+                  "Le reprend, dans chaque emplacement"
+                ],
+                [
+                  "Le coût par article (Cost per item)",
+                  "Le reprend"
+                ],
+                [
+                  "Titre, description, type",
+                  "Conserve votre modification"
+                ],
+                [
+                  "Suppression d'une variante",
+                  "Retire cet état"
+                ],
+                [
+                  "Suppression d'un produit",
+                  "Retire le produit de Synq"
+                ],
+                [
+                  "Ajout, renommage ou fermeture d'un emplacement",
+                  "Suit le changement"
+                ]
+              ]
+            }
+          },
+          {
+            "id": "prices",
+            "title": "Les prix",
+            "paragraphs": [
+              "Un prix modifié dans l'admin Shopify tient jusqu'à la prochaine exécution de la règle du produit.",
+              "Pour conserver un prix, fixez-le dans Synq : modifiez **Listed** dans **Inventory**. L'état est alors exclu des règles. Voir [Exceptions](/docs/exceptions)."
+            ]
+          },
+          {
+            "id": "locations",
+            "title": "Les emplacements",
+            "paragraphs": [
+              "Le stock est suivi par emplacement. Si vous n'en choisissez pas, le nouveau stock va dans votre emplacement principal."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "Bon à savoir",
+            "list": [
+              "**Vos modifications sont conservées** quand vous mettez à jour des produits depuis un modèle.",
+              "**Les produits déliés** restent dans Shopify, et Synq cesse de les mettre à jour."
+            ]
+          }
+        ]
+      },
+      "pos": {
+        "meta": {
+          "title": "Vendre en boutique avec Shopify POS · Centre d'aide Synq",
+          "description": "Avec Shopify POS, chaque carte et chaque état a son propre code-barres : un scan au comptoir encaisse la carte exacte."
+        },
+        "category": "shopify",
+        "title": "Vendre en boutique avec Shopify POS",
+        "intro": "Avec Shopify POS, chaque carte et chaque état a son propre code-barres : un scan au comptoir encaisse la carte exacte.",
+        "readTime": "2 min de lecture",
+        "sections": [
+          {
+            "id": "settings",
+            "title": "Les réglages Point of Sale",
+            "paragraphs": [
+              "Ouvrez **Settings** › **Point of Sale**. Shopify POS doit être installé. Sinon, les réglages sont grisés.",
+              "Toutes les options sont activées au départ :"
+            ],
+            "list": [
+              "**Include new products in Point of Sale** : ajoute les nouveaux produits au canal de vente POS.",
+              "**Sealed products** : l'UPC imprimé sur la boîte, ou un code Synq s'il n'y en a pas.",
+              "**Single cards** : un code unique pour chaque état.",
+              "**TCGplayer SKUs** sur chaque état."
+            ]
+          },
+          {
+            "id": "labels",
+            "title": "Imprimer les étiquettes",
+            "steps": [
+              "Installez l'app gratuite **Retail Barcode Labels** de Shopify.",
+              "Imprimez les étiquettes de vos produits. Ignorez l'option de cette app qui crée des codes-barres : Synq l'a déjà fait.",
+              "Collez l'étiquette sur la sleeve ou le toploader de la carte."
+            ],
+            "paragraphs": [
+              "Synq n'imprime pas les étiquettes lui-même."
+            ]
+          },
+          {
+            "id": "selling",
+            "title": "Au comptoir",
+            "paragraphs": [
+              "Un scan encaisse la carte exacte, dans le bon état. Le stock baisse aussi en ligne."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "Bon à savoir",
+            "list": [
+              "**Les codes sont créés en même temps que le produit.** Les produits ajoutés avant l'installation de POS peuvent ne pas en avoir.",
+              "**Pour changer le code** d'une carte, passez par la fenêtre d'ajout, sous **Point of Sale**.",
+              "**L'étape POS de Home** apparaît quand Shopify POS est installé : **Set up Shopify POS**."
+            ]
+          }
+        ]
+      },
+      "uninstall": {
+        "meta": {
+          "title": "Désinstaller Synq · Centre d'aide Synq",
+          "description": "Désinstallez Synq depuis votre admin Shopify. Vos produits restent dans votre boutique."
+        },
+        "category": "shopify",
+        "title": "Désinstaller Synq",
+        "intro": "Désinstallez Synq depuis votre admin Shopify. Vos produits restent dans votre boutique.",
+        "readTime": "2 min de lecture",
+        "sections": [
+          {
+            "id": "how",
+            "title": "Désinstaller",
+            "steps": [
+              "Dans votre admin Shopify, ouvrez **Settings** › **Apps**.",
+              "Trouvez Synq et cliquez sur **Uninstall**."
+            ]
+          },
+          {
+            "id": "after",
+            "title": "Ce qui se passe",
+            "list": [
+              "**Vos produits restent dans Shopify** avec leurs prix, leur stock et leurs informations.",
+              "**Les prix ne sont plus mis à jour.** Aucune règle ne s'exécute après la désinstallation.",
+              "**Environ 48 heures plus tard,** Shopify demande à Synq d'effacer les données de votre boutique, et Synq s'exécute."
+            ]
+          },
+          {
+            "id": "reinstall",
+            "title": "Réinstaller",
+            "paragraphs": [
+              "Dans les 48 heures, Synq reprend là où vous vous étiez arrêté.",
+              "Passé ce délai, Synq repart de zéro. Vous refaites la configuration, et vous devrez peut-être lier de nouveau vos produits avec [Lier les produits que vous avez déjà](/docs/link-products)."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "Bon à savoir",
+            "list": [
+              "**Pour simplement arrêter de payer,** passez plutôt au forfait Free. Voir [Facturation, changement de forfait et résiliation](/docs/billing).",
+              "**Pour arrêter un seul produit** sans désinstaller : **Inventory** › ⋯ › **Unlink from synq**."
+            ]
+          }
+        ]
+      },
+      "plans": {
+        "meta": {
+          "title": "Forfaits et limites de produits · Centre d'aide Synq",
+          "description": "Les forfaits ne diffèrent que par le nombre de produits autorisés. Toutes les fonctionnalités sont incluses dans chaque forfait, Free compris."
+        },
+        "category": "billing",
+        "title": "Forfaits et limites de produits",
+        "intro": "Les forfaits ne diffèrent que par le nombre de produits autorisés. Toutes les fonctionnalités sont incluses dans chaque forfait, Free compris.",
+        "readTime": "2 min de lecture",
+        "sections": [
+          {
+            "id": "plans",
+            "title": "Les forfaits",
+            "table": {
+              "head": [
+                "Forfait",
+                "Mensuel",
+                "Annuel",
+                "Produits"
+              ],
+              "rows": [
+                [
+                  "Free",
+                  "0 $",
+                  "0 $",
+                  "100"
+                ],
+                [
+                  "Starter",
+                  "29 $",
+                  "232 $",
+                  "2 000"
+                ],
+                [
+                  "Pro",
+                  "79 $",
+                  "632 $",
+                  "15 000"
+                ],
+                [
+                  "Scale",
+                  "149 $",
+                  "1 192 $",
+                  "50 000"
+                ]
+              ]
+            },
+            "paragraphs": [
+              "En annuel, cela revient à environ 19 $, 53 $ et 99 $ par mois."
+            ]
+          },
+          {
+            "id": "count",
+            "title": "Ce que compte la limite",
+            "paragraphs": [
+              "La limite compte les produits. Un produit, c'est une carte dans une version, avec tous ses états et tout son stock.",
+              "Dix exemplaires Near Mint et deux Lightly Played d'une même version font un seul produit."
+            ]
+          },
+          {
+            "id": "every-plan",
+            "title": "Dans chaque forfait",
+            "list": [
+              "Tous les jeux",
+              "Des règles de prix avec planification quotidienne",
+              "Les imports de tableurs et de TCGplayer",
+              "Les codes-barres Shopify POS",
+              "Les modifications en masse dans Inventory"
+            ]
+          },
+          {
+            "id": "limit",
+            "title": "Près de votre limite, ou à la limite",
+            "paragraphs": [
+              "**Inventory** et **Add products** indiquent combien de produits vous utilisez.",
+              "Sur Free, la barre passe à l'orange à 80 produits et au rouge à 100.",
+              "Une fois la limite atteinte, vous ne pouvez plus ajouter ni importer de nouveaux produits. Vos produits existants continuent de fonctionner : le stock, les exécutions de prix et la synchronisation Shopify se poursuivent."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "Bon à savoir",
+            "list": [
+              "**Passer à un forfait inférieur ne supprime rien.** Si vous dépassez sa limite, vous ne pouvez plus ajouter de produits tant que vous n'êtes pas repassé en dessous.",
+              "**Essais.** Les forfaits payants commencent par un essai gratuit. La page des forfaits de Shopify en indique la durée."
+            ]
+          }
+        ]
+      },
+      "billing": {
+        "meta": {
+          "title": "Facturation, changement de forfait et résiliation · Centre d'aide Synq",
+          "description": "Synq est facturé via Shopify. Les frais apparaissent sur votre facture Shopify, et vous changez de forfait sur la page des forfaits de Shopify."
+        },
+        "category": "billing",
+        "title": "Facturation, changement de forfait et résiliation",
+        "intro": "Synq est facturé via Shopify. Les frais apparaissent sur votre facture Shopify, et vous changez de forfait sur la page des forfaits de Shopify.",
+        "readTime": "2 min de lecture",
+        "sections": [
+          {
+            "id": "change",
+            "title": "Passer à un forfait supérieur ou changer de forfait",
+            "steps": [
+              "Cliquez sur **Upgrade** dans **Inventory** ou **Add products**, ou sur **Change plan** dans **Settings** › **Billing**.",
+              "La page des forfaits Synq s'ouvre dans Shopify.",
+              "Choisissez un forfait, mensuel ou annuel, et approuvez-le."
+            ]
+          },
+          {
+            "id": "invoices",
+            "title": "Les factures",
+            "paragraphs": [
+              "Ouvrez **Settings** › **Billing** › **Manage** pour voir vos factures sur Shopify.",
+              "Les frais Synq apparaissent sur votre facture Shopify, avec vos autres apps."
+            ]
+          },
+          {
+            "id": "downgrade",
+            "title": "Passer à un forfait inférieur",
+            "paragraphs": [
+              "Choisissez un forfait plus petit sur la page des forfaits de Shopify. Rien n'est supprimé.",
+              "Si vous avez plus de produits que la nouvelle limite, vous ne pouvez plus en ajouter tant que vous n'êtes pas repassé en dessous."
+            ]
+          },
+          {
+            "id": "cancel",
+            "title": "Résilier",
+            "paragraphs": [
+              "Résiliez votre forfait payant depuis **Change plan**, sur la page des forfaits de Shopify. Votre boutique passe au forfait Free, jusqu'à 100 produits.",
+              "Vos produits, vos règles et votre stock restent en place. Pour arrêter complètement d'utiliser Synq, voir [Désinstaller Synq](/docs/uninstall)."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "Bon à savoir",
+            "list": [
+              "**Après un essai gratuit,** une boutique sans forfait payant passe au forfait Free, jusqu'à 100 produits.",
+              "**Toutes les fonctionnalités** sont incluses dans chaque forfait : vous ne payez que pour avoir plus de produits. Voir [Forfaits et limites de produits](/docs/plans)."
+            ]
+          }
+        ]
+      },
+      "help": {
+        "meta": {
+          "title": "Obtenir de l'aide · Centre d'aide Synq",
+          "description": "Écrivez-nous depuis Home ou par e-mail. C'est le fondateur qui répond, en général le jour même."
+        },
+        "category": "billing",
+        "title": "Obtenir de l'aide",
+        "intro": "Écrivez-nous depuis Home ou par e-mail. C'est le fondateur qui répond, en général le jour même.",
+        "readTime": "2 min de lecture",
+        "sections": [
+          {
+            "id": "feedback",
+            "title": "Depuis l'app",
+            "steps": [
+              "Ouvrez **Home**.",
+              "Cliquez sur **Feedback** en haut de la page.",
+              "Rédigez votre message et envoyez-le. Il arrive directement dans la boîte de réception du fondateur."
+            ],
+            "paragraphs": [
+              "Vous pouvez envoyer un message par minute."
+            ]
+          },
+          {
+            "id": "email",
+            "title": "Par e-mail",
+            "paragraphs": [
+              "Écrivez à [help@synq.cards](mailto:help@synq.cards)."
+            ]
+          },
+          {
+            "id": "include",
+            "title": "Ce qu'il faut indiquer",
+            "list": [
+              "**L'adresse de votre boutique,** par exemple yourstore.myshopify.com.",
+              "**La carte ou le produit,** avec son extension et sa version.",
+              "**La page de Synq concernée** et ce sur quoi vous avez cliqué.",
+              "**Une capture d'écran,** si vous en avez une."
+            ]
+          },
+          {
+            "id": "whats-new",
+            "title": "Les nouveautés",
+            "paragraphs": [
+              "Cliquez sur **What's new** sur Home pour découvrir ce qui a changé dans Synq. Un chiffre indique le nombre de notes non lues."
+            ]
+          },
+          {
+            "id": "good-to-know",
+            "title": "Bon à savoir",
+            "list": [
+              "**Un jeu manque.** Demandez-le avec **Feedback**, ou avec **Request this game** dans l'import de tableur.",
+              "**Une question sur les prix.** Consultez d'abord l'aperçu de la règle et **Activity**. Voir [Prévisualiser, exécuter et planifier une règle](/docs/run-and-schedule)."
+            ]
+          }
+        ]
+      }
+    },
+    "tracks": {
+      "label": "Choisissez votre point de départ",
+      "title": "Partez de là où en est votre boutique.",
+      "items": {
+        "new": {
+          "title": "Vous débutez la vente de cartes en ligne",
+          "body": "Installez Synq, choisissez vos jeux et ajoutez vos premières cartes.",
+          "audience": "Nouvelle boutique",
+          "articles": [
+            "install",
+            "setup",
+            "add-cards",
+            "conditions-printings"
+          ]
+        },
+        "existing": {
+          "title": "Vous vendez déjà sur Shopify",
+          "body": "Reprenez les cartes que vous vendez déjà et laissez les règles fixer leurs prix.",
+          "audience": "Passage à Synq",
+          "articles": [
+            "link-products",
+            "import",
+            "price-rules",
+            "run-and-schedule"
+          ]
+        },
+        "counter": {
+          "title": "Vous vendez aussi au comptoir",
+          "body": "Codes-barres pour Shopify POS, stock par emplacement et marges.",
+          "audience": "Boutique physique",
+          "articles": [
+            "pos",
+            "sync",
+            "bulk-edit",
+            "cost-margin"
+          ]
+        }
+      }
+    }
+  },
+  "legal": {
+    "terms": {
+      "meta": {
+        "title": "Terms of Service · Synq",
+        "description": "The terms that govern your use of Synq, the Shopify trading card pricing and inventory app."
+      },
+      "title": "Terms of Service",
+      "updated": "Last updated: October 12, 2026",
+      "intro": "The short version: your store and your data are yours, you stay in control of your prices, and you can leave whenever you want. The details are below; if anything isn't clear, write to us at iamtelmoo@gmail.com.",
+      "numbered": true,
+      "sections": [
+        {
+          "id": "who-we-are",
+          "title": "Who we are",
+          "body": [
+            "Synq (\"we\", \"us\") makes a Shopify app for trading card stores (\"Synq ‑ TCG Card Manager\"). These terms cover the app, this website and any related service (the \"Service\"). Our legal details are in the [legal notice](/legal), and you can always reach us at iamtelmoo@gmail.com."
+          ]
+        },
+        {
+          "id": "using-synq",
+          "title": "What Synq does",
+          "body": [
+            "Synq helps you find cards and sealed products in a catalog, add them to your Shopify store, keep their stock in sync and, if you want, keep their prices in step with the market. It only does what the permissions you approve at install allow. If you use Synq for a business, these terms apply to that business."
+          ]
+        },
+        {
+          "id": "your-store",
+          "title": "Your store is yours",
+          "body": [
+            "Your products, stock, prices and store data belong to you. We only use them to run Synq for you. If you uninstall, we delete them as described in our [Privacy Policy](/privacy), and the products in your Shopify store stay exactly where they are.",
+            "You know your store best, so what it sells and publishes is your call, along with the laws and platform rules that apply to your business."
+          ]
+        },
+        {
+          "id": "prices",
+          "title": "Prices: you stay in control",
+          "body": [
+            "Market prices in Synq come from third parties, mainly TCGplayer. They can be late or wrong, and card markets move fast.",
+            "Automatic price updates follow the rules you set: strategy, rounding, minimum prices and which products are included. Because you choose those rules, the prices they produce are yours, and we can't take responsibility for a sale made at one of them, even when the market data behind it was off. A minimum price and a quick look at price changes now and then go a long way; if something looks wrong, tell us and we'll look into it."
+          ]
+        },
+        {
+          "id": "images",
+          "title": "Card images and trademarks",
+          "body": [
+            "Card images, names and set symbols belong to their publishers, such as The Pokémon Company, Wizards of the Coast and Konami. Synq isn't affiliated with or endorsed by any of them, or by TCGplayer.",
+            "The images Synq adds to your products are there so shoppers can see which card they're buying. They come mainly from TCGplayer's public catalog and community card databases. They aren't ours, so we can't license them to you, and how you use them is up to you. You can swap any of them for your own photos whenever you like."
+          ]
+        },
+        {
+          "id": "plans",
+          "title": "Plans and billing",
+          "body": [
+            {
+              "list": [
+                "Synq has a free plan and paid plans, billed monthly or yearly through Shopify. Charges appear on your Shopify invoice.",
+                "You can change or cancel your plan at any time from the app, and uninstalling cancels it too.",
+                "Payments already made aren't refunded, except where the law says otherwise. If you think we charged you by mistake, write to us and we'll put it right.",
+                "If our prices change, we'll tell you at least 30 days ahead, and the new price starts with your next billing period."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "fair-use",
+          "title": "Fair use",
+          "body": [
+            "To keep Synq working well for every store, please don't:",
+            {
+              "list": [
+                "use it for anything unlawful;",
+                "use it or its catalog data to build a competing product or database, or resell access to it;",
+                "access it by automated means outside the app, or put unusual load on it;",
+                "try to get into systems or data that aren't yours."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "the-service",
+          "title": "Keeping Synq running",
+          "body": [
+            "We work hard to keep Synq up and accurate, but it depends on Shopify and other providers, so we can't promise it will never be down or never make a mistake. We keep improving it, which means features can change; if we ever remove one your paid plan relies on, we'll tell you in advance."
+          ]
+        },
+        {
+          "id": "our-property",
+          "title": "What belongs to us",
+          "body": [
+            "The Synq software, website, name and design are ours. While you have the app installed, you're free to use them through the Service."
+          ]
+        },
+        {
+          "id": "liability",
+          "title": "The legal part",
+          "body": [
+            "Every software company needs this section. Here is ours, as plainly as we can put it:",
+            {
+              "list": [
+                "Synq is provided \"as is\". As far as the law allows, we don't give warranties beyond what these terms say, including about the accuracy of catalog or price data.",
+                "As far as the law allows, we aren't liable for indirect losses such as lost profits, sales or data, and our total liability for any claim is limited to what you paid us in the 12 months before it. Nothing here limits what the law doesn't allow to be limited.",
+                "If someone makes a claim against us because of something in your store, such as your listings or your use of images, or because these terms were broken, that claim is yours to handle."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "termination",
+          "title": "If things end",
+          "body": [
+            "You can stop using Synq any time by uninstalling it. We would only suspend an account if these terms are broken or the Service is being harmed, and unless it's urgent we'll talk to you first and give you a chance to sort it out."
+          ]
+        },
+        {
+          "id": "changes",
+          "title": "Changes to these terms",
+          "body": [
+            "If we update these terms, we change the date at the top. For anything that matters, we'll let you know by email or in the app at least 15 days before it applies. Continuing to use Synq after that means you accept the update."
+          ]
+        },
+        {
+          "id": "law",
+          "title": "Governing law",
+          "body": [
+            "These terms are governed by Spanish law, and disputes go to the courts of Spain, unless the law gives you the right to bring them elsewhere."
+          ]
+        }
+      ]
+    },
+    "privacy": {
+      "meta": {
+        "title": "Privacy Policy · Synq",
+        "description": "How Synq collects, uses, and protects data for its Shopify trading card pricing app."
+      },
+      "title": "Privacy Policy",
+      "updated": "Last updated: October 12, 2026",
+      "intro": "Our rule is simple: collect only what Synq needs to do its job, and never sell it. Here is what that means in practice.",
+      "numbered": true,
+      "sections": [
+        {
+          "id": "who-we-are",
+          "title": "Who we are",
+          "body": [
+            "Synq (\"we\", \"us\") makes a Shopify app that helps trading card stores list cards, keep stock in sync and price them from market data. This policy covers the app and this website. Our legal details are in the [legal notice](/legal). For anything about your data, write to iamtelmoo@gmail.com."
+          ]
+        },
+        {
+          "id": "what-we-collect",
+          "title": "What we collect",
+          "body": [
+            "We collect only what we need to run the app:",
+            {
+              "list": [
+                "**Store details**: your shop's domain, name, contact email, currency and timezone, from Shopify when you install.",
+                "**Staff details**: the name and email of the people who open the app.",
+                "**Catalog data**: the products, variants, inventory, locations and sales channels Synq manages for you.",
+                "**Analytics**: how the app is used (pages opened, clicks, browser and device), so we can see where it gets in your way. This covers Synq's pages only, never the rest of your Shopify admin or your screen.",
+                "**Messages**: what you send us by email, the contact form or Shopify's support channel."
+              ]
+            },
+            "We don't collect your customers' data. Synq does not ask Shopify for access to orders or customers, and passwords and payment details never pass through it."
+          ]
+        },
+        {
+          "id": "how-we-use-it",
+          "title": "How we use it",
+          "body": [
+            {
+              "list": [
+                "To run the app: create and update your products, sync stock and prices, run imports and bill your plan.",
+                "To help you when you write to us, and to send service emails such as job results or billing notices.",
+                "To find and fix problems and decide what to build next.",
+                "To keep the service secure and prevent abuse.",
+                "To keep the billing and tax records the law requires."
+              ]
+            },
+            "We never sell your data or use it for advertising.",
+            "If you are in the EU or UK: we rely on our contract with you to run the app, on our legitimate interest to improve and secure it, and on legal obligation for billing records."
+          ]
+        },
+        {
+          "id": "who-we-share-it-with",
+          "title": "Who we share it with",
+          "body": [
+            "Only with the providers that run parts of Synq for us (hosting, database, background jobs, image storage, email and analytics), under contracts that limit them to our instructions. Ask us at iamtelmoo@gmail.com and we'll send you the current list.",
+            "We may also disclose data when the law requires it, or to a buyer if Synq is ever sold, under this same policy."
+          ]
+        },
+        {
+          "id": "shopify-and-merchants",
+          "title": "Shopify and merchants",
+          "body": [
+            "Synq works through the permissions you approve when you install it: products, inventory, locations and sales channels. For the data in your store, Synq acts on your behalf.",
+            "Shopify sends us its privacy requests and we answer them. When you uninstall, Shopify asks us to erase your store's data 48 hours later and we delete it. The products in your store stay there; they are yours.",
+            "If you shop at a store that uses Synq, your data is held by that store and Shopify, not by us. Please contact the store."
+          ]
+        },
+        {
+          "id": "retention",
+          "title": "How long we keep it",
+          "body": [
+            {
+              "list": [
+                "Store, staff and catalog data: while the app is installed, then deleted after uninstall as above.",
+                "Analytics: for the retention period of our analytics plan, then deleted.",
+                "Messages: as long as needed to help you.",
+                "Billing records: as long as tax law requires."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "security",
+          "title": "Security",
+          "body": [
+            "Data is encrypted in transit, access to production systems is limited to the people who run Synq, and every read and write is scoped to a single store. No system is perfectly secure; if a breach affects your data, we will tell you and the authorities as the law requires."
+          ]
+        },
+        {
+          "id": "international-transfers",
+          "title": "International transfers",
+          "body": [
+            "Several of our providers are in the United States. Those transfers rely on the EU–US Data Privacy Framework where the provider is certified, and otherwise on the European Commission's Standard Contractual Clauses."
+          ]
+        },
+        {
+          "id": "cookies",
+          "title": "Cookies",
+          "body": [
+            "The app keeps a small analytics identifier in your browser's local storage, and Shopify uses its own cookies to sign you in. This website uses privacy-friendly analytics and no advertising cookies."
+          ]
+        },
+        {
+          "id": "your-rights",
+          "title": "Your rights",
+          "body": [
+            "You can ask us to access, correct, delete or export your personal data, or object to how we use it. Write to iamtelmoo@gmail.com and we will answer within a month.",
+            "In the EU you can also complain to your data protection authority; ours is Spain's Agencia Española de Protección de Datos (aepd.es)."
+          ]
+        },
+        {
+          "id": "changes",
+          "title": "Changes to this policy",
+          "body": [
+            "When we change this policy we update the date at the top. If a change matters, we tell you by email or in the app first."
+          ]
+        }
+      ]
+    },
+    "cookies": {
+      "meta": {
+        "title": "Cookies Policy · Synq",
+        "description": "Information about the cookies used by Synq's website and application."
+      },
+      "title": "Cookies Policy",
+      "updated": "Last updated: May 18, 2026",
+      "intro": "This Cookies Policy explains what cookies are, which cookies we use on synq.cards (the \"Site\") and inside the Synq application, and how you can control them.",
+      "sections": [
+        {
+          "id": "what",
+          "title": "1. What are cookies",
+          "body": [
+            "Cookies are small text files stored on your device when you visit a website. They allow the site to remember your actions and preferences over time. Similar technologies such as localStorage, sessionStorage and pixels are covered by this policy."
+          ]
+        },
+        {
+          "id": "types",
+          "title": "2. Cookies we use",
+          "body": [
+            "Strictly necessary cookies: required for the Site and application to function (session, authentication, security, language preference). These cookies do not require your consent under Spanish law.",
+            "Analytics cookies: used to understand how visitors interact with the Site. We use privacy-friendly analytics that do not track individuals across sites. If enabled, these cookies are loaded only after consent.",
+            "We do not use advertising or third-party tracking cookies."
+          ]
+        },
+        {
+          "id": "manage",
+          "title": "3. How to manage cookies",
+          "body": [
+            "You can configure your browser to refuse cookies, delete existing ones or alert you when cookies are being set. Most browsers offer this option under \"Settings\" or \"Preferences\".",
+            "If you disable strictly necessary cookies, some features of the Site or the application may not work properly."
+          ]
+        },
+        {
+          "id": "changes",
+          "title": "4. Changes to this policy",
+          "body": [
+            "We may update this Cookies Policy. Material changes will be communicated via the Site."
+          ]
+        },
+        {
+          "id": "contact",
+          "title": "5. Contact",
+          "body": [
+            "Questions about this policy can be sent to help@synq.cards."
+          ]
+        }
+      ]
+    },
+    "notice": {
+      "meta": {
+        "title": "Legal Notice · Synq",
+        "description": "Who operates Synq, the Shopify trading card pricing and inventory app."
+      },
+      "title": "Legal Notice",
+      "updated": "Last updated: October 12, 2026",
+      "intro": "Synq is operated by:",
+      "sections": [
+        {
+          "id": "holder",
+          "title": "Service provider",
+          "body": [
+            "**Holder**: Telmo Beroiz Bilbao, sole trader",
+            "**Tax ID (NIF)**: 73234079D",
+            "**Address**: 20800 Zarautz (Gipuzkoa), Spain",
+            "**Email**: iamtelmoo@gmail.com",
+            "**Activity**: software for online stores (the Synq Shopify app)",
+            "Use of Synq is governed by our [Terms of Service](/terms) and [Privacy Policy](/privacy)."
+          ]
+        }
+      ]
+    }
+  },
+  "contact": {
+    "title": "Écrivez-nous",
+    "body": "Chaque message est lu par une vraie personne, et vous recevez une réponse sous un jour ouvré.",
+    "topic": "Objet de votre message",
+    "topics": {
+      "before": "Avant l'installation",
+      "app": "Aide sur l'app",
+      "billing": "Forfaits et facturation",
+      "other": "Autre chose"
+    },
+    "name": "Votre nom",
+    "email": "E-mail",
+    "store": "Votre boutique",
+    "optional": "(facultatif)",
+    "storePlaceholder": "votreboutique.myshopify.com",
+    "message": "Message",
+    "placeholders": {
+      "before": "Parlez-nous de votre boutique et de ce que vous voulez savoir.",
+      "app": "Ce que vous faisiez, ce que vous attendiez et ce qui s'est passé à la place.",
+      "billing": "Votre forfait et ce que vous voulez changer.",
+      "other": "Dites-nous comment nous pouvons vous aider."
+    },
+    "send": "Envoyer le message",
+    "sending": "Envoi…",
+    "direct": "Ou écrivez à <mail>{email}</mail>",
+    "error": "Le message n'est pas parti. Réessayez, ou écrivez à <mail>{email}</mail>.",
+    "close": "Fermer",
+    "sent": {
+      "title": "Message envoyé",
+      "body": "Merci de nous avoir écrit. Vous avez reçu un e-mail de confirmation, et vous aurez une réponse sous un jour ouvré.",
+      "done": "Terminé"
+    }
+  },
+  "notFound": {
+    "title": "Cette page n'existe pas.",
+    "body": "Le lien est peut-être ancien ou mal saisi. Voici les pages les plus consultées :"
+  }
+}
