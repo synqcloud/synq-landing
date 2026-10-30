@@ -21,7 +21,11 @@ const SIZES: Record<string, [number, number]> = {
   "/stores/mint.webp": [210, 96],
 };
 
-export function artSize(src: string): { width?: number; height?: number } {
+/* Every demo sits below the hero, so its pictures load at low priority.
+   Without it React preloads each <img> in <head>, ahead of the hero (LCP
+   went 8s+). Not loading="lazy": pictures in a demo's hidden steps would
+   only start loading when the step shows, and pop in. */
+export function artSize(src: string): { width?: number; height?: number; fetchPriority: "low" } {
   const s = SIZES[src];
-  return s ? { width: s[0], height: s[1] } : {};
+  return s ? { width: s[0], height: s[1], fetchPriority: "low" } : { fetchPriority: "low" };
 }

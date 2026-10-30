@@ -24,7 +24,7 @@ export function generateStaticParams() {
 }
 
 /* only the ten languages exist; anything else (e.g. /wp-login.php, which the
-   middleware skips) is a plain 404 */
+   proxy skips) is a plain 404 */
 export const dynamicParams = false;
 
 export const viewport: Viewport = {
