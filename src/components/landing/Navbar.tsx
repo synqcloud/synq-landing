@@ -5,6 +5,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { useRouter, usePathname, Link } from "@/i18n/navigation";
 import SynqLogo from "./SynqLogo";
 import { isEnglishOnly } from "@/lib/site";
+import { rememberLocaleChoice } from "@/components/i18n/LocaleHint";
 import { localePath } from "@/lib/site";
 
 /* each language in its own name, so a reader finds theirs at a glance */
@@ -40,6 +41,7 @@ function LanguageSelector() {
     /* pages only in English (blog, games, legal…) have no other language:
        switching goes to that language's home instead of bouncing back */
     const target = code !== "en" && isEnglishOnly(pathname) ? "/" : pathname;
+    rememberLocaleChoice();
     if (code !== locale) startTransition(() => router.replace(target, { locale: code }));
   };
 
@@ -323,6 +325,7 @@ function MobileLanguageSelector() {
             lang={l.code}
             onClick={() =>
               startTransition(() => {
+                rememberLocaleChoice();
                 router.replace(l.code !== "en" && isEnglishOnly(pathname) ? "/" : pathname, { locale: l.code });
               })
             }
