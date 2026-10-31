@@ -8,6 +8,8 @@ import { routing } from "@/i18n/routing";
 import ContactModal from "@/components/contact/ContactModal";
 import LocaleHint from "@/components/i18n/LocaleHint";
 import AttributionTracker from "@/components/analytics/AttributionTracker";
+import GoogleAnalytics from "@/components/analytics/GoogleAnalytics";
+import CookieBanner from "@/components/analytics/CookieBanner";
 import { SITE_NAME, SITE_URL, TWITTER_HANDLE } from "@/lib/site";
 import { bareTitle } from "@/lib/seo";
 import "../globals.css";
@@ -98,8 +100,10 @@ export default async function LocaleLayout({
           {children}
           <ContactModal />
           <LocaleHint />
+          <CookieBanner />
         </NextIntlClientProvider>
         <AttributionTracker />
+        <GoogleAnalytics />
         <Analytics />
         <SpeedInsights />
       </body>

@@ -47,7 +47,8 @@
           "terms": "Condicions",
           "privacy": "Privadesa",
           "cookies": "Galetes",
-          "legal": "Avís legal"
+          "legal": "Avís legal",
+          "cookieSettings": "Configurar galetes"
         }
       }
     }

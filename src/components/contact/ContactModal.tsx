@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import { CONTACT_EVENT } from "./open";
+import { track } from "@/lib/ga";
 import { getAttribution } from "@/lib/attribution";
 import "./contact.css";
 
@@ -59,6 +60,8 @@ export default function ContactModal() {
         body: JSON.stringify({ ...data, topic, attribution: getAttribution() }),
       });
       setState(res.ok ? "sent" : "error");
+      /* GA4's lead event; the topic only, never what the person wrote */
+      if (res.ok) track("generate_lead", { topic });
     } catch {
       setState("error");
     }
