@@ -5,6 +5,7 @@ import { useLocale } from "next-intl";
 import { usePathname, useRouter } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
 import { isEnglishOnly } from "@/lib/site";
+import { CONSENT_CHANGE_EVENT, consentPending } from "@/lib/consent";
 
 /* The site never redirects by browser language (crawlers must get the URL
    they asked for). Instead, when the browser prefers another language we
@@ -48,8 +49,18 @@ export default function LocaleHint() {
   const router = useRouter();
   const [, startTransition] = useTransition();
   const [target, setTarget] = useState<string | null>(null);
+  /* bumps when the cookie banner is answered, so the hint can follow it */
+  const [consentTick, setConsentTick] = useState(0);
 
   useEffect(() => {
+    const bump = () => setConsentTick((n) => n + 1);
+    window.addEventListener(CONSENT_CHANGE_EVENT, bump);
+    return () => window.removeEventListener(CONSENT_CHANGE_EVENT, bump);
+  }, []);
+
+  useEffect(() => {
+    /* one card at a time: the cookie banner goes first */
+    if (consentPending()) return setTarget(null);
     /* English-only pages (blog, games, legal…) have nothing to switch to */
     if (isEnglishOnly(pathname)) return setTarget(null);
     try {
@@ -61,7 +72,7 @@ export default function LocaleHint() {
     if (!want || want === locale || !COPY[want]) return;
     const id = setTimeout(() => setTarget(want), 1200);
     return () => clearTimeout(id);
-  }, [locale, pathname]);
+  }, [locale, pathname, consentTick]);
 
   if (!target) return null;
   const copy = COPY[target];

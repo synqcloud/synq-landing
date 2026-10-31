@@ -47,7 +47,8 @@
           "terms": "Terms",
           "privacy": "Privacy",
           "cookies": "Cookies",
-          "legal": "Legal notice"
+          "legal": "Legal notice",
+          "cookieSettings": "Cookie settings"
         }
       }
     }
@@ -2252,7 +2253,7 @@
         "description": "How Synq collects, uses, and protects data for its Shopify trading card pricing app."
       },
       "title": "Privacy Policy",
-      "updated": "Last updated: October 12, 2026",
+      "updated": "Last updated: October 31, 2026",
       "intro": "Our rule is simple: collect only what Synq needs to do its job, and never sell it. Here is what that means in practice.",
       "numbered": true,
       "sections": [
@@ -2346,7 +2347,7 @@
           "id": "cookies",
           "title": "Cookies",
           "body": [
-            "The app keeps a small analytics identifier in your browser's local storage, and Shopify uses its own cookies to sign you in. This website uses privacy-friendly analytics and no advertising cookies."
+            "The app keeps a small analytics identifier in your browser's local storage, and Shopify uses its own cookies to sign you in. This website uses Google Analytics cookies only if you accept them in the cookie banner, and no advertising cookies."
           ]
         },
         {
@@ -2372,7 +2373,7 @@
         "description": "Information about the cookies used by Synq's website and application."
       },
       "title": "Cookies Policy",
-      "updated": "Last updated: October 30, 2026",
+      "updated": "Last updated: October 31, 2026",
       "intro": "This Cookies Policy explains what cookies are, which cookies we use on synq.cards (the \"Site\") and inside the Synq application, and how you can control them.",
       "sections": [
         {
@@ -2387,15 +2388,18 @@
           "title": "2. Cookies we use",
           "body": [
             "Strictly necessary cookies: required for the Site and application to function (session, authentication, security, language preference). These cookies do not require your consent under Spanish law.",
-            "Analytics: we use Vercel Web Analytics and Speed Insights to count visits and measure page speed. They set no cookies and do not track you across sites. When you arrive, we also keep in session storage, for that visit only, the page and link that brought you here, so a message you send through the contact form can say how you found us. Nothing is kept if your browser sends Global Privacy Control or Do Not Track.",
-            "We do not use advertising or third-party tracking cookies."
+            "Your cookie choice: we keep your answer to the cookie banner in your browser's local storage (synq-consent) so we don't ask again. This is strictly necessary and needs no consent.",
+            "Analytics without cookies: we use Vercel Web Analytics and Speed Insights to count visits and measure page speed. They set no cookies and do not track you across sites. When you arrive, we also keep in session storage, for that visit only, the page and link that brought you here, so a message you send through the contact form can say how you found us. Nothing is kept if your browser sends Global Privacy Control or Do Not Track.",
+            "Analytics cookies (only with your consent): if you accept them, we load Google Analytics 4 (Google Ireland Limited) to see how visitors find and use the Site, which pages they open and whether they go on to the Shopify App Store listing. It sets the cookies _ga (2 years) and _ga_<ID> (2 years). Google Signals and advertising features are off, and Google does not keep full IP addresses. Google may process the data in the United States under the EU–US Data Privacy Framework. If you reject them, or your browser sends Global Privacy Control or Do Not Track, Google Analytics never loads.",
+            "We do not use advertising cookies."
           ]
         },
         {
           "id": "manage",
           "title": "3. How to manage cookies",
           "body": [
-            "You can configure your browser to refuse cookies, delete existing ones or alert you when cookies are being set. Most browsers offer this option under \"Settings\" or \"Preferences\".",
+            "You can accept or reject analytics cookies at any time from \"Cookie settings\" in the footer of every page. Rejecting them after accepting stops Google Analytics and deletes its cookies.",
+            "You can also configure your browser to refuse cookies, delete existing ones or alert you when cookies are being set. Most browsers offer this option under \"Settings\" or \"Preferences\".",
             "If you disable strictly necessary cookies, some features of the Site or the application may not work properly."
           ]
         },

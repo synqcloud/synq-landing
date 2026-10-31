@@ -5,6 +5,7 @@ import { Link, usePathname } from "@/i18n/navigation";
 import SynqLogo from "./SynqLogo";
 import { openContact } from "@/components/contact/open";
 import { localePath } from "@/lib/site";
+import { analyticsEnabled, openCookieSettings } from "@/lib/consent";
 
 /* The English-only pages for each game and the comparison: proper nouns, so
    the same labels in every language. Linked from every page so they aren't
@@ -44,11 +45,15 @@ const COLUMNS: Record<
     },
   },
   legal: {
-    linkKeys: ["terms", "privacy", "cookies", "legal"],
+    /* cookieSettings reopens the consent banner; only there when GA is on */
+    linkKeys: analyticsEnabled
+      ? ["terms", "privacy", "cookies", "cookieSettings", "legal"]
+      : ["terms", "privacy", "cookies", "legal"],
     hrefs: {
       terms: "/terms",
       privacy: "/privacy",
       cookies: "/cookies",
+      cookieSettings: "#cookie-settings",
       legal: "/legal",
     },
   },
@@ -92,12 +97,14 @@ export default function Footer() {
                     const raw = col.hrefs[linkKey];
                     const label = t(`columns.${colKey}.links.${linkKey}`);
                     /* contact opens the write-to-us modal instead of a mail client */
-                    if (raw === "#contact") {
+                    if (raw === "#contact" || raw === "#cookie-settings") {
                       return (
                         <li key={linkKey}>
                           <button
                             type="button"
-                            onClick={() => openContact()}
+                            onClick={() =>
+                              raw === "#contact" ? openContact() : openCookieSettings()
+                            }
                             className="text-left text-[14px] text-white/70 transition-colors hover:text-white"
                           >
                             {label}

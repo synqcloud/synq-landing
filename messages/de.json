@@ -47,7 +47,8 @@
           "terms": "AGB",
           "privacy": "Datenschutz",
           "cookies": "Cookies",
-          "legal": "Impressum"
+          "legal": "Impressum",
+          "cookieSettings": "Cookie-Einstellungen"
         }
       }
     }
