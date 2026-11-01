@@ -2253,7 +2253,7 @@
         "description": "How Synq collects, uses, and protects data for its Shopify trading card pricing app."
       },
       "title": "Privacy Policy",
-      "updated": "Last updated: October 31, 2026",
+      "updated": "Last updated: November 1, 2026",
       "intro": "Our rule is simple: collect only what Synq needs to do its job, and never sell it. Here is what that means in practice.",
       "numbered": true,
       "sections": [
@@ -2274,11 +2274,12 @@
                 "**Store details**: your shop's domain, name, contact email, currency and timezone, from Shopify when you install.",
                 "**Staff details**: the name and email of the people who open the app.",
                 "**Catalog data**: the products, variants, inventory, locations and sales channels Synq manages for you.",
+                "**Event players**, only if you use Events: the name and player ID each customer enters when they book a seat, the email or phone you add so a player can get store credit, and the order their ticket came from.",
                 "**Analytics**: how the app is used (pages opened, clicks, browser and device), so we can see where it gets in your way. This covers Synq's pages only, never the rest of your Shopify admin or your screen.",
                 "**Messages**: what you send us by email, the contact form or Shopify's support channel."
               ]
             },
-            "We don't collect your customers' data. Synq does not ask Shopify for access to orders or customers, and passwords and payment details never pass through it."
+            "Apart from Events, Synq doesn't collect your customers' data. Passwords and payment details never pass through it."
           ]
         },
         {
@@ -2288,13 +2289,14 @@
             {
               "list": [
                 "To run the app: create and update your products, sync stock and prices, run imports and bill your plan.",
+                "To run Events for you: seat players from their orders, check them in, refund them when you take them off, and give them store credit and prizes.",
                 "To help you when you write to us, and to send service emails such as job results or billing notices.",
                 "To find and fix problems and decide what to build next.",
                 "To keep the service secure and prevent abuse.",
                 "To keep the billing and tax records the law requires."
               ]
             },
-            "We never sell your data or use it for advertising.",
+            "We never sell your data or use it for advertising. Your customers' data is used only to run your events: never for marketing, and never to train AI models.",
             "If you are in the EU or UK: we rely on our contract with you to run the app, on our legitimate interest to improve and secure it, and on legal obligation for billing records."
           ]
         },
@@ -2302,7 +2304,7 @@
           "id": "who-we-share-it-with",
           "title": "Who we share it with",
           "body": [
-            "Only with the providers that run parts of Synq for us (hosting, database, background jobs, image storage, email and analytics), under contracts that limit them to our instructions. Ask us at iamtelmoo@gmail.com and we'll send you the current list.",
+            "Only with the providers that run parts of Synq for us, under contracts that limit them to our instructions: Render (app hosting), Supabase (database), Trigger.dev (background jobs), Cloudflare (image storage), Resend (email), PostHog (app analytics) and Google (website analytics, only if you accept cookies). On the pages that show your customers, analytics records no text, so their names and contacts never reach PostHog.",
             "We may also disclose data when the law requires it, or to a buyer if Synq is ever sold, under this same policy."
           ]
         },
@@ -2310,9 +2312,10 @@
           "id": "shopify-and-merchants",
           "title": "Shopify and merchants",
           "body": [
-            "Synq works through the permissions you approve when you install it: products, inventory, locations and sales channels. For the data in your store, Synq acts on your behalf.",
+            "Synq works through the permissions you approve when you install it: products, inventory, locations and sales channels. If you use Events, Synq also asks for your orders and customers, and gives those permissions back if you stop. For the data in your store, Synq acts on your behalf.",
             "Shopify sends us its privacy requests and we answer them. When you uninstall, Shopify asks us to erase your store's data 48 hours later and we delete it. The products in your store stay there; they are yours.",
-            "If you shop at a store that uses Synq, your data is held by that store and Shopify, not by us. Please contact the store."
+            "**Our data processing terms.** For your customers' data you are the controller and Synq is your processor. We process it only to run Events, on your instructions and under this policy; keep it confidential; use only the providers listed above; help you answer your customers' requests; tell you without undue delay about a breach that affects it; and delete it as described below. This section is our data processing agreement with you. Write to us for a signed copy.",
+            "If you shop at a store that uses Synq, your data is held by that store and Shopify. When you book one of its events, the store uses Synq to keep your name, player ID and the order your ticket came from, on its behalf. Please contact the store about it."
           ]
         },
         {
@@ -2322,6 +2325,7 @@
             {
               "list": [
                 "Store, staff and catalog data: while the app is installed, then deleted after uninstall as above.",
+                "Event players: names, player IDs and contacts are removed 180 days after the event. The seat record stays, without them. Everything goes 48 hours after you uninstall.",
                 "Analytics: for the retention period of our analytics plan, then deleted.",
                 "Messages: as long as needed to help you.",
                 "Billing records: as long as tax law requires."
@@ -2333,7 +2337,7 @@
           "id": "security",
           "title": "Security",
           "body": [
-            "Data is encrypted in transit, access to production systems is limited to the people who run Synq, and every read and write is scoped to a single store. No system is perfectly secure; if a breach affects your data, we will tell you and the authorities as the law requires."
+            "Data is encrypted in transit and at rest, backups included. Access to production systems is limited to the people who run Synq, and every read and write is scoped to a single store. No system is perfectly secure; if a breach affects your data or your customers', we will tell you and the authorities as the law requires."
           ]
         },
         {
