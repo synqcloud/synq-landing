@@ -185,10 +185,18 @@ function Count({
   decimals?: number;
   suffix?: string;
 }) {
-  const [n, setN] = useState(0);
+  /* starts at the real figure, so the server HTML (what crawlers and no-JS
+     readers get) carries one number, not the figure plus a counting "0" */
+  const [n, setN] = useState(to);
+  const reduced = useRef(false);
+  useEffect(() => {
+    reduced.current = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    /* the band sits far below the fold, so this reset happens unseen */
+    if (!reduced.current) setN(0);
+  }, []);
   useEffect(() => {
     if (!run) return;
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    if (reduced.current) {
       setN(to);
       return;
     }
@@ -205,14 +213,12 @@ function Count({
   }, [run, to, delay]);
   const fmt = (v: number) =>
     v.toLocaleString("en-US", { minimumFractionDigits: decimals, maximumFractionDigits: decimals });
-  /* the real figure is in the HTML for readers and crawlers; the counting
-     one is only a show */
+  /* screen readers get the real figure through the label, never a mid-count one */
   return (
-    <b className="text-[44px] font-[650] leading-none tracking-[-0.03em] tabular-nums text-white lg:text-[56px]">
-      <span className="sr-only">
-        {fmt(to)}
-        {suffix}
-      </span>
+    <b
+      aria-label={`${fmt(to)}${suffix}`}
+      className="text-[44px] font-[650] leading-none tracking-[-0.03em] tabular-nums text-white lg:text-[56px]"
+    >
       <span aria-hidden="true">
         {fmt(n)}
         {suffix}
