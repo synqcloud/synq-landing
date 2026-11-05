@@ -2274,7 +2274,7 @@
                 "**Store details**: your shop's domain, name, contact email, currency and timezone, from Shopify when you install.",
                 "**Staff details**: the name and email of the people who open the app.",
                 "**Catalog data**: the products, variants, inventory, locations and sales channels Synq manages for you.",
-                "**Event players**, only if you use Events: the name and player ID each customer enters when they book a seat, the email or phone you add so a player can get store credit, and the order their ticket came from.",
+                "**Event players**, only if you use Events: the name and player ID each customer enters when they book a seat, the email you add so a player can get store credit, and the order their ticket came from.",
                 "**Analytics**: how the app is used (pages opened, clicks, browser and device), so we can see where it gets in your way. This covers Synq's pages only, never the rest of your Shopify admin or your screen.",
                 "**Messages**: what you send us by email, the contact form or Shopify's support channel."
               ]
